@@ -6,10 +6,6 @@ add_definitions(-std=c++11)
 set(SOURCE_FILES main.cpp)
 add_executable(fleur_run ${SOURCE_FILES})
 
-
-set(SOURCE_FILES main.cpp)
-add_executable(mapReduce_run ${SOURCE_FILES})
-
 find_package(Boost 1.57.0 COMPONENTS system filesystem REQUIRED)
 if(Boost_FOUND)
     message(STATUS "Boost_INCLUDE_DIRS: ${Boost_INCLUDE_DIRS}")
