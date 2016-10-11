@@ -18,7 +18,11 @@ public:
     const std::string &get_input() const;
     void set_input(const std::string &_input);
 
-
+    /*
+     * splite _imput in word trying to find key word
+     * raise exception if miss match
+     */
+    void tokenize();
 
 };
 
