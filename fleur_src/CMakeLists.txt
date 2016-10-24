@@ -1,11 +1,9 @@
 project(fleur_src)
 
 set(HEADER_FILES
-        Parseur.h
-        )
+        Requete_parser.h)
 
 set(SOURCE_FILES
-        Parseur.cpp
-        )
+        Requete_parser.cpp )
 
 add_library(fleur_src STATIC ${SOURCE_FILES} ${HEADER_FILES})
