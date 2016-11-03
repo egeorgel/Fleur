@@ -9,16 +9,16 @@
 /**
  * string _parametersStr to type_parameterS _parameters
  */
-void parser::Requete::splitParametersStr() {
+void parser::Requete::splitParametersStr(std::string &parameterStr, type_parameterS &parameter) {
 
-    boost::erase_all(_parametersStr, " ");
+    boost::erase_all(parameterStr, " ");
 
-    std::vector<std::string> parametersSplitByEgual = split(_parametersStr, ',');
+    std::vector<std::string> parametersSplitByEgual = split(parameterStr, ',');
 
     for (auto & element : parametersSplitByEgual) {
         std::vector<std::string> parameterIvect = split(element, '=');
-        type_parameter parameter = std::make_pair(parameterIvect.front(), parameterIvect.back());
-        _parameters.push_back(parameter);
+        type_parameter parameterTuple = std::make_pair(parameterIvect.front(), parameterIvect.back());
+        parameter.push_back(parameterTuple);
     }
 }
 
