@@ -35,8 +35,10 @@ namespace parser {
         std::string _crud;
         type_parameterS _parameters;
         std::string _parametersStr;
+        type_parameterS _headers;
+        std::string _headersStr;
 
-        void splitParametersStr();
+        void splitParametersStr(std::string &parameterStr, type_parameterS &parameter);
 
     private:
         std::vector<std::string> split(const std::string &s, char delim);
@@ -53,6 +55,7 @@ BOOST_FUSION_ADAPT_STRUCT(
         (std::string, _url)
         (std::string, _crud)
         (std::string, _parametersStr)
+        (std::string, _headersStr)
 )
 
 namespace parser {
@@ -65,7 +68,7 @@ namespace parser {
 
         qi::rule<Iterator, std::string(), ascii::space_type> lexemURL, lexemFormat, lexemCrud, lexemParameter;
 
-        qi::rule<Iterator, std::string(), ascii::space_type> select  , from;
+        qi::rule<Iterator, std::string(), ascii::space_type> select  , from, crud, header;
         qi::rule<Iterator, Requete(), ascii::space_type> requete;
 
         Requete_parser() : Requete_parser::base_type(requete) {
@@ -79,7 +82,10 @@ namespace parser {
 
             select  = ascii::no_case [ "select" ] >> lexemFormat ;
             from   = ascii::no_case [ "from" ]   >> lexemURL ;
-            requete =  select >> from >> lexemCrud >> lexemParameter >> ';';
+            crud = lexemCrud >> lexemParameter;
+            header = (ascii::no_case [ "header" ] | "") >> lexemParameter;
+
+            requete =  select >> from >> lexemCrud >> lexemParameter >> header >> ';';
         }
 
     };
@@ -98,9 +104,13 @@ namespace parser {
                 std::cout << "url: " << query._url << "\n";
                 std::cout << "crud: " << query._crud << "\n";
                 std::cout << "parameter: " << query._parametersStr << "\n";
+                std::cout << "header parameter: " << query._headersStr << "\n";
 
                 if (query._parametersStr != "") {
-                    query.splitParametersStr();
+                    query.splitParametersStr(query._parametersStr, query._parameters);
+                }
+                if (query._headersStr != "") {
+                    query.splitParametersStr(query._headersStr, query._headers);
                 }
 
             }
