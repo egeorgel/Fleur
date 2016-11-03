@@ -12,6 +12,8 @@
 #include <utility>
 #include <vector>
 
+#include <boost/algorithm/string.hpp>
+
 #include <boost/fusion/adapted.hpp>
 
 #include <boost/spirit/include/qi.hpp>
@@ -26,16 +28,23 @@ namespace parser {
     typedef std::list<type_parameter> type_parameterS; // parameters are a list of tuple
 
     struct Requete {
+
+    public:
         std::string _format;
         std::string _url;
         std::string _crud;
-        //type_parameterS _parameters;
-        std::string _parameters;
+        type_parameterS _parameters;
+        std::string _parametersStr;
+
+        void splitParametersStr();
+
+    private:
+        std::vector<std::string> split(const std::string &s, char delim);
     };
 
 }
 
-// We need to tell fusion about our employee struct
+// We need to tell fusion about our Requete struct
 // to make it a first-class fusion citizen. This has to
 // be in global scope.
 BOOST_FUSION_ADAPT_STRUCT(
@@ -43,7 +52,7 @@ BOOST_FUSION_ADAPT_STRUCT(
         (std::string, _format)
         (std::string, _url)
         (std::string, _crud)
-        (std::string, _parameters)
+        (std::string, _parametersStr)
 )
 
 namespace parser {
@@ -88,7 +97,12 @@ namespace parser {
                 std::cout << "format: " << query._format << "\n";
                 std::cout << "url: " << query._url << "\n";
                 std::cout << "crud: " << query._crud << "\n";
-                std::cout << "parameter: " << query._parameters << "\n";
+                std::cout << "parameter: " << query._parametersStr << "\n";
+
+                if (query._parametersStr != "") {
+                    query.splitParametersStr();
+                }
+
             }
             else {
                 std::cerr << "parse failed: '" << std::string(i_begin, i_end) << "'\n";
