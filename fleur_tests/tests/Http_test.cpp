@@ -55,16 +55,6 @@ TEST_F(Http_test, http_downloadContent) {
               http.downloadContent());
 }
 
-TEST_F(Http_test, http_downloadJson) {
-    parser::Requete req;
-    req._url = "https://";
-    req._format = "json"
-
-    Http http(req);
-    ASSERT_EQ("{test : \"une chévre\", chat: {fouine : \"Fleur\"}}",
-              http.downloadContent());
-}
-
 TEST_F(Http_test, http_downloadContent_showld_throw_exception) {
     parser::Requete req;
     req._url = "http://";
@@ -76,4 +66,28 @@ TEST_F(Http_test, http_downloadContent_showld_throw_exception) {
     } catch (const HttpException &e) {
         ASSERT_STREQ("curl_easy_perform() failed: Couldn't resolve host name", e.what());
     }
+}
+
+TEST_F(Http_test, http_downloadJson) {
+    parser::Requete req;
+    req._url = "https://";
+    req._format = "json";
+
+    Http http(req);
+    ASSERT_EQ("{test : \"une chévre\", chat: {fouine : \"Fleur\"}}",
+              http.downloadContent());
+}
+
+TEST_F(Http_test, http_post) {
+    parser::Requete req;
+    req._url = "http://httpbin.org/post";
+    req._crud = "post";
+    parser::type_parameterS param;
+    param.push_back(std::make_pair("name", "denis"));
+    param.push_back(std::make_pair("age", "12"));
+    req._parameters = param;
+
+    Http http(req);
+    ASSERT_EQ("{\"name\" : \"denis\", age: 12}",
+              http.post());
 }
