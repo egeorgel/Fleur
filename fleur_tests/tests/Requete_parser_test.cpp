@@ -4,9 +4,7 @@
 
 #include <string>
 #include <gtest/gtest.h>
-#include <vector>
-#include <boost/spirit/home/support/common_terminals.hpp>
-#include <Requete_parser.h>
+#include "Requete_parser.h"
 
 class Requete_parser_test : public ::testing::Test {
 protected:
