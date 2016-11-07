@@ -13,7 +13,7 @@ class Http {
 public:
     Http(const parser::Requete & req);
 
-    ~Http() {}
+    ~Http();
 
     std::string downloadContent();
 

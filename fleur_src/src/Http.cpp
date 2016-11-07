@@ -60,7 +60,7 @@ std::string Http::downloadContent() {
 
 std::string Http::downloadJson() {
     assert(_requete._crud == "json");
-    
+
     if (!_curl)
         throw HttpException("Error in curl_easy_init()");
 
@@ -98,8 +98,8 @@ std::string Http::post() {
     if (!_curl)
         throw HttpException("Error in curl_easy_init()");
 
-    curl_easy_setopt(_curl, CURLOPT_URL, _requete._url);
-    curl_easy_setopt(_curl, CURLOPT_POSTFIELDS, type_parameterS2strFormat(_requete._parameters));
+    curl_easy_setopt(_curl, CURLOPT_URL, _requete._url.c_str());
+    curl_easy_setopt(_curl, CURLOPT_POSTFIELDS, type_parameterS2strFormat(_requete._parameters).c_str());
     std::stringstream out;
     curl_easy_setopt(_curl, CURLOPT_WRITEFUNCTION, write_data);
     curl_easy_setopt(_curl, CURLOPT_WRITEDATA, &out);
