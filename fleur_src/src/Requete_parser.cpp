@@ -4,7 +4,9 @@
 
 #include "Requete_parser.h"
 
-/// PUBLIC
+/////////////////////
+///     PUBLIC   ////
+/////////////////////
 
 /**
  * string _parametersStr to type_parameterS _parameters
@@ -22,7 +24,10 @@ void parser::Requete::splitParametersStr(std::string &parameterStr, type_paramet
     }
 }
 
-/// PRIVATE
+
+/////////////////////
+///     PRIVATE   ///
+/////////////////////
 
 /**
  * Split string by a delimiter

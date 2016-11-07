@@ -1,7 +1,8 @@
 include_directories(${gtest_SOURCE_DIR}/include ${gtest_SOURCE_DIR})
 
-add_executable(runFleurTests
-               Requete_parser_test.cpp)
+add_executable(fleurTest
+        Requete_parser_test.cpp
+        Http_test.cpp)
 
-target_link_libraries(runFleurTests gtest gtest_main)
-target_link_libraries(runFleurTests fleur_src)
+target_link_libraries(fleurTest gtest gtest_main curl)
+target_link_libraries(fleurTest fleur_src)
