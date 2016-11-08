@@ -70,12 +70,12 @@ TEST_F(Http_test, http_downloadContent_showld_throw_exception) {
 
 TEST_F(Http_test, http_downloadJson) {
     parser::Requete req;
-    req._url = "https://";
+    req._url = "https://www.hutworks.net//test.php?json=ezd";
     req._format = "json";
 
     Http http(req);
-    ASSERT_EQ("{test : \"une chévre\", chat: {fouine : \"Fleur\"}}",
-              http.downloadContent());
+    ASSERT_EQ("{\"test\":\"une chevre\",\"chat\":{\"fouine\":\"Fleur\"}}\n",
+              http.downloadJson());
 }
 
 TEST_F(Http_test, http_post) {
@@ -88,6 +88,8 @@ TEST_F(Http_test, http_post) {
     req._parameters = param;
 
     Http http(req);
-    ASSERT_EQ("{\"name\" : \"denis\", age: 12}",
-              http.post());
+    std::string str = http.post();
+
+    ASSERT_EQ("{\n  \"args\": {}, \n  \"data\": \"\", \n  \"files\": {}, \n  \"form\": {\n    \"age\": \"12\", \n    \"name\": \"denis\"\n  }, \n  \"headers\": {\n    \"Accept\": \"*/*\", \n    \"Content-Length\": \"17\", \n    \"Content-Type\": \"application/x-www-form-urlencoded\", \n    \"Host\": \"httpbin.org\"\n  }, \n  \"json\": null, \n  \"origin\": \"91.199.6.127\", \n  \"url\": \"http://httpbin.org/post\"\n}\n\n",
+                http.post());
 }

@@ -4,7 +4,8 @@ set(HEADER_FILES
         include/Requete_parser.h
         include/RestHttp.h
         include/Http.h
-        include/HttpException.h)
+        include/HttpException.h
+        include/json.hpp)
 
 set(SOURCE_FILES
         src/Requete_parser.cpp
