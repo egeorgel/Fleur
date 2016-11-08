@@ -38,3 +38,13 @@
 
 # OS X
 .DS_Store
+
+#CMake Generator Garbage
+CMakeCache.txt
+CMakeFiles/
+Debug/
+Release/
+*.xcodeproj
+*.cmake
+*.build
+CMakeScripts/
