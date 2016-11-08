@@ -59,7 +59,7 @@ std::string Http::downloadContent() {
 }
 
 std::string Http::downloadJson() {
-    assert(_requete._crud == "json");
+    assert(_requete._format == "json");
 
     if (!_curl)
         throw HttpException("Error in curl_easy_init()");
