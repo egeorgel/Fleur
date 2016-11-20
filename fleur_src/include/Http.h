@@ -23,7 +23,6 @@ public:
 
     std::string post();
 
-
     void *get_curl() const;
     const parser::Requete &get_requete() const;
 

@@ -156,3 +156,4 @@ std::string Http::type_parameterS2strFormat(const parser::type_parameterS &param
     strOutput.pop_back();
     return strOutput;
 }
+
