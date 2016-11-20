@@ -31,6 +31,7 @@ namespace parser {
 
     public:
         std::string _format;
+        std::string _selector; // balise html, element in json...
         std::string _url;
         std::string _crud;
         type_parameterS _parameters;
@@ -52,6 +53,7 @@ namespace parser {
 BOOST_FUSION_ADAPT_STRUCT(
         parser::Requete,
         (std::string, _format)
+        (std::string, _selector)
         (std::string, _url)
         (std::string, _crud)
         (std::string, _parametersStr)
@@ -66,7 +68,7 @@ namespace parser {
     template<typename Iterator>
     struct Requete_parser : qi::grammar<Iterator, Requete(), ascii::space_type> {
 
-        qi::rule<Iterator, std::string(), ascii::space_type> lexemURL, lexemFormat, lexemCrud, lexemParameter;
+        qi::rule<Iterator, std::string(), ascii::space_type> lexemURL, lexemFormat, lexemeSelector, lexemCrud, lexemParameter;
 
         qi::rule<Iterator, std::string(), ascii::space_type> select  , from, crud, header;
         qi::rule<Iterator, Requete(), ascii::space_type> requete;
@@ -78,14 +80,13 @@ namespace parser {
             lexemURL = lexeme ['"' >> +(char_ - '"') >> '"'];
             lexemFormat = lexeme [+(char_("*jsonxmlhtJSONXMLHT"))];
             lexemCrud = lexeme [+(char_("*getposudlGETPOSUDL")) | ""];
-            lexemParameter = lexeme[ ('(' >> +(char_ - ')') >> ')' ) | ""]; // (a=b, c=d)
+            lexemeSelector = lexemParameter = lexeme[ ('(' >> +(char_ - ')') >> ')' ) | ""]; // (a=b, c=d)
 
             select  = ascii::no_case [ "select" ] >> lexemFormat ;
             from   = ascii::no_case [ "from" ]   >> lexemURL ;
-            crud = lexemCrud >> lexemParameter;
             header = (ascii::no_case [ "header" ] | "") >> lexemParameter;
 
-            requete =  select >> from >> lexemCrud >> lexemParameter >> header >> ';';
+            requete =  select >> lexemeSelector >> from >> lexemCrud >> lexemParameter >> header >> ';';
         }
 
     };
@@ -101,6 +102,7 @@ namespace parser {
             if (ok) {
                 std::cout << "parse success\n";
                 std::cout << "format: " << query._format << "\n";
+                std::cout << "selector: " << query._selector << "\n";
                 std::cout << "url: " << query._url << "\n";
                 std::cout << "crud: " << query._crud << "\n";
                 std::cout << "parameter: " << query._parametersStr << "\n";
