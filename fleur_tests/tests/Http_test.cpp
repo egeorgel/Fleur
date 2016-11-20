@@ -1,6 +1,9 @@
 //
 // Created by Edgar on 06/11/2016.
 //
+#include <boost/property_tree/ptree.hpp>
+#include <boost/property_tree/json_parser.hpp>
+#include <boost/foreach.hpp>
 
 #include <gtest/gtest.h>
 #include <Requete_parser.h>
@@ -88,8 +91,32 @@ TEST_F(Http_test, http_post) {
     req._parameters = param;
 
     Http http(req);
-    std::string str = http.post();
+    //parsing json
+    std::stringstream ss;
+    ss << http.post();
+    boost::property_tree::ptree pt;
+    boost::property_tree::read_json(ss, pt);
 
-    ASSERT_EQ("{\n  \"args\": {}, \n  \"data\": \"\", \n  \"files\": {}, \n  \"form\": {\n    \"age\": \"12\", \n    \"name\": \"denis\"\n  }, \n  \"headers\": {\n    \"Accept\": \"*/*\", \n    \"Content-Length\": \"17\", \n    \"Content-Type\": \"application/x-www-form-urlencoded\", \n    \"Host\": \"httpbin.org\"\n  }, \n  \"json\": null, \n  \"origin\": \"91.199.6.127\", \n  \"url\": \"http://httpbin.org/post\"\n}\n\n",
-                http.post());
+    ASSERT_EQ("12", pt.get<std::string>("form.age"));
+    ASSERT_EQ("denis", pt.get<std::string>("form.name"));
+}
+
+TEST_F(Http_test, http_get) {
+    parser::Requete req;
+    req._url = "http://httpbin.org/get";
+    req._crud = "get";
+    parser::type_parameterS param;
+    param.push_back(std::make_pair("name", "denis"));
+    param.push_back(std::make_pair("age", "12"));
+    req._parameters = param;
+
+    Http http(req);
+
+    std::stringstream ss;
+    ss << http.get();
+    boost::property_tree::ptree pt;
+    boost::property_tree::read_json(ss, pt);
+    //parsing json
+    ASSERT_EQ("12", pt.get<std::string>("args.age"));
+    ASSERT_EQ("denis", pt.get<std::string>("args.name"));
 }
