@@ -3,10 +3,7 @@
 //
 
 #include <HttpException.h>
-#include <assert.h>
 #include <curl/curl.h>
-#include <curl/easy.h>
-#include <curl/curlbuild.h>
 #include "Http.h"
 
 size_t write_data(void *ptr, size_t size, size_t nmemb, void *stream) {
@@ -85,10 +82,29 @@ std::string Http::downloadJson() {
 }
 
 std::string Http::get() {
+    assert( ! _requete._parameters.empty());
+    assert(_requete._crud == "get");
+
     if (!_curl)
         throw HttpException("Error in curl_easy_init()");
 
-    return std::string();
+    std::string urlWithArg = _requete._url + "?" + type_parameterS2strFormat(_requete._parameters);
+    curl_easy_setopt(_curl, CURLOPT_URL, urlWithArg.c_str());
+
+    curl_easy_setopt(_curl, CURLOPT_FOLLOWLOCATION, 1L);
+    curl_easy_setopt(_curl, CURLOPT_NOSIGNAL, 1); //Prevent "longjmp causes uninitialized stack frame" bug
+    curl_easy_setopt(_curl, CURLOPT_ACCEPT_ENCODING, "deflate");
+    std::stringstream out;
+    curl_easy_setopt(_curl, CURLOPT_WRITEFUNCTION, write_data);
+    curl_easy_setopt(_curl, CURLOPT_WRITEDATA, &out);
+
+    /* Perform the request, res will get the return code */
+    CURLcode res = curl_easy_perform(_curl);
+    /* Check for errors */
+    if (res != CURLE_OK)
+        throw HttpException( std::string("curl_easy_perform() failed: ") + curl_easy_strerror(res));
+
+    return out.str();
 }
 
 std::string Http::post() {
