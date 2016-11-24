@@ -2,10 +2,14 @@
 // Created by Edgar on 20/11/2016.
 //
 #include <algorithm>
-#include <vector>
 #include <sstream>
+#include <iostream>
 #include "Filter.h"
 #include "FilterException.h"
+//#include "Xml_parser.h"
+
+#include "Document.h"
+#include "Node.h"
 
 Filter::Filter() {
     markerHtml = {
@@ -42,28 +46,18 @@ std::vector<std::string> Filter::filterHTMLByMarked(const std::string &strToFilt
         throw FilterException("No valid html marker");
 
     std::vector<std::string> output;
-    std::string openMarker = "<" + markerStr + ">";
-    std::string closingMarker = "</" + markerStr + ">";
 
-    bool isRecording = false;
-    std::string sentence = "";
-    std::istringstream buf(strToFilter);
+    CDocument doc;
+    doc.parse(strToFilter.c_str());
+    CSelection c = doc.find(markerStr);
 
-    for (std::string word; buf >> word;) {
-        if (word == openMarker) {
-            isRecording = true;
-        } else if (word == closingMarker) {
-            isRecording = false;
-            output.push_back(sentence); // push the creating sentence in the vector at the end
-            sentence = "";
-        }
+    int i = 0;
 
-        if (isRecording && word != openMarker ) {
-            sentence += " ";
-            sentence += word;
-        }
+    while (i < c.nodeNum()) {
+        std::cout << c.nodeAt(i).text().c_str() << std::endl;
+        output.push_back(c.nodeAt(i).text().c_str());
+        ++i;
     }
-    if (sentence != "") output.push_back(sentence);
 
     return output;
 }

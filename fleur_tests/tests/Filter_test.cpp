@@ -31,21 +31,27 @@ TEST_F(Filter_test, filterHTMLByMarked_shouldThowException) {
 TEST_F(Filter_test, filterHTMLByMarked_divX1) {
 
     Filter filter;
-    std::vector<std::string> outputFilter = filter.filterHTMLByMarked("<h1> Test h1 </h1> no marker <div> I'm a dive </div>",
+    std::vector<std::string> outputFilter = filter.filterHTMLByMarked("<html> <h1> Test h1 </h1> <div> I'm a dive </div></html>",
                                                          "div");
-    ASSERT_EQ(" I'm a dive", outputFilter.front());
+
+    ASSERT_EQ(" I'm a dive ", outputFilter.front());
 }
 
 TEST_F(Filter_test, filterHTMLByMarked_pX3) {
 
     Filter filter;
     std::vector<std::string> outputFilter;
-    outputFilter = filter.filterHTMLByMarked("<h1> Test h1 </h1> "
-                                             "<p> p marker 1 </p>"
+    outputFilter = filter.filterHTMLByMarked("<html> <h1> Test h1 </h1> "
+                                             "<p> p marker 1 <span> spam moi </span> </p>"
                                              " <div> I'm a dive </div>"
                                              " <p> p marker 2 </p> "
-                                             "<img src=\"img/toto.jpg\"/> "
-                                             "<p> p marker 3 </p> ", "p");
-    std::vector<std::string> outputExpected = {" p marker 1", " p marker 2", " p marker 3" };
-    ASSERT_EQ(outputExpected, outputFilter);
+                                             "<h1> Test h1 </h1> "
+                                             "<p> p marker 3 </p> </html>", "p");
+    std::vector<std::string> outputExpected = {" p marker 1  spam moi ", " p marker 2 ", " p marker 3 " };
+    std::cout << outputFilter.size() << std::endl;
+    for (auto str : outputFilter)
+        std::cout << str << std::endl;
+    ASSERT_EQ(outputExpected.at(0), outputFilter.at(0));
+    ASSERT_EQ(outputExpected.at(1), outputFilter.at(1));
+    ASSERT_EQ(outputExpected.at(2), outputFilter.at(2));
 }

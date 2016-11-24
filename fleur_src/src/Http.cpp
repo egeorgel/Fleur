@@ -37,11 +37,17 @@ std::string Http::downloadContent() {
     if (!_curl)
         throw HttpException("Error in curl_easy_init()");
 
+    struct curl_slist *headers=NULL; // init to NULL is important
+    curl_slist_append(headers, "Accept: text/html");
+    curl_slist_append( headers, "Content-Type: text/html");
+    curl_slist_append( headers, "charsets: utf-8");
+
     curl_easy_setopt(_curl, CURLOPT_URL, _requete._url.c_str());
 
     curl_easy_setopt(_curl, CURLOPT_FOLLOWLOCATION, 1L);
     curl_easy_setopt(_curl, CURLOPT_NOSIGNAL, 1); //Prevent "longjmp causes uninitialized stack frame" bug
-    curl_easy_setopt(_curl, CURLOPT_ACCEPT_ENCODING, "deflate");
+    //curl_easy_setopt(_curl, CURLOPT_ACCEPT_ENCODING, "");
+    curl_easy_setopt(_curl, CURLOPT_HTTPHEADER, headers);
     std::stringstream out;
     curl_easy_setopt(_curl, CURLOPT_WRITEFUNCTION, write_data);
     curl_easy_setopt(_curl, CURLOPT_WRITEDATA, &out);

@@ -1,0 +1,12 @@
+/Applications/CLion.app/Contents/bin/cmake/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DOPENSSL_ROOT_DIR=/usr/local/opt/openssl/ -DOPENSSL_LIBRARIES=/usr/local/opt/openssl/lib -G "CodeBlocks - Unix Makefiles" /Users/Edgar/ClionProjects/Fleur
+-- Boost version: 1.61.0
+-- Found the following Boost libraries:
+--   system
+--   filesystem
+-- Boost_INCLUDE_DIRS: /usr/local/include
+-- Boost_LIBRARIES: /usr/local/lib/libboost_system-mt.dylib;/usr/local/lib/libboost_filesystem-mt.dylib
+-- Boost_VERSION: 106100
+-- Found Gumbo 
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /Users/Edgar/ClionProjects/Fleur/cmake-build-debug
