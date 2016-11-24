@@ -6,6 +6,7 @@
 #define FLEUR_FILTER_H
 
 #include <string>
+#include <vector>
 
 class Filter {
 

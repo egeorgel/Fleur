@@ -2,7 +2,6 @@
 // Created by Edgar on 16/10/2016.
 //
 
-#include <string>
 #include <gtest/gtest.h>
 #include "Requete_parser.h"
 

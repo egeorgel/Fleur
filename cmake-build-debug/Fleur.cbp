@@ -1,0 +1,676 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="Fleur"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\cmake\;CMake Files\gumbo-query\;CMake Files\gumbo-query\src\;CMake Files\fleur_src\;CMake Files\fleur_tests\;CMake Files\fleur_tests\lib\;CMake Files\fleur_tests\lib\gtest-1.7.0\;CMake Files\fleur_tests\lib\gtest-1.7.0\cmake\;CMake Files\fleur_tests\tests\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/Users/Edgar/ClionProjects/Fleur/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/opt/local/bin/gmake -j8 -f &quot;/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/opt/local/bin/gmake -j8 -f &quot;/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/opt/local/bin/gmake -j8 -f &quot;/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/opt/local/bin/gmake -j8 -f &quot;/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="list_install_components">
+				<Option working_dir="/Users/Edgar/ClionProjects/Fleur/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/opt/local/bin/gmake -j8 -f &quot;/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/Makefile&quot;  VERBOSE=1 list_install_components"/>
+					<CompileFile command="/opt/local/bin/gmake -j8 -f &quot;/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/opt/local/bin/gmake -j8 -f &quot;/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/opt/local/bin/gmake -j8 -f &quot;/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/Users/Edgar/ClionProjects/Fleur/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/opt/local/bin/gmake -j8 -f &quot;/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/opt/local/bin/gmake -j8 -f &quot;/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/opt/local/bin/gmake -j8 -f &quot;/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/opt/local/bin/gmake -j8 -f &quot;/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="package_source">
+				<Option working_dir="/Users/Edgar/ClionProjects/Fleur/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/opt/local/bin/gmake -j8 -f &quot;/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/Makefile&quot;  VERBOSE=1 package_source"/>
+					<CompileFile command="/opt/local/bin/gmake -j8 -f &quot;/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/opt/local/bin/gmake -j8 -f &quot;/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/opt/local/bin/gmake -j8 -f &quot;/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install">
+				<Option working_dir="/Users/Edgar/ClionProjects/Fleur/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/opt/local/bin/gmake -j8 -f &quot;/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/Makefile&quot;  VERBOSE=1 install"/>
+					<CompileFile command="/opt/local/bin/gmake -j8 -f &quot;/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/opt/local/bin/gmake -j8 -f &quot;/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/opt/local/bin/gmake -j8 -f &quot;/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install/strip">
+				<Option working_dir="/Users/Edgar/ClionProjects/Fleur/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/opt/local/bin/gmake -j8 -f &quot;/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/Makefile&quot;  VERBOSE=1 install/strip"/>
+					<CompileFile command="/opt/local/bin/gmake -j8 -f &quot;/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/opt/local/bin/gmake -j8 -f &quot;/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/opt/local/bin/gmake -j8 -f &quot;/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/Users/Edgar/ClionProjects/Fleur/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/opt/local/bin/gmake -j8 -f &quot;/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/opt/local/bin/gmake -j8 -f &quot;/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/opt/local/bin/gmake -j8 -f &quot;/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/opt/local/bin/gmake -j8 -f &quot;/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="BoostTest">
+				<Option output="/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/BoostTest" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/Edgar/ClionProjects/Fleur/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Users/Edgar/ClionProjects/Fleur/gumbo-query/include"/>
+					<Add directory="/Users/Edgar/ClionProjects/Fleur/fleur_src/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/opt/local/bin/gmake -j8 -f &quot;/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/Makefile&quot;  VERBOSE=1 BoostTest"/>
+					<CompileFile command="/opt/local/bin/gmake -j8 -f &quot;/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/opt/local/bin/gmake -j8 -f &quot;/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/opt/local/bin/gmake -j8 -f &quot;/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="BoostTest/fast">
+				<Option output="/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/BoostTest" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/Edgar/ClionProjects/Fleur/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Users/Edgar/ClionProjects/Fleur/gumbo-query/include"/>
+					<Add directory="/Users/Edgar/ClionProjects/Fleur/fleur_src/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/opt/local/bin/gmake -j8 -f &quot;/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/Makefile&quot;  VERBOSE=1 BoostTest/fast"/>
+					<CompileFile command="/opt/local/bin/gmake -j8 -f &quot;/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/opt/local/bin/gmake -j8 -f &quot;/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/opt/local/bin/gmake -j8 -f &quot;/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install/local">
+				<Option working_dir="/Users/Edgar/ClionProjects/Fleur/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/opt/local/bin/gmake -j8 -f &quot;/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/Makefile&quot;  VERBOSE=1 install/local"/>
+					<CompileFile command="/opt/local/bin/gmake -j8 -f &quot;/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/opt/local/bin/gmake -j8 -f &quot;/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/opt/local/bin/gmake -j8 -f &quot;/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="package">
+				<Option working_dir="/Users/Edgar/ClionProjects/Fleur/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/opt/local/bin/gmake -j8 -f &quot;/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/Makefile&quot;  VERBOSE=1 package"/>
+					<CompileFile command="/opt/local/bin/gmake -j8 -f &quot;/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/opt/local/bin/gmake -j8 -f &quot;/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/opt/local/bin/gmake -j8 -f &quot;/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="fleur_run">
+				<Option output="/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/fleur_run" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/Edgar/ClionProjects/Fleur/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Users/Edgar/ClionProjects/Fleur/gumbo-query/include"/>
+					<Add directory="/Users/Edgar/ClionProjects/Fleur/fleur_src/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/opt/local/bin/gmake -j8 -f &quot;/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/Makefile&quot;  VERBOSE=1 fleur_run"/>
+					<CompileFile command="/opt/local/bin/gmake -j8 -f &quot;/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/opt/local/bin/gmake -j8 -f &quot;/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/opt/local/bin/gmake -j8 -f &quot;/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="fleur_run/fast">
+				<Option output="/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/fleur_run" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/Edgar/ClionProjects/Fleur/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Users/Edgar/ClionProjects/Fleur/gumbo-query/include"/>
+					<Add directory="/Users/Edgar/ClionProjects/Fleur/fleur_src/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/opt/local/bin/gmake -j8 -f &quot;/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/Makefile&quot;  VERBOSE=1 fleur_run/fast"/>
+					<CompileFile command="/opt/local/bin/gmake -j8 -f &quot;/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/opt/local/bin/gmake -j8 -f &quot;/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/opt/local/bin/gmake -j8 -f &quot;/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="gumbo_query_static">
+				<Option output="/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/gumbo-query/src/libgq.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/gumbo-query/src"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Users/Edgar/ClionProjects/Fleur/gumbo-query/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/opt/local/bin/gmake -j8 -f &quot;/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/gumbo-query/src/Makefile&quot;  VERBOSE=1 gumbo_query_static"/>
+					<CompileFile command="/opt/local/bin/gmake -j8 -f &quot;/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/gumbo-query/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/opt/local/bin/gmake -j8 -f &quot;/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/gumbo-query/src/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/opt/local/bin/gmake -j8 -f &quot;/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/gumbo-query/src/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="gumbo_query_static/fast">
+				<Option output="/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/gumbo-query/src/libgq.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/gumbo-query/src"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Users/Edgar/ClionProjects/Fleur/gumbo-query/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/opt/local/bin/gmake -j8 -f &quot;/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/gumbo-query/src/Makefile&quot;  VERBOSE=1 gumbo_query_static/fast"/>
+					<CompileFile command="/opt/local/bin/gmake -j8 -f &quot;/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/gumbo-query/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/opt/local/bin/gmake -j8 -f &quot;/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/gumbo-query/src/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/opt/local/bin/gmake -j8 -f &quot;/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/gumbo-query/src/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="gumbo_query_shared">
+				<Option output="/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/gumbo-query/src/libgq.dylib" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/gumbo-query/src"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Users/Edgar/ClionProjects/Fleur/gumbo-query/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/opt/local/bin/gmake -j8 -f &quot;/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/gumbo-query/src/Makefile&quot;  VERBOSE=1 gumbo_query_shared"/>
+					<CompileFile command="/opt/local/bin/gmake -j8 -f &quot;/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/gumbo-query/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/opt/local/bin/gmake -j8 -f &quot;/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/gumbo-query/src/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/opt/local/bin/gmake -j8 -f &quot;/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/gumbo-query/src/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="gumbo_query_shared/fast">
+				<Option output="/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/gumbo-query/src/libgq.dylib" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/gumbo-query/src"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Users/Edgar/ClionProjects/Fleur/gumbo-query/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/opt/local/bin/gmake -j8 -f &quot;/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/gumbo-query/src/Makefile&quot;  VERBOSE=1 gumbo_query_shared/fast"/>
+					<CompileFile command="/opt/local/bin/gmake -j8 -f &quot;/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/gumbo-query/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/opt/local/bin/gmake -j8 -f &quot;/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/gumbo-query/src/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/opt/local/bin/gmake -j8 -f &quot;/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/gumbo-query/src/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="fleur_src">
+				<Option output="/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/fleur_src/libfleur_src.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/fleur_src"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Users/Edgar/ClionProjects/Fleur/gumbo-query/include"/>
+					<Add directory="/Users/Edgar/ClionProjects/Fleur/fleur_src/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/opt/local/bin/gmake -j8 -f &quot;/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/fleur_src/Makefile&quot;  VERBOSE=1 fleur_src"/>
+					<CompileFile command="/opt/local/bin/gmake -j8 -f &quot;/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/fleur_src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/opt/local/bin/gmake -j8 -f &quot;/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/fleur_src/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/opt/local/bin/gmake -j8 -f &quot;/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/fleur_src/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="fleur_src/fast">
+				<Option output="/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/fleur_src/libfleur_src.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/fleur_src"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Users/Edgar/ClionProjects/Fleur/gumbo-query/include"/>
+					<Add directory="/Users/Edgar/ClionProjects/Fleur/fleur_src/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/opt/local/bin/gmake -j8 -f &quot;/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/fleur_src/Makefile&quot;  VERBOSE=1 fleur_src/fast"/>
+					<CompileFile command="/opt/local/bin/gmake -j8 -f &quot;/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/fleur_src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/opt/local/bin/gmake -j8 -f &quot;/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/fleur_src/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/opt/local/bin/gmake -j8 -f &quot;/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/fleur_src/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="gtest_main">
+				<Option output="/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/fleur_tests/lib/gtest-1.7.0/libgtest_main.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/fleur_tests/lib/gtest-1.7.0"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Users/Edgar/ClionProjects/Fleur/gumbo-query/include"/>
+					<Add directory="/Users/Edgar/ClionProjects/Fleur/fleur_src/include"/>
+					<Add directory="/Users/Edgar/ClionProjects/Fleur/fleur_tests/lib/gtest-1.7.0/include"/>
+					<Add directory="/Users/Edgar/ClionProjects/Fleur/fleur_tests/lib/gtest-1.7.0"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/opt/local/bin/gmake -j8 -f &quot;/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/fleur_tests/lib/gtest-1.7.0/Makefile&quot;  VERBOSE=1 gtest_main"/>
+					<CompileFile command="/opt/local/bin/gmake -j8 -f &quot;/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/fleur_tests/lib/gtest-1.7.0/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/opt/local/bin/gmake -j8 -f &quot;/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/fleur_tests/lib/gtest-1.7.0/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/opt/local/bin/gmake -j8 -f &quot;/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/fleur_tests/lib/gtest-1.7.0/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="gtest_main/fast">
+				<Option output="/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/fleur_tests/lib/gtest-1.7.0/libgtest_main.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/fleur_tests/lib/gtest-1.7.0"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Users/Edgar/ClionProjects/Fleur/gumbo-query/include"/>
+					<Add directory="/Users/Edgar/ClionProjects/Fleur/fleur_src/include"/>
+					<Add directory="/Users/Edgar/ClionProjects/Fleur/fleur_tests/lib/gtest-1.7.0/include"/>
+					<Add directory="/Users/Edgar/ClionProjects/Fleur/fleur_tests/lib/gtest-1.7.0"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/opt/local/bin/gmake -j8 -f &quot;/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/fleur_tests/lib/gtest-1.7.0/Makefile&quot;  VERBOSE=1 gtest_main/fast"/>
+					<CompileFile command="/opt/local/bin/gmake -j8 -f &quot;/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/fleur_tests/lib/gtest-1.7.0/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/opt/local/bin/gmake -j8 -f &quot;/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/fleur_tests/lib/gtest-1.7.0/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/opt/local/bin/gmake -j8 -f &quot;/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/fleur_tests/lib/gtest-1.7.0/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="gtest">
+				<Option output="/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/fleur_tests/lib/gtest-1.7.0/libgtest.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/fleur_tests/lib/gtest-1.7.0"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Users/Edgar/ClionProjects/Fleur/gumbo-query/include"/>
+					<Add directory="/Users/Edgar/ClionProjects/Fleur/fleur_src/include"/>
+					<Add directory="/Users/Edgar/ClionProjects/Fleur/fleur_tests/lib/gtest-1.7.0/include"/>
+					<Add directory="/Users/Edgar/ClionProjects/Fleur/fleur_tests/lib/gtest-1.7.0"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/opt/local/bin/gmake -j8 -f &quot;/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/fleur_tests/lib/gtest-1.7.0/Makefile&quot;  VERBOSE=1 gtest"/>
+					<CompileFile command="/opt/local/bin/gmake -j8 -f &quot;/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/fleur_tests/lib/gtest-1.7.0/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/opt/local/bin/gmake -j8 -f &quot;/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/fleur_tests/lib/gtest-1.7.0/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/opt/local/bin/gmake -j8 -f &quot;/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/fleur_tests/lib/gtest-1.7.0/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="gtest/fast">
+				<Option output="/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/fleur_tests/lib/gtest-1.7.0/libgtest.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/fleur_tests/lib/gtest-1.7.0"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Users/Edgar/ClionProjects/Fleur/gumbo-query/include"/>
+					<Add directory="/Users/Edgar/ClionProjects/Fleur/fleur_src/include"/>
+					<Add directory="/Users/Edgar/ClionProjects/Fleur/fleur_tests/lib/gtest-1.7.0/include"/>
+					<Add directory="/Users/Edgar/ClionProjects/Fleur/fleur_tests/lib/gtest-1.7.0"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/opt/local/bin/gmake -j8 -f &quot;/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/fleur_tests/lib/gtest-1.7.0/Makefile&quot;  VERBOSE=1 gtest/fast"/>
+					<CompileFile command="/opt/local/bin/gmake -j8 -f &quot;/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/fleur_tests/lib/gtest-1.7.0/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/opt/local/bin/gmake -j8 -f &quot;/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/fleur_tests/lib/gtest-1.7.0/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/opt/local/bin/gmake -j8 -f &quot;/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/fleur_tests/lib/gtest-1.7.0/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="fleurTest">
+				<Option output="/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/fleur_tests/tests/fleurTest" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/fleur_tests/tests"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Users/Edgar/ClionProjects/Fleur/gumbo-query/include"/>
+					<Add directory="/Users/Edgar/ClionProjects/Fleur/fleur_src/include"/>
+					<Add directory="/Users/Edgar/ClionProjects/Fleur/fleur_tests/lib/gtest-1.7.0/include"/>
+					<Add directory="/Users/Edgar/ClionProjects/Fleur/fleur_tests/lib/gtest-1.7.0"/>
+					<Add directory="/Users/Edgar/ClionProjects/Fleur/fleur_tests/gumbo-query/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/opt/local/bin/gmake -j8 -f &quot;/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/fleur_tests/tests/Makefile&quot;  VERBOSE=1 fleurTest"/>
+					<CompileFile command="/opt/local/bin/gmake -j8 -f &quot;/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/fleur_tests/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/opt/local/bin/gmake -j8 -f &quot;/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/fleur_tests/tests/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/opt/local/bin/gmake -j8 -f &quot;/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/fleur_tests/tests/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="fleurTest/fast">
+				<Option output="/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/fleur_tests/tests/fleurTest" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/fleur_tests/tests"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Users/Edgar/ClionProjects/Fleur/gumbo-query/include"/>
+					<Add directory="/Users/Edgar/ClionProjects/Fleur/fleur_src/include"/>
+					<Add directory="/Users/Edgar/ClionProjects/Fleur/fleur_tests/lib/gtest-1.7.0/include"/>
+					<Add directory="/Users/Edgar/ClionProjects/Fleur/fleur_tests/lib/gtest-1.7.0"/>
+					<Add directory="/Users/Edgar/ClionProjects/Fleur/fleur_tests/gumbo-query/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/opt/local/bin/gmake -j8 -f &quot;/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/fleur_tests/tests/Makefile&quot;  VERBOSE=1 fleurTest/fast"/>
+					<CompileFile command="/opt/local/bin/gmake -j8 -f &quot;/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/fleur_tests/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/opt/local/bin/gmake -j8 -f &quot;/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/fleur_tests/tests/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/opt/local/bin/gmake -j8 -f &quot;/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/fleur_tests/tests/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/Users/Edgar/ClionProjects/Fleur/fleur_src/include/Filter.h">
+			<Option target="fleur_src"/>
+		</Unit>
+		<Unit filename="/Users/Edgar/ClionProjects/Fleur/fleur_src/include/FilterException.h">
+			<Option target="fleur_src"/>
+		</Unit>
+		<Unit filename="/Users/Edgar/ClionProjects/Fleur/fleur_src/include/Http.h">
+			<Option target="fleur_src"/>
+		</Unit>
+		<Unit filename="/Users/Edgar/ClionProjects/Fleur/fleur_src/include/HttpException.h">
+			<Option target="fleur_src"/>
+		</Unit>
+		<Unit filename="/Users/Edgar/ClionProjects/Fleur/fleur_src/include/Processing.h">
+			<Option target="fleur_src"/>
+		</Unit>
+		<Unit filename="/Users/Edgar/ClionProjects/Fleur/fleur_src/include/Requete_parser.h">
+			<Option target="fleur_src"/>
+		</Unit>
+		<Unit filename="/Users/Edgar/ClionProjects/Fleur/fleur_src/include/Xml_parser.h">
+			<Option target="fleur_src"/>
+		</Unit>
+		<Unit filename="/Users/Edgar/ClionProjects/Fleur/fleur_src/src/Filter.cpp">
+			<Option target="fleur_src"/>
+		</Unit>
+		<Unit filename="/Users/Edgar/ClionProjects/Fleur/fleur_src/src/Http.cpp">
+			<Option target="fleur_src"/>
+		</Unit>
+		<Unit filename="/Users/Edgar/ClionProjects/Fleur/fleur_src/src/Processing.cpp">
+			<Option target="fleur_src"/>
+		</Unit>
+		<Unit filename="/Users/Edgar/ClionProjects/Fleur/fleur_src/src/Requete_parser.cpp">
+			<Option target="fleur_src"/>
+		</Unit>
+		<Unit filename="/Users/Edgar/ClionProjects/Fleur/fleur_src/src/Xml_parser.cpp">
+			<Option target="fleur_src"/>
+		</Unit>
+		<Unit filename="/Users/Edgar/ClionProjects/Fleur/fleur_tests/lib/gtest-1.7.0/src/gtest-all.cc">
+			<Option target="gtest"/>
+		</Unit>
+		<Unit filename="/Users/Edgar/ClionProjects/Fleur/fleur_tests/lib/gtest-1.7.0/src/gtest_main.cc">
+			<Option target="gtest_main"/>
+		</Unit>
+		<Unit filename="/Users/Edgar/ClionProjects/Fleur/fleur_tests/tests/Filter_test.cpp">
+			<Option target="fleurTest"/>
+		</Unit>
+		<Unit filename="/Users/Edgar/ClionProjects/Fleur/fleur_tests/tests/Html_parser_test.cpp">
+			<Option target="fleurTest"/>
+		</Unit>
+		<Unit filename="/Users/Edgar/ClionProjects/Fleur/fleur_tests/tests/Http_test.cpp">
+			<Option target="fleurTest"/>
+		</Unit>
+		<Unit filename="/Users/Edgar/ClionProjects/Fleur/fleur_tests/tests/Processing_test.cpp">
+			<Option target="fleurTest"/>
+		</Unit>
+		<Unit filename="/Users/Edgar/ClionProjects/Fleur/fleur_tests/tests/Requete_parser_test.cpp">
+			<Option target="fleurTest"/>
+		</Unit>
+		<Unit filename="/Users/Edgar/ClionProjects/Fleur/gumbo-query/src/Document.cpp">
+			<Option target="gumbo_query_static"/>
+			<Option target="gumbo_query_shared"/>
+		</Unit>
+		<Unit filename="/Users/Edgar/ClionProjects/Fleur/gumbo-query/src/Document.h">
+			<Option target="gumbo_query_static"/>
+			<Option target="gumbo_query_shared"/>
+		</Unit>
+		<Unit filename="/Users/Edgar/ClionProjects/Fleur/gumbo-query/src/Node.cpp">
+			<Option target="gumbo_query_static"/>
+			<Option target="gumbo_query_shared"/>
+		</Unit>
+		<Unit filename="/Users/Edgar/ClionProjects/Fleur/gumbo-query/src/Node.h">
+			<Option target="gumbo_query_static"/>
+			<Option target="gumbo_query_shared"/>
+		</Unit>
+		<Unit filename="/Users/Edgar/ClionProjects/Fleur/gumbo-query/src/Object.cpp">
+			<Option target="gumbo_query_static"/>
+			<Option target="gumbo_query_shared"/>
+		</Unit>
+		<Unit filename="/Users/Edgar/ClionProjects/Fleur/gumbo-query/src/Object.h">
+			<Option target="gumbo_query_static"/>
+			<Option target="gumbo_query_shared"/>
+		</Unit>
+		<Unit filename="/Users/Edgar/ClionProjects/Fleur/gumbo-query/src/Parser.cpp">
+			<Option target="gumbo_query_static"/>
+			<Option target="gumbo_query_shared"/>
+		</Unit>
+		<Unit filename="/Users/Edgar/ClionProjects/Fleur/gumbo-query/src/Parser.h">
+			<Option target="gumbo_query_static"/>
+			<Option target="gumbo_query_shared"/>
+		</Unit>
+		<Unit filename="/Users/Edgar/ClionProjects/Fleur/gumbo-query/src/QueryUtil.cpp">
+			<Option target="gumbo_query_static"/>
+			<Option target="gumbo_query_shared"/>
+		</Unit>
+		<Unit filename="/Users/Edgar/ClionProjects/Fleur/gumbo-query/src/QueryUtil.h">
+			<Option target="gumbo_query_static"/>
+			<Option target="gumbo_query_shared"/>
+		</Unit>
+		<Unit filename="/Users/Edgar/ClionProjects/Fleur/gumbo-query/src/Selection.cpp">
+			<Option target="gumbo_query_static"/>
+			<Option target="gumbo_query_shared"/>
+		</Unit>
+		<Unit filename="/Users/Edgar/ClionProjects/Fleur/gumbo-query/src/Selection.h">
+			<Option target="gumbo_query_static"/>
+			<Option target="gumbo_query_shared"/>
+		</Unit>
+		<Unit filename="/Users/Edgar/ClionProjects/Fleur/gumbo-query/src/Selector.cpp">
+			<Option target="gumbo_query_static"/>
+			<Option target="gumbo_query_shared"/>
+		</Unit>
+		<Unit filename="/Users/Edgar/ClionProjects/Fleur/gumbo-query/src/Selector.h">
+			<Option target="gumbo_query_static"/>
+			<Option target="gumbo_query_shared"/>
+		</Unit>
+		<Unit filename="/Users/Edgar/ClionProjects/Fleur/main.cpp">
+			<Option target="BoostTest"/>
+			<Option target="fleur_run"/>
+		</Unit>
+		<Unit filename="/Users/Edgar/ClionProjects/Fleur/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/Users/Edgar/ClionProjects/Fleur/cmake/PreventInSourceBuilds.cmake">
+			<Option virtualFolder="CMake Files\cmake\"/>
+		</Unit>
+		<Unit filename="/Users/Edgar/ClionProjects/Fleur/cmake/FindGumbo.cmake">
+			<Option virtualFolder="CMake Files\cmake\"/>
+		</Unit>
+		<Unit filename="/Users/Edgar/ClionProjects/Fleur/cmake/LibFindMacros.cmake">
+			<Option virtualFolder="CMake Files\cmake\"/>
+		</Unit>
+		<Unit filename="/Users/Edgar/ClionProjects/Fleur/cmake/FindGumbo.cmake">
+			<Option virtualFolder="CMake Files\cmake\"/>
+		</Unit>
+		<Unit filename="/Users/Edgar/ClionProjects/Fleur/cmake/LibFindMacros.cmake">
+			<Option virtualFolder="CMake Files\cmake\"/>
+		</Unit>
+		<Unit filename="/Users/Edgar/ClionProjects/Fleur/cmake/FindGumbo.cmake">
+			<Option virtualFolder="CMake Files\cmake\"/>
+		</Unit>
+		<Unit filename="/Users/Edgar/ClionProjects/Fleur/cmake/LibFindMacros.cmake">
+			<Option virtualFolder="CMake Files\cmake\"/>
+		</Unit>
+		<Unit filename="/Users/Edgar/ClionProjects/Fleur/gumbo-query/src/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\gumbo-query\src\"/>
+		</Unit>
+		<Unit filename="/Users/Edgar/ClionProjects/Fleur/fleur_src/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\fleur_src\"/>
+		</Unit>
+		<Unit filename="/Users/Edgar/ClionProjects/Fleur/fleur_src/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\fleur_src\"/>
+		</Unit>
+		<Unit filename="/Users/Edgar/ClionProjects/Fleur/fleur_tests/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\fleur_tests\"/>
+		</Unit>
+		<Unit filename="/Users/Edgar/ClionProjects/Fleur/fleur_tests/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\fleur_tests\"/>
+		</Unit>
+		<Unit filename="/Users/Edgar/ClionProjects/Fleur/fleur_tests/lib/gtest-1.7.0/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\fleur_tests\lib\gtest-1.7.0\"/>
+		</Unit>
+		<Unit filename="/Users/Edgar/ClionProjects/Fleur/fleur_tests/lib/gtest-1.7.0/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\fleur_tests\lib\gtest-1.7.0\"/>
+		</Unit>
+		<Unit filename="/Users/Edgar/ClionProjects/Fleur/fleur_tests/lib/gtest-1.7.0/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\fleur_tests\lib\gtest-1.7.0\"/>
+		</Unit>
+		<Unit filename="/Users/Edgar/ClionProjects/Fleur/fleur_tests/lib/gtest-1.7.0/cmake/internal_utils.cmake">
+			<Option virtualFolder="CMake Files\fleur_tests\lib\gtest-1.7.0\cmake\"/>
+		</Unit>
+		<Unit filename="/Users/Edgar/ClionProjects/Fleur/fleur_tests/lib/gtest-1.7.0/cmake/internal_utils.cmake">
+			<Option virtualFolder="CMake Files\fleur_tests\lib\gtest-1.7.0\cmake\"/>
+		</Unit>
+		<Unit filename="/Users/Edgar/ClionProjects/Fleur/fleur_tests/lib/gtest-1.7.0/cmake/internal_utils.cmake">
+			<Option virtualFolder="CMake Files\fleur_tests\lib\gtest-1.7.0\cmake\"/>
+		</Unit>
+		<Unit filename="/Users/Edgar/ClionProjects/Fleur/fleur_tests/tests/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\fleur_tests\tests\"/>
+		</Unit>
+		<Unit filename="/Users/Edgar/ClionProjects/Fleur/fleur_tests/tests/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\fleur_tests\tests\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
