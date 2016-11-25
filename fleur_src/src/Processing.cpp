@@ -14,22 +14,7 @@ Processing::Strings Processing::build() {
     Http http(_requete);
 
     // 1 cheque the return format
-    if (_requete._format == "html") {
-        // 2 check if they are a crud method
-        if (_requete._crud.empty()) {
-            result.push_back(http.downloadContent());
-        } else {
-            result.push_back(processCrud("html"));
-        }
-
-    } else if (_requete._format == "json" ) {
-        if (_requete._crud.empty()) {
-            result.push_back(http.downloadContent());
-        } else {
-            result.push_back(processCrud("json"));
-        }
-    }
-    //TODO: other format
+    result.push_back(http.process());
 
     // 3 cheque if they are selector
     if (_requete._selector != "") {
@@ -38,20 +23,6 @@ Processing::Strings Processing::build() {
         if (_requete._format == "html") {
             result = filter.filterHTMLByMarked(result.front(), _requete._selector);
         }
-    }
-
-    return result;
-}
-
-std::string Processing::processCrud(const std::string &format) const {
-    std::string result = "";
-
-    if (_requete._crud == "get") {
-
-    } else if (_requete._crud == "post") {
-
-    } else if (_requete._crud == "delete") {
-
     }
 
     return result;

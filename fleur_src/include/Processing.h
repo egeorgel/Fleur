@@ -23,7 +23,6 @@ private:
 
     parser::Requete _requete;
 
-    std::string processCrud(const std::string &format) const;
     std::string processHeader(const std::string &format, const std::string &crud) const;
 };
 

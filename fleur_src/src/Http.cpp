@@ -14,12 +14,12 @@
 
 //TODO: Throw exception with result.status_code != 200
 
-std::string Http::downloadContent() {
+std::string Http::downloadContent() const {
     auto response = cpr::Get(cpr::Url{_requete._url});
     return response.text;
 }
 
-std::string Http::get() {
+std::string Http::get() const {
     assert( ! _requete._parameters.empty());
     assert(_requete._crud == "get");
 
@@ -29,7 +29,7 @@ std::string Http::get() {
     return result.text;
 }
 
-std::string Http::post() {
+std::string Http::post() const {
     assert( ! _requete._parameters.empty());
     assert(_requete._crud == "post");
 
@@ -39,6 +39,18 @@ std::string Http::post() {
     return result.text;
 }
 
+std::string Http::process() const {
+    if (_requete._crud == "") {
+        return downloadContent();
+    }else if (_requete._crud == "get") {
+        return get();
+    } else if (_requete._crud == "post") {
+        return post();
+    }
+
+    //TODO: implement other crud methodes
+    return "Http error";
+}
 
 
 /**
