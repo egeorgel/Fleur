@@ -25,6 +25,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/Applications/CLion.app/Contents/bin/cmake/share/cmake-3.6/Modules/Compiler/Clang.cmake"
   "/Applications/CLion.app/Contents/bin/cmake/share/cmake-3.6/Modules/Compiler/GNU.cmake"
   "/Applications/CLion.app/Contents/bin/cmake/share/cmake-3.6/Modules/FindBoost.cmake"
+  "/Applications/CLion.app/Contents/bin/cmake/share/cmake-3.6/Modules/FindCURL.cmake"
   "/Applications/CLion.app/Contents/bin/cmake/share/cmake-3.6/Modules/FindPackageHandleStandardArgs.cmake"
   "/Applications/CLion.app/Contents/bin/cmake/share/cmake-3.6/Modules/FindPackageMessage.cmake"
   "/Applications/CLion.app/Contents/bin/cmake/share/cmake-3.6/Modules/FindPkgConfig.cmake"
@@ -52,6 +53,10 @@ set(CMAKE_MAKEFILE_DEPENDS
   "../fleur_tests/lib/gtest-1.7.0/cmake/internal_utils.cmake"
   "../fleur_tests/tests/CMakeLists.txt"
   "../gumbo-query/src/CMakeLists.txt"
+  "../opt/CMakeLists.txt"
+  "../opt/cpr/CMakeLists.txt"
+  "../opt/cpr/cpr/CMakeLists.txt"
+  "../opt/cpr/opt/CMakeLists.txt"
   )
 
 # The corresponding makefile is:
@@ -64,6 +69,10 @@ set(CMAKE_MAKEFILE_OUTPUTS
 set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/CMakeDirectoryInformation.cmake"
   "gumbo-query/src/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "opt/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "opt/cpr/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "opt/cpr/opt/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "opt/cpr/cpr/CMakeFiles/CMakeDirectoryInformation.cmake"
   "fleur_src/CMakeFiles/CMakeDirectoryInformation.cmake"
   "fleur_tests/CMakeFiles/CMakeDirectoryInformation.cmake"
   "fleur_tests/lib/gtest-1.7.0/CMakeFiles/CMakeDirectoryInformation.cmake"
@@ -76,6 +85,7 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/fleur_run.dir/DependInfo.cmake"
   "gumbo-query/src/CMakeFiles/gumbo_query_static.dir/DependInfo.cmake"
   "gumbo-query/src/CMakeFiles/gumbo_query_shared.dir/DependInfo.cmake"
+  "opt/cpr/cpr/CMakeFiles/cpr.dir/DependInfo.cmake"
   "fleur_src/CMakeFiles/fleur_src.dir/DependInfo.cmake"
   "fleur_tests/lib/gtest-1.7.0/CMakeFiles/gtest_main.dir/DependInfo.cmake"
   "fleur_tests/lib/gtest-1.7.0/CMakeFiles/gtest.dir/DependInfo.cmake"

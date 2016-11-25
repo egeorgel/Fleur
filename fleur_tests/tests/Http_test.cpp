@@ -8,6 +8,7 @@
 #include <Requete_parser.h>
 #include <Http.h>
 #include <HttpException.h>
+#include <json.hpp>
 
 class Http_test : public ::testing::Test {
 protected:
@@ -20,25 +21,6 @@ protected:
 public:
     virtual ~Http_test(){}
 };
-
-TEST_F(Http_test, http_showld_throw_exception) {
-    parser::Requete req;
-
-    try {
-        Http http(req);
-        FAIL();
-    } catch (const HttpException &e) {
-        ASSERT_STREQ("Requete must have an url", e.what());
-    }
-
-    req._url = "";
-    try {
-        Http http(req);
-        FAIL();
-    } catch (const HttpException &e) {
-        ASSERT_STREQ("Requete must have an url", e.what());
-    }
-}
 
 TEST_F(Http_test, http_init) {
     parser::Requete req;
@@ -53,22 +35,10 @@ TEST_F(Http_test, http_downloadContent) {
     req._url = "https://raw.githubusercontent.com/AurelienGuerard/BigDataWithHadoop/master/README.md";
 
     Http http(req);
-    ASSERT_EQ("# BigDataWithHadoop\n\nTP MapReduce.\nMap(), ShuffleAndSort(), Reduce() are implemented. Each step is displayed on the page.\n",
+    ASSERT_EQ("# BigDataWithHadoop\n\nTP MapReduce.\nMap(), ShuffleAndSort(), Reduce() are implemented. Each step is displayed on the page.",
               http.downloadContent());
 }
 
-TEST_F(Http_test, http_downloadContent_showld_throw_exception) {
-    parser::Requete req;
-    req._url = "http://";
-
-    try {
-        Http http(req);
-        http.downloadContent();
-        FAIL();
-    } catch (const HttpException &e) {
-        ASSERT_STREQ("curl_easy_perform() failed: Couldn't resolve host name", e.what());
-    }
-}
 
 TEST_F(Http_test, http_downloadJson) {
     parser::Requete req;
@@ -76,8 +46,8 @@ TEST_F(Http_test, http_downloadJson) {
     req._format = "json";
 
     Http http(req);
-    ASSERT_EQ("{\"test\":\"une chevre\",\"chat\":{\"fouine\":\"Fleur\"}}\n",
-              http.downloadJson());
+    ASSERT_EQ("{\"test\":\"une chevre\",\"chat\":{\"fouine\":\"Fleur\"}}",
+              http.downloadContent());
 }
 
 TEST_F(Http_test, http_post) {
@@ -90,14 +60,12 @@ TEST_F(Http_test, http_post) {
     req._parameters = param;
 
     Http http(req);
-    //parsing json
-    std::stringstream ss;
-    ss << http.post();
-    boost::property_tree::ptree pt;
-    boost::property_tree::read_json(ss, pt);
 
-    ASSERT_EQ("12", pt.get<std::string>("form.age"));
-    ASSERT_EQ("denis", pt.get<std::string>("form.name"));
+    std::string returnPost = http.post();
+    auto json = nlohmann::json::parse(returnPost);
+
+    ASSERT_EQ("12", json["form"]["age"].get<std::string>());
+    ASSERT_EQ("denis", json["form"]["name"].get<std::string>());
 }
 
 TEST_F(Http_test, http_get) {

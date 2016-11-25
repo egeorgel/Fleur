@@ -7,6 +7,20 @@
 -- Boost_LIBRARIES: /usr/local/lib/libboost_system-mt.dylib;/usr/local/lib/libboost_filesystem-mt.dylib
 -- Boost_VERSION: 106100
 -- Found Gumbo 
+-- C++ Requests CMake Options
+-- =======================================================
+--   USE_SYSTEM_CURL: ON
+--   BUILD_CPR_TESTS: OFF
+--   INSECURE_CURL: OFF
+--   GENERATE_COVERAGE: OFF
+--   USE_SYSTEM_GTEST: OFF
+--   CMAKE_USE_OPENSSL: ON
+-- =======================================================
+-- Set CURL_FOUND to TRUE.
+-- Set CURL_LIBRARIES to /usr/lib/libcurl.dylib.
+-- Set CURL_INCLUDE_DIRS to /usr/include.
+-- Using CURL_INCLUDE_DIRS: /usr/include.
+-- Using CURL_LIBRARIES: /usr/lib/libcurl.dylib.
 -- Configuring done
 -- Generating done
 -- Build files have been written to: /Users/Edgar/ClionProjects/Fleur/cmake-build-debug

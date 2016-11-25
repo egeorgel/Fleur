@@ -196,9 +196,11 @@ fleur_tests/tests/fleurTest: fleur_tests/tests/CMakeFiles/fleurTest.dir/Html_par
 fleur_tests/tests/fleurTest: fleur_tests/tests/CMakeFiles/fleurTest.dir/build.make
 fleur_tests/tests/fleurTest: fleur_tests/lib/gtest-1.7.0/libgtest.a
 fleur_tests/tests/fleurTest: fleur_tests/lib/gtest-1.7.0/libgtest_main.a
+fleur_tests/tests/fleurTest: lib/libcpr.a
 fleur_tests/tests/fleurTest: gumbo-query/src/libgq.dylib
 fleur_tests/tests/fleurTest: fleur_src/libfleur_src.a
 fleur_tests/tests/fleurTest: fleur_tests/lib/gtest-1.7.0/libgtest.a
+fleur_tests/tests/fleurTest: /usr/lib/libcurl.dylib
 fleur_tests/tests/fleurTest: /usr/local/lib/libgumbo.dylib
 fleur_tests/tests/fleurTest: fleur_tests/tests/CMakeFiles/fleurTest.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable fleurTest"

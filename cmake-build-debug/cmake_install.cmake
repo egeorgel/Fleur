@@ -30,6 +30,7 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/gumbo-query/src/cmake_install.cmake")
+  include("/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/opt/cmake_install.cmake")
   include("/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/fleur_src/cmake_install.cmake")
   include("/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/fleur_tests/cmake_install.cmake")
 
