@@ -13,13 +13,15 @@ class Http {
 public:
     Http(const parser::Requete & req) : _requete(req) {};
 
-    std::string downloadContent();
+    std::string downloadContent() const;
 
-    std::string get();
+    std::string get() const;
 
-    std::string post();
+    std::string post() const;
 
     const parser::Requete &get_requete() const;
+
+    std::string process() const;
 
 private:
     parser::Requete _requete;

@@ -43,6 +43,17 @@ TEST_F(Processing_test, selecet_html__selectH1_from_url) {
     ,processing.build().front());
 }
 
+/// select html (h1) from "http://www.dynasim.fr";
+TEST_F(Processing_test, selecet_html__select_p_a_from_url) {
+    const std::string input = "select html (title) from \"http://www.dynasim.fr\";";
+    parser::Requete requete;
+    parser::doParse(input, requete);
+
+    Processing processing(requete);
+    EXPECT_EQ( "Dynasim" ,processing.build().at(0));
+    EXPECT_EQ( " simulation dynamique microscopique trafic 3D estimation" ,processing.build().at(1));
+}
+
 
 
 /////////////////////
