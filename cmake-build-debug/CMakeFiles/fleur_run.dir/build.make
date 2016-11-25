@@ -91,7 +91,9 @@ fleur_run_EXTERNAL_OBJECTS =
 fleur_run: CMakeFiles/fleur_run.dir/main.cpp.o
 fleur_run: CMakeFiles/fleur_run.dir/build.make
 fleur_run: fleur_src/libfleur_src.a
+fleur_run: lib/libcpr.a
 fleur_run: gumbo-query/src/libgq.dylib
+fleur_run: /usr/lib/libcurl.dylib
 fleur_run: /usr/local/lib/libgumbo.dylib
 fleur_run: CMakeFiles/fleur_run.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable fleur_run"

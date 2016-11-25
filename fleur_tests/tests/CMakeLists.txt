@@ -10,8 +10,7 @@ set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} ${PROJECT_SOURCE_DIR}/cmake)
 find_package(Gumbo REQUIRED)
 
 include_directories(${PROJECT_SOURCE_DIR}/gumbo-query/include)
-#file(GLOB LIBRARIES "${PROJECT_SOURCE_DIR}/gumbo-query/lib/*.dylib")
-#message("LIBRARIES = ${LIBRARIES}")
 
-target_link_libraries(fleurTest gtest gtest_main curl gumbo_query_shared)
+
+target_link_libraries(fleurTest gtest gtest_main curl ${CPR_LIBRARIES} gumbo_query_shared)
 target_link_libraries(fleurTest fleur_src)

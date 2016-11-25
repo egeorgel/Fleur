@@ -5,7 +5,7 @@
 		<Option title="Fleur"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="gcc"/>
-		<Option virtualFolders="CMake Files\;CMake Files\cmake\;CMake Files\gumbo-query\;CMake Files\gumbo-query\src\;CMake Files\fleur_src\;CMake Files\fleur_tests\;CMake Files\fleur_tests\lib\;CMake Files\fleur_tests\lib\gtest-1.7.0\;CMake Files\fleur_tests\lib\gtest-1.7.0\cmake\;CMake Files\fleur_tests\tests\;"/>
+		<Option virtualFolders="CMake Files\;CMake Files\cmake\;CMake Files\gumbo-query\;CMake Files\gumbo-query\src\;CMake Files\opt\;CMake Files\opt\cpr\;CMake Files\opt\cpr\opt\;CMake Files\opt\cpr\cpr\;CMake Files\fleur_src\;CMake Files\fleur_tests\;CMake Files\fleur_tests\lib\;CMake Files\fleur_tests\lib\gtest-1.7.0\;CMake Files\fleur_tests\lib\gtest-1.7.0\cmake\;CMake Files\fleur_tests\tests\;"/>
 		<Build>
 			<Target title="all">
 				<Option working_dir="/Users/Edgar/ClionProjects/Fleur/cmake-build-debug"/>
@@ -86,6 +86,8 @@
 				<Compiler>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/Users/Edgar/ClionProjects/Fleur/gumbo-query/include"/>
+					<Add directory="/Users/Edgar/ClionProjects/Fleur/opt/cpr/include"/>
+					<Add directory="/Users/Edgar/ClionProjects/Fleur/opt/json/src"/>
 					<Add directory="/Users/Edgar/ClionProjects/Fleur/fleur_src/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.0.0/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
@@ -110,6 +112,8 @@
 				<Compiler>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/Users/Edgar/ClionProjects/Fleur/gumbo-query/include"/>
+					<Add directory="/Users/Edgar/ClionProjects/Fleur/opt/cpr/include"/>
+					<Add directory="/Users/Edgar/ClionProjects/Fleur/opt/json/src"/>
 					<Add directory="/Users/Edgar/ClionProjects/Fleur/fleur_src/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.0.0/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
@@ -154,6 +158,8 @@
 				<Compiler>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/Users/Edgar/ClionProjects/Fleur/gumbo-query/include"/>
+					<Add directory="/Users/Edgar/ClionProjects/Fleur/opt/cpr/include"/>
+					<Add directory="/Users/Edgar/ClionProjects/Fleur/opt/json/src"/>
 					<Add directory="/Users/Edgar/ClionProjects/Fleur/fleur_src/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.0.0/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
@@ -178,6 +184,8 @@
 				<Compiler>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/Users/Edgar/ClionProjects/Fleur/gumbo-query/include"/>
+					<Add directory="/Users/Edgar/ClionProjects/Fleur/opt/cpr/include"/>
+					<Add directory="/Users/Edgar/ClionProjects/Fleur/opt/json/src"/>
 					<Add directory="/Users/Edgar/ClionProjects/Fleur/fleur_src/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.0.0/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
@@ -285,6 +293,58 @@
 					<DistClean command="/opt/local/bin/gmake -j8 -f &quot;/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/gumbo-query/src/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="cpr">
+				<Option output="/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/lib/libcpr.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/opt/cpr/cpr"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DUSE_SYSTEM_CURL"/>
+					<Add option="-DCMAKE_USE_OPENSSL"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Users/Edgar/ClionProjects/Fleur/gumbo-query/include"/>
+					<Add directory="/Users/Edgar/ClionProjects/Fleur/opt/cpr/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/opt/local/bin/gmake -j8 -f &quot;/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/opt/cpr/cpr/Makefile&quot;  VERBOSE=1 cpr"/>
+					<CompileFile command="/opt/local/bin/gmake -j8 -f &quot;/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/opt/cpr/cpr/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/opt/local/bin/gmake -j8 -f &quot;/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/opt/cpr/cpr/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/opt/local/bin/gmake -j8 -f &quot;/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/opt/cpr/cpr/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="cpr/fast">
+				<Option output="/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/lib/libcpr.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/opt/cpr/cpr"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DUSE_SYSTEM_CURL"/>
+					<Add option="-DCMAKE_USE_OPENSSL"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Users/Edgar/ClionProjects/Fleur/gumbo-query/include"/>
+					<Add directory="/Users/Edgar/ClionProjects/Fleur/opt/cpr/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/opt/local/bin/gmake -j8 -f &quot;/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/opt/cpr/cpr/Makefile&quot;  VERBOSE=1 cpr/fast"/>
+					<CompileFile command="/opt/local/bin/gmake -j8 -f &quot;/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/opt/cpr/cpr/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/opt/local/bin/gmake -j8 -f &quot;/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/opt/cpr/cpr/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/opt/local/bin/gmake -j8 -f &quot;/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/opt/cpr/cpr/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 			<Target title="fleur_src">
 				<Option output="/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/fleur_src/libfleur_src.a" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/fleur_src"/>
@@ -294,6 +354,8 @@
 				<Compiler>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/Users/Edgar/ClionProjects/Fleur/gumbo-query/include"/>
+					<Add directory="/Users/Edgar/ClionProjects/Fleur/opt/cpr/include"/>
+					<Add directory="/Users/Edgar/ClionProjects/Fleur/opt/json/src"/>
 					<Add directory="/Users/Edgar/ClionProjects/Fleur/fleur_src/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.0.0/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
@@ -318,6 +380,8 @@
 				<Compiler>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/Users/Edgar/ClionProjects/Fleur/gumbo-query/include"/>
+					<Add directory="/Users/Edgar/ClionProjects/Fleur/opt/cpr/include"/>
+					<Add directory="/Users/Edgar/ClionProjects/Fleur/opt/json/src"/>
 					<Add directory="/Users/Edgar/ClionProjects/Fleur/fleur_src/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.0.0/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
@@ -342,6 +406,8 @@
 				<Compiler>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/Users/Edgar/ClionProjects/Fleur/gumbo-query/include"/>
+					<Add directory="/Users/Edgar/ClionProjects/Fleur/opt/cpr/include"/>
+					<Add directory="/Users/Edgar/ClionProjects/Fleur/opt/json/src"/>
 					<Add directory="/Users/Edgar/ClionProjects/Fleur/fleur_src/include"/>
 					<Add directory="/Users/Edgar/ClionProjects/Fleur/fleur_tests/lib/gtest-1.7.0/include"/>
 					<Add directory="/Users/Edgar/ClionProjects/Fleur/fleur_tests/lib/gtest-1.7.0"/>
@@ -368,6 +434,8 @@
 				<Compiler>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/Users/Edgar/ClionProjects/Fleur/gumbo-query/include"/>
+					<Add directory="/Users/Edgar/ClionProjects/Fleur/opt/cpr/include"/>
+					<Add directory="/Users/Edgar/ClionProjects/Fleur/opt/json/src"/>
 					<Add directory="/Users/Edgar/ClionProjects/Fleur/fleur_src/include"/>
 					<Add directory="/Users/Edgar/ClionProjects/Fleur/fleur_tests/lib/gtest-1.7.0/include"/>
 					<Add directory="/Users/Edgar/ClionProjects/Fleur/fleur_tests/lib/gtest-1.7.0"/>
@@ -394,6 +462,8 @@
 				<Compiler>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/Users/Edgar/ClionProjects/Fleur/gumbo-query/include"/>
+					<Add directory="/Users/Edgar/ClionProjects/Fleur/opt/cpr/include"/>
+					<Add directory="/Users/Edgar/ClionProjects/Fleur/opt/json/src"/>
 					<Add directory="/Users/Edgar/ClionProjects/Fleur/fleur_src/include"/>
 					<Add directory="/Users/Edgar/ClionProjects/Fleur/fleur_tests/lib/gtest-1.7.0/include"/>
 					<Add directory="/Users/Edgar/ClionProjects/Fleur/fleur_tests/lib/gtest-1.7.0"/>
@@ -420,6 +490,8 @@
 				<Compiler>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/Users/Edgar/ClionProjects/Fleur/gumbo-query/include"/>
+					<Add directory="/Users/Edgar/ClionProjects/Fleur/opt/cpr/include"/>
+					<Add directory="/Users/Edgar/ClionProjects/Fleur/opt/json/src"/>
 					<Add directory="/Users/Edgar/ClionProjects/Fleur/fleur_src/include"/>
 					<Add directory="/Users/Edgar/ClionProjects/Fleur/fleur_tests/lib/gtest-1.7.0/include"/>
 					<Add directory="/Users/Edgar/ClionProjects/Fleur/fleur_tests/lib/gtest-1.7.0"/>
@@ -446,6 +518,8 @@
 				<Compiler>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/Users/Edgar/ClionProjects/Fleur/gumbo-query/include"/>
+					<Add directory="/Users/Edgar/ClionProjects/Fleur/opt/cpr/include"/>
+					<Add directory="/Users/Edgar/ClionProjects/Fleur/opt/json/src"/>
 					<Add directory="/Users/Edgar/ClionProjects/Fleur/fleur_src/include"/>
 					<Add directory="/Users/Edgar/ClionProjects/Fleur/fleur_tests/lib/gtest-1.7.0/include"/>
 					<Add directory="/Users/Edgar/ClionProjects/Fleur/fleur_tests/lib/gtest-1.7.0"/>
@@ -473,6 +547,8 @@
 				<Compiler>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/Users/Edgar/ClionProjects/Fleur/gumbo-query/include"/>
+					<Add directory="/Users/Edgar/ClionProjects/Fleur/opt/cpr/include"/>
+					<Add directory="/Users/Edgar/ClionProjects/Fleur/opt/json/src"/>
 					<Add directory="/Users/Edgar/ClionProjects/Fleur/fleur_src/include"/>
 					<Add directory="/Users/Edgar/ClionProjects/Fleur/fleur_tests/lib/gtest-1.7.0/include"/>
 					<Add directory="/Users/Edgar/ClionProjects/Fleur/fleur_tests/lib/gtest-1.7.0"/>
@@ -609,6 +685,93 @@
 			<Option target="BoostTest"/>
 			<Option target="fleur_run"/>
 		</Unit>
+		<Unit filename="/Users/Edgar/ClionProjects/Fleur/opt/cpr/cpr/auth.cpp">
+			<Option target="cpr"/>
+		</Unit>
+		<Unit filename="/Users/Edgar/ClionProjects/Fleur/opt/cpr/cpr/cookies.cpp">
+			<Option target="cpr"/>
+		</Unit>
+		<Unit filename="/Users/Edgar/ClionProjects/Fleur/opt/cpr/cpr/cprtypes.cpp">
+			<Option target="cpr"/>
+		</Unit>
+		<Unit filename="/Users/Edgar/ClionProjects/Fleur/opt/cpr/cpr/digest.cpp">
+			<Option target="cpr"/>
+		</Unit>
+		<Unit filename="/Users/Edgar/ClionProjects/Fleur/opt/cpr/cpr/error.cpp">
+			<Option target="cpr"/>
+		</Unit>
+		<Unit filename="/Users/Edgar/ClionProjects/Fleur/opt/cpr/cpr/multipart.cpp">
+			<Option target="cpr"/>
+		</Unit>
+		<Unit filename="/Users/Edgar/ClionProjects/Fleur/opt/cpr/cpr/parameters.cpp">
+			<Option target="cpr"/>
+		</Unit>
+		<Unit filename="/Users/Edgar/ClionProjects/Fleur/opt/cpr/cpr/payload.cpp">
+			<Option target="cpr"/>
+		</Unit>
+		<Unit filename="/Users/Edgar/ClionProjects/Fleur/opt/cpr/cpr/proxies.cpp">
+			<Option target="cpr"/>
+		</Unit>
+		<Unit filename="/Users/Edgar/ClionProjects/Fleur/opt/cpr/cpr/session.cpp">
+			<Option target="cpr"/>
+		</Unit>
+		<Unit filename="/Users/Edgar/ClionProjects/Fleur/opt/cpr/cpr/util.cpp">
+			<Option target="cpr"/>
+		</Unit>
+		<Unit filename="/Users/Edgar/ClionProjects/Fleur/opt/cpr/include/cpr/api.h">
+			<Option target="cpr"/>
+		</Unit>
+		<Unit filename="/Users/Edgar/ClionProjects/Fleur/opt/cpr/include/cpr/auth.h">
+			<Option target="cpr"/>
+		</Unit>
+		<Unit filename="/Users/Edgar/ClionProjects/Fleur/opt/cpr/include/cpr/body.h">
+			<Option target="cpr"/>
+		</Unit>
+		<Unit filename="/Users/Edgar/ClionProjects/Fleur/opt/cpr/include/cpr/cookies.h">
+			<Option target="cpr"/>
+		</Unit>
+		<Unit filename="/Users/Edgar/ClionProjects/Fleur/opt/cpr/include/cpr/cpr.h">
+			<Option target="cpr"/>
+		</Unit>
+		<Unit filename="/Users/Edgar/ClionProjects/Fleur/opt/cpr/include/cpr/cprtypes.h">
+			<Option target="cpr"/>
+		</Unit>
+		<Unit filename="/Users/Edgar/ClionProjects/Fleur/opt/cpr/include/cpr/curlholder.h">
+			<Option target="cpr"/>
+		</Unit>
+		<Unit filename="/Users/Edgar/ClionProjects/Fleur/opt/cpr/include/cpr/defines.h">
+			<Option target="cpr"/>
+		</Unit>
+		<Unit filename="/Users/Edgar/ClionProjects/Fleur/opt/cpr/include/cpr/digest.h">
+			<Option target="cpr"/>
+		</Unit>
+		<Unit filename="/Users/Edgar/ClionProjects/Fleur/opt/cpr/include/cpr/error.h">
+			<Option target="cpr"/>
+		</Unit>
+		<Unit filename="/Users/Edgar/ClionProjects/Fleur/opt/cpr/include/cpr/multipart.h">
+			<Option target="cpr"/>
+		</Unit>
+		<Unit filename="/Users/Edgar/ClionProjects/Fleur/opt/cpr/include/cpr/parameters.h">
+			<Option target="cpr"/>
+		</Unit>
+		<Unit filename="/Users/Edgar/ClionProjects/Fleur/opt/cpr/include/cpr/payload.h">
+			<Option target="cpr"/>
+		</Unit>
+		<Unit filename="/Users/Edgar/ClionProjects/Fleur/opt/cpr/include/cpr/proxies.h">
+			<Option target="cpr"/>
+		</Unit>
+		<Unit filename="/Users/Edgar/ClionProjects/Fleur/opt/cpr/include/cpr/response.h">
+			<Option target="cpr"/>
+		</Unit>
+		<Unit filename="/Users/Edgar/ClionProjects/Fleur/opt/cpr/include/cpr/session.h">
+			<Option target="cpr"/>
+		</Unit>
+		<Unit filename="/Users/Edgar/ClionProjects/Fleur/opt/cpr/include/cpr/timeout.h">
+			<Option target="cpr"/>
+		</Unit>
+		<Unit filename="/Users/Edgar/ClionProjects/Fleur/opt/cpr/include/cpr/util.h">
+			<Option target="cpr"/>
+		</Unit>
 		<Unit filename="/Users/Edgar/ClionProjects/Fleur/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
@@ -635,6 +798,27 @@
 		</Unit>
 		<Unit filename="/Users/Edgar/ClionProjects/Fleur/gumbo-query/src/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\gumbo-query\src\"/>
+		</Unit>
+		<Unit filename="/Users/Edgar/ClionProjects/Fleur/opt/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\opt\"/>
+		</Unit>
+		<Unit filename="/Users/Edgar/ClionProjects/Fleur/opt/cpr/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\opt\cpr\"/>
+		</Unit>
+		<Unit filename="/Users/Edgar/ClionProjects/Fleur/opt/cpr/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\opt\cpr\"/>
+		</Unit>
+		<Unit filename="/Users/Edgar/ClionProjects/Fleur/opt/cpr/opt/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\opt\cpr\opt\"/>
+		</Unit>
+		<Unit filename="/Users/Edgar/ClionProjects/Fleur/opt/cpr/opt/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\opt\cpr\opt\"/>
+		</Unit>
+		<Unit filename="/Users/Edgar/ClionProjects/Fleur/opt/cpr/cpr/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\opt\cpr\cpr\"/>
+		</Unit>
+		<Unit filename="/Users/Edgar/ClionProjects/Fleur/opt/cpr/cpr/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\opt\cpr\cpr\"/>
 		</Unit>
 		<Unit filename="/Users/Edgar/ClionProjects/Fleur/fleur_src/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\fleur_src\"/>

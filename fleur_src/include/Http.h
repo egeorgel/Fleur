@@ -11,23 +11,17 @@
 class Http {
 
 public:
-    Http(const parser::Requete & req);
-
-    ~Http();
+    Http(const parser::Requete & req) : _requete(req) {};
 
     std::string downloadContent();
-
-    std::string downloadJson();
 
     std::string get();
 
     std::string post();
 
-    void *get_curl() const;
     const parser::Requete &get_requete() const;
 
 private:
-    void* _curl;
     parser::Requete _requete;
 
     /*

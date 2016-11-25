@@ -24,7 +24,7 @@ Processing::Strings Processing::build() {
 
     } else if (_requete._format == "json" ) {
         if (_requete._crud.empty()) {
-            result.push_back(http.downloadJson());
+            result.push_back(http.downloadContent());
         } else {
             result.push_back(processCrud("json"));
         }

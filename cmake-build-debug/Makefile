@@ -229,6 +229,19 @@ gumbo_query_shared/fast:
 .PHONY : gumbo_query_shared/fast
 
 #=============================================================================
+# Target rules for targets named cpr
+
+# Build rule for target.
+cpr: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 cpr
+.PHONY : cpr
+
+# fast build rule for target.
+cpr/fast:
+	$(MAKE) -f opt/cpr/cpr/CMakeFiles/cpr.dir/build.make opt/cpr/cpr/CMakeFiles/cpr.dir/build
+.PHONY : cpr/fast
+
+#=============================================================================
 # Target rules for targets named fleur_src
 
 # Build rule for target.
@@ -328,6 +341,7 @@ help:
 	@echo "... fleur_run"
 	@echo "... gumbo_query_static"
 	@echo "... gumbo_query_shared"
+	@echo "... cpr"
 	@echo "... fleur_src"
 	@echo "... gtest_main"
 	@echo "... gtest"

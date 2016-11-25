@@ -15,6 +15,23 @@ fleur_src/CMakeFiles/fleur_src.dir/src/Http.cpp.o
  ../fleur_src/include/Http.h
  ../fleur_src/include/HttpException.h
  ../fleur_src/include/Requete_parser.h
+ ../opt/cpr/include/cpr/api.h
+ ../opt/cpr/include/cpr/auth.h
+ ../opt/cpr/include/cpr/body.h
+ ../opt/cpr/include/cpr/cookies.h
+ ../opt/cpr/include/cpr/cpr.h
+ ../opt/cpr/include/cpr/cprtypes.h
+ ../opt/cpr/include/cpr/defines.h
+ ../opt/cpr/include/cpr/digest.h
+ ../opt/cpr/include/cpr/error.h
+ ../opt/cpr/include/cpr/multipart.h
+ ../opt/cpr/include/cpr/parameters.h
+ ../opt/cpr/include/cpr/payload.h
+ ../opt/cpr/include/cpr/proxies.h
+ ../opt/cpr/include/cpr/response.h
+ ../opt/cpr/include/cpr/session.h
+ ../opt/cpr/include/cpr/timeout.h
+ ../opt/json/src/json.hpp
  /Users/Edgar/ClionProjects/Fleur/fleur_src/src/Http.cpp
  /usr/local/include/boost/algorithm/string.hpp
  /usr/local/include/boost/algorithm/string/case_conv.hpp

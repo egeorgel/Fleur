@@ -14,6 +14,9 @@
 # EXTERNAL cache entries
 ########################
 
+//Set to ON to build cpr tests.
+BUILD_CPR_TESTS:BOOL=OFF
+
 //Build shared libraries (DLLs).
 BUILD_SHARED_LIBS:BOOL=OFF
 
@@ -207,6 +210,9 @@ CMAKE_STATIC_LINKER_FLAGS_RELWITHDEBINFO:STRING=
 //Path to a program.
 CMAKE_STRIP:FILEPATH=/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip
 
+//Use OpenSSL code. Experimental
+CMAKE_USE_OPENSSL:BOOL=ON
+
 //If this value is on, makefiles will be generated without the
 // .SILENT directive, and all commands will be echoed to the console
 // during the make.  This is useful for debugging only. With Visual
@@ -228,11 +234,20 @@ CPACK_SOURCE_TZ:BOOL=ON
 //Enable to build ZIP source packages
 CPACK_SOURCE_ZIP:BOOL=OFF
 
+//Path to a file.
+CURL_INCLUDE_DIR:PATH=/usr/include
+
+//Path to a library.
+CURL_LIBRARY:FILEPATH=/usr/lib/libcurl.dylib
+
 //Value Computed by CMake
 Fleur_BINARY_DIR:STATIC=/Users/Edgar/ClionProjects/Fleur/cmake-build-debug
 
 //Value Computed by CMake
 Fleur_SOURCE_DIR:STATIC=/Users/Edgar/ClionProjects/Fleur
+
+//Set to ON to generate coverage reports.
+GENERATE_COVERAGE:BOOL=OFF
 
 //The directory containing a CMake configuration file for Gumbo.
 Gumbo_DIR:PATH=Gumbo_DIR-NOTFOUND
@@ -245,6 +260,9 @@ Gumbo_LIBRARY:FILEPATH=/usr/local/lib/libgumbo.dylib
 
 //Path to a library.
 Gumbo_static_LIBRARY:FILEPATH=/usr/local/lib/libgumbo.a
+
+//Set to ON to disable verification of SSL certificates.
+INSECURE_CURL:BOOL=OFF
 
 //Dependencies for target
 MathFunctions_LIB_DEPENDS:STATIC=
@@ -272,6 +290,23 @@ PYTHON_EXECUTABLE:FILEPATH=/usr/bin/python
 
 //Path to a program.
 ProcessorCount_cmd_sysctl:FILEPATH=/usr/sbin/sysctl
+
+//If ON, this project will look in the system paths for an installed
+// curl library
+USE_SYSTEM_CURL:BOOL=ON
+
+//If ON, this project will look in the system paths for an installed
+// gtest library
+USE_SYSTEM_GTEST:BOOL=OFF
+
+//Value Computed by CMake
+cpr_BINARY_DIR:STATIC=/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/opt/cpr
+
+//Dependencies for the target
+cpr_LIB_DEPENDS:STATIC=general;/usr/lib/libcurl.dylib;
+
+//Value Computed by CMake
+cpr_SOURCE_DIR:STATIC=/Users/Edgar/ClionProjects/Fleur/opt/cpr
 
 //Value Computed by CMake
 fleur_src_BINARY_DIR:STATIC=/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/fleur_src
@@ -453,7 +488,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=6
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=10
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
@@ -502,6 +537,20 @@ CPACK_SOURCE_TXZ-ADVANCED:INTERNAL=1
 CPACK_SOURCE_TZ-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CPACK_SOURCE_ZIP
 CPACK_SOURCE_ZIP-ADVANCED:INTERNAL=1
+CPR_INCLUDE_DIRS:INTERNAL=/Users/Edgar/ClionProjects/Fleur/opt/cpr/include
+CPR_LIBRARIES:INTERNAL=cpr
+//Set if libcurl is found or built
+CURL_FOUND:INTERNAL=TRUE
+//ADVANCED property for variable: CURL_INCLUDE_DIR
+CURL_INCLUDE_DIR-ADVANCED:INTERNAL=1
+//Location of curl include files
+CURL_INCLUDE_DIRS:INTERNAL=/usr/include
+//Location of libcurl
+CURL_LIBRARIES:INTERNAL=/usr/lib/libcurl.dylib
+//ADVANCED property for variable: CURL_LIBRARY
+CURL_LIBRARY-ADVANCED:INTERNAL=1
+//Details about finding CURL
+FIND_PACKAGE_MESSAGE_DETAILS_CURL:INTERNAL=[/usr/lib/libcurl.dylib][/usr/include][v7.49.1()]
 //Details about finding PythonInterp
 FIND_PACKAGE_MESSAGE_DETAILS_PythonInterp:INTERNAL=[/usr/bin/python][v2.7.10()]
 //Details about finding Threads

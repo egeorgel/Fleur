@@ -12,6 +12,8 @@ set(CMAKE_CXX_COMPILER_ID "AppleClang")
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "/usr/local/include"
   "../gumbo-query/include"
+  "../opt/cpr/include"
+  "../opt/json/src"
   "../fleur_src/include"
   "../fleur_tests/lib/gtest-1.7.0/include"
   "../fleur_tests/lib/gtest-1.7.0"
