@@ -30,6 +30,24 @@ exception
 string
 -
 
+../fleur_src/include/Include_parser.h
+string
+-
+boost/algorithm/string.hpp
+-
+boost/fusion/adapted.hpp
+-
+boost/spirit/include/qi.hpp
+-
+boost/spirit/include/qi_no_case.hpp
+-
+boost/spirit/include/phoenix_core.hpp
+-
+boost/spirit/include/phoenix_operator.hpp
+-
+boost/spirit/include/phoenix_object.hpp
+-
+
 ../fleur_src/include/Processing.h
 Requete_parser.h
 ../fleur_src/include/Requete_parser.h
@@ -401,6 +419,12 @@ HttpException.h
 -
 json.hpp
 -
+
+/Users/Edgar/ClionProjects/Fleur/fleur_tests/tests/Include_parser_test.cpp
+gtest/gtest.h
+-
+Include_parser.h
+/Users/Edgar/ClionProjects/Fleur/fleur_tests/tests/Include_parser.h
 
 /Users/Edgar/ClionProjects/Fleur/fleur_tests/tests/Processing_test.cpp
 gtest/gtest.h

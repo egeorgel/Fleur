@@ -7,7 +7,8 @@ set(HEADER_FILES
         include/Filter.h
         include/FilterException.h
         include/Processing.h
-        include/Xml_parser.h)
+        include/Xml_parser.h
+        include/Include_parser.h)
 
 set(SOURCE_FILES
         src/Requete_parser.cpp

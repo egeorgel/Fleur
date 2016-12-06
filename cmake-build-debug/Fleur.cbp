@@ -580,6 +580,9 @@
 		<Unit filename="/Users/Edgar/ClionProjects/Fleur/fleur_src/include/HttpException.h">
 			<Option target="fleur_src"/>
 		</Unit>
+		<Unit filename="/Users/Edgar/ClionProjects/Fleur/fleur_src/include/Include_parser.h">
+			<Option target="fleur_src"/>
+		</Unit>
 		<Unit filename="/Users/Edgar/ClionProjects/Fleur/fleur_src/include/Processing.h">
 			<Option target="fleur_src"/>
 		</Unit>
@@ -617,6 +620,9 @@
 			<Option target="fleurTest"/>
 		</Unit>
 		<Unit filename="/Users/Edgar/ClionProjects/Fleur/fleur_tests/tests/Http_test.cpp">
+			<Option target="fleurTest"/>
+		</Unit>
+		<Unit filename="/Users/Edgar/ClionProjects/Fleur/fleur_tests/tests/Include_parser_test.cpp">
 			<Option target="fleurTest"/>
 		</Unit>
 		<Unit filename="/Users/Edgar/ClionProjects/Fleur/fleur_tests/tests/Processing_test.cpp">

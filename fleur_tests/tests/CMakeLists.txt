@@ -4,7 +4,7 @@ add_executable(fleurTest
         Requete_parser_test.cpp
         Http_test.cpp
         Filter_test.cpp
-        Processing_test.cpp Html_parser_test.cpp)
+        Processing_test.cpp Html_parser_test.cpp Include_parser_test.cpp)
 
 set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} ${PROJECT_SOURCE_DIR}/cmake)
 find_package(Gumbo REQUIRED)

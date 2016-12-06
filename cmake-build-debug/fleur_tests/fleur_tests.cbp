@@ -203,6 +203,9 @@
 		<Unit filename="/Users/Edgar/ClionProjects/Fleur/fleur_tests/tests/Http_test.cpp">
 			<Option target="fleurTest"/>
 		</Unit>
+		<Unit filename="/Users/Edgar/ClionProjects/Fleur/fleur_tests/tests/Include_parser_test.cpp">
+			<Option target="fleurTest"/>
+		</Unit>
 		<Unit filename="/Users/Edgar/ClionProjects/Fleur/fleur_tests/tests/Processing_test.cpp">
 			<Option target="fleurTest"/>
 		</Unit>

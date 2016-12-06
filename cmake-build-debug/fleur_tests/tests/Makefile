@@ -272,6 +272,33 @@ Http_test.cpp.s:
 	cd /Users/Edgar/ClionProjects/Fleur/cmake-build-debug && $(MAKE) -f fleur_tests/tests/CMakeFiles/fleurTest.dir/build.make fleur_tests/tests/CMakeFiles/fleurTest.dir/Http_test.cpp.s
 .PHONY : Http_test.cpp.s
 
+Include_parser_test.o: Include_parser_test.cpp.o
+
+.PHONY : Include_parser_test.o
+
+# target to build an object file
+Include_parser_test.cpp.o:
+	cd /Users/Edgar/ClionProjects/Fleur/cmake-build-debug && $(MAKE) -f fleur_tests/tests/CMakeFiles/fleurTest.dir/build.make fleur_tests/tests/CMakeFiles/fleurTest.dir/Include_parser_test.cpp.o
+.PHONY : Include_parser_test.cpp.o
+
+Include_parser_test.i: Include_parser_test.cpp.i
+
+.PHONY : Include_parser_test.i
+
+# target to preprocess a source file
+Include_parser_test.cpp.i:
+	cd /Users/Edgar/ClionProjects/Fleur/cmake-build-debug && $(MAKE) -f fleur_tests/tests/CMakeFiles/fleurTest.dir/build.make fleur_tests/tests/CMakeFiles/fleurTest.dir/Include_parser_test.cpp.i
+.PHONY : Include_parser_test.cpp.i
+
+Include_parser_test.s: Include_parser_test.cpp.s
+
+.PHONY : Include_parser_test.s
+
+# target to generate assembly for a file
+Include_parser_test.cpp.s:
+	cd /Users/Edgar/ClionProjects/Fleur/cmake-build-debug && $(MAKE) -f fleur_tests/tests/CMakeFiles/fleurTest.dir/build.make fleur_tests/tests/CMakeFiles/fleurTest.dir/Include_parser_test.cpp.s
+.PHONY : Include_parser_test.cpp.s
+
 Processing_test.o: Processing_test.cpp.o
 
 .PHONY : Processing_test.o
@@ -350,6 +377,9 @@ help:
 	@echo "... Http_test.o"
 	@echo "... Http_test.i"
 	@echo "... Http_test.s"
+	@echo "... Include_parser_test.o"
+	@echo "... Include_parser_test.i"
+	@echo "... Include_parser_test.s"
 	@echo "... Processing_test.o"
 	@echo "... Processing_test.i"
 	@echo "... Processing_test.s"

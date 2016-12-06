@@ -4,6 +4,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/fleurTest.dir/Filter_test.cpp.o"
   "CMakeFiles/fleurTest.dir/Processing_test.cpp.o"
   "CMakeFiles/fleurTest.dir/Html_parser_test.cpp.o"
+  "CMakeFiles/fleurTest.dir/Include_parser_test.cpp.o"
   "fleurTest.pdb"
   "fleurTest"
 )
