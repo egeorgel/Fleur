@@ -37,7 +37,7 @@ set(SOURCE_FILES main.cpp)
 add_executable(fleur_run ${SOURCE_FILES})
 
 ### INCLUDE BOOST
-find_package(Boost 1.57.0 COMPONENTS system filesystem REQUIRED)
+find_package(Boost COMPONENTS system filesystem REQUIRED)
 if(Boost_FOUND)
     message(STATUS "Boost_INCLUDE_DIRS: ${Boost_INCLUDE_DIRS}")
     message(STATUS "Boost_LIBRARIES: ${Boost_LIBRARIES}")

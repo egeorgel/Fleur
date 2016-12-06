@@ -101,8 +101,8 @@ clean: CMakeFiles/BoostTest.dir/clean
 
 # All Build rule for target.
 CMakeFiles/fleur_run.dir/all: gumbo-query/src/CMakeFiles/gumbo_query_shared.dir/all
-CMakeFiles/fleur_run.dir/all: fleur_src/CMakeFiles/fleur_src.dir/all
 CMakeFiles/fleur_run.dir/all: opt/cpr/cpr/CMakeFiles/cpr.dir/all
+CMakeFiles/fleur_run.dir/all: fleur_src/CMakeFiles/fleur_src.dir/all
 	$(MAKE) -f CMakeFiles/fleur_run.dir/build.make CMakeFiles/fleur_run.dir/depend
 	$(MAKE) -f CMakeFiles/fleur_run.dir/build.make CMakeFiles/fleur_run.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/CMakeFiles --progress-num=21,22 "Built target fleur_run"
@@ -534,10 +534,10 @@ fleur_tests/tests/preinstall:
 
 # All Build rule for target.
 fleur_tests/tests/CMakeFiles/fleurTest.dir/all: gumbo-query/src/CMakeFiles/gumbo_query_shared.dir/all
+fleur_tests/tests/CMakeFiles/fleurTest.dir/all: opt/cpr/cpr/CMakeFiles/cpr.dir/all
 fleur_tests/tests/CMakeFiles/fleurTest.dir/all: fleur_src/CMakeFiles/fleur_src.dir/all
 fleur_tests/tests/CMakeFiles/fleurTest.dir/all: fleur_tests/lib/gtest-1.7.0/CMakeFiles/gtest_main.dir/all
 fleur_tests/tests/CMakeFiles/fleurTest.dir/all: fleur_tests/lib/gtest-1.7.0/CMakeFiles/gtest.dir/all
-fleur_tests/tests/CMakeFiles/fleurTest.dir/all: opt/cpr/cpr/CMakeFiles/cpr.dir/all
 	$(MAKE) -f fleur_tests/tests/CMakeFiles/fleurTest.dir/build.make fleur_tests/tests/CMakeFiles/fleurTest.dir/depend
 	$(MAKE) -f fleur_tests/tests/CMakeFiles/fleurTest.dir/build.make fleur_tests/tests/CMakeFiles/fleurTest.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/CMakeFiles --progress-num=15,16,17,18,19,20 "Built target fleurTest"
