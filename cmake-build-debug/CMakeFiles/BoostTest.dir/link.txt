@@ -1,1 +1,1 @@
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   -g -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/BoostTest.dir/main.cpp.o  -o BoostTest /usr/local/lib/libboost_system-mt.dylib /usr/local/lib/libboost_filesystem-mt.dylib 
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   -g -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/BoostTest.dir/main.cpp.o  -o BoostTest  /usr/local/lib/libboost_system-mt.dylib /usr/local/lib/libboost_filesystem-mt.dylib 

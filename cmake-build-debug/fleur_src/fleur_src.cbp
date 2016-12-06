@@ -4,7 +4,7 @@
 	<Project>
 		<Option title="fleur_src"/>
 		<Option makefile_is_custom="1"/>
-		<Option compiler="gcc"/>
+		<Option compiler="clang"/>
 		<Option virtualFolders="CMake Files\;CMake Files\cmake\;CMake Files\gumbo-query\;CMake Files\gumbo-query\src\;CMake Files\opt\;CMake Files\opt\cpr\;CMake Files\opt\cpr\opt\;CMake Files\opt\cpr\cpr\;CMake Files\fleur_src\;CMake Files\fleur_tests\;CMake Files\fleur_tests\lib\;CMake Files\fleur_tests\lib\gtest-1.7.0\;CMake Files\fleur_tests\lib\gtest-1.7.0\cmake\;CMake Files\fleur_tests\tests\;"/>
 		<Build>
 			<Target title="all">
@@ -22,7 +22,7 @@
 				<Option working_dir="/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/fleur_src"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
-				<Option compiler="gcc"/>
+				<Option compiler="clang"/>
 				<Compiler>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/Users/Edgar/ClionProjects/Fleur/gumbo-query/include"/>
@@ -48,7 +48,7 @@
 				<Option working_dir="/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/fleur_src"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
-				<Option compiler="gcc"/>
+				<Option compiler="clang"/>
 				<Compiler>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/Users/Edgar/ClionProjects/Fleur/gumbo-query/include"/>

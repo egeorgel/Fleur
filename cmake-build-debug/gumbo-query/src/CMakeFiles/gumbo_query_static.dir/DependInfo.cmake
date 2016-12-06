@@ -12,7 +12,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/Users/Edgar/ClionProjects/Fleur/gumbo-query/src/Selection.cpp" "/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/gumbo-query/src/CMakeFiles/gumbo_query_static.dir/Selection.cpp.o"
   "/Users/Edgar/ClionProjects/Fleur/gumbo-query/src/Selector.cpp" "/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/gumbo-query/src/CMakeFiles/gumbo_query_static.dir/Selector.cpp.o"
   )
-set(CMAKE_CXX_COMPILER_ID "AppleClang")
+set(CMAKE_CXX_COMPILER_ID "Clang")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
