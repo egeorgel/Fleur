@@ -42,7 +42,14 @@ Filter::Filter() {
 
 std::vector<std::string> Filter::filterHTMLByMarked(const std::string &strToFilter, const std::string &markerStr) {
 
-    if ( ! (std::find(markerHtml.begin(), markerHtml.end(), markerStr) != markerHtml.end()) )
+    std::string markerBuff = "";
+    for (auto c : markerStr) {
+        if (c == '.' || c == '[')
+            break;
+        markerBuff += c;
+    }
+
+    if ( ! (std::find(markerHtml.begin(), markerHtml.end(), markerBuff) != markerHtml.end()) )
         throw FilterException("No valid html marker");
 
     std::vector<std::string> output;
