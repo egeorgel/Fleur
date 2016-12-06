@@ -54,6 +54,16 @@ TEST_F(Processing_test, selecet_html__select_p_a_from_url) {
     EXPECT_EQ( " simulation dynamique microscopique trafic 3D estimation" ,processing.build().at(1));
 }
 
+/// select html (h1.title) from "http://reactivex.io";
+TEST_F(Processing_test, selecet_html_select_h1_Class_a_from_url) {
+    const std::string input = "select html (h1.title) from \"http://reactivex.io\";";
+    parser::Requete requete;
+    parser::doParse(input, requete);
+
+    Processing processing(requete);
+    EXPECT_EQ( "ReactiveX" ,processing.build().at(0));
+}
+
 
 
 /////////////////////
