@@ -10,7 +10,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/Users/Edgar/ClionProjects/Fleur/fleur_src/src/Requete_parser.cpp" "/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/fleur_src/CMakeFiles/fleur_src.dir/src/Requete_parser.cpp.o"
   "/Users/Edgar/ClionProjects/Fleur/fleur_src/src/Xml_parser.cpp" "/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/fleur_src/CMakeFiles/fleur_src.dir/src/Xml_parser.cpp.o"
   )
-set(CMAKE_CXX_COMPILER_ID "AppleClang")
+set(CMAKE_CXX_COMPILER_ID "Clang")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH

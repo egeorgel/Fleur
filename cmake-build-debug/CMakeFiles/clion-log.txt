@@ -22,5 +22,16 @@
 -- Using CURL_INCLUDE_DIRS: /usr/include.
 -- Using CURL_LIBRARIES: /usr/lib/libcurl.dylib.
 -- Configuring done
+CMake Warning (dev):
+  Policy CMP0042 is not set: MACOSX_RPATH is enabled by default.  Run "cmake
+  --help-policy CMP0042" for policy details.  Use the cmake_policy command to
+  set the policy and suppress this warning.
+
+  MACOSX_RPATH is not specified for the following targets:
+
+   gumbo_query_shared
+
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
 -- Generating done
 -- Build files have been written to: /Users/Edgar/ClionProjects/Fleur/cmake-build-debug
