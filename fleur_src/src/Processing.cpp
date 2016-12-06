@@ -30,7 +30,5 @@ Processing::Strings Processing::build() {
 
 std::string Processing::processHeader(const std::string &format, const std::string &crud) const {
     std::string result = "";
-
-
     return result;
 }
