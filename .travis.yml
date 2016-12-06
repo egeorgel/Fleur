@@ -43,15 +43,6 @@ matrix:
 before_install:
   - sudo apt-get update -qq
   - sudo apt-get install libboost-all-dev
-  - mkdir -pv /tmp/boostinst
-  - cd /tmp/boostinst/
-  - wget -c 'http://sourceforge.net/projects/boost/files/boost/1.57.0/boost_1_57_0.tar.bz2/download'
-  - tar xf download
-  - cd boost_1_46_1/
-  - ./bootstrap.sh --help
-  - ./bootstrap.sh --show-libraries
-  - ./bootstrap.sh
-  – cd
   – git clone https://github.com/google/gumbo-parser
   – cd gumbo-parser/
   - ./autogen.sh
