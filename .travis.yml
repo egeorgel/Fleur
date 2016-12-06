@@ -43,11 +43,12 @@ matrix:
 before_install:
   - sudo apt-get update -qq
   - sudo apt-get install libboost-all-dev
-  – git clone https://github.com/google/gumbo-parser
-  – cd gumbo-parser/
-  - ./autogen.sh
-  - ./configure
-  - make
+  - sudo apt-get install libtool
+  – sudo git clone https://github.com/google/gumbo-parser
+  – sudo cd gumbo-parser/
+  - sudo ./autogen.sh
+  - sudo ./configure
+  - sudo make
   - sudo make install
 script:
   - mkdir build
