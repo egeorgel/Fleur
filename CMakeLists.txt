@@ -57,10 +57,14 @@ include_directories(${PROJECT_SOURCE_DIR}/gumbo-query/include)
 include_directories(${Gumbo_INCLUDE_DIRS} ${gumbo_query_SOURCE_DIRECTORY})
 add_subdirectory(${PROJECT_SOURCE_DIR}/gumbo-query/src)
 
-# https://whoshuu.github.io/cpr/introduction.html lib C++ Requests: Curl for People
+## https://whoshuu.github.io/cpr/introduction.html lib C++ Requests: Curl for People
 add_subdirectory(opt)
 include_directories(${CPR_INCLUDE_DIRS} ${JSON_INCLUDE_DIRS})
 
+## libtwitcurl
+add_subdirectory(libtwitcurl)
+include_directories(libtwitcurl/include)
+link_directories(libtwitcurl/lib)
 
 ## Fleur
 include_directories(fleur_src/include )
@@ -68,6 +72,6 @@ include_directories(fleur_src/include )
 add_subdirectory(fleur_src)
 add_subdirectory(fleur_tests)
 
-target_link_libraries(fleur_run fleur_src curl ${CPR_LIBRARIES} gumbo_query_shared)
+target_link_libraries(fleur_run fleur_src curl ${CPR_LIBRARIES} gumbo_query_shared libtwitcurl)
 
 

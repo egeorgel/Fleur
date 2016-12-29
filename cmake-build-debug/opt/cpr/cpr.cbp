@@ -5,7 +5,7 @@
 		<Option title="cpr"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="clang"/>
-		<Option virtualFolders="CMake Files\;CMake Files\cmake\;CMake Files\gumbo-query\;CMake Files\gumbo-query\src\;CMake Files\opt\;CMake Files\opt\cpr\;CMake Files\opt\cpr\opt\;CMake Files\opt\cpr\cpr\;CMake Files\fleur_src\;CMake Files\fleur_tests\;CMake Files\fleur_tests\lib\;CMake Files\fleur_tests\lib\gtest-1.7.0\;CMake Files\fleur_tests\lib\gtest-1.7.0\cmake\;CMake Files\fleur_tests\tests\;"/>
+		<Option virtualFolders="CMake Files\;CMake Files\cmake\;CMake Files\gumbo-query\;CMake Files\gumbo-query\src\;CMake Files\opt\;CMake Files\opt\cpr\;CMake Files\opt\cpr\opt\;CMake Files\opt\cpr\cpr\;CMake Files\libtwitcurl\;CMake Files\fleur_src\;CMake Files\fleur_tests\;CMake Files\fleur_tests\lib\;CMake Files\fleur_tests\lib\gtest-1.7.0\;CMake Files\fleur_tests\lib\gtest-1.7.0\cmake\;CMake Files\fleur_tests\tests\;"/>
 		<Build>
 			<Target title="all">
 				<Option working_dir="/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/opt/cpr"/>
@@ -204,6 +204,12 @@
 		</Unit>
 		<Unit filename="/Users/Edgar/ClionProjects/Fleur/opt/cpr/cpr/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\opt\cpr\cpr\"/>
+		</Unit>
+		<Unit filename="/Users/Edgar/ClionProjects/Fleur/libtwitcurl/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\libtwitcurl\"/>
+		</Unit>
+		<Unit filename="/Users/Edgar/ClionProjects/Fleur/libtwitcurl/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\libtwitcurl\"/>
 		</Unit>
 		<Unit filename="/Users/Edgar/ClionProjects/Fleur/fleur_src/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\fleur_src\"/>

@@ -5,7 +5,7 @@
 		<Option title="Fleur"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="gcc"/>
-		<Option virtualFolders="CMake Files\;CMake Files\cmake\;CMake Files\gumbo-query\;CMake Files\gumbo-query\src\;CMake Files\opt\;CMake Files\opt\cpr\;CMake Files\opt\cpr\opt\;CMake Files\opt\cpr\cpr\;CMake Files\fleur_src\;CMake Files\fleur_tests\;CMake Files\fleur_tests\lib\;CMake Files\fleur_tests\lib\gtest-1.7.0\;CMake Files\fleur_tests\lib\gtest-1.7.0\cmake\;CMake Files\fleur_tests\tests\;"/>
+		<Option virtualFolders="CMake Files\;CMake Files\cmake\;CMake Files\gumbo-query\;CMake Files\gumbo-query\src\;CMake Files\opt\;CMake Files\opt\cpr\;CMake Files\opt\cpr\opt\;CMake Files\opt\cpr\cpr\;CMake Files\libtwitcurl\;CMake Files\fleur_src\;CMake Files\fleur_tests\;CMake Files\fleur_tests\lib\;CMake Files\fleur_tests\lib\gtest-1.7.0\;CMake Files\fleur_tests\lib\gtest-1.7.0\cmake\;CMake Files\fleur_tests\tests\;"/>
 		<Build>
 			<Target title="all">
 				<Option working_dir="/Users/Edgar/ClionProjects/Fleur/cmake-build-debug"/>
@@ -88,6 +88,7 @@
 					<Add directory="/Users/Edgar/ClionProjects/Fleur/gumbo-query/include"/>
 					<Add directory="/Users/Edgar/ClionProjects/Fleur/opt/cpr/include"/>
 					<Add directory="/Users/Edgar/ClionProjects/Fleur/opt/json/src"/>
+					<Add directory="/Users/Edgar/ClionProjects/Fleur/libtwitcurl/include"/>
 					<Add directory="/Users/Edgar/ClionProjects/Fleur/fleur_src/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.0.0/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
@@ -114,6 +115,7 @@
 					<Add directory="/Users/Edgar/ClionProjects/Fleur/gumbo-query/include"/>
 					<Add directory="/Users/Edgar/ClionProjects/Fleur/opt/cpr/include"/>
 					<Add directory="/Users/Edgar/ClionProjects/Fleur/opt/json/src"/>
+					<Add directory="/Users/Edgar/ClionProjects/Fleur/libtwitcurl/include"/>
 					<Add directory="/Users/Edgar/ClionProjects/Fleur/fleur_src/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.0.0/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
@@ -160,6 +162,7 @@
 					<Add directory="/Users/Edgar/ClionProjects/Fleur/gumbo-query/include"/>
 					<Add directory="/Users/Edgar/ClionProjects/Fleur/opt/cpr/include"/>
 					<Add directory="/Users/Edgar/ClionProjects/Fleur/opt/json/src"/>
+					<Add directory="/Users/Edgar/ClionProjects/Fleur/libtwitcurl/include"/>
 					<Add directory="/Users/Edgar/ClionProjects/Fleur/fleur_src/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.0.0/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
@@ -186,6 +189,7 @@
 					<Add directory="/Users/Edgar/ClionProjects/Fleur/gumbo-query/include"/>
 					<Add directory="/Users/Edgar/ClionProjects/Fleur/opt/cpr/include"/>
 					<Add directory="/Users/Edgar/ClionProjects/Fleur/opt/json/src"/>
+					<Add directory="/Users/Edgar/ClionProjects/Fleur/libtwitcurl/include"/>
 					<Add directory="/Users/Edgar/ClionProjects/Fleur/fleur_src/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.0.0/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
@@ -345,6 +349,56 @@
 					<DistClean command="/opt/local/bin/gmake -j8 -f &quot;/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/opt/cpr/cpr/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="libtwitcurl">
+				<Option output="/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/libtwitcurl/liblibtwitcurl.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/libtwitcurl"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Users/Edgar/ClionProjects/Fleur/gumbo-query/include"/>
+					<Add directory="/Users/Edgar/ClionProjects/Fleur/opt/cpr/include"/>
+					<Add directory="/Users/Edgar/ClionProjects/Fleur/opt/json/src"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/opt/local/bin/gmake -j8 -f &quot;/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/libtwitcurl/Makefile&quot;  VERBOSE=1 libtwitcurl"/>
+					<CompileFile command="/opt/local/bin/gmake -j8 -f &quot;/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/libtwitcurl/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/opt/local/bin/gmake -j8 -f &quot;/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/libtwitcurl/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/opt/local/bin/gmake -j8 -f &quot;/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/libtwitcurl/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="libtwitcurl/fast">
+				<Option output="/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/libtwitcurl/liblibtwitcurl.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/libtwitcurl"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Users/Edgar/ClionProjects/Fleur/gumbo-query/include"/>
+					<Add directory="/Users/Edgar/ClionProjects/Fleur/opt/cpr/include"/>
+					<Add directory="/Users/Edgar/ClionProjects/Fleur/opt/json/src"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/opt/local/bin/gmake -j8 -f &quot;/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/libtwitcurl/Makefile&quot;  VERBOSE=1 libtwitcurl/fast"/>
+					<CompileFile command="/opt/local/bin/gmake -j8 -f &quot;/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/libtwitcurl/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/opt/local/bin/gmake -j8 -f &quot;/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/libtwitcurl/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/opt/local/bin/gmake -j8 -f &quot;/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/libtwitcurl/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 			<Target title="fleur_src">
 				<Option output="/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/fleur_src/libfleur_src.a" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/fleur_src"/>
@@ -356,6 +410,7 @@
 					<Add directory="/Users/Edgar/ClionProjects/Fleur/gumbo-query/include"/>
 					<Add directory="/Users/Edgar/ClionProjects/Fleur/opt/cpr/include"/>
 					<Add directory="/Users/Edgar/ClionProjects/Fleur/opt/json/src"/>
+					<Add directory="/Users/Edgar/ClionProjects/Fleur/libtwitcurl/include"/>
 					<Add directory="/Users/Edgar/ClionProjects/Fleur/fleur_src/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.0.0/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
@@ -382,6 +437,7 @@
 					<Add directory="/Users/Edgar/ClionProjects/Fleur/gumbo-query/include"/>
 					<Add directory="/Users/Edgar/ClionProjects/Fleur/opt/cpr/include"/>
 					<Add directory="/Users/Edgar/ClionProjects/Fleur/opt/json/src"/>
+					<Add directory="/Users/Edgar/ClionProjects/Fleur/libtwitcurl/include"/>
 					<Add directory="/Users/Edgar/ClionProjects/Fleur/fleur_src/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.0.0/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
@@ -408,6 +464,7 @@
 					<Add directory="/Users/Edgar/ClionProjects/Fleur/gumbo-query/include"/>
 					<Add directory="/Users/Edgar/ClionProjects/Fleur/opt/cpr/include"/>
 					<Add directory="/Users/Edgar/ClionProjects/Fleur/opt/json/src"/>
+					<Add directory="/Users/Edgar/ClionProjects/Fleur/libtwitcurl/include"/>
 					<Add directory="/Users/Edgar/ClionProjects/Fleur/fleur_src/include"/>
 					<Add directory="/Users/Edgar/ClionProjects/Fleur/fleur_tests/lib/gtest-1.7.0/include"/>
 					<Add directory="/Users/Edgar/ClionProjects/Fleur/fleur_tests/lib/gtest-1.7.0"/>
@@ -436,6 +493,7 @@
 					<Add directory="/Users/Edgar/ClionProjects/Fleur/gumbo-query/include"/>
 					<Add directory="/Users/Edgar/ClionProjects/Fleur/opt/cpr/include"/>
 					<Add directory="/Users/Edgar/ClionProjects/Fleur/opt/json/src"/>
+					<Add directory="/Users/Edgar/ClionProjects/Fleur/libtwitcurl/include"/>
 					<Add directory="/Users/Edgar/ClionProjects/Fleur/fleur_src/include"/>
 					<Add directory="/Users/Edgar/ClionProjects/Fleur/fleur_tests/lib/gtest-1.7.0/include"/>
 					<Add directory="/Users/Edgar/ClionProjects/Fleur/fleur_tests/lib/gtest-1.7.0"/>
@@ -464,6 +522,7 @@
 					<Add directory="/Users/Edgar/ClionProjects/Fleur/gumbo-query/include"/>
 					<Add directory="/Users/Edgar/ClionProjects/Fleur/opt/cpr/include"/>
 					<Add directory="/Users/Edgar/ClionProjects/Fleur/opt/json/src"/>
+					<Add directory="/Users/Edgar/ClionProjects/Fleur/libtwitcurl/include"/>
 					<Add directory="/Users/Edgar/ClionProjects/Fleur/fleur_src/include"/>
 					<Add directory="/Users/Edgar/ClionProjects/Fleur/fleur_tests/lib/gtest-1.7.0/include"/>
 					<Add directory="/Users/Edgar/ClionProjects/Fleur/fleur_tests/lib/gtest-1.7.0"/>
@@ -492,6 +551,7 @@
 					<Add directory="/Users/Edgar/ClionProjects/Fleur/gumbo-query/include"/>
 					<Add directory="/Users/Edgar/ClionProjects/Fleur/opt/cpr/include"/>
 					<Add directory="/Users/Edgar/ClionProjects/Fleur/opt/json/src"/>
+					<Add directory="/Users/Edgar/ClionProjects/Fleur/libtwitcurl/include"/>
 					<Add directory="/Users/Edgar/ClionProjects/Fleur/fleur_src/include"/>
 					<Add directory="/Users/Edgar/ClionProjects/Fleur/fleur_tests/lib/gtest-1.7.0/include"/>
 					<Add directory="/Users/Edgar/ClionProjects/Fleur/fleur_tests/lib/gtest-1.7.0"/>
@@ -520,6 +580,7 @@
 					<Add directory="/Users/Edgar/ClionProjects/Fleur/gumbo-query/include"/>
 					<Add directory="/Users/Edgar/ClionProjects/Fleur/opt/cpr/include"/>
 					<Add directory="/Users/Edgar/ClionProjects/Fleur/opt/json/src"/>
+					<Add directory="/Users/Edgar/ClionProjects/Fleur/libtwitcurl/include"/>
 					<Add directory="/Users/Edgar/ClionProjects/Fleur/fleur_src/include"/>
 					<Add directory="/Users/Edgar/ClionProjects/Fleur/fleur_tests/lib/gtest-1.7.0/include"/>
 					<Add directory="/Users/Edgar/ClionProjects/Fleur/fleur_tests/lib/gtest-1.7.0"/>
@@ -549,6 +610,7 @@
 					<Add directory="/Users/Edgar/ClionProjects/Fleur/gumbo-query/include"/>
 					<Add directory="/Users/Edgar/ClionProjects/Fleur/opt/cpr/include"/>
 					<Add directory="/Users/Edgar/ClionProjects/Fleur/opt/json/src"/>
+					<Add directory="/Users/Edgar/ClionProjects/Fleur/libtwitcurl/include"/>
 					<Add directory="/Users/Edgar/ClionProjects/Fleur/fleur_src/include"/>
 					<Add directory="/Users/Edgar/ClionProjects/Fleur/fleur_tests/lib/gtest-1.7.0/include"/>
 					<Add directory="/Users/Edgar/ClionProjects/Fleur/fleur_tests/lib/gtest-1.7.0"/>
@@ -589,6 +651,12 @@
 		<Unit filename="/Users/Edgar/ClionProjects/Fleur/fleur_src/include/Requete_parser.h">
 			<Option target="fleur_src"/>
 		</Unit>
+		<Unit filename="/Users/Edgar/ClionProjects/Fleur/fleur_src/include/Twitter.h">
+			<Option target="fleur_src"/>
+		</Unit>
+		<Unit filename="/Users/Edgar/ClionProjects/Fleur/fleur_src/include/Twitter_parser.h">
+			<Option target="fleur_src"/>
+		</Unit>
 		<Unit filename="/Users/Edgar/ClionProjects/Fleur/fleur_src/include/Xml_parser.h">
 			<Option target="fleur_src"/>
 		</Unit>
@@ -602,6 +670,9 @@
 			<Option target="fleur_src"/>
 		</Unit>
 		<Unit filename="/Users/Edgar/ClionProjects/Fleur/fleur_src/src/Requete_parser.cpp">
+			<Option target="fleur_src"/>
+		</Unit>
+		<Unit filename="/Users/Edgar/ClionProjects/Fleur/fleur_src/src/Twitter.cpp">
 			<Option target="fleur_src"/>
 		</Unit>
 		<Unit filename="/Users/Edgar/ClionProjects/Fleur/fleur_src/src/Xml_parser.cpp">
@@ -625,10 +696,19 @@
 		<Unit filename="/Users/Edgar/ClionProjects/Fleur/fleur_tests/tests/Include_parser_test.cpp">
 			<Option target="fleurTest"/>
 		</Unit>
+		<Unit filename="/Users/Edgar/ClionProjects/Fleur/fleur_tests/tests/Libtwitcurl_test.cpp">
+			<Option target="fleurTest"/>
+		</Unit>
 		<Unit filename="/Users/Edgar/ClionProjects/Fleur/fleur_tests/tests/Processing_test.cpp">
 			<Option target="fleurTest"/>
 		</Unit>
 		<Unit filename="/Users/Edgar/ClionProjects/Fleur/fleur_tests/tests/Requete_parser_test.cpp">
+			<Option target="fleurTest"/>
+		</Unit>
+		<Unit filename="/Users/Edgar/ClionProjects/Fleur/fleur_tests/tests/Twitter_parser_test.cpp">
+			<Option target="fleurTest"/>
+		</Unit>
+		<Unit filename="/Users/Edgar/ClionProjects/Fleur/fleur_tests/tests/Twitter_test.cpp">
 			<Option target="fleurTest"/>
 		</Unit>
 		<Unit filename="/Users/Edgar/ClionProjects/Fleur/gumbo-query/src/Document.cpp">
@@ -686,6 +766,75 @@
 		<Unit filename="/Users/Edgar/ClionProjects/Fleur/gumbo-query/src/Selector.h">
 			<Option target="gumbo_query_static"/>
 			<Option target="gumbo_query_shared"/>
+		</Unit>
+		<Unit filename="/Users/Edgar/ClionProjects/Fleur/libtwitcurl/include/HMAC_SHA1.cpp">
+			<Option target="libtwitcurl"/>
+		</Unit>
+		<Unit filename="/Users/Edgar/ClionProjects/Fleur/libtwitcurl/include/HMAC_SHA1.h">
+			<Option target="libtwitcurl"/>
+		</Unit>
+		<Unit filename="/Users/Edgar/ClionProjects/Fleur/libtwitcurl/include/OAuthLibDefaults.h">
+			<Option target="libtwitcurl"/>
+		</Unit>
+		<Unit filename="/Users/Edgar/ClionProjects/Fleur/libtwitcurl/include/SHA1.cpp">
+			<Option target="libtwitcurl"/>
+		</Unit>
+		<Unit filename="/Users/Edgar/ClionProjects/Fleur/libtwitcurl/include/SHA1.h">
+			<Option target="libtwitcurl"/>
+		</Unit>
+		<Unit filename="/Users/Edgar/ClionProjects/Fleur/libtwitcurl/include/base64.cpp">
+			<Option target="libtwitcurl"/>
+		</Unit>
+		<Unit filename="/Users/Edgar/ClionProjects/Fleur/libtwitcurl/include/base64.h">
+			<Option target="libtwitcurl"/>
+		</Unit>
+		<Unit filename="/Users/Edgar/ClionProjects/Fleur/libtwitcurl/include/curl/curl.h">
+			<Option target="libtwitcurl"/>
+		</Unit>
+		<Unit filename="/Users/Edgar/ClionProjects/Fleur/libtwitcurl/include/curl/curlbuild.h">
+			<Option target="libtwitcurl"/>
+		</Unit>
+		<Unit filename="/Users/Edgar/ClionProjects/Fleur/libtwitcurl/include/curl/curlrules.h">
+			<Option target="libtwitcurl"/>
+		</Unit>
+		<Unit filename="/Users/Edgar/ClionProjects/Fleur/libtwitcurl/include/curl/curlver.h">
+			<Option target="libtwitcurl"/>
+		</Unit>
+		<Unit filename="/Users/Edgar/ClionProjects/Fleur/libtwitcurl/include/curl/easy.h">
+			<Option target="libtwitcurl"/>
+		</Unit>
+		<Unit filename="/Users/Edgar/ClionProjects/Fleur/libtwitcurl/include/curl/mprintf.h">
+			<Option target="libtwitcurl"/>
+		</Unit>
+		<Unit filename="/Users/Edgar/ClionProjects/Fleur/libtwitcurl/include/curl/multi.h">
+			<Option target="libtwitcurl"/>
+		</Unit>
+		<Unit filename="/Users/Edgar/ClionProjects/Fleur/libtwitcurl/include/curl/stdcheaders.h">
+			<Option target="libtwitcurl"/>
+		</Unit>
+		<Unit filename="/Users/Edgar/ClionProjects/Fleur/libtwitcurl/include/curl/typecheck-gcc.h">
+			<Option target="libtwitcurl"/>
+		</Unit>
+		<Unit filename="/Users/Edgar/ClionProjects/Fleur/libtwitcurl/include/oauthlib.cpp">
+			<Option target="libtwitcurl"/>
+		</Unit>
+		<Unit filename="/Users/Edgar/ClionProjects/Fleur/libtwitcurl/include/oauthlib.h">
+			<Option target="libtwitcurl"/>
+		</Unit>
+		<Unit filename="/Users/Edgar/ClionProjects/Fleur/libtwitcurl/include/twitcurl.cpp">
+			<Option target="libtwitcurl"/>
+		</Unit>
+		<Unit filename="/Users/Edgar/ClionProjects/Fleur/libtwitcurl/include/twitcurl.h">
+			<Option target="libtwitcurl"/>
+		</Unit>
+		<Unit filename="/Users/Edgar/ClionProjects/Fleur/libtwitcurl/include/twitcurlurls.h">
+			<Option target="libtwitcurl"/>
+		</Unit>
+		<Unit filename="/Users/Edgar/ClionProjects/Fleur/libtwitcurl/include/urlencode.cpp">
+			<Option target="libtwitcurl"/>
+		</Unit>
+		<Unit filename="/Users/Edgar/ClionProjects/Fleur/libtwitcurl/include/urlencode.h">
+			<Option target="libtwitcurl"/>
 		</Unit>
 		<Unit filename="/Users/Edgar/ClionProjects/Fleur/main.cpp">
 			<Option target="BoostTest"/>
@@ -825,6 +974,12 @@
 		</Unit>
 		<Unit filename="/Users/Edgar/ClionProjects/Fleur/opt/cpr/cpr/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\opt\cpr\cpr\"/>
+		</Unit>
+		<Unit filename="/Users/Edgar/ClionProjects/Fleur/libtwitcurl/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\libtwitcurl\"/>
+		</Unit>
+		<Unit filename="/Users/Edgar/ClionProjects/Fleur/libtwitcurl/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\libtwitcurl\"/>
 		</Unit>
 		<Unit filename="/Users/Edgar/ClionProjects/Fleur/fleur_src/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\fleur_src\"/>

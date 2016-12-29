@@ -4,6 +4,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/fleur_src.dir/src/Filter.cpp.o"
   "CMakeFiles/fleur_src.dir/src/Processing.cpp.o"
   "CMakeFiles/fleur_src.dir/src/Xml_parser.cpp.o"
+  "CMakeFiles/fleur_src.dir/src/Twitter.cpp.o"
   "libfleur_src.pdb"
   "libfleur_src.a"
 )
