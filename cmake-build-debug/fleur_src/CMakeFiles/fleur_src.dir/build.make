@@ -177,13 +177,38 @@ fleur_src/CMakeFiles/fleur_src.dir/src/Xml_parser.cpp.o.provides: fleur_src/CMak
 fleur_src/CMakeFiles/fleur_src.dir/src/Xml_parser.cpp.o.provides.build: fleur_src/CMakeFiles/fleur_src.dir/src/Xml_parser.cpp.o
 
 
+fleur_src/CMakeFiles/fleur_src.dir/src/Twitter.cpp.o: fleur_src/CMakeFiles/fleur_src.dir/flags.make
+fleur_src/CMakeFiles/fleur_src.dir/src/Twitter.cpp.o: ../fleur_src/src/Twitter.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object fleur_src/CMakeFiles/fleur_src.dir/src/Twitter.cpp.o"
+	cd /Users/Edgar/ClionProjects/Fleur/cmake-build-debug/fleur_src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/fleur_src.dir/src/Twitter.cpp.o -c /Users/Edgar/ClionProjects/Fleur/fleur_src/src/Twitter.cpp
+
+fleur_src/CMakeFiles/fleur_src.dir/src/Twitter.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/fleur_src.dir/src/Twitter.cpp.i"
+	cd /Users/Edgar/ClionProjects/Fleur/cmake-build-debug/fleur_src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Edgar/ClionProjects/Fleur/fleur_src/src/Twitter.cpp > CMakeFiles/fleur_src.dir/src/Twitter.cpp.i
+
+fleur_src/CMakeFiles/fleur_src.dir/src/Twitter.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/fleur_src.dir/src/Twitter.cpp.s"
+	cd /Users/Edgar/ClionProjects/Fleur/cmake-build-debug/fleur_src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Edgar/ClionProjects/Fleur/fleur_src/src/Twitter.cpp -o CMakeFiles/fleur_src.dir/src/Twitter.cpp.s
+
+fleur_src/CMakeFiles/fleur_src.dir/src/Twitter.cpp.o.requires:
+
+.PHONY : fleur_src/CMakeFiles/fleur_src.dir/src/Twitter.cpp.o.requires
+
+fleur_src/CMakeFiles/fleur_src.dir/src/Twitter.cpp.o.provides: fleur_src/CMakeFiles/fleur_src.dir/src/Twitter.cpp.o.requires
+	$(MAKE) -f fleur_src/CMakeFiles/fleur_src.dir/build.make fleur_src/CMakeFiles/fleur_src.dir/src/Twitter.cpp.o.provides.build
+.PHONY : fleur_src/CMakeFiles/fleur_src.dir/src/Twitter.cpp.o.provides
+
+fleur_src/CMakeFiles/fleur_src.dir/src/Twitter.cpp.o.provides.build: fleur_src/CMakeFiles/fleur_src.dir/src/Twitter.cpp.o
+
+
 # Object files for target fleur_src
 fleur_src_OBJECTS = \
 "CMakeFiles/fleur_src.dir/src/Requete_parser.cpp.o" \
 "CMakeFiles/fleur_src.dir/src/Http.cpp.o" \
 "CMakeFiles/fleur_src.dir/src/Filter.cpp.o" \
 "CMakeFiles/fleur_src.dir/src/Processing.cpp.o" \
-"CMakeFiles/fleur_src.dir/src/Xml_parser.cpp.o"
+"CMakeFiles/fleur_src.dir/src/Xml_parser.cpp.o" \
+"CMakeFiles/fleur_src.dir/src/Twitter.cpp.o"
 
 # External object files for target fleur_src
 fleur_src_EXTERNAL_OBJECTS =
@@ -193,9 +218,10 @@ fleur_src/libfleur_src.a: fleur_src/CMakeFiles/fleur_src.dir/src/Http.cpp.o
 fleur_src/libfleur_src.a: fleur_src/CMakeFiles/fleur_src.dir/src/Filter.cpp.o
 fleur_src/libfleur_src.a: fleur_src/CMakeFiles/fleur_src.dir/src/Processing.cpp.o
 fleur_src/libfleur_src.a: fleur_src/CMakeFiles/fleur_src.dir/src/Xml_parser.cpp.o
+fleur_src/libfleur_src.a: fleur_src/CMakeFiles/fleur_src.dir/src/Twitter.cpp.o
 fleur_src/libfleur_src.a: fleur_src/CMakeFiles/fleur_src.dir/build.make
 fleur_src/libfleur_src.a: fleur_src/CMakeFiles/fleur_src.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX static library libfleur_src.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX static library libfleur_src.a"
 	cd /Users/Edgar/ClionProjects/Fleur/cmake-build-debug/fleur_src && $(CMAKE_COMMAND) -P CMakeFiles/fleur_src.dir/cmake_clean_target.cmake
 	cd /Users/Edgar/ClionProjects/Fleur/cmake-build-debug/fleur_src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/fleur_src.dir/link.txt --verbose=$(VERBOSE)
 
@@ -209,6 +235,7 @@ fleur_src/CMakeFiles/fleur_src.dir/requires: fleur_src/CMakeFiles/fleur_src.dir/
 fleur_src/CMakeFiles/fleur_src.dir/requires: fleur_src/CMakeFiles/fleur_src.dir/src/Filter.cpp.o.requires
 fleur_src/CMakeFiles/fleur_src.dir/requires: fleur_src/CMakeFiles/fleur_src.dir/src/Processing.cpp.o.requires
 fleur_src/CMakeFiles/fleur_src.dir/requires: fleur_src/CMakeFiles/fleur_src.dir/src/Xml_parser.cpp.o.requires
+fleur_src/CMakeFiles/fleur_src.dir/requires: fleur_src/CMakeFiles/fleur_src.dir/src/Twitter.cpp.o.requires
 
 .PHONY : fleur_src/CMakeFiles/fleur_src.dir/requires
 

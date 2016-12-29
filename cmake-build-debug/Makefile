@@ -242,6 +242,19 @@ cpr/fast:
 .PHONY : cpr/fast
 
 #=============================================================================
+# Target rules for targets named libtwitcurl
+
+# Build rule for target.
+libtwitcurl: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 libtwitcurl
+.PHONY : libtwitcurl
+
+# fast build rule for target.
+libtwitcurl/fast:
+	$(MAKE) -f libtwitcurl/CMakeFiles/libtwitcurl.dir/build.make libtwitcurl/CMakeFiles/libtwitcurl.dir/build
+.PHONY : libtwitcurl/fast
+
+#=============================================================================
 # Target rules for targets named fleur_src
 
 # Build rule for target.
@@ -342,6 +355,7 @@ help:
 	@echo "... gumbo_query_static"
 	@echo "... gumbo_query_shared"
 	@echo "... cpr"
+	@echo "... libtwitcurl"
 	@echo "... fleur_src"
 	@echo "... gtest_main"
 	@echo "... gtest"

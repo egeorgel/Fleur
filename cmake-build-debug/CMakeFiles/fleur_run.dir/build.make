@@ -93,6 +93,7 @@ fleur_run: CMakeFiles/fleur_run.dir/build.make
 fleur_run: fleur_src/libfleur_src.a
 fleur_run: lib/libcpr.a
 fleur_run: gumbo-query/src/libgq.dylib
+fleur_run: libtwitcurl/liblibtwitcurl.a
 fleur_run: /usr/lib/libcurl.dylib
 fleur_run: /usr/local/lib/libgumbo.dylib
 fleur_run: CMakeFiles/fleur_run.dir/link.txt

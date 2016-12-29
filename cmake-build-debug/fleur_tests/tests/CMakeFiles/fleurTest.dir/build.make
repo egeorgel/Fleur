@@ -201,6 +201,78 @@ fleur_tests/tests/CMakeFiles/fleurTest.dir/Include_parser_test.cpp.o.provides: f
 fleur_tests/tests/CMakeFiles/fleurTest.dir/Include_parser_test.cpp.o.provides.build: fleur_tests/tests/CMakeFiles/fleurTest.dir/Include_parser_test.cpp.o
 
 
+fleur_tests/tests/CMakeFiles/fleurTest.dir/Twitter_parser_test.cpp.o: fleur_tests/tests/CMakeFiles/fleurTest.dir/flags.make
+fleur_tests/tests/CMakeFiles/fleurTest.dir/Twitter_parser_test.cpp.o: ../fleur_tests/tests/Twitter_parser_test.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object fleur_tests/tests/CMakeFiles/fleurTest.dir/Twitter_parser_test.cpp.o"
+	cd /Users/Edgar/ClionProjects/Fleur/cmake-build-debug/fleur_tests/tests && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/fleurTest.dir/Twitter_parser_test.cpp.o -c /Users/Edgar/ClionProjects/Fleur/fleur_tests/tests/Twitter_parser_test.cpp
+
+fleur_tests/tests/CMakeFiles/fleurTest.dir/Twitter_parser_test.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/fleurTest.dir/Twitter_parser_test.cpp.i"
+	cd /Users/Edgar/ClionProjects/Fleur/cmake-build-debug/fleur_tests/tests && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Edgar/ClionProjects/Fleur/fleur_tests/tests/Twitter_parser_test.cpp > CMakeFiles/fleurTest.dir/Twitter_parser_test.cpp.i
+
+fleur_tests/tests/CMakeFiles/fleurTest.dir/Twitter_parser_test.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/fleurTest.dir/Twitter_parser_test.cpp.s"
+	cd /Users/Edgar/ClionProjects/Fleur/cmake-build-debug/fleur_tests/tests && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Edgar/ClionProjects/Fleur/fleur_tests/tests/Twitter_parser_test.cpp -o CMakeFiles/fleurTest.dir/Twitter_parser_test.cpp.s
+
+fleur_tests/tests/CMakeFiles/fleurTest.dir/Twitter_parser_test.cpp.o.requires:
+
+.PHONY : fleur_tests/tests/CMakeFiles/fleurTest.dir/Twitter_parser_test.cpp.o.requires
+
+fleur_tests/tests/CMakeFiles/fleurTest.dir/Twitter_parser_test.cpp.o.provides: fleur_tests/tests/CMakeFiles/fleurTest.dir/Twitter_parser_test.cpp.o.requires
+	$(MAKE) -f fleur_tests/tests/CMakeFiles/fleurTest.dir/build.make fleur_tests/tests/CMakeFiles/fleurTest.dir/Twitter_parser_test.cpp.o.provides.build
+.PHONY : fleur_tests/tests/CMakeFiles/fleurTest.dir/Twitter_parser_test.cpp.o.provides
+
+fleur_tests/tests/CMakeFiles/fleurTest.dir/Twitter_parser_test.cpp.o.provides.build: fleur_tests/tests/CMakeFiles/fleurTest.dir/Twitter_parser_test.cpp.o
+
+
+fleur_tests/tests/CMakeFiles/fleurTest.dir/Libtwitcurl_test.cpp.o: fleur_tests/tests/CMakeFiles/fleurTest.dir/flags.make
+fleur_tests/tests/CMakeFiles/fleurTest.dir/Libtwitcurl_test.cpp.o: ../fleur_tests/tests/Libtwitcurl_test.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object fleur_tests/tests/CMakeFiles/fleurTest.dir/Libtwitcurl_test.cpp.o"
+	cd /Users/Edgar/ClionProjects/Fleur/cmake-build-debug/fleur_tests/tests && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/fleurTest.dir/Libtwitcurl_test.cpp.o -c /Users/Edgar/ClionProjects/Fleur/fleur_tests/tests/Libtwitcurl_test.cpp
+
+fleur_tests/tests/CMakeFiles/fleurTest.dir/Libtwitcurl_test.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/fleurTest.dir/Libtwitcurl_test.cpp.i"
+	cd /Users/Edgar/ClionProjects/Fleur/cmake-build-debug/fleur_tests/tests && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Edgar/ClionProjects/Fleur/fleur_tests/tests/Libtwitcurl_test.cpp > CMakeFiles/fleurTest.dir/Libtwitcurl_test.cpp.i
+
+fleur_tests/tests/CMakeFiles/fleurTest.dir/Libtwitcurl_test.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/fleurTest.dir/Libtwitcurl_test.cpp.s"
+	cd /Users/Edgar/ClionProjects/Fleur/cmake-build-debug/fleur_tests/tests && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Edgar/ClionProjects/Fleur/fleur_tests/tests/Libtwitcurl_test.cpp -o CMakeFiles/fleurTest.dir/Libtwitcurl_test.cpp.s
+
+fleur_tests/tests/CMakeFiles/fleurTest.dir/Libtwitcurl_test.cpp.o.requires:
+
+.PHONY : fleur_tests/tests/CMakeFiles/fleurTest.dir/Libtwitcurl_test.cpp.o.requires
+
+fleur_tests/tests/CMakeFiles/fleurTest.dir/Libtwitcurl_test.cpp.o.provides: fleur_tests/tests/CMakeFiles/fleurTest.dir/Libtwitcurl_test.cpp.o.requires
+	$(MAKE) -f fleur_tests/tests/CMakeFiles/fleurTest.dir/build.make fleur_tests/tests/CMakeFiles/fleurTest.dir/Libtwitcurl_test.cpp.o.provides.build
+.PHONY : fleur_tests/tests/CMakeFiles/fleurTest.dir/Libtwitcurl_test.cpp.o.provides
+
+fleur_tests/tests/CMakeFiles/fleurTest.dir/Libtwitcurl_test.cpp.o.provides.build: fleur_tests/tests/CMakeFiles/fleurTest.dir/Libtwitcurl_test.cpp.o
+
+
+fleur_tests/tests/CMakeFiles/fleurTest.dir/Twitter_test.cpp.o: fleur_tests/tests/CMakeFiles/fleurTest.dir/flags.make
+fleur_tests/tests/CMakeFiles/fleurTest.dir/Twitter_test.cpp.o: ../fleur_tests/tests/Twitter_test.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object fleur_tests/tests/CMakeFiles/fleurTest.dir/Twitter_test.cpp.o"
+	cd /Users/Edgar/ClionProjects/Fleur/cmake-build-debug/fleur_tests/tests && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/fleurTest.dir/Twitter_test.cpp.o -c /Users/Edgar/ClionProjects/Fleur/fleur_tests/tests/Twitter_test.cpp
+
+fleur_tests/tests/CMakeFiles/fleurTest.dir/Twitter_test.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/fleurTest.dir/Twitter_test.cpp.i"
+	cd /Users/Edgar/ClionProjects/Fleur/cmake-build-debug/fleur_tests/tests && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Edgar/ClionProjects/Fleur/fleur_tests/tests/Twitter_test.cpp > CMakeFiles/fleurTest.dir/Twitter_test.cpp.i
+
+fleur_tests/tests/CMakeFiles/fleurTest.dir/Twitter_test.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/fleurTest.dir/Twitter_test.cpp.s"
+	cd /Users/Edgar/ClionProjects/Fleur/cmake-build-debug/fleur_tests/tests && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Edgar/ClionProjects/Fleur/fleur_tests/tests/Twitter_test.cpp -o CMakeFiles/fleurTest.dir/Twitter_test.cpp.s
+
+fleur_tests/tests/CMakeFiles/fleurTest.dir/Twitter_test.cpp.o.requires:
+
+.PHONY : fleur_tests/tests/CMakeFiles/fleurTest.dir/Twitter_test.cpp.o.requires
+
+fleur_tests/tests/CMakeFiles/fleurTest.dir/Twitter_test.cpp.o.provides: fleur_tests/tests/CMakeFiles/fleurTest.dir/Twitter_test.cpp.o.requires
+	$(MAKE) -f fleur_tests/tests/CMakeFiles/fleurTest.dir/build.make fleur_tests/tests/CMakeFiles/fleurTest.dir/Twitter_test.cpp.o.provides.build
+.PHONY : fleur_tests/tests/CMakeFiles/fleurTest.dir/Twitter_test.cpp.o.provides
+
+fleur_tests/tests/CMakeFiles/fleurTest.dir/Twitter_test.cpp.o.provides.build: fleur_tests/tests/CMakeFiles/fleurTest.dir/Twitter_test.cpp.o
+
+
 # Object files for target fleurTest
 fleurTest_OBJECTS = \
 "CMakeFiles/fleurTest.dir/Requete_parser_test.cpp.o" \
@@ -208,7 +280,10 @@ fleurTest_OBJECTS = \
 "CMakeFiles/fleurTest.dir/Filter_test.cpp.o" \
 "CMakeFiles/fleurTest.dir/Processing_test.cpp.o" \
 "CMakeFiles/fleurTest.dir/Html_parser_test.cpp.o" \
-"CMakeFiles/fleurTest.dir/Include_parser_test.cpp.o"
+"CMakeFiles/fleurTest.dir/Include_parser_test.cpp.o" \
+"CMakeFiles/fleurTest.dir/Twitter_parser_test.cpp.o" \
+"CMakeFiles/fleurTest.dir/Libtwitcurl_test.cpp.o" \
+"CMakeFiles/fleurTest.dir/Twitter_test.cpp.o"
 
 # External object files for target fleurTest
 fleurTest_EXTERNAL_OBJECTS =
@@ -219,17 +294,21 @@ fleur_tests/tests/fleurTest: fleur_tests/tests/CMakeFiles/fleurTest.dir/Filter_t
 fleur_tests/tests/fleurTest: fleur_tests/tests/CMakeFiles/fleurTest.dir/Processing_test.cpp.o
 fleur_tests/tests/fleurTest: fleur_tests/tests/CMakeFiles/fleurTest.dir/Html_parser_test.cpp.o
 fleur_tests/tests/fleurTest: fleur_tests/tests/CMakeFiles/fleurTest.dir/Include_parser_test.cpp.o
+fleur_tests/tests/fleurTest: fleur_tests/tests/CMakeFiles/fleurTest.dir/Twitter_parser_test.cpp.o
+fleur_tests/tests/fleurTest: fleur_tests/tests/CMakeFiles/fleurTest.dir/Libtwitcurl_test.cpp.o
+fleur_tests/tests/fleurTest: fleur_tests/tests/CMakeFiles/fleurTest.dir/Twitter_test.cpp.o
 fleur_tests/tests/fleurTest: fleur_tests/tests/CMakeFiles/fleurTest.dir/build.make
 fleur_tests/tests/fleurTest: fleur_tests/lib/gtest-1.7.0/libgtest.a
 fleur_tests/tests/fleurTest: fleur_tests/lib/gtest-1.7.0/libgtest_main.a
 fleur_tests/tests/fleurTest: lib/libcpr.a
 fleur_tests/tests/fleurTest: gumbo-query/src/libgq.dylib
+fleur_tests/tests/fleurTest: libtwitcurl/liblibtwitcurl.a
 fleur_tests/tests/fleurTest: fleur_src/libfleur_src.a
 fleur_tests/tests/fleurTest: fleur_tests/lib/gtest-1.7.0/libgtest.a
 fleur_tests/tests/fleurTest: /usr/lib/libcurl.dylib
 fleur_tests/tests/fleurTest: /usr/local/lib/libgumbo.dylib
 fleur_tests/tests/fleurTest: fleur_tests/tests/CMakeFiles/fleurTest.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable fleurTest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable fleurTest"
 	cd /Users/Edgar/ClionProjects/Fleur/cmake-build-debug/fleur_tests/tests && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/fleurTest.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -243,6 +322,9 @@ fleur_tests/tests/CMakeFiles/fleurTest.dir/requires: fleur_tests/tests/CMakeFile
 fleur_tests/tests/CMakeFiles/fleurTest.dir/requires: fleur_tests/tests/CMakeFiles/fleurTest.dir/Processing_test.cpp.o.requires
 fleur_tests/tests/CMakeFiles/fleurTest.dir/requires: fleur_tests/tests/CMakeFiles/fleurTest.dir/Html_parser_test.cpp.o.requires
 fleur_tests/tests/CMakeFiles/fleurTest.dir/requires: fleur_tests/tests/CMakeFiles/fleurTest.dir/Include_parser_test.cpp.o.requires
+fleur_tests/tests/CMakeFiles/fleurTest.dir/requires: fleur_tests/tests/CMakeFiles/fleurTest.dir/Twitter_parser_test.cpp.o.requires
+fleur_tests/tests/CMakeFiles/fleurTest.dir/requires: fleur_tests/tests/CMakeFiles/fleurTest.dir/Libtwitcurl_test.cpp.o.requires
+fleur_tests/tests/CMakeFiles/fleurTest.dir/requires: fleur_tests/tests/CMakeFiles/fleurTest.dir/Twitter_test.cpp.o.requires
 
 .PHONY : fleur_tests/tests/CMakeFiles/fleurTest.dir/requires
 

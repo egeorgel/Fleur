@@ -5,6 +5,9 @@ file(REMOVE_RECURSE
   "CMakeFiles/fleurTest.dir/Processing_test.cpp.o"
   "CMakeFiles/fleurTest.dir/Html_parser_test.cpp.o"
   "CMakeFiles/fleurTest.dir/Include_parser_test.cpp.o"
+  "CMakeFiles/fleurTest.dir/Twitter_parser_test.cpp.o"
+  "CMakeFiles/fleurTest.dir/Libtwitcurl_test.cpp.o"
+  "CMakeFiles/fleurTest.dir/Twitter_test.cpp.o"
   "fleurTest.pdb"
   "fleurTest"
 )

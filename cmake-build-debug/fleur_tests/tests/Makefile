@@ -299,6 +299,33 @@ Include_parser_test.cpp.s:
 	cd /Users/Edgar/ClionProjects/Fleur/cmake-build-debug && $(MAKE) -f fleur_tests/tests/CMakeFiles/fleurTest.dir/build.make fleur_tests/tests/CMakeFiles/fleurTest.dir/Include_parser_test.cpp.s
 .PHONY : Include_parser_test.cpp.s
 
+Libtwitcurl_test.o: Libtwitcurl_test.cpp.o
+
+.PHONY : Libtwitcurl_test.o
+
+# target to build an object file
+Libtwitcurl_test.cpp.o:
+	cd /Users/Edgar/ClionProjects/Fleur/cmake-build-debug && $(MAKE) -f fleur_tests/tests/CMakeFiles/fleurTest.dir/build.make fleur_tests/tests/CMakeFiles/fleurTest.dir/Libtwitcurl_test.cpp.o
+.PHONY : Libtwitcurl_test.cpp.o
+
+Libtwitcurl_test.i: Libtwitcurl_test.cpp.i
+
+.PHONY : Libtwitcurl_test.i
+
+# target to preprocess a source file
+Libtwitcurl_test.cpp.i:
+	cd /Users/Edgar/ClionProjects/Fleur/cmake-build-debug && $(MAKE) -f fleur_tests/tests/CMakeFiles/fleurTest.dir/build.make fleur_tests/tests/CMakeFiles/fleurTest.dir/Libtwitcurl_test.cpp.i
+.PHONY : Libtwitcurl_test.cpp.i
+
+Libtwitcurl_test.s: Libtwitcurl_test.cpp.s
+
+.PHONY : Libtwitcurl_test.s
+
+# target to generate assembly for a file
+Libtwitcurl_test.cpp.s:
+	cd /Users/Edgar/ClionProjects/Fleur/cmake-build-debug && $(MAKE) -f fleur_tests/tests/CMakeFiles/fleurTest.dir/build.make fleur_tests/tests/CMakeFiles/fleurTest.dir/Libtwitcurl_test.cpp.s
+.PHONY : Libtwitcurl_test.cpp.s
+
 Processing_test.o: Processing_test.cpp.o
 
 .PHONY : Processing_test.o
@@ -353,6 +380,60 @@ Requete_parser_test.cpp.s:
 	cd /Users/Edgar/ClionProjects/Fleur/cmake-build-debug && $(MAKE) -f fleur_tests/tests/CMakeFiles/fleurTest.dir/build.make fleur_tests/tests/CMakeFiles/fleurTest.dir/Requete_parser_test.cpp.s
 .PHONY : Requete_parser_test.cpp.s
 
+Twitter_parser_test.o: Twitter_parser_test.cpp.o
+
+.PHONY : Twitter_parser_test.o
+
+# target to build an object file
+Twitter_parser_test.cpp.o:
+	cd /Users/Edgar/ClionProjects/Fleur/cmake-build-debug && $(MAKE) -f fleur_tests/tests/CMakeFiles/fleurTest.dir/build.make fleur_tests/tests/CMakeFiles/fleurTest.dir/Twitter_parser_test.cpp.o
+.PHONY : Twitter_parser_test.cpp.o
+
+Twitter_parser_test.i: Twitter_parser_test.cpp.i
+
+.PHONY : Twitter_parser_test.i
+
+# target to preprocess a source file
+Twitter_parser_test.cpp.i:
+	cd /Users/Edgar/ClionProjects/Fleur/cmake-build-debug && $(MAKE) -f fleur_tests/tests/CMakeFiles/fleurTest.dir/build.make fleur_tests/tests/CMakeFiles/fleurTest.dir/Twitter_parser_test.cpp.i
+.PHONY : Twitter_parser_test.cpp.i
+
+Twitter_parser_test.s: Twitter_parser_test.cpp.s
+
+.PHONY : Twitter_parser_test.s
+
+# target to generate assembly for a file
+Twitter_parser_test.cpp.s:
+	cd /Users/Edgar/ClionProjects/Fleur/cmake-build-debug && $(MAKE) -f fleur_tests/tests/CMakeFiles/fleurTest.dir/build.make fleur_tests/tests/CMakeFiles/fleurTest.dir/Twitter_parser_test.cpp.s
+.PHONY : Twitter_parser_test.cpp.s
+
+Twitter_test.o: Twitter_test.cpp.o
+
+.PHONY : Twitter_test.o
+
+# target to build an object file
+Twitter_test.cpp.o:
+	cd /Users/Edgar/ClionProjects/Fleur/cmake-build-debug && $(MAKE) -f fleur_tests/tests/CMakeFiles/fleurTest.dir/build.make fleur_tests/tests/CMakeFiles/fleurTest.dir/Twitter_test.cpp.o
+.PHONY : Twitter_test.cpp.o
+
+Twitter_test.i: Twitter_test.cpp.i
+
+.PHONY : Twitter_test.i
+
+# target to preprocess a source file
+Twitter_test.cpp.i:
+	cd /Users/Edgar/ClionProjects/Fleur/cmake-build-debug && $(MAKE) -f fleur_tests/tests/CMakeFiles/fleurTest.dir/build.make fleur_tests/tests/CMakeFiles/fleurTest.dir/Twitter_test.cpp.i
+.PHONY : Twitter_test.cpp.i
+
+Twitter_test.s: Twitter_test.cpp.s
+
+.PHONY : Twitter_test.s
+
+# target to generate assembly for a file
+Twitter_test.cpp.s:
+	cd /Users/Edgar/ClionProjects/Fleur/cmake-build-debug && $(MAKE) -f fleur_tests/tests/CMakeFiles/fleurTest.dir/build.make fleur_tests/tests/CMakeFiles/fleurTest.dir/Twitter_test.cpp.s
+.PHONY : Twitter_test.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -380,12 +461,21 @@ help:
 	@echo "... Include_parser_test.o"
 	@echo "... Include_parser_test.i"
 	@echo "... Include_parser_test.s"
+	@echo "... Libtwitcurl_test.o"
+	@echo "... Libtwitcurl_test.i"
+	@echo "... Libtwitcurl_test.s"
 	@echo "... Processing_test.o"
 	@echo "... Processing_test.i"
 	@echo "... Processing_test.s"
 	@echo "... Requete_parser_test.o"
 	@echo "... Requete_parser_test.i"
 	@echo "... Requete_parser_test.s"
+	@echo "... Twitter_parser_test.o"
+	@echo "... Twitter_parser_test.i"
+	@echo "... Twitter_parser_test.s"
+	@echo "... Twitter_test.o"
+	@echo "... Twitter_test.i"
+	@echo "... Twitter_test.s"
 .PHONY : help
 
 

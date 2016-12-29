@@ -299,6 +299,33 @@ src/Requete_parser.cpp.s:
 	cd /Users/Edgar/ClionProjects/Fleur/cmake-build-debug && $(MAKE) -f fleur_src/CMakeFiles/fleur_src.dir/build.make fleur_src/CMakeFiles/fleur_src.dir/src/Requete_parser.cpp.s
 .PHONY : src/Requete_parser.cpp.s
 
+src/Twitter.o: src/Twitter.cpp.o
+
+.PHONY : src/Twitter.o
+
+# target to build an object file
+src/Twitter.cpp.o:
+	cd /Users/Edgar/ClionProjects/Fleur/cmake-build-debug && $(MAKE) -f fleur_src/CMakeFiles/fleur_src.dir/build.make fleur_src/CMakeFiles/fleur_src.dir/src/Twitter.cpp.o
+.PHONY : src/Twitter.cpp.o
+
+src/Twitter.i: src/Twitter.cpp.i
+
+.PHONY : src/Twitter.i
+
+# target to preprocess a source file
+src/Twitter.cpp.i:
+	cd /Users/Edgar/ClionProjects/Fleur/cmake-build-debug && $(MAKE) -f fleur_src/CMakeFiles/fleur_src.dir/build.make fleur_src/CMakeFiles/fleur_src.dir/src/Twitter.cpp.i
+.PHONY : src/Twitter.cpp.i
+
+src/Twitter.s: src/Twitter.cpp.s
+
+.PHONY : src/Twitter.s
+
+# target to generate assembly for a file
+src/Twitter.cpp.s:
+	cd /Users/Edgar/ClionProjects/Fleur/cmake-build-debug && $(MAKE) -f fleur_src/CMakeFiles/fleur_src.dir/build.make fleur_src/CMakeFiles/fleur_src.dir/src/Twitter.cpp.s
+.PHONY : src/Twitter.cpp.s
+
 src/Xml_parser.o: src/Xml_parser.cpp.o
 
 .PHONY : src/Xml_parser.o
@@ -353,6 +380,9 @@ help:
 	@echo "... src/Requete_parser.o"
 	@echo "... src/Requete_parser.i"
 	@echo "... src/Requete_parser.s"
+	@echo "... src/Twitter.o"
+	@echo "... src/Twitter.i"
+	@echo "... src/Twitter.s"
 	@echo "... src/Xml_parser.o"
 	@echo "... src/Xml_parser.i"
 	@echo "... src/Xml_parser.s"
