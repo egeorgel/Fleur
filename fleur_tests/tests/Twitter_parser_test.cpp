@@ -148,6 +148,14 @@ TEST_F(Twitter_parser_test, parse_url_parse_u_) {
     ASSERT_EQ(twitterReq._actionName, "\"new tweet\"");
 }
 
+TEST_F(Twitter_parser_test, parse_ur) {
+    std::string input = "delete 934839843522;";
+    parser::Twitter twitterReq;
+    EXPECT_TRUE(parser::doParse(input, twitterReq));
+    ASSERT_EQ(twitterReq._crud, "delete");
+    ASSERT_EQ(twitterReq._actionName, "934839843522");
+}
+
 TEST_F(Twitter_parser_test, rse_url_parse_u_) {
     std::string input = "get trends;";
     parser::Twitter twitterReq;

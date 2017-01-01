@@ -166,16 +166,16 @@ TEST_F(Libtwitcurl_test, test_twitcurl_trends) {
         FAIL();
     }
 }
-
-TEST_F(Libtwitcurl_test, test_twitcurl_postNewStatus) {
-
-    if( twitterObj.statusUpdate( "test new tweet" ) ) {
-        twitterObj.getLastWebResponse( replyMsg );
-        printf( "\ntwitterClient:: twitCurl::accountVerifyCredGet web response:\n%s\n", replyMsg.c_str() );
-    }
-    else {
-        twitterObj.getLastCurlError( replyMsg );
-        printf( "\ntwitterClient:: twitCurl::accountVerifyCredGet error:\n%s\n", replyMsg.c_str() );
-        FAIL();
-    }
-}
+//
+//TEST_F(Libtwitcurl_test, test_twitcurl_postNewStatus) {
+//
+//    if( twitterObj.statusUpdate( "test new tweet" ) ) {
+//        twitterObj.getLastWebResponse( replyMsg );
+//        printf( "\ntwitterClient:: twitCurl::accountVerifyCredGet web response:\n%s\n", replyMsg.c_str() );
+//    }
+//    else {
+//        twitterObj.getLastCurlError( replyMsg );
+//        printf( "\ntwitterClient:: twitCurl::accountVerifyCredGet error:\n%s\n", replyMsg.c_str() );
+//        FAIL();
+//    }
+//}
