@@ -476,6 +476,21 @@ bool twitCurl::statusShowById( const std::string& statusId )
 *          response by twitter. Use getLastWebResponse() for that.
 *
 *--*/
+//bool twitCurl::statusDestroyById( const std::string& statusId )
+//{
+//    if( statusId.empty() )
+//    {
+//        return false;
+//    }
+//
+//    /* Prepare URL */
+//    std::string buildUrl = twitCurlDefaults::TWITCURL_PROTOCOLS[m_eProtocolType] +
+//                           twitterDefaults::TWITCURL_STATUDESTROY_URL + statusId +
+//                           twitCurlDefaults::TWITCURL_EXTENSIONFORMATS[m_eApiFormatType];
+//
+//    /* Perform DELETE */
+//    return performDelete( buildUrl );
+//}
 bool twitCurl::statusDestroyById( const std::string& statusId )
 {
     if( statusId.empty() )
@@ -483,13 +498,17 @@ bool twitCurl::statusDestroyById( const std::string& statusId )
         return false;
     }
 
+    std::string msgToPost = "id=" + statusId;
+
     /* Prepare URL */
     std::string buildUrl = twitCurlDefaults::TWITCURL_PROTOCOLS[m_eProtocolType] +
-                           twitterDefaults::TWITCURL_STATUDESTROY_URL + statusId +
+                           twitterDefaults::TWITCURL_STATUDESTROY_URL
+                           //+ twitCurlDefaults::TWITCURL_COLON    // not added by me
+                           + statusId +
                            twitCurlDefaults::TWITCURL_EXTENSIONFORMATS[m_eApiFormatType];
 
-    /* Perform DELETE */
-    return performDelete( buildUrl );
+    /* Perform POST */
+    return performPost( buildUrl, msgToPost );
 }
 
 /*++

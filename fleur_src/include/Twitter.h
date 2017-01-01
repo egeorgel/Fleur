@@ -11,39 +11,57 @@
 class Twitter {
 
 public:
-    typedef std::vector<std::pair<std::string, std::string>> listOfTweet ;
-    Twitter(const parser::Twitter & twitter) : _twitter(twitter){};
+    typedef std::pair<std::string, std::string> type_tweet;
+    typedef std::vector<type_tweet> type_listOfTweet ;
+    Twitter(const parser::Twitter &twitter, twitCurl &twitCurl) : _twitter(twitter), _twitCurl(twitCurl){};
+    ~Twitter(){}
 
     /*
      * return the time line (list of tweet) of the current user or the user give in the
      * parser::Twitter object the default limit is 200
      */
-    listOfTweet getTimeLineFromUserWithLimit() const;
+    type_listOfTweet getTimeLineFromUserWithLimit();
 
     /*
      * return a vector of pair the limit of the vector is fixe in the parse::Twitter object
      * key : user name
      * value : text of the tweet
      */
-    listOfTweet searchForTwitContainStringWithLimit() const;
+    type_listOfTweet searchForTwitContainStringWithLimit();
 
     /*
      * return all the tweet mentioning the connected acount
      */
-    listOfTweet getTwitSelfMentioningWithLimit() const;
+    type_listOfTweet getTwitSelfMentioningWithLimit();
 
     /*
      * Post a new tweet on the connected user timeline
      */
-    void postNewTwit() const;
+    type_tweet postNewTweet();
+
+    /*
+     * Delete tweet from the connected user timeline
+     */
+    type_tweet deleteTweet();
 
     /*
      * return a vector of string containing the most tweet word of the moment
      */
-    std::vector<std::string> getCurrentTrendWithLimit() const;
+    std::vector<std::string> getCurrentTrendWithLimit();
 
 private:
-    parser::Twitter _twitter;
+    const parser::Twitter &_twitter;
+    twitCurl &_twitCurl;
+
+    bool isLogIn();
+    std::string getWebResponse(bool isWorking);
+    type_listOfTweet json2TypeListOfTweetGetTimeLine(std::string json);
+    type_listOfTweet json2TypeListOfTweetSearch(std::string json);
+    type_listOfTweet json2TypeListOfTweetSelfMentioning(std::string json, int limit);
+    type_tweet json2TypeTweetpostNewTweet(std::string json);
+    type_tweet json2TypeTweetDeletTweet(std::string json);
+    std::vector<std::string> json2stringVecOfTrend(std::string json, int limit);
+
 };
 
 

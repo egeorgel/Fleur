@@ -24,11 +24,10 @@ namespace parser {
     struct Twitter {
 
     public:
-        std::string _crud; //get, post, search
+        std::string _crud; //get, post, search, delete
         std::string _actionName;
         std::string _fromName;
         std::string _limitName;
-        twitCurl _twitCurl;
     };
 
 }
@@ -62,7 +61,7 @@ namespace parser {
             using ascii::char_;
             using qi::hold;
 
-            lexemCrud = lexeme       [+(char_("*getposarchGETPOSARCH"))];
+            lexemCrud = lexeme       [+(char_("*getposarchdlGETPOSARCHDL"))];
             lexemActionName = hold[ lexeme [ (+(char_ - " from") >> " from")  ] ]  | lexeme[ ( +(char_ - ";") >> ";" ) ];
             lexemFromName =   hold[ lexeme [ (+(char_ - " limit") >> " limit")] ]  | lexeme[ ( +(char_ - ";") >> ";" ) | "" ];
             lexemLimitName = lexeme  [ ( +(char_ - ";") >> ";" ) | ""];

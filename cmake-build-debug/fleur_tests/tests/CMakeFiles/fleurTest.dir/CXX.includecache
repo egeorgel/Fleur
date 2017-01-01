@@ -568,9 +568,7 @@ Include_parser.h
 gtest/gtest.h
 -
 Twitter.h
--
-Include_parser.h
--
+/Users/Edgar/ClionProjects/Fleur/fleur_tests/tests/Twitter.h
 
 /usr/local/include/boost/algorithm/string.hpp
 boost/algorithm/string/std_containers_traits.hpp
