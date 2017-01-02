@@ -203,28 +203,34 @@
 		<Unit filename="/Users/Edgar/ClionProjects/Fleur/fleur_tests/tests/Filter_test.cpp">
 			<Option target="fleurTest"/>
 		</Unit>
-		<Unit filename="/Users/Edgar/ClionProjects/Fleur/fleur_tests/tests/Html_parser_test.cpp">
-			<Option target="fleurTest"/>
-		</Unit>
-		<Unit filename="/Users/Edgar/ClionProjects/Fleur/fleur_tests/tests/Http_test.cpp">
-			<Option target="fleurTest"/>
-		</Unit>
-		<Unit filename="/Users/Edgar/ClionProjects/Fleur/fleur_tests/tests/Include_parser_test.cpp">
-			<Option target="fleurTest"/>
-		</Unit>
 		<Unit filename="/Users/Edgar/ClionProjects/Fleur/fleur_tests/tests/Libtwitcurl_test.cpp">
 			<Option target="fleurTest"/>
 		</Unit>
-		<Unit filename="/Users/Edgar/ClionProjects/Fleur/fleur_tests/tests/Processing_test.cpp">
+		<Unit filename="/Users/Edgar/ClionProjects/Fleur/fleur_tests/tests/parser/Html_parser_test.cpp">
 			<Option target="fleurTest"/>
 		</Unit>
-		<Unit filename="/Users/Edgar/ClionProjects/Fleur/fleur_tests/tests/Requete_parser_test.cpp">
+		<Unit filename="/Users/Edgar/ClionProjects/Fleur/fleur_tests/tests/parser/Include_parser_test.cpp">
 			<Option target="fleurTest"/>
 		</Unit>
-		<Unit filename="/Users/Edgar/ClionProjects/Fleur/fleur_tests/tests/Twitter_parser_test.cpp">
+		<Unit filename="/Users/Edgar/ClionProjects/Fleur/fleur_tests/tests/parser/Requete_parser_test.cpp">
 			<Option target="fleurTest"/>
 		</Unit>
-		<Unit filename="/Users/Edgar/ClionProjects/Fleur/fleur_tests/tests/Twitter_test.cpp">
+		<Unit filename="/Users/Edgar/ClionProjects/Fleur/fleur_tests/tests/parser/Twitter_parser_test.cpp">
+			<Option target="fleurTest"/>
+		</Unit>
+		<Unit filename="/Users/Edgar/ClionProjects/Fleur/fleur_tests/tests/processing/Processing_http_test.cpp">
+			<Option target="fleurTest"/>
+		</Unit>
+		<Unit filename="/Users/Edgar/ClionProjects/Fleur/fleur_tests/tests/processing/Processing_twitter_test.cpp">
+			<Option target="fleurTest"/>
+		</Unit>
+		<Unit filename="/Users/Edgar/ClionProjects/Fleur/fleur_tests/tests/processing/processing_test.cpp">
+			<Option target="fleurTest"/>
+		</Unit>
+		<Unit filename="/Users/Edgar/ClionProjects/Fleur/fleur_tests/tests/service/Http_test.cpp">
+			<Option target="fleurTest"/>
+		</Unit>
+		<Unit filename="/Users/Edgar/ClionProjects/Fleur/fleur_tests/tests/service/Twitter_test.cpp">
 			<Option target="fleurTest"/>
 		</Unit>
 		<Unit filename="/Users/Edgar/ClionProjects/Fleur/CMakeLists.txt">

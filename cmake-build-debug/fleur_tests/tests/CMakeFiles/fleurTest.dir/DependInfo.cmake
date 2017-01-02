@@ -5,14 +5,16 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "/Users/Edgar/ClionProjects/Fleur/fleur_tests/tests/Filter_test.cpp" "/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/fleur_tests/tests/CMakeFiles/fleurTest.dir/Filter_test.cpp.o"
-  "/Users/Edgar/ClionProjects/Fleur/fleur_tests/tests/Html_parser_test.cpp" "/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/fleur_tests/tests/CMakeFiles/fleurTest.dir/Html_parser_test.cpp.o"
-  "/Users/Edgar/ClionProjects/Fleur/fleur_tests/tests/Http_test.cpp" "/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/fleur_tests/tests/CMakeFiles/fleurTest.dir/Http_test.cpp.o"
-  "/Users/Edgar/ClionProjects/Fleur/fleur_tests/tests/Include_parser_test.cpp" "/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/fleur_tests/tests/CMakeFiles/fleurTest.dir/Include_parser_test.cpp.o"
   "/Users/Edgar/ClionProjects/Fleur/fleur_tests/tests/Libtwitcurl_test.cpp" "/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/fleur_tests/tests/CMakeFiles/fleurTest.dir/Libtwitcurl_test.cpp.o"
-  "/Users/Edgar/ClionProjects/Fleur/fleur_tests/tests/Processing_test.cpp" "/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/fleur_tests/tests/CMakeFiles/fleurTest.dir/Processing_test.cpp.o"
-  "/Users/Edgar/ClionProjects/Fleur/fleur_tests/tests/Requete_parser_test.cpp" "/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/fleur_tests/tests/CMakeFiles/fleurTest.dir/Requete_parser_test.cpp.o"
-  "/Users/Edgar/ClionProjects/Fleur/fleur_tests/tests/Twitter_parser_test.cpp" "/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/fleur_tests/tests/CMakeFiles/fleurTest.dir/Twitter_parser_test.cpp.o"
-  "/Users/Edgar/ClionProjects/Fleur/fleur_tests/tests/Twitter_test.cpp" "/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/fleur_tests/tests/CMakeFiles/fleurTest.dir/Twitter_test.cpp.o"
+  "/Users/Edgar/ClionProjects/Fleur/fleur_tests/tests/parser/Html_parser_test.cpp" "/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/fleur_tests/tests/CMakeFiles/fleurTest.dir/parser/Html_parser_test.cpp.o"
+  "/Users/Edgar/ClionProjects/Fleur/fleur_tests/tests/parser/Include_parser_test.cpp" "/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/fleur_tests/tests/CMakeFiles/fleurTest.dir/parser/Include_parser_test.cpp.o"
+  "/Users/Edgar/ClionProjects/Fleur/fleur_tests/tests/parser/Requete_parser_test.cpp" "/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/fleur_tests/tests/CMakeFiles/fleurTest.dir/parser/Requete_parser_test.cpp.o"
+  "/Users/Edgar/ClionProjects/Fleur/fleur_tests/tests/parser/Twitter_parser_test.cpp" "/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/fleur_tests/tests/CMakeFiles/fleurTest.dir/parser/Twitter_parser_test.cpp.o"
+  "/Users/Edgar/ClionProjects/Fleur/fleur_tests/tests/processing/Processing_http_test.cpp" "/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/fleur_tests/tests/CMakeFiles/fleurTest.dir/processing/Processing_http_test.cpp.o"
+  "/Users/Edgar/ClionProjects/Fleur/fleur_tests/tests/processing/Processing_twitter_test.cpp" "/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/fleur_tests/tests/CMakeFiles/fleurTest.dir/processing/Processing_twitter_test.cpp.o"
+  "/Users/Edgar/ClionProjects/Fleur/fleur_tests/tests/processing/processing_test.cpp" "/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/fleur_tests/tests/CMakeFiles/fleurTest.dir/processing/processing_test.cpp.o"
+  "/Users/Edgar/ClionProjects/Fleur/fleur_tests/tests/service/Http_test.cpp" "/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/fleur_tests/tests/CMakeFiles/fleurTest.dir/service/Http_test.cpp.o"
+  "/Users/Edgar/ClionProjects/Fleur/fleur_tests/tests/service/Twitter_test.cpp" "/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/fleur_tests/tests/CMakeFiles/fleurTest.dir/service/Twitter_test.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")
 

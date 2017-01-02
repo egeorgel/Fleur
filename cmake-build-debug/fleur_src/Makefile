@@ -218,140 +218,194 @@ src/Filter.cpp.s:
 	cd /Users/Edgar/ClionProjects/Fleur/cmake-build-debug && $(MAKE) -f fleur_src/CMakeFiles/fleur_src.dir/build.make fleur_src/CMakeFiles/fleur_src.dir/src/Filter.cpp.s
 .PHONY : src/Filter.cpp.s
 
-src/Http.o: src/Http.cpp.o
+src/parser/Requete_parser.o: src/parser/Requete_parser.cpp.o
 
-.PHONY : src/Http.o
-
-# target to build an object file
-src/Http.cpp.o:
-	cd /Users/Edgar/ClionProjects/Fleur/cmake-build-debug && $(MAKE) -f fleur_src/CMakeFiles/fleur_src.dir/build.make fleur_src/CMakeFiles/fleur_src.dir/src/Http.cpp.o
-.PHONY : src/Http.cpp.o
-
-src/Http.i: src/Http.cpp.i
-
-.PHONY : src/Http.i
-
-# target to preprocess a source file
-src/Http.cpp.i:
-	cd /Users/Edgar/ClionProjects/Fleur/cmake-build-debug && $(MAKE) -f fleur_src/CMakeFiles/fleur_src.dir/build.make fleur_src/CMakeFiles/fleur_src.dir/src/Http.cpp.i
-.PHONY : src/Http.cpp.i
-
-src/Http.s: src/Http.cpp.s
-
-.PHONY : src/Http.s
-
-# target to generate assembly for a file
-src/Http.cpp.s:
-	cd /Users/Edgar/ClionProjects/Fleur/cmake-build-debug && $(MAKE) -f fleur_src/CMakeFiles/fleur_src.dir/build.make fleur_src/CMakeFiles/fleur_src.dir/src/Http.cpp.s
-.PHONY : src/Http.cpp.s
-
-src/Processing.o: src/Processing.cpp.o
-
-.PHONY : src/Processing.o
+.PHONY : src/parser/Requete_parser.o
 
 # target to build an object file
-src/Processing.cpp.o:
-	cd /Users/Edgar/ClionProjects/Fleur/cmake-build-debug && $(MAKE) -f fleur_src/CMakeFiles/fleur_src.dir/build.make fleur_src/CMakeFiles/fleur_src.dir/src/Processing.cpp.o
-.PHONY : src/Processing.cpp.o
+src/parser/Requete_parser.cpp.o:
+	cd /Users/Edgar/ClionProjects/Fleur/cmake-build-debug && $(MAKE) -f fleur_src/CMakeFiles/fleur_src.dir/build.make fleur_src/CMakeFiles/fleur_src.dir/src/parser/Requete_parser.cpp.o
+.PHONY : src/parser/Requete_parser.cpp.o
 
-src/Processing.i: src/Processing.cpp.i
+src/parser/Requete_parser.i: src/parser/Requete_parser.cpp.i
 
-.PHONY : src/Processing.i
+.PHONY : src/parser/Requete_parser.i
 
 # target to preprocess a source file
-src/Processing.cpp.i:
-	cd /Users/Edgar/ClionProjects/Fleur/cmake-build-debug && $(MAKE) -f fleur_src/CMakeFiles/fleur_src.dir/build.make fleur_src/CMakeFiles/fleur_src.dir/src/Processing.cpp.i
-.PHONY : src/Processing.cpp.i
+src/parser/Requete_parser.cpp.i:
+	cd /Users/Edgar/ClionProjects/Fleur/cmake-build-debug && $(MAKE) -f fleur_src/CMakeFiles/fleur_src.dir/build.make fleur_src/CMakeFiles/fleur_src.dir/src/parser/Requete_parser.cpp.i
+.PHONY : src/parser/Requete_parser.cpp.i
 
-src/Processing.s: src/Processing.cpp.s
+src/parser/Requete_parser.s: src/parser/Requete_parser.cpp.s
 
-.PHONY : src/Processing.s
+.PHONY : src/parser/Requete_parser.s
 
 # target to generate assembly for a file
-src/Processing.cpp.s:
-	cd /Users/Edgar/ClionProjects/Fleur/cmake-build-debug && $(MAKE) -f fleur_src/CMakeFiles/fleur_src.dir/build.make fleur_src/CMakeFiles/fleur_src.dir/src/Processing.cpp.s
-.PHONY : src/Processing.cpp.s
+src/parser/Requete_parser.cpp.s:
+	cd /Users/Edgar/ClionProjects/Fleur/cmake-build-debug && $(MAKE) -f fleur_src/CMakeFiles/fleur_src.dir/build.make fleur_src/CMakeFiles/fleur_src.dir/src/parser/Requete_parser.cpp.s
+.PHONY : src/parser/Requete_parser.cpp.s
 
-src/Requete_parser.o: src/Requete_parser.cpp.o
+src/parser/Xml_parser.o: src/parser/Xml_parser.cpp.o
 
-.PHONY : src/Requete_parser.o
+.PHONY : src/parser/Xml_parser.o
 
 # target to build an object file
-src/Requete_parser.cpp.o:
-	cd /Users/Edgar/ClionProjects/Fleur/cmake-build-debug && $(MAKE) -f fleur_src/CMakeFiles/fleur_src.dir/build.make fleur_src/CMakeFiles/fleur_src.dir/src/Requete_parser.cpp.o
-.PHONY : src/Requete_parser.cpp.o
+src/parser/Xml_parser.cpp.o:
+	cd /Users/Edgar/ClionProjects/Fleur/cmake-build-debug && $(MAKE) -f fleur_src/CMakeFiles/fleur_src.dir/build.make fleur_src/CMakeFiles/fleur_src.dir/src/parser/Xml_parser.cpp.o
+.PHONY : src/parser/Xml_parser.cpp.o
 
-src/Requete_parser.i: src/Requete_parser.cpp.i
+src/parser/Xml_parser.i: src/parser/Xml_parser.cpp.i
 
-.PHONY : src/Requete_parser.i
+.PHONY : src/parser/Xml_parser.i
 
 # target to preprocess a source file
-src/Requete_parser.cpp.i:
-	cd /Users/Edgar/ClionProjects/Fleur/cmake-build-debug && $(MAKE) -f fleur_src/CMakeFiles/fleur_src.dir/build.make fleur_src/CMakeFiles/fleur_src.dir/src/Requete_parser.cpp.i
-.PHONY : src/Requete_parser.cpp.i
+src/parser/Xml_parser.cpp.i:
+	cd /Users/Edgar/ClionProjects/Fleur/cmake-build-debug && $(MAKE) -f fleur_src/CMakeFiles/fleur_src.dir/build.make fleur_src/CMakeFiles/fleur_src.dir/src/parser/Xml_parser.cpp.i
+.PHONY : src/parser/Xml_parser.cpp.i
 
-src/Requete_parser.s: src/Requete_parser.cpp.s
+src/parser/Xml_parser.s: src/parser/Xml_parser.cpp.s
 
-.PHONY : src/Requete_parser.s
+.PHONY : src/parser/Xml_parser.s
 
 # target to generate assembly for a file
-src/Requete_parser.cpp.s:
-	cd /Users/Edgar/ClionProjects/Fleur/cmake-build-debug && $(MAKE) -f fleur_src/CMakeFiles/fleur_src.dir/build.make fleur_src/CMakeFiles/fleur_src.dir/src/Requete_parser.cpp.s
-.PHONY : src/Requete_parser.cpp.s
+src/parser/Xml_parser.cpp.s:
+	cd /Users/Edgar/ClionProjects/Fleur/cmake-build-debug && $(MAKE) -f fleur_src/CMakeFiles/fleur_src.dir/build.make fleur_src/CMakeFiles/fleur_src.dir/src/parser/Xml_parser.cpp.s
+.PHONY : src/parser/Xml_parser.cpp.s
 
-src/Twitter.o: src/Twitter.cpp.o
+src/processing/Processing.o: src/processing/Processing.cpp.o
 
-.PHONY : src/Twitter.o
+.PHONY : src/processing/Processing.o
 
 # target to build an object file
-src/Twitter.cpp.o:
-	cd /Users/Edgar/ClionProjects/Fleur/cmake-build-debug && $(MAKE) -f fleur_src/CMakeFiles/fleur_src.dir/build.make fleur_src/CMakeFiles/fleur_src.dir/src/Twitter.cpp.o
-.PHONY : src/Twitter.cpp.o
+src/processing/Processing.cpp.o:
+	cd /Users/Edgar/ClionProjects/Fleur/cmake-build-debug && $(MAKE) -f fleur_src/CMakeFiles/fleur_src.dir/build.make fleur_src/CMakeFiles/fleur_src.dir/src/processing/Processing.cpp.o
+.PHONY : src/processing/Processing.cpp.o
 
-src/Twitter.i: src/Twitter.cpp.i
+src/processing/Processing.i: src/processing/Processing.cpp.i
 
-.PHONY : src/Twitter.i
+.PHONY : src/processing/Processing.i
 
 # target to preprocess a source file
-src/Twitter.cpp.i:
-	cd /Users/Edgar/ClionProjects/Fleur/cmake-build-debug && $(MAKE) -f fleur_src/CMakeFiles/fleur_src.dir/build.make fleur_src/CMakeFiles/fleur_src.dir/src/Twitter.cpp.i
-.PHONY : src/Twitter.cpp.i
+src/processing/Processing.cpp.i:
+	cd /Users/Edgar/ClionProjects/Fleur/cmake-build-debug && $(MAKE) -f fleur_src/CMakeFiles/fleur_src.dir/build.make fleur_src/CMakeFiles/fleur_src.dir/src/processing/Processing.cpp.i
+.PHONY : src/processing/Processing.cpp.i
 
-src/Twitter.s: src/Twitter.cpp.s
+src/processing/Processing.s: src/processing/Processing.cpp.s
 
-.PHONY : src/Twitter.s
+.PHONY : src/processing/Processing.s
 
 # target to generate assembly for a file
-src/Twitter.cpp.s:
-	cd /Users/Edgar/ClionProjects/Fleur/cmake-build-debug && $(MAKE) -f fleur_src/CMakeFiles/fleur_src.dir/build.make fleur_src/CMakeFiles/fleur_src.dir/src/Twitter.cpp.s
-.PHONY : src/Twitter.cpp.s
+src/processing/Processing.cpp.s:
+	cd /Users/Edgar/ClionProjects/Fleur/cmake-build-debug && $(MAKE) -f fleur_src/CMakeFiles/fleur_src.dir/build.make fleur_src/CMakeFiles/fleur_src.dir/src/processing/Processing.cpp.s
+.PHONY : src/processing/Processing.cpp.s
 
-src/Xml_parser.o: src/Xml_parser.cpp.o
+src/processing/Processing_http.o: src/processing/Processing_http.cpp.o
 
-.PHONY : src/Xml_parser.o
+.PHONY : src/processing/Processing_http.o
 
 # target to build an object file
-src/Xml_parser.cpp.o:
-	cd /Users/Edgar/ClionProjects/Fleur/cmake-build-debug && $(MAKE) -f fleur_src/CMakeFiles/fleur_src.dir/build.make fleur_src/CMakeFiles/fleur_src.dir/src/Xml_parser.cpp.o
-.PHONY : src/Xml_parser.cpp.o
+src/processing/Processing_http.cpp.o:
+	cd /Users/Edgar/ClionProjects/Fleur/cmake-build-debug && $(MAKE) -f fleur_src/CMakeFiles/fleur_src.dir/build.make fleur_src/CMakeFiles/fleur_src.dir/src/processing/Processing_http.cpp.o
+.PHONY : src/processing/Processing_http.cpp.o
 
-src/Xml_parser.i: src/Xml_parser.cpp.i
+src/processing/Processing_http.i: src/processing/Processing_http.cpp.i
 
-.PHONY : src/Xml_parser.i
+.PHONY : src/processing/Processing_http.i
 
 # target to preprocess a source file
-src/Xml_parser.cpp.i:
-	cd /Users/Edgar/ClionProjects/Fleur/cmake-build-debug && $(MAKE) -f fleur_src/CMakeFiles/fleur_src.dir/build.make fleur_src/CMakeFiles/fleur_src.dir/src/Xml_parser.cpp.i
-.PHONY : src/Xml_parser.cpp.i
+src/processing/Processing_http.cpp.i:
+	cd /Users/Edgar/ClionProjects/Fleur/cmake-build-debug && $(MAKE) -f fleur_src/CMakeFiles/fleur_src.dir/build.make fleur_src/CMakeFiles/fleur_src.dir/src/processing/Processing_http.cpp.i
+.PHONY : src/processing/Processing_http.cpp.i
 
-src/Xml_parser.s: src/Xml_parser.cpp.s
+src/processing/Processing_http.s: src/processing/Processing_http.cpp.s
 
-.PHONY : src/Xml_parser.s
+.PHONY : src/processing/Processing_http.s
 
 # target to generate assembly for a file
-src/Xml_parser.cpp.s:
-	cd /Users/Edgar/ClionProjects/Fleur/cmake-build-debug && $(MAKE) -f fleur_src/CMakeFiles/fleur_src.dir/build.make fleur_src/CMakeFiles/fleur_src.dir/src/Xml_parser.cpp.s
-.PHONY : src/Xml_parser.cpp.s
+src/processing/Processing_http.cpp.s:
+	cd /Users/Edgar/ClionProjects/Fleur/cmake-build-debug && $(MAKE) -f fleur_src/CMakeFiles/fleur_src.dir/build.make fleur_src/CMakeFiles/fleur_src.dir/src/processing/Processing_http.cpp.s
+.PHONY : src/processing/Processing_http.cpp.s
+
+src/processing/Processing_twitter.o: src/processing/Processing_twitter.cpp.o
+
+.PHONY : src/processing/Processing_twitter.o
+
+# target to build an object file
+src/processing/Processing_twitter.cpp.o:
+	cd /Users/Edgar/ClionProjects/Fleur/cmake-build-debug && $(MAKE) -f fleur_src/CMakeFiles/fleur_src.dir/build.make fleur_src/CMakeFiles/fleur_src.dir/src/processing/Processing_twitter.cpp.o
+.PHONY : src/processing/Processing_twitter.cpp.o
+
+src/processing/Processing_twitter.i: src/processing/Processing_twitter.cpp.i
+
+.PHONY : src/processing/Processing_twitter.i
+
+# target to preprocess a source file
+src/processing/Processing_twitter.cpp.i:
+	cd /Users/Edgar/ClionProjects/Fleur/cmake-build-debug && $(MAKE) -f fleur_src/CMakeFiles/fleur_src.dir/build.make fleur_src/CMakeFiles/fleur_src.dir/src/processing/Processing_twitter.cpp.i
+.PHONY : src/processing/Processing_twitter.cpp.i
+
+src/processing/Processing_twitter.s: src/processing/Processing_twitter.cpp.s
+
+.PHONY : src/processing/Processing_twitter.s
+
+# target to generate assembly for a file
+src/processing/Processing_twitter.cpp.s:
+	cd /Users/Edgar/ClionProjects/Fleur/cmake-build-debug && $(MAKE) -f fleur_src/CMakeFiles/fleur_src.dir/build.make fleur_src/CMakeFiles/fleur_src.dir/src/processing/Processing_twitter.cpp.s
+.PHONY : src/processing/Processing_twitter.cpp.s
+
+src/service/Http.o: src/service/Http.cpp.o
+
+.PHONY : src/service/Http.o
+
+# target to build an object file
+src/service/Http.cpp.o:
+	cd /Users/Edgar/ClionProjects/Fleur/cmake-build-debug && $(MAKE) -f fleur_src/CMakeFiles/fleur_src.dir/build.make fleur_src/CMakeFiles/fleur_src.dir/src/service/Http.cpp.o
+.PHONY : src/service/Http.cpp.o
+
+src/service/Http.i: src/service/Http.cpp.i
+
+.PHONY : src/service/Http.i
+
+# target to preprocess a source file
+src/service/Http.cpp.i:
+	cd /Users/Edgar/ClionProjects/Fleur/cmake-build-debug && $(MAKE) -f fleur_src/CMakeFiles/fleur_src.dir/build.make fleur_src/CMakeFiles/fleur_src.dir/src/service/Http.cpp.i
+.PHONY : src/service/Http.cpp.i
+
+src/service/Http.s: src/service/Http.cpp.s
+
+.PHONY : src/service/Http.s
+
+# target to generate assembly for a file
+src/service/Http.cpp.s:
+	cd /Users/Edgar/ClionProjects/Fleur/cmake-build-debug && $(MAKE) -f fleur_src/CMakeFiles/fleur_src.dir/build.make fleur_src/CMakeFiles/fleur_src.dir/src/service/Http.cpp.s
+.PHONY : src/service/Http.cpp.s
+
+src/service/Twitter.o: src/service/Twitter.cpp.o
+
+.PHONY : src/service/Twitter.o
+
+# target to build an object file
+src/service/Twitter.cpp.o:
+	cd /Users/Edgar/ClionProjects/Fleur/cmake-build-debug && $(MAKE) -f fleur_src/CMakeFiles/fleur_src.dir/build.make fleur_src/CMakeFiles/fleur_src.dir/src/service/Twitter.cpp.o
+.PHONY : src/service/Twitter.cpp.o
+
+src/service/Twitter.i: src/service/Twitter.cpp.i
+
+.PHONY : src/service/Twitter.i
+
+# target to preprocess a source file
+src/service/Twitter.cpp.i:
+	cd /Users/Edgar/ClionProjects/Fleur/cmake-build-debug && $(MAKE) -f fleur_src/CMakeFiles/fleur_src.dir/build.make fleur_src/CMakeFiles/fleur_src.dir/src/service/Twitter.cpp.i
+.PHONY : src/service/Twitter.cpp.i
+
+src/service/Twitter.s: src/service/Twitter.cpp.s
+
+.PHONY : src/service/Twitter.s
+
+# target to generate assembly for a file
+src/service/Twitter.cpp.s:
+	cd /Users/Edgar/ClionProjects/Fleur/cmake-build-debug && $(MAKE) -f fleur_src/CMakeFiles/fleur_src.dir/build.make fleur_src/CMakeFiles/fleur_src.dir/src/service/Twitter.cpp.s
+.PHONY : src/service/Twitter.cpp.s
 
 # Help Target
 help:
@@ -371,21 +425,27 @@ help:
 	@echo "... src/Filter.o"
 	@echo "... src/Filter.i"
 	@echo "... src/Filter.s"
-	@echo "... src/Http.o"
-	@echo "... src/Http.i"
-	@echo "... src/Http.s"
-	@echo "... src/Processing.o"
-	@echo "... src/Processing.i"
-	@echo "... src/Processing.s"
-	@echo "... src/Requete_parser.o"
-	@echo "... src/Requete_parser.i"
-	@echo "... src/Requete_parser.s"
-	@echo "... src/Twitter.o"
-	@echo "... src/Twitter.i"
-	@echo "... src/Twitter.s"
-	@echo "... src/Xml_parser.o"
-	@echo "... src/Xml_parser.i"
-	@echo "... src/Xml_parser.s"
+	@echo "... src/parser/Requete_parser.o"
+	@echo "... src/parser/Requete_parser.i"
+	@echo "... src/parser/Requete_parser.s"
+	@echo "... src/parser/Xml_parser.o"
+	@echo "... src/parser/Xml_parser.i"
+	@echo "... src/parser/Xml_parser.s"
+	@echo "... src/processing/Processing.o"
+	@echo "... src/processing/Processing.i"
+	@echo "... src/processing/Processing.s"
+	@echo "... src/processing/Processing_http.o"
+	@echo "... src/processing/Processing_http.i"
+	@echo "... src/processing/Processing_http.s"
+	@echo "... src/processing/Processing_twitter.o"
+	@echo "... src/processing/Processing_twitter.i"
+	@echo "... src/processing/Processing_twitter.s"
+	@echo "... src/service/Http.o"
+	@echo "... src/service/Http.i"
+	@echo "... src/service/Http.s"
+	@echo "... src/service/Twitter.o"
+	@echo "... src/service/Twitter.i"
+	@echo "... src/service/Twitter.s"
 .PHONY : help
 
 

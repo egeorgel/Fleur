@@ -78,46 +78,58 @@
 		<Unit filename="/Users/Edgar/ClionProjects/Fleur/fleur_src/include/FilterException.h">
 			<Option target="fleur_src"/>
 		</Unit>
-		<Unit filename="/Users/Edgar/ClionProjects/Fleur/fleur_src/include/Http.h">
-			<Option target="fleur_src"/>
-		</Unit>
 		<Unit filename="/Users/Edgar/ClionProjects/Fleur/fleur_src/include/HttpException.h">
 			<Option target="fleur_src"/>
 		</Unit>
-		<Unit filename="/Users/Edgar/ClionProjects/Fleur/fleur_src/include/Include_parser.h">
+		<Unit filename="/Users/Edgar/ClionProjects/Fleur/fleur_src/include/parser/Include_parser.h">
 			<Option target="fleur_src"/>
 		</Unit>
-		<Unit filename="/Users/Edgar/ClionProjects/Fleur/fleur_src/include/Processing.h">
+		<Unit filename="/Users/Edgar/ClionProjects/Fleur/fleur_src/include/parser/Requete_parser.h">
 			<Option target="fleur_src"/>
 		</Unit>
-		<Unit filename="/Users/Edgar/ClionProjects/Fleur/fleur_src/include/Requete_parser.h">
+		<Unit filename="/Users/Edgar/ClionProjects/Fleur/fleur_src/include/parser/Twitter_parser.h">
 			<Option target="fleur_src"/>
 		</Unit>
-		<Unit filename="/Users/Edgar/ClionProjects/Fleur/fleur_src/include/Twitter.h">
+		<Unit filename="/Users/Edgar/ClionProjects/Fleur/fleur_src/include/parser/Xml_parser.h">
 			<Option target="fleur_src"/>
 		</Unit>
-		<Unit filename="/Users/Edgar/ClionProjects/Fleur/fleur_src/include/Twitter_parser.h">
+		<Unit filename="/Users/Edgar/ClionProjects/Fleur/fleur_src/include/processing/Processing.h">
 			<Option target="fleur_src"/>
 		</Unit>
-		<Unit filename="/Users/Edgar/ClionProjects/Fleur/fleur_src/include/Xml_parser.h">
+		<Unit filename="/Users/Edgar/ClionProjects/Fleur/fleur_src/include/processing/Processing_http.h">
+			<Option target="fleur_src"/>
+		</Unit>
+		<Unit filename="/Users/Edgar/ClionProjects/Fleur/fleur_src/include/processing/Processing_twitter.h">
+			<Option target="fleur_src"/>
+		</Unit>
+		<Unit filename="/Users/Edgar/ClionProjects/Fleur/fleur_src/include/service/Http.h">
+			<Option target="fleur_src"/>
+		</Unit>
+		<Unit filename="/Users/Edgar/ClionProjects/Fleur/fleur_src/include/service/Twitter.h">
 			<Option target="fleur_src"/>
 		</Unit>
 		<Unit filename="/Users/Edgar/ClionProjects/Fleur/fleur_src/src/Filter.cpp">
 			<Option target="fleur_src"/>
 		</Unit>
-		<Unit filename="/Users/Edgar/ClionProjects/Fleur/fleur_src/src/Http.cpp">
+		<Unit filename="/Users/Edgar/ClionProjects/Fleur/fleur_src/src/parser/Requete_parser.cpp">
 			<Option target="fleur_src"/>
 		</Unit>
-		<Unit filename="/Users/Edgar/ClionProjects/Fleur/fleur_src/src/Processing.cpp">
+		<Unit filename="/Users/Edgar/ClionProjects/Fleur/fleur_src/src/parser/Xml_parser.cpp">
 			<Option target="fleur_src"/>
 		</Unit>
-		<Unit filename="/Users/Edgar/ClionProjects/Fleur/fleur_src/src/Requete_parser.cpp">
+		<Unit filename="/Users/Edgar/ClionProjects/Fleur/fleur_src/src/processing/Processing.cpp">
 			<Option target="fleur_src"/>
 		</Unit>
-		<Unit filename="/Users/Edgar/ClionProjects/Fleur/fleur_src/src/Twitter.cpp">
+		<Unit filename="/Users/Edgar/ClionProjects/Fleur/fleur_src/src/processing/Processing_http.cpp">
 			<Option target="fleur_src"/>
 		</Unit>
-		<Unit filename="/Users/Edgar/ClionProjects/Fleur/fleur_src/src/Xml_parser.cpp">
+		<Unit filename="/Users/Edgar/ClionProjects/Fleur/fleur_src/src/processing/Processing_twitter.cpp">
+			<Option target="fleur_src"/>
+		</Unit>
+		<Unit filename="/Users/Edgar/ClionProjects/Fleur/fleur_src/src/service/Http.cpp">
+			<Option target="fleur_src"/>
+		</Unit>
+		<Unit filename="/Users/Edgar/ClionProjects/Fleur/fleur_src/src/service/Twitter.cpp">
 			<Option target="fleur_src"/>
 		</Unit>
 		<Unit filename="/Users/Edgar/ClionProjects/Fleur/CMakeLists.txt">
