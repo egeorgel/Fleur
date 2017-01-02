@@ -30,6 +30,15 @@ namespace parser {
         std::string _limitName;
     };
 
+    struct TwitterKeyOAut {
+
+    public:
+        std::string _consumerKey;
+        std::string _consumerSecret;
+        std::string _tokenKey;
+        std::string _tokenSecret;
+    };
+
 }
 
 // We need to tell fusion about our Twitter struct
@@ -41,6 +50,14 @@ BOOST_FUSION_ADAPT_STRUCT(
         (std::string, _actionName)
         (std::string, _fromName)
         (std::string, _limitName)
+)
+
+BOOST_FUSION_ADAPT_STRUCT(
+        parser::TwitterKeyOAut,
+        (std::string, _consumerKey)
+        (std::string, _consumerSecret)
+        (std::string, _tokenKey)
+        (std::string, _tokenSecret)
 )
 
 namespace parser {
@@ -94,7 +111,50 @@ namespace parser {
             std::string frag(e.first, e.last);
             std::cerr << e.what() << "'" << frag << "'\n";
         }
+        return false;
+    }
 
+
+    template<typename Iterator>
+    struct TwitterKeyOAut_parser : qi::grammar<Iterator, TwitterKeyOAut(), ascii::space_type> {
+
+        qi::rule<Iterator, std::string(), ascii::space_type> lexemConsumerKey, lexemConsumerSecret, lexemTokenKey, lexemTokenSecret;
+        qi::rule<Iterator, TwitterKeyOAut(), ascii::space_type> requete;
+
+        TwitterKeyOAut_parser() : TwitterKeyOAut_parser::base_type(requete) {
+            using qi::lexeme;
+            using ascii::char_;
+
+            lexemConsumerKey = lexemConsumerSecret = lexemTokenKey = lexeme [ (+(char_ - ",") >> ",")  ];
+            lexemTokenSecret = lexeme [ (+(char_ - ")") >> ")")  ];
+            requete = "(" >> lexemConsumerKey >> lexemConsumerSecret >> lexemTokenKey >> lexemTokenSecret >> ";";
+
+        }
+    };
+
+    template <typename C>
+    bool doParse(const C& input, TwitterKeyOAut &query) {
+        auto i_begin(std::begin(input)), i_end(std::end(input));
+
+        TwitterKeyOAut_parser<decltype(i_begin)> twitterKeyOAutParser;
+
+        try {
+            bool ok = qi::phrase_parse(i_begin, i_end, twitterKeyOAutParser, ascii::space, query);
+            if (ok) {
+                std::cout << "parse success\n";
+                std::cout << "consumerKey : " << query._consumerKey << "\n";
+                std::cout << "consumerSecret : " << query._consumerSecret << "\n";
+                std::cout << "tokenKey : " << query._tokenKey << "\n";
+                std::cout << "tokenSecret : " << query._tokenSecret << "\n";
+            }
+            else {
+                std::cerr << "parse failed: '" << std::string(i_begin, i_end) << "'\n";
+            }
+            return ok;
+        } catch(const qi::expectation_failure<decltype(i_begin)>& e) {
+            std::string frag(e.first, e.last);
+            std::cerr << e.what() << "'" << frag << "'\n";
+        }
         return false;
     }
 

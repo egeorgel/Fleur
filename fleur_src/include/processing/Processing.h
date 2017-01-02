@@ -7,7 +7,12 @@
 
 
 class Processing_http {
-//TODO: link processings
+
+public:
+    
+
+private:
+
 };
 
 
