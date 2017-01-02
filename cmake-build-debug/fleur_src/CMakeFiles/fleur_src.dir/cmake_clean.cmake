@@ -1,9 +1,12 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/fleur_src.dir/src/Requete_parser.cpp.o"
-  "CMakeFiles/fleur_src.dir/src/Http.cpp.o"
+  "CMakeFiles/fleur_src.dir/src/parser/Requete_parser.cpp.o"
+  "CMakeFiles/fleur_src.dir/src/service/Http.cpp.o"
   "CMakeFiles/fleur_src.dir/src/Filter.cpp.o"
-  "CMakeFiles/fleur_src.dir/src/Processing.cpp.o"
-  "CMakeFiles/fleur_src.dir/src/Xml_parser.cpp.o"
+  "CMakeFiles/fleur_src.dir/src/processing/Processing_http.cpp.o"
+  "CMakeFiles/fleur_src.dir/src/parser/Xml_parser.cpp.o"
+  "CMakeFiles/fleur_src.dir/src/service/Twitter.cpp.o"
+  "CMakeFiles/fleur_src.dir/src/processing/Processing_twitter.cpp.o"
+  "CMakeFiles/fleur_src.dir/src/processing/Processing.cpp.o"
   "libfleur_src.pdb"
   "libfleur_src.a"
 )

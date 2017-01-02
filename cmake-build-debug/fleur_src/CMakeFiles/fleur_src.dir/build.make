@@ -57,52 +57,52 @@ include fleur_src/CMakeFiles/fleur_src.dir/progress.make
 # Include the compile flags for this target's objects.
 include fleur_src/CMakeFiles/fleur_src.dir/flags.make
 
-fleur_src/CMakeFiles/fleur_src.dir/src/Requete_parser.cpp.o: fleur_src/CMakeFiles/fleur_src.dir/flags.make
-fleur_src/CMakeFiles/fleur_src.dir/src/Requete_parser.cpp.o: ../fleur_src/src/Requete_parser.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object fleur_src/CMakeFiles/fleur_src.dir/src/Requete_parser.cpp.o"
-	cd /Users/Edgar/ClionProjects/Fleur/cmake-build-debug/fleur_src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/fleur_src.dir/src/Requete_parser.cpp.o -c /Users/Edgar/ClionProjects/Fleur/fleur_src/src/Requete_parser.cpp
+fleur_src/CMakeFiles/fleur_src.dir/src/parser/Requete_parser.cpp.o: fleur_src/CMakeFiles/fleur_src.dir/flags.make
+fleur_src/CMakeFiles/fleur_src.dir/src/parser/Requete_parser.cpp.o: ../fleur_src/src/parser/Requete_parser.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object fleur_src/CMakeFiles/fleur_src.dir/src/parser/Requete_parser.cpp.o"
+	cd /Users/Edgar/ClionProjects/Fleur/cmake-build-debug/fleur_src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/fleur_src.dir/src/parser/Requete_parser.cpp.o -c /Users/Edgar/ClionProjects/Fleur/fleur_src/src/parser/Requete_parser.cpp
 
-fleur_src/CMakeFiles/fleur_src.dir/src/Requete_parser.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/fleur_src.dir/src/Requete_parser.cpp.i"
-	cd /Users/Edgar/ClionProjects/Fleur/cmake-build-debug/fleur_src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Edgar/ClionProjects/Fleur/fleur_src/src/Requete_parser.cpp > CMakeFiles/fleur_src.dir/src/Requete_parser.cpp.i
+fleur_src/CMakeFiles/fleur_src.dir/src/parser/Requete_parser.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/fleur_src.dir/src/parser/Requete_parser.cpp.i"
+	cd /Users/Edgar/ClionProjects/Fleur/cmake-build-debug/fleur_src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Edgar/ClionProjects/Fleur/fleur_src/src/parser/Requete_parser.cpp > CMakeFiles/fleur_src.dir/src/parser/Requete_parser.cpp.i
 
-fleur_src/CMakeFiles/fleur_src.dir/src/Requete_parser.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/fleur_src.dir/src/Requete_parser.cpp.s"
-	cd /Users/Edgar/ClionProjects/Fleur/cmake-build-debug/fleur_src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Edgar/ClionProjects/Fleur/fleur_src/src/Requete_parser.cpp -o CMakeFiles/fleur_src.dir/src/Requete_parser.cpp.s
+fleur_src/CMakeFiles/fleur_src.dir/src/parser/Requete_parser.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/fleur_src.dir/src/parser/Requete_parser.cpp.s"
+	cd /Users/Edgar/ClionProjects/Fleur/cmake-build-debug/fleur_src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Edgar/ClionProjects/Fleur/fleur_src/src/parser/Requete_parser.cpp -o CMakeFiles/fleur_src.dir/src/parser/Requete_parser.cpp.s
 
-fleur_src/CMakeFiles/fleur_src.dir/src/Requete_parser.cpp.o.requires:
+fleur_src/CMakeFiles/fleur_src.dir/src/parser/Requete_parser.cpp.o.requires:
 
-.PHONY : fleur_src/CMakeFiles/fleur_src.dir/src/Requete_parser.cpp.o.requires
+.PHONY : fleur_src/CMakeFiles/fleur_src.dir/src/parser/Requete_parser.cpp.o.requires
 
-fleur_src/CMakeFiles/fleur_src.dir/src/Requete_parser.cpp.o.provides: fleur_src/CMakeFiles/fleur_src.dir/src/Requete_parser.cpp.o.requires
-	$(MAKE) -f fleur_src/CMakeFiles/fleur_src.dir/build.make fleur_src/CMakeFiles/fleur_src.dir/src/Requete_parser.cpp.o.provides.build
-.PHONY : fleur_src/CMakeFiles/fleur_src.dir/src/Requete_parser.cpp.o.provides
+fleur_src/CMakeFiles/fleur_src.dir/src/parser/Requete_parser.cpp.o.provides: fleur_src/CMakeFiles/fleur_src.dir/src/parser/Requete_parser.cpp.o.requires
+	$(MAKE) -f fleur_src/CMakeFiles/fleur_src.dir/build.make fleur_src/CMakeFiles/fleur_src.dir/src/parser/Requete_parser.cpp.o.provides.build
+.PHONY : fleur_src/CMakeFiles/fleur_src.dir/src/parser/Requete_parser.cpp.o.provides
 
-fleur_src/CMakeFiles/fleur_src.dir/src/Requete_parser.cpp.o.provides.build: fleur_src/CMakeFiles/fleur_src.dir/src/Requete_parser.cpp.o
+fleur_src/CMakeFiles/fleur_src.dir/src/parser/Requete_parser.cpp.o.provides.build: fleur_src/CMakeFiles/fleur_src.dir/src/parser/Requete_parser.cpp.o
 
 
-fleur_src/CMakeFiles/fleur_src.dir/src/Http.cpp.o: fleur_src/CMakeFiles/fleur_src.dir/flags.make
-fleur_src/CMakeFiles/fleur_src.dir/src/Http.cpp.o: ../fleur_src/src/Http.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object fleur_src/CMakeFiles/fleur_src.dir/src/Http.cpp.o"
-	cd /Users/Edgar/ClionProjects/Fleur/cmake-build-debug/fleur_src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/fleur_src.dir/src/Http.cpp.o -c /Users/Edgar/ClionProjects/Fleur/fleur_src/src/Http.cpp
+fleur_src/CMakeFiles/fleur_src.dir/src/service/Http.cpp.o: fleur_src/CMakeFiles/fleur_src.dir/flags.make
+fleur_src/CMakeFiles/fleur_src.dir/src/service/Http.cpp.o: ../fleur_src/src/service/Http.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object fleur_src/CMakeFiles/fleur_src.dir/src/service/Http.cpp.o"
+	cd /Users/Edgar/ClionProjects/Fleur/cmake-build-debug/fleur_src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/fleur_src.dir/src/service/Http.cpp.o -c /Users/Edgar/ClionProjects/Fleur/fleur_src/src/service/Http.cpp
 
-fleur_src/CMakeFiles/fleur_src.dir/src/Http.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/fleur_src.dir/src/Http.cpp.i"
-	cd /Users/Edgar/ClionProjects/Fleur/cmake-build-debug/fleur_src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Edgar/ClionProjects/Fleur/fleur_src/src/Http.cpp > CMakeFiles/fleur_src.dir/src/Http.cpp.i
+fleur_src/CMakeFiles/fleur_src.dir/src/service/Http.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/fleur_src.dir/src/service/Http.cpp.i"
+	cd /Users/Edgar/ClionProjects/Fleur/cmake-build-debug/fleur_src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Edgar/ClionProjects/Fleur/fleur_src/src/service/Http.cpp > CMakeFiles/fleur_src.dir/src/service/Http.cpp.i
 
-fleur_src/CMakeFiles/fleur_src.dir/src/Http.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/fleur_src.dir/src/Http.cpp.s"
-	cd /Users/Edgar/ClionProjects/Fleur/cmake-build-debug/fleur_src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Edgar/ClionProjects/Fleur/fleur_src/src/Http.cpp -o CMakeFiles/fleur_src.dir/src/Http.cpp.s
+fleur_src/CMakeFiles/fleur_src.dir/src/service/Http.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/fleur_src.dir/src/service/Http.cpp.s"
+	cd /Users/Edgar/ClionProjects/Fleur/cmake-build-debug/fleur_src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Edgar/ClionProjects/Fleur/fleur_src/src/service/Http.cpp -o CMakeFiles/fleur_src.dir/src/service/Http.cpp.s
 
-fleur_src/CMakeFiles/fleur_src.dir/src/Http.cpp.o.requires:
+fleur_src/CMakeFiles/fleur_src.dir/src/service/Http.cpp.o.requires:
 
-.PHONY : fleur_src/CMakeFiles/fleur_src.dir/src/Http.cpp.o.requires
+.PHONY : fleur_src/CMakeFiles/fleur_src.dir/src/service/Http.cpp.o.requires
 
-fleur_src/CMakeFiles/fleur_src.dir/src/Http.cpp.o.provides: fleur_src/CMakeFiles/fleur_src.dir/src/Http.cpp.o.requires
-	$(MAKE) -f fleur_src/CMakeFiles/fleur_src.dir/build.make fleur_src/CMakeFiles/fleur_src.dir/src/Http.cpp.o.provides.build
-.PHONY : fleur_src/CMakeFiles/fleur_src.dir/src/Http.cpp.o.provides
+fleur_src/CMakeFiles/fleur_src.dir/src/service/Http.cpp.o.provides: fleur_src/CMakeFiles/fleur_src.dir/src/service/Http.cpp.o.requires
+	$(MAKE) -f fleur_src/CMakeFiles/fleur_src.dir/build.make fleur_src/CMakeFiles/fleur_src.dir/src/service/Http.cpp.o.provides.build
+.PHONY : fleur_src/CMakeFiles/fleur_src.dir/src/service/Http.cpp.o.provides
 
-fleur_src/CMakeFiles/fleur_src.dir/src/Http.cpp.o.provides.build: fleur_src/CMakeFiles/fleur_src.dir/src/Http.cpp.o
+fleur_src/CMakeFiles/fleur_src.dir/src/service/Http.cpp.o.provides.build: fleur_src/CMakeFiles/fleur_src.dir/src/service/Http.cpp.o
 
 
 fleur_src/CMakeFiles/fleur_src.dir/src/Filter.cpp.o: fleur_src/CMakeFiles/fleur_src.dir/flags.make
@@ -129,73 +129,151 @@ fleur_src/CMakeFiles/fleur_src.dir/src/Filter.cpp.o.provides: fleur_src/CMakeFil
 fleur_src/CMakeFiles/fleur_src.dir/src/Filter.cpp.o.provides.build: fleur_src/CMakeFiles/fleur_src.dir/src/Filter.cpp.o
 
 
-fleur_src/CMakeFiles/fleur_src.dir/src/Processing.cpp.o: fleur_src/CMakeFiles/fleur_src.dir/flags.make
-fleur_src/CMakeFiles/fleur_src.dir/src/Processing.cpp.o: ../fleur_src/src/Processing.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object fleur_src/CMakeFiles/fleur_src.dir/src/Processing.cpp.o"
-	cd /Users/Edgar/ClionProjects/Fleur/cmake-build-debug/fleur_src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/fleur_src.dir/src/Processing.cpp.o -c /Users/Edgar/ClionProjects/Fleur/fleur_src/src/Processing.cpp
+fleur_src/CMakeFiles/fleur_src.dir/src/processing/Processing_http.cpp.o: fleur_src/CMakeFiles/fleur_src.dir/flags.make
+fleur_src/CMakeFiles/fleur_src.dir/src/processing/Processing_http.cpp.o: ../fleur_src/src/processing/Processing_http.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object fleur_src/CMakeFiles/fleur_src.dir/src/processing/Processing_http.cpp.o"
+	cd /Users/Edgar/ClionProjects/Fleur/cmake-build-debug/fleur_src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/fleur_src.dir/src/processing/Processing_http.cpp.o -c /Users/Edgar/ClionProjects/Fleur/fleur_src/src/processing/Processing_http.cpp
 
-fleur_src/CMakeFiles/fleur_src.dir/src/Processing.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/fleur_src.dir/src/Processing.cpp.i"
-	cd /Users/Edgar/ClionProjects/Fleur/cmake-build-debug/fleur_src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Edgar/ClionProjects/Fleur/fleur_src/src/Processing.cpp > CMakeFiles/fleur_src.dir/src/Processing.cpp.i
+fleur_src/CMakeFiles/fleur_src.dir/src/processing/Processing_http.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/fleur_src.dir/src/processing/Processing_http.cpp.i"
+	cd /Users/Edgar/ClionProjects/Fleur/cmake-build-debug/fleur_src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Edgar/ClionProjects/Fleur/fleur_src/src/processing/Processing_http.cpp > CMakeFiles/fleur_src.dir/src/processing/Processing_http.cpp.i
 
-fleur_src/CMakeFiles/fleur_src.dir/src/Processing.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/fleur_src.dir/src/Processing.cpp.s"
-	cd /Users/Edgar/ClionProjects/Fleur/cmake-build-debug/fleur_src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Edgar/ClionProjects/Fleur/fleur_src/src/Processing.cpp -o CMakeFiles/fleur_src.dir/src/Processing.cpp.s
+fleur_src/CMakeFiles/fleur_src.dir/src/processing/Processing_http.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/fleur_src.dir/src/processing/Processing_http.cpp.s"
+	cd /Users/Edgar/ClionProjects/Fleur/cmake-build-debug/fleur_src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Edgar/ClionProjects/Fleur/fleur_src/src/processing/Processing_http.cpp -o CMakeFiles/fleur_src.dir/src/processing/Processing_http.cpp.s
 
-fleur_src/CMakeFiles/fleur_src.dir/src/Processing.cpp.o.requires:
+fleur_src/CMakeFiles/fleur_src.dir/src/processing/Processing_http.cpp.o.requires:
 
-.PHONY : fleur_src/CMakeFiles/fleur_src.dir/src/Processing.cpp.o.requires
+.PHONY : fleur_src/CMakeFiles/fleur_src.dir/src/processing/Processing_http.cpp.o.requires
 
-fleur_src/CMakeFiles/fleur_src.dir/src/Processing.cpp.o.provides: fleur_src/CMakeFiles/fleur_src.dir/src/Processing.cpp.o.requires
-	$(MAKE) -f fleur_src/CMakeFiles/fleur_src.dir/build.make fleur_src/CMakeFiles/fleur_src.dir/src/Processing.cpp.o.provides.build
-.PHONY : fleur_src/CMakeFiles/fleur_src.dir/src/Processing.cpp.o.provides
+fleur_src/CMakeFiles/fleur_src.dir/src/processing/Processing_http.cpp.o.provides: fleur_src/CMakeFiles/fleur_src.dir/src/processing/Processing_http.cpp.o.requires
+	$(MAKE) -f fleur_src/CMakeFiles/fleur_src.dir/build.make fleur_src/CMakeFiles/fleur_src.dir/src/processing/Processing_http.cpp.o.provides.build
+.PHONY : fleur_src/CMakeFiles/fleur_src.dir/src/processing/Processing_http.cpp.o.provides
 
-fleur_src/CMakeFiles/fleur_src.dir/src/Processing.cpp.o.provides.build: fleur_src/CMakeFiles/fleur_src.dir/src/Processing.cpp.o
+fleur_src/CMakeFiles/fleur_src.dir/src/processing/Processing_http.cpp.o.provides.build: fleur_src/CMakeFiles/fleur_src.dir/src/processing/Processing_http.cpp.o
 
 
-fleur_src/CMakeFiles/fleur_src.dir/src/Xml_parser.cpp.o: fleur_src/CMakeFiles/fleur_src.dir/flags.make
-fleur_src/CMakeFiles/fleur_src.dir/src/Xml_parser.cpp.o: ../fleur_src/src/Xml_parser.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object fleur_src/CMakeFiles/fleur_src.dir/src/Xml_parser.cpp.o"
-	cd /Users/Edgar/ClionProjects/Fleur/cmake-build-debug/fleur_src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/fleur_src.dir/src/Xml_parser.cpp.o -c /Users/Edgar/ClionProjects/Fleur/fleur_src/src/Xml_parser.cpp
+fleur_src/CMakeFiles/fleur_src.dir/src/parser/Xml_parser.cpp.o: fleur_src/CMakeFiles/fleur_src.dir/flags.make
+fleur_src/CMakeFiles/fleur_src.dir/src/parser/Xml_parser.cpp.o: ../fleur_src/src/parser/Xml_parser.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object fleur_src/CMakeFiles/fleur_src.dir/src/parser/Xml_parser.cpp.o"
+	cd /Users/Edgar/ClionProjects/Fleur/cmake-build-debug/fleur_src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/fleur_src.dir/src/parser/Xml_parser.cpp.o -c /Users/Edgar/ClionProjects/Fleur/fleur_src/src/parser/Xml_parser.cpp
 
-fleur_src/CMakeFiles/fleur_src.dir/src/Xml_parser.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/fleur_src.dir/src/Xml_parser.cpp.i"
-	cd /Users/Edgar/ClionProjects/Fleur/cmake-build-debug/fleur_src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Edgar/ClionProjects/Fleur/fleur_src/src/Xml_parser.cpp > CMakeFiles/fleur_src.dir/src/Xml_parser.cpp.i
+fleur_src/CMakeFiles/fleur_src.dir/src/parser/Xml_parser.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/fleur_src.dir/src/parser/Xml_parser.cpp.i"
+	cd /Users/Edgar/ClionProjects/Fleur/cmake-build-debug/fleur_src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Edgar/ClionProjects/Fleur/fleur_src/src/parser/Xml_parser.cpp > CMakeFiles/fleur_src.dir/src/parser/Xml_parser.cpp.i
 
-fleur_src/CMakeFiles/fleur_src.dir/src/Xml_parser.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/fleur_src.dir/src/Xml_parser.cpp.s"
-	cd /Users/Edgar/ClionProjects/Fleur/cmake-build-debug/fleur_src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Edgar/ClionProjects/Fleur/fleur_src/src/Xml_parser.cpp -o CMakeFiles/fleur_src.dir/src/Xml_parser.cpp.s
+fleur_src/CMakeFiles/fleur_src.dir/src/parser/Xml_parser.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/fleur_src.dir/src/parser/Xml_parser.cpp.s"
+	cd /Users/Edgar/ClionProjects/Fleur/cmake-build-debug/fleur_src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Edgar/ClionProjects/Fleur/fleur_src/src/parser/Xml_parser.cpp -o CMakeFiles/fleur_src.dir/src/parser/Xml_parser.cpp.s
 
-fleur_src/CMakeFiles/fleur_src.dir/src/Xml_parser.cpp.o.requires:
+fleur_src/CMakeFiles/fleur_src.dir/src/parser/Xml_parser.cpp.o.requires:
 
-.PHONY : fleur_src/CMakeFiles/fleur_src.dir/src/Xml_parser.cpp.o.requires
+.PHONY : fleur_src/CMakeFiles/fleur_src.dir/src/parser/Xml_parser.cpp.o.requires
 
-fleur_src/CMakeFiles/fleur_src.dir/src/Xml_parser.cpp.o.provides: fleur_src/CMakeFiles/fleur_src.dir/src/Xml_parser.cpp.o.requires
-	$(MAKE) -f fleur_src/CMakeFiles/fleur_src.dir/build.make fleur_src/CMakeFiles/fleur_src.dir/src/Xml_parser.cpp.o.provides.build
-.PHONY : fleur_src/CMakeFiles/fleur_src.dir/src/Xml_parser.cpp.o.provides
+fleur_src/CMakeFiles/fleur_src.dir/src/parser/Xml_parser.cpp.o.provides: fleur_src/CMakeFiles/fleur_src.dir/src/parser/Xml_parser.cpp.o.requires
+	$(MAKE) -f fleur_src/CMakeFiles/fleur_src.dir/build.make fleur_src/CMakeFiles/fleur_src.dir/src/parser/Xml_parser.cpp.o.provides.build
+.PHONY : fleur_src/CMakeFiles/fleur_src.dir/src/parser/Xml_parser.cpp.o.provides
 
-fleur_src/CMakeFiles/fleur_src.dir/src/Xml_parser.cpp.o.provides.build: fleur_src/CMakeFiles/fleur_src.dir/src/Xml_parser.cpp.o
+fleur_src/CMakeFiles/fleur_src.dir/src/parser/Xml_parser.cpp.o.provides.build: fleur_src/CMakeFiles/fleur_src.dir/src/parser/Xml_parser.cpp.o
+
+
+fleur_src/CMakeFiles/fleur_src.dir/src/service/Twitter.cpp.o: fleur_src/CMakeFiles/fleur_src.dir/flags.make
+fleur_src/CMakeFiles/fleur_src.dir/src/service/Twitter.cpp.o: ../fleur_src/src/service/Twitter.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object fleur_src/CMakeFiles/fleur_src.dir/src/service/Twitter.cpp.o"
+	cd /Users/Edgar/ClionProjects/Fleur/cmake-build-debug/fleur_src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/fleur_src.dir/src/service/Twitter.cpp.o -c /Users/Edgar/ClionProjects/Fleur/fleur_src/src/service/Twitter.cpp
+
+fleur_src/CMakeFiles/fleur_src.dir/src/service/Twitter.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/fleur_src.dir/src/service/Twitter.cpp.i"
+	cd /Users/Edgar/ClionProjects/Fleur/cmake-build-debug/fleur_src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Edgar/ClionProjects/Fleur/fleur_src/src/service/Twitter.cpp > CMakeFiles/fleur_src.dir/src/service/Twitter.cpp.i
+
+fleur_src/CMakeFiles/fleur_src.dir/src/service/Twitter.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/fleur_src.dir/src/service/Twitter.cpp.s"
+	cd /Users/Edgar/ClionProjects/Fleur/cmake-build-debug/fleur_src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Edgar/ClionProjects/Fleur/fleur_src/src/service/Twitter.cpp -o CMakeFiles/fleur_src.dir/src/service/Twitter.cpp.s
+
+fleur_src/CMakeFiles/fleur_src.dir/src/service/Twitter.cpp.o.requires:
+
+.PHONY : fleur_src/CMakeFiles/fleur_src.dir/src/service/Twitter.cpp.o.requires
+
+fleur_src/CMakeFiles/fleur_src.dir/src/service/Twitter.cpp.o.provides: fleur_src/CMakeFiles/fleur_src.dir/src/service/Twitter.cpp.o.requires
+	$(MAKE) -f fleur_src/CMakeFiles/fleur_src.dir/build.make fleur_src/CMakeFiles/fleur_src.dir/src/service/Twitter.cpp.o.provides.build
+.PHONY : fleur_src/CMakeFiles/fleur_src.dir/src/service/Twitter.cpp.o.provides
+
+fleur_src/CMakeFiles/fleur_src.dir/src/service/Twitter.cpp.o.provides.build: fleur_src/CMakeFiles/fleur_src.dir/src/service/Twitter.cpp.o
+
+
+fleur_src/CMakeFiles/fleur_src.dir/src/processing/Processing_twitter.cpp.o: fleur_src/CMakeFiles/fleur_src.dir/flags.make
+fleur_src/CMakeFiles/fleur_src.dir/src/processing/Processing_twitter.cpp.o: ../fleur_src/src/processing/Processing_twitter.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object fleur_src/CMakeFiles/fleur_src.dir/src/processing/Processing_twitter.cpp.o"
+	cd /Users/Edgar/ClionProjects/Fleur/cmake-build-debug/fleur_src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/fleur_src.dir/src/processing/Processing_twitter.cpp.o -c /Users/Edgar/ClionProjects/Fleur/fleur_src/src/processing/Processing_twitter.cpp
+
+fleur_src/CMakeFiles/fleur_src.dir/src/processing/Processing_twitter.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/fleur_src.dir/src/processing/Processing_twitter.cpp.i"
+	cd /Users/Edgar/ClionProjects/Fleur/cmake-build-debug/fleur_src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Edgar/ClionProjects/Fleur/fleur_src/src/processing/Processing_twitter.cpp > CMakeFiles/fleur_src.dir/src/processing/Processing_twitter.cpp.i
+
+fleur_src/CMakeFiles/fleur_src.dir/src/processing/Processing_twitter.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/fleur_src.dir/src/processing/Processing_twitter.cpp.s"
+	cd /Users/Edgar/ClionProjects/Fleur/cmake-build-debug/fleur_src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Edgar/ClionProjects/Fleur/fleur_src/src/processing/Processing_twitter.cpp -o CMakeFiles/fleur_src.dir/src/processing/Processing_twitter.cpp.s
+
+fleur_src/CMakeFiles/fleur_src.dir/src/processing/Processing_twitter.cpp.o.requires:
+
+.PHONY : fleur_src/CMakeFiles/fleur_src.dir/src/processing/Processing_twitter.cpp.o.requires
+
+fleur_src/CMakeFiles/fleur_src.dir/src/processing/Processing_twitter.cpp.o.provides: fleur_src/CMakeFiles/fleur_src.dir/src/processing/Processing_twitter.cpp.o.requires
+	$(MAKE) -f fleur_src/CMakeFiles/fleur_src.dir/build.make fleur_src/CMakeFiles/fleur_src.dir/src/processing/Processing_twitter.cpp.o.provides.build
+.PHONY : fleur_src/CMakeFiles/fleur_src.dir/src/processing/Processing_twitter.cpp.o.provides
+
+fleur_src/CMakeFiles/fleur_src.dir/src/processing/Processing_twitter.cpp.o.provides.build: fleur_src/CMakeFiles/fleur_src.dir/src/processing/Processing_twitter.cpp.o
+
+
+fleur_src/CMakeFiles/fleur_src.dir/src/processing/Processing.cpp.o: fleur_src/CMakeFiles/fleur_src.dir/flags.make
+fleur_src/CMakeFiles/fleur_src.dir/src/processing/Processing.cpp.o: ../fleur_src/src/processing/Processing.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object fleur_src/CMakeFiles/fleur_src.dir/src/processing/Processing.cpp.o"
+	cd /Users/Edgar/ClionProjects/Fleur/cmake-build-debug/fleur_src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/fleur_src.dir/src/processing/Processing.cpp.o -c /Users/Edgar/ClionProjects/Fleur/fleur_src/src/processing/Processing.cpp
+
+fleur_src/CMakeFiles/fleur_src.dir/src/processing/Processing.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/fleur_src.dir/src/processing/Processing.cpp.i"
+	cd /Users/Edgar/ClionProjects/Fleur/cmake-build-debug/fleur_src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Edgar/ClionProjects/Fleur/fleur_src/src/processing/Processing.cpp > CMakeFiles/fleur_src.dir/src/processing/Processing.cpp.i
+
+fleur_src/CMakeFiles/fleur_src.dir/src/processing/Processing.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/fleur_src.dir/src/processing/Processing.cpp.s"
+	cd /Users/Edgar/ClionProjects/Fleur/cmake-build-debug/fleur_src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Edgar/ClionProjects/Fleur/fleur_src/src/processing/Processing.cpp -o CMakeFiles/fleur_src.dir/src/processing/Processing.cpp.s
+
+fleur_src/CMakeFiles/fleur_src.dir/src/processing/Processing.cpp.o.requires:
+
+.PHONY : fleur_src/CMakeFiles/fleur_src.dir/src/processing/Processing.cpp.o.requires
+
+fleur_src/CMakeFiles/fleur_src.dir/src/processing/Processing.cpp.o.provides: fleur_src/CMakeFiles/fleur_src.dir/src/processing/Processing.cpp.o.requires
+	$(MAKE) -f fleur_src/CMakeFiles/fleur_src.dir/build.make fleur_src/CMakeFiles/fleur_src.dir/src/processing/Processing.cpp.o.provides.build
+.PHONY : fleur_src/CMakeFiles/fleur_src.dir/src/processing/Processing.cpp.o.provides
+
+fleur_src/CMakeFiles/fleur_src.dir/src/processing/Processing.cpp.o.provides.build: fleur_src/CMakeFiles/fleur_src.dir/src/processing/Processing.cpp.o
 
 
 # Object files for target fleur_src
 fleur_src_OBJECTS = \
-"CMakeFiles/fleur_src.dir/src/Requete_parser.cpp.o" \
-"CMakeFiles/fleur_src.dir/src/Http.cpp.o" \
+"CMakeFiles/fleur_src.dir/src/parser/Requete_parser.cpp.o" \
+"CMakeFiles/fleur_src.dir/src/service/Http.cpp.o" \
 "CMakeFiles/fleur_src.dir/src/Filter.cpp.o" \
-"CMakeFiles/fleur_src.dir/src/Processing.cpp.o" \
-"CMakeFiles/fleur_src.dir/src/Xml_parser.cpp.o"
+"CMakeFiles/fleur_src.dir/src/processing/Processing_http.cpp.o" \
+"CMakeFiles/fleur_src.dir/src/parser/Xml_parser.cpp.o" \
+"CMakeFiles/fleur_src.dir/src/service/Twitter.cpp.o" \
+"CMakeFiles/fleur_src.dir/src/processing/Processing_twitter.cpp.o" \
+"CMakeFiles/fleur_src.dir/src/processing/Processing.cpp.o"
 
 # External object files for target fleur_src
 fleur_src_EXTERNAL_OBJECTS =
 
-fleur_src/libfleur_src.a: fleur_src/CMakeFiles/fleur_src.dir/src/Requete_parser.cpp.o
-fleur_src/libfleur_src.a: fleur_src/CMakeFiles/fleur_src.dir/src/Http.cpp.o
+fleur_src/libfleur_src.a: fleur_src/CMakeFiles/fleur_src.dir/src/parser/Requete_parser.cpp.o
+fleur_src/libfleur_src.a: fleur_src/CMakeFiles/fleur_src.dir/src/service/Http.cpp.o
 fleur_src/libfleur_src.a: fleur_src/CMakeFiles/fleur_src.dir/src/Filter.cpp.o
-fleur_src/libfleur_src.a: fleur_src/CMakeFiles/fleur_src.dir/src/Processing.cpp.o
-fleur_src/libfleur_src.a: fleur_src/CMakeFiles/fleur_src.dir/src/Xml_parser.cpp.o
+fleur_src/libfleur_src.a: fleur_src/CMakeFiles/fleur_src.dir/src/processing/Processing_http.cpp.o
+fleur_src/libfleur_src.a: fleur_src/CMakeFiles/fleur_src.dir/src/parser/Xml_parser.cpp.o
+fleur_src/libfleur_src.a: fleur_src/CMakeFiles/fleur_src.dir/src/service/Twitter.cpp.o
+fleur_src/libfleur_src.a: fleur_src/CMakeFiles/fleur_src.dir/src/processing/Processing_twitter.cpp.o
+fleur_src/libfleur_src.a: fleur_src/CMakeFiles/fleur_src.dir/src/processing/Processing.cpp.o
 fleur_src/libfleur_src.a: fleur_src/CMakeFiles/fleur_src.dir/build.make
 fleur_src/libfleur_src.a: fleur_src/CMakeFiles/fleur_src.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX static library libfleur_src.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX static library libfleur_src.a"
 	cd /Users/Edgar/ClionProjects/Fleur/cmake-build-debug/fleur_src && $(CMAKE_COMMAND) -P CMakeFiles/fleur_src.dir/cmake_clean_target.cmake
 	cd /Users/Edgar/ClionProjects/Fleur/cmake-build-debug/fleur_src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/fleur_src.dir/link.txt --verbose=$(VERBOSE)
 
@@ -204,11 +282,14 @@ fleur_src/CMakeFiles/fleur_src.dir/build: fleur_src/libfleur_src.a
 
 .PHONY : fleur_src/CMakeFiles/fleur_src.dir/build
 
-fleur_src/CMakeFiles/fleur_src.dir/requires: fleur_src/CMakeFiles/fleur_src.dir/src/Requete_parser.cpp.o.requires
-fleur_src/CMakeFiles/fleur_src.dir/requires: fleur_src/CMakeFiles/fleur_src.dir/src/Http.cpp.o.requires
+fleur_src/CMakeFiles/fleur_src.dir/requires: fleur_src/CMakeFiles/fleur_src.dir/src/parser/Requete_parser.cpp.o.requires
+fleur_src/CMakeFiles/fleur_src.dir/requires: fleur_src/CMakeFiles/fleur_src.dir/src/service/Http.cpp.o.requires
 fleur_src/CMakeFiles/fleur_src.dir/requires: fleur_src/CMakeFiles/fleur_src.dir/src/Filter.cpp.o.requires
-fleur_src/CMakeFiles/fleur_src.dir/requires: fleur_src/CMakeFiles/fleur_src.dir/src/Processing.cpp.o.requires
-fleur_src/CMakeFiles/fleur_src.dir/requires: fleur_src/CMakeFiles/fleur_src.dir/src/Xml_parser.cpp.o.requires
+fleur_src/CMakeFiles/fleur_src.dir/requires: fleur_src/CMakeFiles/fleur_src.dir/src/processing/Processing_http.cpp.o.requires
+fleur_src/CMakeFiles/fleur_src.dir/requires: fleur_src/CMakeFiles/fleur_src.dir/src/parser/Xml_parser.cpp.o.requires
+fleur_src/CMakeFiles/fleur_src.dir/requires: fleur_src/CMakeFiles/fleur_src.dir/src/service/Twitter.cpp.o.requires
+fleur_src/CMakeFiles/fleur_src.dir/requires: fleur_src/CMakeFiles/fleur_src.dir/src/processing/Processing_twitter.cpp.o.requires
+fleur_src/CMakeFiles/fleur_src.dir/requires: fleur_src/CMakeFiles/fleur_src.dir/src/processing/Processing.cpp.o.requires
 
 .PHONY : fleur_src/CMakeFiles/fleur_src.dir/requires
 

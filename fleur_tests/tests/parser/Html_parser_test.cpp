@@ -3,7 +3,7 @@
 //
 
 #include <gtest/gtest.h>
-#include "Xml_parser.h"
+#include "parser/Xml_parser.h"
 
 class Html_parser_test : public ::testing::Test {
 protected:

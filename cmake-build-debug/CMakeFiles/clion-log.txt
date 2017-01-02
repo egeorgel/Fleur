@@ -21,6 +21,18 @@
 -- Set CURL_INCLUDE_DIRS to /usr/include.
 -- Using CURL_INCLUDE_DIRS: /usr/include.
 -- Using CURL_LIBRARIES: /usr/lib/libcurl.dylib.
+CMake Warning (dev) at CMakeLists.txt:67 (link_directories):
+  This command specifies the relative path
+
+    libtwitcurl/lib
+
+  as a link directory.
+
+  Policy CMP0015 is not set: link_directories() treats paths relative to the
+  source dir.  Run "cmake --help-policy CMP0015" for policy details.  Use the
+  cmake_policy command to set the policy and suppress this warning.
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
 -- Configuring done
 CMake Warning (dev):
   Policy CMP0042 is not set: MACOSX_RPATH is enabled by default.  Run "cmake

@@ -5,8 +5,8 @@
 #include <boost/property_tree/json_parser.hpp>
 
 #include <gtest/gtest.h>
-#include <Requete_parser.h>
-#include <Http.h>
+#include <parser/Requete_parser.h>
+#include <service/Http.h>
 #include <HttpException.h>
 #include <json.hpp>
 

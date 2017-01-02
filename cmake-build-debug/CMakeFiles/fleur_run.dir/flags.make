@@ -6,5 +6,5 @@ CXX_FLAGS = -g   -std=c++11 -std=gnu++11
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/usr/local/include -I/Users/Edgar/ClionProjects/Fleur/gumbo-query/include -I/Users/Edgar/ClionProjects/Fleur/opt/cpr/include -I/Users/Edgar/ClionProjects/Fleur/opt/json/src -I/Users/Edgar/ClionProjects/Fleur/fleur_src/include 
+CXX_INCLUDES = -I/usr/local/include -I/Users/Edgar/ClionProjects/Fleur/gumbo-query/include -I/Users/Edgar/ClionProjects/Fleur/opt/cpr/include -I/Users/Edgar/ClionProjects/Fleur/opt/json/src -I/Users/Edgar/ClionProjects/Fleur/libtwitcurl/include -I/Users/Edgar/ClionProjects/Fleur/fleur_src/include 
 

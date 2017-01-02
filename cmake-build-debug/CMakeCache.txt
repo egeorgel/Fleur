@@ -354,6 +354,15 @@ gumbo_query_shared_LIB_DEPENDS:STATIC=general;/usr/local/lib/libgumbo.dylib;
 //Dependencies for the target
 gumbo_query_static_LIB_DEPENDS:STATIC=general;/usr/local/lib/libgumbo.dylib;
 
+//Value Computed by CMake
+libtwitcurl_BINARY_DIR:STATIC=/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/libtwitcurl
+
+//Dependencies for target
+libtwitcurl_LIB_DEPENDS:STATIC=
+
+//Value Computed by CMake
+libtwitcurl_SOURCE_DIR:STATIC=/Users/Edgar/ClionProjects/Fleur/libtwitcurl
+
 //Dependencies for target
 my_LIB_DEPENDS:STATIC=
 
@@ -488,7 +497,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=10
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=11
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
@@ -550,7 +559,7 @@ CURL_LIBRARIES:INTERNAL=/usr/lib/libcurl.dylib
 //ADVANCED property for variable: CURL_LIBRARY
 CURL_LIBRARY-ADVANCED:INTERNAL=1
 //Details about finding CURL
-FIND_PACKAGE_MESSAGE_DETAILS_CURL:INTERNAL=[/usr/lib/libcurl.dylib][/usr/include][v7.49.1()]
+FIND_PACKAGE_MESSAGE_DETAILS_CURL:INTERNAL=[/usr/lib/libcurl.dylib][/usr/include][v7.51.0()]
 //Details about finding PythonInterp
 FIND_PACKAGE_MESSAGE_DETAILS_PythonInterp:INTERNAL=[/usr/bin/python][v2.7.10()]
 //Details about finding Threads

@@ -5,10 +5,16 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "/Users/Edgar/ClionProjects/Fleur/fleur_tests/tests/Filter_test.cpp" "/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/fleur_tests/tests/CMakeFiles/fleurTest.dir/Filter_test.cpp.o"
-  "/Users/Edgar/ClionProjects/Fleur/fleur_tests/tests/Html_parser_test.cpp" "/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/fleur_tests/tests/CMakeFiles/fleurTest.dir/Html_parser_test.cpp.o"
-  "/Users/Edgar/ClionProjects/Fleur/fleur_tests/tests/Http_test.cpp" "/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/fleur_tests/tests/CMakeFiles/fleurTest.dir/Http_test.cpp.o"
-  "/Users/Edgar/ClionProjects/Fleur/fleur_tests/tests/Processing_test.cpp" "/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/fleur_tests/tests/CMakeFiles/fleurTest.dir/Processing_test.cpp.o"
-  "/Users/Edgar/ClionProjects/Fleur/fleur_tests/tests/Requete_parser_test.cpp" "/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/fleur_tests/tests/CMakeFiles/fleurTest.dir/Requete_parser_test.cpp.o"
+  "/Users/Edgar/ClionProjects/Fleur/fleur_tests/tests/Libtwitcurl_test.cpp" "/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/fleur_tests/tests/CMakeFiles/fleurTest.dir/Libtwitcurl_test.cpp.o"
+  "/Users/Edgar/ClionProjects/Fleur/fleur_tests/tests/parser/Html_parser_test.cpp" "/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/fleur_tests/tests/CMakeFiles/fleurTest.dir/parser/Html_parser_test.cpp.o"
+  "/Users/Edgar/ClionProjects/Fleur/fleur_tests/tests/parser/Include_parser_test.cpp" "/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/fleur_tests/tests/CMakeFiles/fleurTest.dir/parser/Include_parser_test.cpp.o"
+  "/Users/Edgar/ClionProjects/Fleur/fleur_tests/tests/parser/Requete_parser_test.cpp" "/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/fleur_tests/tests/CMakeFiles/fleurTest.dir/parser/Requete_parser_test.cpp.o"
+  "/Users/Edgar/ClionProjects/Fleur/fleur_tests/tests/parser/Twitter_parser_test.cpp" "/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/fleur_tests/tests/CMakeFiles/fleurTest.dir/parser/Twitter_parser_test.cpp.o"
+  "/Users/Edgar/ClionProjects/Fleur/fleur_tests/tests/processing/Processing_http_test.cpp" "/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/fleur_tests/tests/CMakeFiles/fleurTest.dir/processing/Processing_http_test.cpp.o"
+  "/Users/Edgar/ClionProjects/Fleur/fleur_tests/tests/processing/Processing_twitter_test.cpp" "/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/fleur_tests/tests/CMakeFiles/fleurTest.dir/processing/Processing_twitter_test.cpp.o"
+  "/Users/Edgar/ClionProjects/Fleur/fleur_tests/tests/processing/processing_test.cpp" "/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/fleur_tests/tests/CMakeFiles/fleurTest.dir/processing/processing_test.cpp.o"
+  "/Users/Edgar/ClionProjects/Fleur/fleur_tests/tests/service/Http_test.cpp" "/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/fleur_tests/tests/CMakeFiles/fleurTest.dir/service/Http_test.cpp.o"
+  "/Users/Edgar/ClionProjects/Fleur/fleur_tests/tests/service/Twitter_test.cpp" "/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/fleur_tests/tests/CMakeFiles/fleurTest.dir/service/Twitter_test.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "Clang")
 
@@ -18,6 +24,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "../gumbo-query/include"
   "../opt/cpr/include"
   "../opt/json/src"
+  "../libtwitcurl/include"
   "../fleur_src/include"
   "../fleur_tests/lib/gtest-1.7.0/include"
   "../fleur_tests/lib/gtest-1.7.0"
@@ -30,6 +37,7 @@ set(CMAKE_TARGET_LINKED_INFO_FILES
   "/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/fleur_tests/lib/gtest-1.7.0/CMakeFiles/gtest_main.dir/DependInfo.cmake"
   "/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/opt/cpr/cpr/CMakeFiles/cpr.dir/DependInfo.cmake"
   "/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/gumbo-query/src/CMakeFiles/gumbo_query_shared.dir/DependInfo.cmake"
+  "/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/libtwitcurl/CMakeFiles/libtwitcurl.dir/DependInfo.cmake"
   "/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/fleur_src/CMakeFiles/fleur_src.dir/DependInfo.cmake"
   )
 

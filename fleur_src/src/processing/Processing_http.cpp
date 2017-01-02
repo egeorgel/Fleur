@@ -2,15 +2,15 @@
 // Created by Edgar on 21/11/2016.
 //
 
-#include "Processing.h"
+#include "processing/Processing_http.h"
 #include <assert.h>
-#include <Http.h>
+#include <service/Http.h>
 #include "Filter.h"
 
-Processing::Strings Processing::build() {
+Processing_http::Strings Processing_http::build() {
     assert(_requete._url != "");
 
-    Processing::Strings result;
+    Processing_http::Strings result;
     Http http(_requete);
 
     // 1 cheque the return format
@@ -28,7 +28,9 @@ Processing::Strings Processing::build() {
     return result;
 }
 
-std::string Processing::processHeader(const std::string &format, const std::string &crud) const {
+std::string Processing_http::processHeader(const std::string &format, const std::string &crud) const {
     std::string result = "";
+//TODO: a coder
+
     return result;
 }
