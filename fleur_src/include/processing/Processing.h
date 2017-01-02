@@ -6,7 +6,7 @@
 #define FLEUR_PROCESSING_H
 
 
-class Processing {
+class Processing_http {
 //TODO: link processings
 };
 

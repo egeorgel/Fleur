@@ -7,12 +7,12 @@
 
 #include "parser/Requete_parser.h"
 
-class Processing {
+class Processing_http {
 
 public:
     typedef std::vector<std::string> Strings;
 
-    Processing(const parser::Requete &requete) : _requete(requete) {}
+    Processing_http(const parser::Requete &requete) : _requete(requete) {}
 
     /**
      * Run the _requete

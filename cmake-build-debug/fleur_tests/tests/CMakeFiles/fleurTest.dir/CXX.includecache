@@ -124,6 +124,10 @@ vector
 parser/Requete_parser.h
 ../fleur_src/include/processing/parser/Requete_parser.h
 
+../fleur_src/include/processing/Processing_twitter.h
+service/Twitter.h
+-
+
 ../fleur_src/include/service/Http.h
 string
 -
@@ -549,6 +553,10 @@ processing/Processing_http.h
 /Users/Edgar/ClionProjects/Fleur/fleur_tests/tests/processing/processing/Processing_http.h
 
 /Users/Edgar/ClionProjects/Fleur/fleur_tests/tests/processing/Processing_twitter_test.cpp
+gtest/gtest.h
+-
+processing/Processing_twitter.h
+/Users/Edgar/ClionProjects/Fleur/fleur_tests/tests/processing/processing/Processing_twitter.h
 
 /Users/Edgar/ClionProjects/Fleur/fleur_tests/tests/processing/processing_test.cpp
 

@@ -109,6 +109,8 @@ parser/Requete_parser.h
 ../fleur_src/include/processing/parser/Requete_parser.h
 
 ../fleur_src/include/processing/Processing_twitter.h
+service/Twitter.h
+-
 
 ../fleur_src/include/service/Http.h
 string
