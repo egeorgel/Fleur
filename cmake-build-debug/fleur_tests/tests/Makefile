@@ -218,113 +218,275 @@ Filter_test.cpp.s:
 	cd /Users/Edgar/ClionProjects/Fleur/cmake-build-debug && $(MAKE) -f fleur_tests/tests/CMakeFiles/fleurTest.dir/build.make fleur_tests/tests/CMakeFiles/fleurTest.dir/Filter_test.cpp.s
 .PHONY : Filter_test.cpp.s
 
-Html_parser_test.o: Html_parser_test.cpp.o
+Libtwitcurl_test.o: Libtwitcurl_test.cpp.o
 
-.PHONY : Html_parser_test.o
-
-# target to build an object file
-Html_parser_test.cpp.o:
-	cd /Users/Edgar/ClionProjects/Fleur/cmake-build-debug && $(MAKE) -f fleur_tests/tests/CMakeFiles/fleurTest.dir/build.make fleur_tests/tests/CMakeFiles/fleurTest.dir/Html_parser_test.cpp.o
-.PHONY : Html_parser_test.cpp.o
-
-Html_parser_test.i: Html_parser_test.cpp.i
-
-.PHONY : Html_parser_test.i
-
-# target to preprocess a source file
-Html_parser_test.cpp.i:
-	cd /Users/Edgar/ClionProjects/Fleur/cmake-build-debug && $(MAKE) -f fleur_tests/tests/CMakeFiles/fleurTest.dir/build.make fleur_tests/tests/CMakeFiles/fleurTest.dir/Html_parser_test.cpp.i
-.PHONY : Html_parser_test.cpp.i
-
-Html_parser_test.s: Html_parser_test.cpp.s
-
-.PHONY : Html_parser_test.s
-
-# target to generate assembly for a file
-Html_parser_test.cpp.s:
-	cd /Users/Edgar/ClionProjects/Fleur/cmake-build-debug && $(MAKE) -f fleur_tests/tests/CMakeFiles/fleurTest.dir/build.make fleur_tests/tests/CMakeFiles/fleurTest.dir/Html_parser_test.cpp.s
-.PHONY : Html_parser_test.cpp.s
-
-Http_test.o: Http_test.cpp.o
-
-.PHONY : Http_test.o
+.PHONY : Libtwitcurl_test.o
 
 # target to build an object file
-Http_test.cpp.o:
-	cd /Users/Edgar/ClionProjects/Fleur/cmake-build-debug && $(MAKE) -f fleur_tests/tests/CMakeFiles/fleurTest.dir/build.make fleur_tests/tests/CMakeFiles/fleurTest.dir/Http_test.cpp.o
-.PHONY : Http_test.cpp.o
+Libtwitcurl_test.cpp.o:
+	cd /Users/Edgar/ClionProjects/Fleur/cmake-build-debug && $(MAKE) -f fleur_tests/tests/CMakeFiles/fleurTest.dir/build.make fleur_tests/tests/CMakeFiles/fleurTest.dir/Libtwitcurl_test.cpp.o
+.PHONY : Libtwitcurl_test.cpp.o
 
-Http_test.i: Http_test.cpp.i
+Libtwitcurl_test.i: Libtwitcurl_test.cpp.i
 
-.PHONY : Http_test.i
+.PHONY : Libtwitcurl_test.i
 
 # target to preprocess a source file
-Http_test.cpp.i:
-	cd /Users/Edgar/ClionProjects/Fleur/cmake-build-debug && $(MAKE) -f fleur_tests/tests/CMakeFiles/fleurTest.dir/build.make fleur_tests/tests/CMakeFiles/fleurTest.dir/Http_test.cpp.i
-.PHONY : Http_test.cpp.i
+Libtwitcurl_test.cpp.i:
+	cd /Users/Edgar/ClionProjects/Fleur/cmake-build-debug && $(MAKE) -f fleur_tests/tests/CMakeFiles/fleurTest.dir/build.make fleur_tests/tests/CMakeFiles/fleurTest.dir/Libtwitcurl_test.cpp.i
+.PHONY : Libtwitcurl_test.cpp.i
 
-Http_test.s: Http_test.cpp.s
+Libtwitcurl_test.s: Libtwitcurl_test.cpp.s
 
-.PHONY : Http_test.s
+.PHONY : Libtwitcurl_test.s
 
 # target to generate assembly for a file
-Http_test.cpp.s:
-	cd /Users/Edgar/ClionProjects/Fleur/cmake-build-debug && $(MAKE) -f fleur_tests/tests/CMakeFiles/fleurTest.dir/build.make fleur_tests/tests/CMakeFiles/fleurTest.dir/Http_test.cpp.s
-.PHONY : Http_test.cpp.s
+Libtwitcurl_test.cpp.s:
+	cd /Users/Edgar/ClionProjects/Fleur/cmake-build-debug && $(MAKE) -f fleur_tests/tests/CMakeFiles/fleurTest.dir/build.make fleur_tests/tests/CMakeFiles/fleurTest.dir/Libtwitcurl_test.cpp.s
+.PHONY : Libtwitcurl_test.cpp.s
 
-Processing_test.o: Processing_test.cpp.o
+parser/Html_parser_test.o: parser/Html_parser_test.cpp.o
 
-.PHONY : Processing_test.o
+.PHONY : parser/Html_parser_test.o
 
 # target to build an object file
-Processing_test.cpp.o:
-	cd /Users/Edgar/ClionProjects/Fleur/cmake-build-debug && $(MAKE) -f fleur_tests/tests/CMakeFiles/fleurTest.dir/build.make fleur_tests/tests/CMakeFiles/fleurTest.dir/Processing_test.cpp.o
-.PHONY : Processing_test.cpp.o
+parser/Html_parser_test.cpp.o:
+	cd /Users/Edgar/ClionProjects/Fleur/cmake-build-debug && $(MAKE) -f fleur_tests/tests/CMakeFiles/fleurTest.dir/build.make fleur_tests/tests/CMakeFiles/fleurTest.dir/parser/Html_parser_test.cpp.o
+.PHONY : parser/Html_parser_test.cpp.o
 
-Processing_test.i: Processing_test.cpp.i
+parser/Html_parser_test.i: parser/Html_parser_test.cpp.i
 
-.PHONY : Processing_test.i
+.PHONY : parser/Html_parser_test.i
 
 # target to preprocess a source file
-Processing_test.cpp.i:
-	cd /Users/Edgar/ClionProjects/Fleur/cmake-build-debug && $(MAKE) -f fleur_tests/tests/CMakeFiles/fleurTest.dir/build.make fleur_tests/tests/CMakeFiles/fleurTest.dir/Processing_test.cpp.i
-.PHONY : Processing_test.cpp.i
+parser/Html_parser_test.cpp.i:
+	cd /Users/Edgar/ClionProjects/Fleur/cmake-build-debug && $(MAKE) -f fleur_tests/tests/CMakeFiles/fleurTest.dir/build.make fleur_tests/tests/CMakeFiles/fleurTest.dir/parser/Html_parser_test.cpp.i
+.PHONY : parser/Html_parser_test.cpp.i
 
-Processing_test.s: Processing_test.cpp.s
+parser/Html_parser_test.s: parser/Html_parser_test.cpp.s
 
-.PHONY : Processing_test.s
+.PHONY : parser/Html_parser_test.s
 
 # target to generate assembly for a file
-Processing_test.cpp.s:
-	cd /Users/Edgar/ClionProjects/Fleur/cmake-build-debug && $(MAKE) -f fleur_tests/tests/CMakeFiles/fleurTest.dir/build.make fleur_tests/tests/CMakeFiles/fleurTest.dir/Processing_test.cpp.s
-.PHONY : Processing_test.cpp.s
+parser/Html_parser_test.cpp.s:
+	cd /Users/Edgar/ClionProjects/Fleur/cmake-build-debug && $(MAKE) -f fleur_tests/tests/CMakeFiles/fleurTest.dir/build.make fleur_tests/tests/CMakeFiles/fleurTest.dir/parser/Html_parser_test.cpp.s
+.PHONY : parser/Html_parser_test.cpp.s
 
-Requete_parser_test.o: Requete_parser_test.cpp.o
+parser/Include_parser_test.o: parser/Include_parser_test.cpp.o
 
-.PHONY : Requete_parser_test.o
+.PHONY : parser/Include_parser_test.o
 
 # target to build an object file
-Requete_parser_test.cpp.o:
-	cd /Users/Edgar/ClionProjects/Fleur/cmake-build-debug && $(MAKE) -f fleur_tests/tests/CMakeFiles/fleurTest.dir/build.make fleur_tests/tests/CMakeFiles/fleurTest.dir/Requete_parser_test.cpp.o
-.PHONY : Requete_parser_test.cpp.o
+parser/Include_parser_test.cpp.o:
+	cd /Users/Edgar/ClionProjects/Fleur/cmake-build-debug && $(MAKE) -f fleur_tests/tests/CMakeFiles/fleurTest.dir/build.make fleur_tests/tests/CMakeFiles/fleurTest.dir/parser/Include_parser_test.cpp.o
+.PHONY : parser/Include_parser_test.cpp.o
 
-Requete_parser_test.i: Requete_parser_test.cpp.i
+parser/Include_parser_test.i: parser/Include_parser_test.cpp.i
 
-.PHONY : Requete_parser_test.i
+.PHONY : parser/Include_parser_test.i
 
 # target to preprocess a source file
-Requete_parser_test.cpp.i:
-	cd /Users/Edgar/ClionProjects/Fleur/cmake-build-debug && $(MAKE) -f fleur_tests/tests/CMakeFiles/fleurTest.dir/build.make fleur_tests/tests/CMakeFiles/fleurTest.dir/Requete_parser_test.cpp.i
-.PHONY : Requete_parser_test.cpp.i
+parser/Include_parser_test.cpp.i:
+	cd /Users/Edgar/ClionProjects/Fleur/cmake-build-debug && $(MAKE) -f fleur_tests/tests/CMakeFiles/fleurTest.dir/build.make fleur_tests/tests/CMakeFiles/fleurTest.dir/parser/Include_parser_test.cpp.i
+.PHONY : parser/Include_parser_test.cpp.i
 
-Requete_parser_test.s: Requete_parser_test.cpp.s
+parser/Include_parser_test.s: parser/Include_parser_test.cpp.s
 
-.PHONY : Requete_parser_test.s
+.PHONY : parser/Include_parser_test.s
 
 # target to generate assembly for a file
-Requete_parser_test.cpp.s:
-	cd /Users/Edgar/ClionProjects/Fleur/cmake-build-debug && $(MAKE) -f fleur_tests/tests/CMakeFiles/fleurTest.dir/build.make fleur_tests/tests/CMakeFiles/fleurTest.dir/Requete_parser_test.cpp.s
-.PHONY : Requete_parser_test.cpp.s
+parser/Include_parser_test.cpp.s:
+	cd /Users/Edgar/ClionProjects/Fleur/cmake-build-debug && $(MAKE) -f fleur_tests/tests/CMakeFiles/fleurTest.dir/build.make fleur_tests/tests/CMakeFiles/fleurTest.dir/parser/Include_parser_test.cpp.s
+.PHONY : parser/Include_parser_test.cpp.s
+
+parser/Requete_parser_test.o: parser/Requete_parser_test.cpp.o
+
+.PHONY : parser/Requete_parser_test.o
+
+# target to build an object file
+parser/Requete_parser_test.cpp.o:
+	cd /Users/Edgar/ClionProjects/Fleur/cmake-build-debug && $(MAKE) -f fleur_tests/tests/CMakeFiles/fleurTest.dir/build.make fleur_tests/tests/CMakeFiles/fleurTest.dir/parser/Requete_parser_test.cpp.o
+.PHONY : parser/Requete_parser_test.cpp.o
+
+parser/Requete_parser_test.i: parser/Requete_parser_test.cpp.i
+
+.PHONY : parser/Requete_parser_test.i
+
+# target to preprocess a source file
+parser/Requete_parser_test.cpp.i:
+	cd /Users/Edgar/ClionProjects/Fleur/cmake-build-debug && $(MAKE) -f fleur_tests/tests/CMakeFiles/fleurTest.dir/build.make fleur_tests/tests/CMakeFiles/fleurTest.dir/parser/Requete_parser_test.cpp.i
+.PHONY : parser/Requete_parser_test.cpp.i
+
+parser/Requete_parser_test.s: parser/Requete_parser_test.cpp.s
+
+.PHONY : parser/Requete_parser_test.s
+
+# target to generate assembly for a file
+parser/Requete_parser_test.cpp.s:
+	cd /Users/Edgar/ClionProjects/Fleur/cmake-build-debug && $(MAKE) -f fleur_tests/tests/CMakeFiles/fleurTest.dir/build.make fleur_tests/tests/CMakeFiles/fleurTest.dir/parser/Requete_parser_test.cpp.s
+.PHONY : parser/Requete_parser_test.cpp.s
+
+parser/Twitter_parser_test.o: parser/Twitter_parser_test.cpp.o
+
+.PHONY : parser/Twitter_parser_test.o
+
+# target to build an object file
+parser/Twitter_parser_test.cpp.o:
+	cd /Users/Edgar/ClionProjects/Fleur/cmake-build-debug && $(MAKE) -f fleur_tests/tests/CMakeFiles/fleurTest.dir/build.make fleur_tests/tests/CMakeFiles/fleurTest.dir/parser/Twitter_parser_test.cpp.o
+.PHONY : parser/Twitter_parser_test.cpp.o
+
+parser/Twitter_parser_test.i: parser/Twitter_parser_test.cpp.i
+
+.PHONY : parser/Twitter_parser_test.i
+
+# target to preprocess a source file
+parser/Twitter_parser_test.cpp.i:
+	cd /Users/Edgar/ClionProjects/Fleur/cmake-build-debug && $(MAKE) -f fleur_tests/tests/CMakeFiles/fleurTest.dir/build.make fleur_tests/tests/CMakeFiles/fleurTest.dir/parser/Twitter_parser_test.cpp.i
+.PHONY : parser/Twitter_parser_test.cpp.i
+
+parser/Twitter_parser_test.s: parser/Twitter_parser_test.cpp.s
+
+.PHONY : parser/Twitter_parser_test.s
+
+# target to generate assembly for a file
+parser/Twitter_parser_test.cpp.s:
+	cd /Users/Edgar/ClionProjects/Fleur/cmake-build-debug && $(MAKE) -f fleur_tests/tests/CMakeFiles/fleurTest.dir/build.make fleur_tests/tests/CMakeFiles/fleurTest.dir/parser/Twitter_parser_test.cpp.s
+.PHONY : parser/Twitter_parser_test.cpp.s
+
+processing/Processing_http_test.o: processing/Processing_http_test.cpp.o
+
+.PHONY : processing/Processing_http_test.o
+
+# target to build an object file
+processing/Processing_http_test.cpp.o:
+	cd /Users/Edgar/ClionProjects/Fleur/cmake-build-debug && $(MAKE) -f fleur_tests/tests/CMakeFiles/fleurTest.dir/build.make fleur_tests/tests/CMakeFiles/fleurTest.dir/processing/Processing_http_test.cpp.o
+.PHONY : processing/Processing_http_test.cpp.o
+
+processing/Processing_http_test.i: processing/Processing_http_test.cpp.i
+
+.PHONY : processing/Processing_http_test.i
+
+# target to preprocess a source file
+processing/Processing_http_test.cpp.i:
+	cd /Users/Edgar/ClionProjects/Fleur/cmake-build-debug && $(MAKE) -f fleur_tests/tests/CMakeFiles/fleurTest.dir/build.make fleur_tests/tests/CMakeFiles/fleurTest.dir/processing/Processing_http_test.cpp.i
+.PHONY : processing/Processing_http_test.cpp.i
+
+processing/Processing_http_test.s: processing/Processing_http_test.cpp.s
+
+.PHONY : processing/Processing_http_test.s
+
+# target to generate assembly for a file
+processing/Processing_http_test.cpp.s:
+	cd /Users/Edgar/ClionProjects/Fleur/cmake-build-debug && $(MAKE) -f fleur_tests/tests/CMakeFiles/fleurTest.dir/build.make fleur_tests/tests/CMakeFiles/fleurTest.dir/processing/Processing_http_test.cpp.s
+.PHONY : processing/Processing_http_test.cpp.s
+
+processing/Processing_twitter_test.o: processing/Processing_twitter_test.cpp.o
+
+.PHONY : processing/Processing_twitter_test.o
+
+# target to build an object file
+processing/Processing_twitter_test.cpp.o:
+	cd /Users/Edgar/ClionProjects/Fleur/cmake-build-debug && $(MAKE) -f fleur_tests/tests/CMakeFiles/fleurTest.dir/build.make fleur_tests/tests/CMakeFiles/fleurTest.dir/processing/Processing_twitter_test.cpp.o
+.PHONY : processing/Processing_twitter_test.cpp.o
+
+processing/Processing_twitter_test.i: processing/Processing_twitter_test.cpp.i
+
+.PHONY : processing/Processing_twitter_test.i
+
+# target to preprocess a source file
+processing/Processing_twitter_test.cpp.i:
+	cd /Users/Edgar/ClionProjects/Fleur/cmake-build-debug && $(MAKE) -f fleur_tests/tests/CMakeFiles/fleurTest.dir/build.make fleur_tests/tests/CMakeFiles/fleurTest.dir/processing/Processing_twitter_test.cpp.i
+.PHONY : processing/Processing_twitter_test.cpp.i
+
+processing/Processing_twitter_test.s: processing/Processing_twitter_test.cpp.s
+
+.PHONY : processing/Processing_twitter_test.s
+
+# target to generate assembly for a file
+processing/Processing_twitter_test.cpp.s:
+	cd /Users/Edgar/ClionProjects/Fleur/cmake-build-debug && $(MAKE) -f fleur_tests/tests/CMakeFiles/fleurTest.dir/build.make fleur_tests/tests/CMakeFiles/fleurTest.dir/processing/Processing_twitter_test.cpp.s
+.PHONY : processing/Processing_twitter_test.cpp.s
+
+processing/processing_test.o: processing/processing_test.cpp.o
+
+.PHONY : processing/processing_test.o
+
+# target to build an object file
+processing/processing_test.cpp.o:
+	cd /Users/Edgar/ClionProjects/Fleur/cmake-build-debug && $(MAKE) -f fleur_tests/tests/CMakeFiles/fleurTest.dir/build.make fleur_tests/tests/CMakeFiles/fleurTest.dir/processing/processing_test.cpp.o
+.PHONY : processing/processing_test.cpp.o
+
+processing/processing_test.i: processing/processing_test.cpp.i
+
+.PHONY : processing/processing_test.i
+
+# target to preprocess a source file
+processing/processing_test.cpp.i:
+	cd /Users/Edgar/ClionProjects/Fleur/cmake-build-debug && $(MAKE) -f fleur_tests/tests/CMakeFiles/fleurTest.dir/build.make fleur_tests/tests/CMakeFiles/fleurTest.dir/processing/processing_test.cpp.i
+.PHONY : processing/processing_test.cpp.i
+
+processing/processing_test.s: processing/processing_test.cpp.s
+
+.PHONY : processing/processing_test.s
+
+# target to generate assembly for a file
+processing/processing_test.cpp.s:
+	cd /Users/Edgar/ClionProjects/Fleur/cmake-build-debug && $(MAKE) -f fleur_tests/tests/CMakeFiles/fleurTest.dir/build.make fleur_tests/tests/CMakeFiles/fleurTest.dir/processing/processing_test.cpp.s
+.PHONY : processing/processing_test.cpp.s
+
+service/Http_test.o: service/Http_test.cpp.o
+
+.PHONY : service/Http_test.o
+
+# target to build an object file
+service/Http_test.cpp.o:
+	cd /Users/Edgar/ClionProjects/Fleur/cmake-build-debug && $(MAKE) -f fleur_tests/tests/CMakeFiles/fleurTest.dir/build.make fleur_tests/tests/CMakeFiles/fleurTest.dir/service/Http_test.cpp.o
+.PHONY : service/Http_test.cpp.o
+
+service/Http_test.i: service/Http_test.cpp.i
+
+.PHONY : service/Http_test.i
+
+# target to preprocess a source file
+service/Http_test.cpp.i:
+	cd /Users/Edgar/ClionProjects/Fleur/cmake-build-debug && $(MAKE) -f fleur_tests/tests/CMakeFiles/fleurTest.dir/build.make fleur_tests/tests/CMakeFiles/fleurTest.dir/service/Http_test.cpp.i
+.PHONY : service/Http_test.cpp.i
+
+service/Http_test.s: service/Http_test.cpp.s
+
+.PHONY : service/Http_test.s
+
+# target to generate assembly for a file
+service/Http_test.cpp.s:
+	cd /Users/Edgar/ClionProjects/Fleur/cmake-build-debug && $(MAKE) -f fleur_tests/tests/CMakeFiles/fleurTest.dir/build.make fleur_tests/tests/CMakeFiles/fleurTest.dir/service/Http_test.cpp.s
+.PHONY : service/Http_test.cpp.s
+
+service/Twitter_test.o: service/Twitter_test.cpp.o
+
+.PHONY : service/Twitter_test.o
+
+# target to build an object file
+service/Twitter_test.cpp.o:
+	cd /Users/Edgar/ClionProjects/Fleur/cmake-build-debug && $(MAKE) -f fleur_tests/tests/CMakeFiles/fleurTest.dir/build.make fleur_tests/tests/CMakeFiles/fleurTest.dir/service/Twitter_test.cpp.o
+.PHONY : service/Twitter_test.cpp.o
+
+service/Twitter_test.i: service/Twitter_test.cpp.i
+
+.PHONY : service/Twitter_test.i
+
+# target to preprocess a source file
+service/Twitter_test.cpp.i:
+	cd /Users/Edgar/ClionProjects/Fleur/cmake-build-debug && $(MAKE) -f fleur_tests/tests/CMakeFiles/fleurTest.dir/build.make fleur_tests/tests/CMakeFiles/fleurTest.dir/service/Twitter_test.cpp.i
+.PHONY : service/Twitter_test.cpp.i
+
+service/Twitter_test.s: service/Twitter_test.cpp.s
+
+.PHONY : service/Twitter_test.s
+
+# target to generate assembly for a file
+service/Twitter_test.cpp.s:
+	cd /Users/Edgar/ClionProjects/Fleur/cmake-build-debug && $(MAKE) -f fleur_tests/tests/CMakeFiles/fleurTest.dir/build.make fleur_tests/tests/CMakeFiles/fleurTest.dir/service/Twitter_test.cpp.s
+.PHONY : service/Twitter_test.cpp.s
 
 # Help Target
 help:
@@ -344,18 +506,36 @@ help:
 	@echo "... Filter_test.o"
 	@echo "... Filter_test.i"
 	@echo "... Filter_test.s"
-	@echo "... Html_parser_test.o"
-	@echo "... Html_parser_test.i"
-	@echo "... Html_parser_test.s"
-	@echo "... Http_test.o"
-	@echo "... Http_test.i"
-	@echo "... Http_test.s"
-	@echo "... Processing_test.o"
-	@echo "... Processing_test.i"
-	@echo "... Processing_test.s"
-	@echo "... Requete_parser_test.o"
-	@echo "... Requete_parser_test.i"
-	@echo "... Requete_parser_test.s"
+	@echo "... Libtwitcurl_test.o"
+	@echo "... Libtwitcurl_test.i"
+	@echo "... Libtwitcurl_test.s"
+	@echo "... parser/Html_parser_test.o"
+	@echo "... parser/Html_parser_test.i"
+	@echo "... parser/Html_parser_test.s"
+	@echo "... parser/Include_parser_test.o"
+	@echo "... parser/Include_parser_test.i"
+	@echo "... parser/Include_parser_test.s"
+	@echo "... parser/Requete_parser_test.o"
+	@echo "... parser/Requete_parser_test.i"
+	@echo "... parser/Requete_parser_test.s"
+	@echo "... parser/Twitter_parser_test.o"
+	@echo "... parser/Twitter_parser_test.i"
+	@echo "... parser/Twitter_parser_test.s"
+	@echo "... processing/Processing_http_test.o"
+	@echo "... processing/Processing_http_test.i"
+	@echo "... processing/Processing_http_test.s"
+	@echo "... processing/Processing_twitter_test.o"
+	@echo "... processing/Processing_twitter_test.i"
+	@echo "... processing/Processing_twitter_test.s"
+	@echo "... processing/processing_test.o"
+	@echo "... processing/processing_test.i"
+	@echo "... processing/processing_test.s"
+	@echo "... service/Http_test.o"
+	@echo "... service/Http_test.i"
+	@echo "... service/Http_test.s"
+	@echo "... service/Twitter_test.o"
+	@echo "... service/Twitter_test.i"
+	@echo "... service/Twitter_test.s"
 .PHONY : help
 
 

@@ -14,6 +14,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "../gumbo-query/include"
   "../opt/cpr/include"
   "../opt/json/src"
+  "../libtwitcurl/include"
   "../fleur_src/include"
   "../fleur_tests/lib/gtest-1.7.0/include"
   "../fleur_tests/lib/gtest-1.7.0"

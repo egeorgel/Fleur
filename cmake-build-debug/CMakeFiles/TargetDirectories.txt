@@ -51,6 +51,15 @@
 /Users/Edgar/ClionProjects/Fleur/cmake-build-debug/opt/cpr/cpr/CMakeFiles/install/local.dir
 /Users/Edgar/ClionProjects/Fleur/cmake-build-debug/opt/cpr/cpr/CMakeFiles/package.dir
 /Users/Edgar/ClionProjects/Fleur/cmake-build-debug/opt/cpr/cpr/CMakeFiles/cpr.dir
+/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/libtwitcurl/CMakeFiles/package.dir
+/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/libtwitcurl/CMakeFiles/edit_cache.dir
+/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/libtwitcurl/CMakeFiles/rebuild_cache.dir
+/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/libtwitcurl/CMakeFiles/package_source.dir
+/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/libtwitcurl/CMakeFiles/install.dir
+/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/libtwitcurl/CMakeFiles/install/strip.dir
+/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/libtwitcurl/CMakeFiles/install/local.dir
+/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/libtwitcurl/CMakeFiles/list_install_components.dir
+/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/libtwitcurl/CMakeFiles/libtwitcurl.dir
 /Users/Edgar/ClionProjects/Fleur/cmake-build-debug/fleur_src/CMakeFiles/package.dir
 /Users/Edgar/ClionProjects/Fleur/cmake-build-debug/fleur_src/CMakeFiles/list_install_components.dir
 /Users/Edgar/ClionProjects/Fleur/cmake-build-debug/fleur_src/CMakeFiles/rebuild_cache.dir

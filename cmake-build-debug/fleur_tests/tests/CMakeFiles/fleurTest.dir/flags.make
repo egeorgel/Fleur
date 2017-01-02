@@ -6,5 +6,5 @@ CXX_FLAGS = -g   -std=c++11 -std=gnu++11
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/usr/local/include -I/Users/Edgar/ClionProjects/Fleur/gumbo-query/include -I/Users/Edgar/ClionProjects/Fleur/opt/cpr/include -I/Users/Edgar/ClionProjects/Fleur/opt/json/src -I/Users/Edgar/ClionProjects/Fleur/fleur_src/include -I/Users/Edgar/ClionProjects/Fleur/fleur_tests/lib/gtest-1.7.0/include -I/Users/Edgar/ClionProjects/Fleur/fleur_tests/lib/gtest-1.7.0 -I/Users/Edgar/ClionProjects/Fleur/fleur_tests/gumbo-query/include 
+CXX_INCLUDES = -I/usr/local/include -I/Users/Edgar/ClionProjects/Fleur/gumbo-query/include -I/Users/Edgar/ClionProjects/Fleur/opt/cpr/include -I/Users/Edgar/ClionProjects/Fleur/opt/json/src -I/Users/Edgar/ClionProjects/Fleur/libtwitcurl/include -I/Users/Edgar/ClionProjects/Fleur/fleur_src/include -I/Users/Edgar/ClionProjects/Fleur/fleur_tests/lib/gtest-1.7.0/include -I/Users/Edgar/ClionProjects/Fleur/fleur_tests/lib/gtest-1.7.0 -I/Users/Edgar/ClionProjects/Fleur/fleur_tests/gumbo-query/include 
 
