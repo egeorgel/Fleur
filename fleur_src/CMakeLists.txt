@@ -12,7 +12,8 @@ set(HEADER_FILES
         include/parser/Twitter_parser.h
         include/service/Twitter.h
         include/processing/Processing_twitter.h
-        include/processing/Processing.h)
+        include/processing/Processing.h
+        include/ProcessingException.h)
 
 set(SOURCE_FILES
         src/parser/Requete_parser.cpp

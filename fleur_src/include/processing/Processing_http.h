@@ -2,8 +2,8 @@
 // Created by Edgar on 21/11/2016.
 //
 
-#ifndef FLEUR_PROCESSING_H
-#define FLEUR_PROCESSING_H
+#ifndef FLEUR_PROCESSING_HTTP_H
+#define FLEUR_PROCESSING_HTTP_H
 
 #include "parser/Requete_parser.h"
 
@@ -27,4 +27,4 @@ private:
 };
 
 
-#endif //FLEUR_PROCESSING_H
+#endif //FLEUR_PROCESSING_HTTP_H

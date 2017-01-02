@@ -175,7 +175,7 @@ Twitter::type_listOfTweet Twitter::json2TypeListOfTweetGetTimeLine(std::string j
             std::string value = v.second.get<std::string>("text");
             listOfTweet.push_back(std::make_pair(key, value));
         } catch (std::exception) {
-            std::string key = "ERROR get timelibe";
+            std::string key = "ERROR get timeline";
             listOfTweet.push_back(std::make_pair(key, jsonP.dump()));
             break;
         }
