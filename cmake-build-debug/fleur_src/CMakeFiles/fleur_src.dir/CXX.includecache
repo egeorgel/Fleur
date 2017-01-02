@@ -24,6 +24,30 @@ exception
 string
 -
 
+../fleur_src/include/ProcessingException.h
+exception
+-
+string
+-
+
+../fleur_src/include/parser/Include_parser.h
+string
+-
+boost/algorithm/string.hpp
+-
+boost/fusion/adapted.hpp
+-
+boost/spirit/include/qi.hpp
+-
+boost/spirit/include/qi_no_case.hpp
+-
+boost/spirit/include/phoenix_core.hpp
+-
+boost/spirit/include/phoenix_operator.hpp
+-
+boost/spirit/include/phoenix_object.hpp
+-
+
 ../fleur_src/include/parser/Requete_parser.h
 iostream
 -
@@ -103,6 +127,8 @@ vector
 -
 
 ../fleur_src/include/processing/Processing.h
+vector
+-
 
 ../fleur_src/include/processing/Processing_http.h
 parser/Requete_parser.h
@@ -471,6 +497,16 @@ parser/Xml_parser.h
 /Users/Edgar/ClionProjects/Fleur/fleur_src/src/processing/Processing.cpp
 processing/Processing.h
 /Users/Edgar/ClionProjects/Fleur/fleur_src/src/processing/processing/Processing.h
+processing/Processing_http.h
+/Users/Edgar/ClionProjects/Fleur/fleur_src/src/processing/processing/Processing_http.h
+ProcessingException.h
+/Users/Edgar/ClionProjects/Fleur/fleur_src/src/processing/ProcessingException.h
+parser/Include_parser.h
+/Users/Edgar/ClionProjects/Fleur/fleur_src/src/processing/parser/Include_parser.h
+processing/Processing_twitter.h
+/Users/Edgar/ClionProjects/Fleur/fleur_src/src/processing/processing/Processing_twitter.h
+boost/algorithm/string.hpp
+-
 
 /Users/Edgar/ClionProjects/Fleur/fleur_src/src/processing/Processing_http.cpp
 processing/Processing_http.h

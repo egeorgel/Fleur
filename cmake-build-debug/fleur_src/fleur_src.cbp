@@ -81,6 +81,9 @@
 		<Unit filename="/Users/Edgar/ClionProjects/Fleur/fleur_src/include/HttpException.h">
 			<Option target="fleur_src"/>
 		</Unit>
+		<Unit filename="/Users/Edgar/ClionProjects/Fleur/fleur_src/include/ProcessingException.h">
+			<Option target="fleur_src"/>
+		</Unit>
 		<Unit filename="/Users/Edgar/ClionProjects/Fleur/fleur_src/include/parser/Include_parser.h">
 			<Option target="fleur_src"/>
 		</Unit>
