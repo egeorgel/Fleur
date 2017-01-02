@@ -6,6 +6,10 @@
 #include <json.hpp>
 #include "service/Twitter.h"
 
+/////////////////////
+///     PUBLIC   ////
+/////////////////////
+
 Twitter::type_listOfTweet Twitter::getTimeLineFromUserWithLimit() {
     assert(_twitter._crud == "get");
     if ( !isLogIn() ) {
@@ -110,6 +114,36 @@ std::vector<std::string> Twitter::getCurrentTrendWithLimit() {
     return json2stringVecOfTrend(response, limit);
 }
 
+
+std::vector<std::string> Twitter::process() { //TODO: test in twitter_test.cpp
+
+    if (_twitter._crud == "search") {
+        return type_listOfTweet2VectorString(searchForTwitContainStringWithLimit(), "User");
+    }
+
+    if (_twitter._crud == "post") {
+        return type_tweet2VectorString(postNewTweet(), "post");
+    }
+
+    if (_twitter._crud == "delete") {
+        return type_tweet2VectorString(deleteTweet(), "delete");
+    }
+
+    if (_twitter._crud != "get") return {"Error, not a valid syntax use : get | post | delete | search"};
+
+    if (_twitter._actionName == "mentions") {
+        return type_listOfTweet2VectorString(getTwitSelfMentioningWithLimit(), "User");
+    }
+
+    if (_twitter._actionName == "trends")
+        return getCurrentTrendWithLimit();
+
+    return type_listOfTweet2VectorString(getTimeLineFromUserWithLimit(), "Id");
+}
+
+/////////////////////
+///     PRIVATE   ///
+/////////////////////
 
 bool Twitter::isLogIn() {
     return _twitCurl.accountVerifyCredGet();
@@ -271,6 +305,18 @@ std::vector<std::string> Twitter::json2stringVecOfTrend(std::string json, int li
     return outputTrend;
 }
 
+std::vector<std::string> Twitter::type_listOfTweet2VectorString(Twitter::type_listOfTweet listOfTweet, std::string keyName){
+    std::vector<std::string> container;
+    for (type_tweet tweet : listOfTweet) {
+        std::string str("");
+        str = keyName + " = " + tweet.first + " | tweet = " + tweet.second;
+        container.push_back(str);
+    }
+    return container;
+}
 
+std::vector<std::string> Twitter::type_tweet2VectorString(Twitter::type_tweet tweet, std::string typeOperation){
+    return {"The tweet " + tweet.first + " : " + tweet.second + " has been " + typeOperation};
+}
 
 

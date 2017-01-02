@@ -49,6 +49,8 @@ public:
      */
     std::vector<std::string> getCurrentTrendWithLimit();
 
+    std::vector<std::string> process();
+
 private:
     const parser::Twitter &_twitter;
     twitCurl &_twitCurl;
@@ -62,6 +64,8 @@ private:
     type_tweet json2TypeTweetDeletTweet(std::string json);
     std::vector<std::string> json2stringVecOfTrend(std::string json, int limit);
 
+    std::vector<std::string> type_listOfTweet2VectorString(type_listOfTweet listOfTweet, std::string keyName);
+    std::vector<std::string> type_tweet2VectorString(type_tweet tweet, std::string typeOperation);
 };
 
 
