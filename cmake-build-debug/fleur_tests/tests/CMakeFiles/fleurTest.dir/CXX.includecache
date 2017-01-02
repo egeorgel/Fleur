@@ -120,6 +120,8 @@ string
 vector
 -
 
+../fleur_src/include/processing/Processing.h
+
 ../fleur_src/include/processing/Processing_http.h
 parser/Requete_parser.h
 ../fleur_src/include/processing/parser/Requete_parser.h
@@ -559,6 +561,10 @@ processing/Processing_twitter.h
 /Users/Edgar/ClionProjects/Fleur/fleur_tests/tests/processing/processing/Processing_twitter.h
 
 /Users/Edgar/ClionProjects/Fleur/fleur_tests/tests/processing/processing_test.cpp
+gtest/gtest.h
+-
+processing/Processing.h
+/Users/Edgar/ClionProjects/Fleur/fleur_tests/tests/processing/processing/Processing.h
 
 /Users/Edgar/ClionProjects/Fleur/fleur_tests/tests/service/Http_test.cpp
 boost/property_tree/ptree.hpp

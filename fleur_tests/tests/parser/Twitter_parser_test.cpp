@@ -164,3 +164,16 @@ TEST_F(Twitter_parser_test, rse_url_parse_u_) {
     ASSERT_EQ(twitterReq._actionName, "trends");
 
 }
+
+/// TwitterKeyOAut
+
+TEST_F(Twitter_parser_test, twitterKeyOAut) {
+    std::string input = "(CBJimEZofmww7RQ4fvitrNHnj, M9NBXFAQLJC6j5lTcQ1QL0QMAm4L8nyCKGwNcARP5BGlrJaNLA, 2711422854-wV9d3fCBnyx7oTDFlRn9F4oCM4CysAaR97TeaKn, qq9z0Bv5ZigB810CnRnF8rgrdx7cen9TS1CJTKlMngYRm);";
+    parser::TwitterKeyOAut twitterKeyOAut;
+    EXPECT_TRUE(parser::doParse(input, twitterKeyOAut));
+    ASSERT_EQ(twitterKeyOAut._consumerKey, "CBJimEZofmww7RQ4fvitrNHnj");
+    ASSERT_EQ(twitterKeyOAut._consumerSecret, "M9NBXFAQLJC6j5lTcQ1QL0QMAm4L8nyCKGwNcARP5BGlrJaNLA");
+    ASSERT_EQ(twitterKeyOAut._tokenKey, "2711422854-wV9d3fCBnyx7oTDFlRn9F4oCM4CysAaR97TeaKn");
+    ASSERT_EQ(twitterKeyOAut._tokenSecret, "qq9z0Bv5ZigB810CnRnF8rgrdx7cen9TS1CJTKlMngYRm");
+
+}
