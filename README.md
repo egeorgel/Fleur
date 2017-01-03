@@ -30,4 +30,4 @@ Some key word :
 Feel free to add any new component to this project.
 
 ## Authors
-Edgar Georgel - Philppe Dupart - Arthur Busser - Valentin Mercier
+Edgar Georgel - Philppe Dupart - Arthur Busser - Anthony Da Mota - Valentin Mercier
