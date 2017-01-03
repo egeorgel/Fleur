@@ -1,0 +1,22 @@
+{
+ "scope": "source.fql",
+ "completions":
+ [
+    "FROM",
+    "GET (header)",
+    "GET (html)",
+    "GET (txt)",
+    "GET",
+    {
+      "trigger": "GET (custom parameter)",
+      "contents": "GET (${1:parameter})"
+    },
+    "SEARCH",
+    "USE",
+    {
+      "trigger": "HEADER (parameter)",
+      "contents": "HEADER (${1:parameter})"
+    }
+    "SELECT"
+  ]
+}
