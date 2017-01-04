@@ -10,8 +10,11 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/Users/Edgar/ClionProjects/Fleur/fleur_src/src/processing/Processing.cpp" "/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/fleur_src/CMakeFiles/fleur_src.dir/src/processing/Processing.cpp.o"
   "/Users/Edgar/ClionProjects/Fleur/fleur_src/src/processing/Processing_http.cpp" "/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/fleur_src/CMakeFiles/fleur_src.dir/src/processing/Processing_http.cpp.o"
   "/Users/Edgar/ClionProjects/Fleur/fleur_src/src/processing/Processing_twitter.cpp" "/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/fleur_src/CMakeFiles/fleur_src.dir/src/processing/Processing_twitter.cpp.o"
+  "/Users/Edgar/ClionProjects/Fleur/fleur_src/src/processing/Processing_wiki.cpp" "/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/fleur_src/CMakeFiles/fleur_src.dir/src/processing/Processing_wiki.cpp.o"
   "/Users/Edgar/ClionProjects/Fleur/fleur_src/src/service/Http.cpp" "/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/fleur_src/CMakeFiles/fleur_src.dir/src/service/Http.cpp.o"
   "/Users/Edgar/ClionProjects/Fleur/fleur_src/src/service/Twitter.cpp" "/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/fleur_src/CMakeFiles/fleur_src.dir/src/service/Twitter.cpp.o"
+  "/Users/Edgar/ClionProjects/Fleur/fleur_src/src/service/Wiki.cpp" "/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/fleur_src/CMakeFiles/fleur_src.dir/src/service/Wiki.cpp.o"
+  "/Users/Edgar/ClionProjects/Fleur/fleur_src/src/utils/sha1.cpp" "/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/fleur_src/CMakeFiles/fleur_src.dir/src/utils/sha1.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "Clang")
 

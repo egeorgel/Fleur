@@ -10,7 +10,9 @@ add_executable(fleurTest
         parser/Twitter_parser_test.cpp
         Libtwitcurl_test.cpp service/Twitter_test.cpp
         processing/Processing_twitter_test.cpp
-        processing/processing_test.cpp)
+        processing/processing_test.cpp
+        parser/Wiki_parser_test.cpp
+        service/Wiki_test.cpp)
 
 set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} ${PROJECT_SOURCE_DIR}/cmake)
 find_package(Gumbo REQUIRED)

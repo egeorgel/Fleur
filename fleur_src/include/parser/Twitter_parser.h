@@ -65,7 +65,6 @@ namespace parser {
     namespace ascii = boost::spirit::ascii;
 
 
-    // Requete parser
     template<typename Iterator>
     struct Twitter_parser : qi::grammar<Iterator, Twitter(), ascii::space_type> {
         qi::rule<Iterator, std::string(), ascii::space_type> lexemCrud, lexemActionName, lexemFromName, lexemLimitName;

@@ -651,6 +651,9 @@
 		<Unit filename="/Users/Edgar/ClionProjects/Fleur/fleur_src/include/parser/Twitter_parser.h">
 			<Option target="fleur_src"/>
 		</Unit>
+		<Unit filename="/Users/Edgar/ClionProjects/Fleur/fleur_src/include/parser/Wiki_parser.h">
+			<Option target="fleur_src"/>
+		</Unit>
 		<Unit filename="/Users/Edgar/ClionProjects/Fleur/fleur_src/include/parser/Xml_parser.h">
 			<Option target="fleur_src"/>
 		</Unit>
@@ -663,10 +666,19 @@
 		<Unit filename="/Users/Edgar/ClionProjects/Fleur/fleur_src/include/processing/Processing_twitter.h">
 			<Option target="fleur_src"/>
 		</Unit>
+		<Unit filename="/Users/Edgar/ClionProjects/Fleur/fleur_src/include/processing/Processing_wiki.h">
+			<Option target="fleur_src"/>
+		</Unit>
 		<Unit filename="/Users/Edgar/ClionProjects/Fleur/fleur_src/include/service/Http.h">
 			<Option target="fleur_src"/>
 		</Unit>
 		<Unit filename="/Users/Edgar/ClionProjects/Fleur/fleur_src/include/service/Twitter.h">
+			<Option target="fleur_src"/>
+		</Unit>
+		<Unit filename="/Users/Edgar/ClionProjects/Fleur/fleur_src/include/service/Wiki.h">
+			<Option target="fleur_src"/>
+		</Unit>
+		<Unit filename="/Users/Edgar/ClionProjects/Fleur/fleur_src/include/utils/sha1.h">
 			<Option target="fleur_src"/>
 		</Unit>
 		<Unit filename="/Users/Edgar/ClionProjects/Fleur/fleur_src/src/Filter.cpp">
@@ -687,10 +699,19 @@
 		<Unit filename="/Users/Edgar/ClionProjects/Fleur/fleur_src/src/processing/Processing_twitter.cpp">
 			<Option target="fleur_src"/>
 		</Unit>
+		<Unit filename="/Users/Edgar/ClionProjects/Fleur/fleur_src/src/processing/Processing_wiki.cpp">
+			<Option target="fleur_src"/>
+		</Unit>
 		<Unit filename="/Users/Edgar/ClionProjects/Fleur/fleur_src/src/service/Http.cpp">
 			<Option target="fleur_src"/>
 		</Unit>
 		<Unit filename="/Users/Edgar/ClionProjects/Fleur/fleur_src/src/service/Twitter.cpp">
+			<Option target="fleur_src"/>
+		</Unit>
+		<Unit filename="/Users/Edgar/ClionProjects/Fleur/fleur_src/src/service/Wiki.cpp">
+			<Option target="fleur_src"/>
+		</Unit>
+		<Unit filename="/Users/Edgar/ClionProjects/Fleur/fleur_src/src/utils/sha1.cpp">
 			<Option target="fleur_src"/>
 		</Unit>
 		<Unit filename="/Users/Edgar/ClionProjects/Fleur/fleur_tests/lib/gtest-1.7.0/src/gtest-all.cc">
@@ -717,6 +738,9 @@
 		<Unit filename="/Users/Edgar/ClionProjects/Fleur/fleur_tests/tests/parser/Twitter_parser_test.cpp">
 			<Option target="fleurTest"/>
 		</Unit>
+		<Unit filename="/Users/Edgar/ClionProjects/Fleur/fleur_tests/tests/parser/Wiki_parser_test.cpp">
+			<Option target="fleurTest"/>
+		</Unit>
 		<Unit filename="/Users/Edgar/ClionProjects/Fleur/fleur_tests/tests/processing/Processing_http_test.cpp">
 			<Option target="fleurTest"/>
 		</Unit>
@@ -730,6 +754,9 @@
 			<Option target="fleurTest"/>
 		</Unit>
 		<Unit filename="/Users/Edgar/ClionProjects/Fleur/fleur_tests/tests/service/Twitter_test.cpp">
+			<Option target="fleurTest"/>
+		</Unit>
+		<Unit filename="/Users/Edgar/ClionProjects/Fleur/fleur_tests/tests/service/Wiki_test.cpp">
 			<Option target="fleurTest"/>
 		</Unit>
 		<Unit filename="/Users/Edgar/ClionProjects/Fleur/gumbo-query/src/Document.cpp">

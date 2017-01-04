@@ -218,6 +218,9 @@
 		<Unit filename="/Users/Edgar/ClionProjects/Fleur/fleur_tests/tests/parser/Twitter_parser_test.cpp">
 			<Option target="fleurTest"/>
 		</Unit>
+		<Unit filename="/Users/Edgar/ClionProjects/Fleur/fleur_tests/tests/parser/Wiki_parser_test.cpp">
+			<Option target="fleurTest"/>
+		</Unit>
 		<Unit filename="/Users/Edgar/ClionProjects/Fleur/fleur_tests/tests/processing/Processing_http_test.cpp">
 			<Option target="fleurTest"/>
 		</Unit>
@@ -231,6 +234,9 @@
 			<Option target="fleurTest"/>
 		</Unit>
 		<Unit filename="/Users/Edgar/ClionProjects/Fleur/fleur_tests/tests/service/Twitter_test.cpp">
+			<Option target="fleurTest"/>
+		</Unit>
+		<Unit filename="/Users/Edgar/ClionProjects/Fleur/fleur_tests/tests/service/Wiki_test.cpp">
 			<Option target="fleurTest"/>
 		</Unit>
 		<Unit filename="/Users/Edgar/ClionProjects/Fleur/CMakeLists.txt">

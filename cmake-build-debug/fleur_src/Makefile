@@ -353,6 +353,33 @@ src/processing/Processing_twitter.cpp.s:
 	cd /Users/Edgar/ClionProjects/Fleur/cmake-build-debug && $(MAKE) -f fleur_src/CMakeFiles/fleur_src.dir/build.make fleur_src/CMakeFiles/fleur_src.dir/src/processing/Processing_twitter.cpp.s
 .PHONY : src/processing/Processing_twitter.cpp.s
 
+src/processing/Processing_wiki.o: src/processing/Processing_wiki.cpp.o
+
+.PHONY : src/processing/Processing_wiki.o
+
+# target to build an object file
+src/processing/Processing_wiki.cpp.o:
+	cd /Users/Edgar/ClionProjects/Fleur/cmake-build-debug && $(MAKE) -f fleur_src/CMakeFiles/fleur_src.dir/build.make fleur_src/CMakeFiles/fleur_src.dir/src/processing/Processing_wiki.cpp.o
+.PHONY : src/processing/Processing_wiki.cpp.o
+
+src/processing/Processing_wiki.i: src/processing/Processing_wiki.cpp.i
+
+.PHONY : src/processing/Processing_wiki.i
+
+# target to preprocess a source file
+src/processing/Processing_wiki.cpp.i:
+	cd /Users/Edgar/ClionProjects/Fleur/cmake-build-debug && $(MAKE) -f fleur_src/CMakeFiles/fleur_src.dir/build.make fleur_src/CMakeFiles/fleur_src.dir/src/processing/Processing_wiki.cpp.i
+.PHONY : src/processing/Processing_wiki.cpp.i
+
+src/processing/Processing_wiki.s: src/processing/Processing_wiki.cpp.s
+
+.PHONY : src/processing/Processing_wiki.s
+
+# target to generate assembly for a file
+src/processing/Processing_wiki.cpp.s:
+	cd /Users/Edgar/ClionProjects/Fleur/cmake-build-debug && $(MAKE) -f fleur_src/CMakeFiles/fleur_src.dir/build.make fleur_src/CMakeFiles/fleur_src.dir/src/processing/Processing_wiki.cpp.s
+.PHONY : src/processing/Processing_wiki.cpp.s
+
 src/service/Http.o: src/service/Http.cpp.o
 
 .PHONY : src/service/Http.o
@@ -407,6 +434,60 @@ src/service/Twitter.cpp.s:
 	cd /Users/Edgar/ClionProjects/Fleur/cmake-build-debug && $(MAKE) -f fleur_src/CMakeFiles/fleur_src.dir/build.make fleur_src/CMakeFiles/fleur_src.dir/src/service/Twitter.cpp.s
 .PHONY : src/service/Twitter.cpp.s
 
+src/service/Wiki.o: src/service/Wiki.cpp.o
+
+.PHONY : src/service/Wiki.o
+
+# target to build an object file
+src/service/Wiki.cpp.o:
+	cd /Users/Edgar/ClionProjects/Fleur/cmake-build-debug && $(MAKE) -f fleur_src/CMakeFiles/fleur_src.dir/build.make fleur_src/CMakeFiles/fleur_src.dir/src/service/Wiki.cpp.o
+.PHONY : src/service/Wiki.cpp.o
+
+src/service/Wiki.i: src/service/Wiki.cpp.i
+
+.PHONY : src/service/Wiki.i
+
+# target to preprocess a source file
+src/service/Wiki.cpp.i:
+	cd /Users/Edgar/ClionProjects/Fleur/cmake-build-debug && $(MAKE) -f fleur_src/CMakeFiles/fleur_src.dir/build.make fleur_src/CMakeFiles/fleur_src.dir/src/service/Wiki.cpp.i
+.PHONY : src/service/Wiki.cpp.i
+
+src/service/Wiki.s: src/service/Wiki.cpp.s
+
+.PHONY : src/service/Wiki.s
+
+# target to generate assembly for a file
+src/service/Wiki.cpp.s:
+	cd /Users/Edgar/ClionProjects/Fleur/cmake-build-debug && $(MAKE) -f fleur_src/CMakeFiles/fleur_src.dir/build.make fleur_src/CMakeFiles/fleur_src.dir/src/service/Wiki.cpp.s
+.PHONY : src/service/Wiki.cpp.s
+
+src/utils/sha1.o: src/utils/sha1.cpp.o
+
+.PHONY : src/utils/sha1.o
+
+# target to build an object file
+src/utils/sha1.cpp.o:
+	cd /Users/Edgar/ClionProjects/Fleur/cmake-build-debug && $(MAKE) -f fleur_src/CMakeFiles/fleur_src.dir/build.make fleur_src/CMakeFiles/fleur_src.dir/src/utils/sha1.cpp.o
+.PHONY : src/utils/sha1.cpp.o
+
+src/utils/sha1.i: src/utils/sha1.cpp.i
+
+.PHONY : src/utils/sha1.i
+
+# target to preprocess a source file
+src/utils/sha1.cpp.i:
+	cd /Users/Edgar/ClionProjects/Fleur/cmake-build-debug && $(MAKE) -f fleur_src/CMakeFiles/fleur_src.dir/build.make fleur_src/CMakeFiles/fleur_src.dir/src/utils/sha1.cpp.i
+.PHONY : src/utils/sha1.cpp.i
+
+src/utils/sha1.s: src/utils/sha1.cpp.s
+
+.PHONY : src/utils/sha1.s
+
+# target to generate assembly for a file
+src/utils/sha1.cpp.s:
+	cd /Users/Edgar/ClionProjects/Fleur/cmake-build-debug && $(MAKE) -f fleur_src/CMakeFiles/fleur_src.dir/build.make fleur_src/CMakeFiles/fleur_src.dir/src/utils/sha1.cpp.s
+.PHONY : src/utils/sha1.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -440,12 +521,21 @@ help:
 	@echo "... src/processing/Processing_twitter.o"
 	@echo "... src/processing/Processing_twitter.i"
 	@echo "... src/processing/Processing_twitter.s"
+	@echo "... src/processing/Processing_wiki.o"
+	@echo "... src/processing/Processing_wiki.i"
+	@echo "... src/processing/Processing_wiki.s"
 	@echo "... src/service/Http.o"
 	@echo "... src/service/Http.i"
 	@echo "... src/service/Http.s"
 	@echo "... src/service/Twitter.o"
 	@echo "... src/service/Twitter.i"
 	@echo "... src/service/Twitter.s"
+	@echo "... src/service/Wiki.o"
+	@echo "... src/service/Wiki.i"
+	@echo "... src/service/Wiki.s"
+	@echo "... src/utils/sha1.o"
+	@echo "... src/utils/sha1.i"
+	@echo "... src/utils/sha1.s"
 .PHONY : help
 
 

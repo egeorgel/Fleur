@@ -353,6 +353,33 @@ parser/Twitter_parser_test.cpp.s:
 	cd /Users/Edgar/ClionProjects/Fleur/cmake-build-debug && $(MAKE) -f fleur_tests/tests/CMakeFiles/fleurTest.dir/build.make fleur_tests/tests/CMakeFiles/fleurTest.dir/parser/Twitter_parser_test.cpp.s
 .PHONY : parser/Twitter_parser_test.cpp.s
 
+parser/Wiki_parser_test.o: parser/Wiki_parser_test.cpp.o
+
+.PHONY : parser/Wiki_parser_test.o
+
+# target to build an object file
+parser/Wiki_parser_test.cpp.o:
+	cd /Users/Edgar/ClionProjects/Fleur/cmake-build-debug && $(MAKE) -f fleur_tests/tests/CMakeFiles/fleurTest.dir/build.make fleur_tests/tests/CMakeFiles/fleurTest.dir/parser/Wiki_parser_test.cpp.o
+.PHONY : parser/Wiki_parser_test.cpp.o
+
+parser/Wiki_parser_test.i: parser/Wiki_parser_test.cpp.i
+
+.PHONY : parser/Wiki_parser_test.i
+
+# target to preprocess a source file
+parser/Wiki_parser_test.cpp.i:
+	cd /Users/Edgar/ClionProjects/Fleur/cmake-build-debug && $(MAKE) -f fleur_tests/tests/CMakeFiles/fleurTest.dir/build.make fleur_tests/tests/CMakeFiles/fleurTest.dir/parser/Wiki_parser_test.cpp.i
+.PHONY : parser/Wiki_parser_test.cpp.i
+
+parser/Wiki_parser_test.s: parser/Wiki_parser_test.cpp.s
+
+.PHONY : parser/Wiki_parser_test.s
+
+# target to generate assembly for a file
+parser/Wiki_parser_test.cpp.s:
+	cd /Users/Edgar/ClionProjects/Fleur/cmake-build-debug && $(MAKE) -f fleur_tests/tests/CMakeFiles/fleurTest.dir/build.make fleur_tests/tests/CMakeFiles/fleurTest.dir/parser/Wiki_parser_test.cpp.s
+.PHONY : parser/Wiki_parser_test.cpp.s
+
 processing/Processing_http_test.o: processing/Processing_http_test.cpp.o
 
 .PHONY : processing/Processing_http_test.o
@@ -488,6 +515,33 @@ service/Twitter_test.cpp.s:
 	cd /Users/Edgar/ClionProjects/Fleur/cmake-build-debug && $(MAKE) -f fleur_tests/tests/CMakeFiles/fleurTest.dir/build.make fleur_tests/tests/CMakeFiles/fleurTest.dir/service/Twitter_test.cpp.s
 .PHONY : service/Twitter_test.cpp.s
 
+service/Wiki_test.o: service/Wiki_test.cpp.o
+
+.PHONY : service/Wiki_test.o
+
+# target to build an object file
+service/Wiki_test.cpp.o:
+	cd /Users/Edgar/ClionProjects/Fleur/cmake-build-debug && $(MAKE) -f fleur_tests/tests/CMakeFiles/fleurTest.dir/build.make fleur_tests/tests/CMakeFiles/fleurTest.dir/service/Wiki_test.cpp.o
+.PHONY : service/Wiki_test.cpp.o
+
+service/Wiki_test.i: service/Wiki_test.cpp.i
+
+.PHONY : service/Wiki_test.i
+
+# target to preprocess a source file
+service/Wiki_test.cpp.i:
+	cd /Users/Edgar/ClionProjects/Fleur/cmake-build-debug && $(MAKE) -f fleur_tests/tests/CMakeFiles/fleurTest.dir/build.make fleur_tests/tests/CMakeFiles/fleurTest.dir/service/Wiki_test.cpp.i
+.PHONY : service/Wiki_test.cpp.i
+
+service/Wiki_test.s: service/Wiki_test.cpp.s
+
+.PHONY : service/Wiki_test.s
+
+# target to generate assembly for a file
+service/Wiki_test.cpp.s:
+	cd /Users/Edgar/ClionProjects/Fleur/cmake-build-debug && $(MAKE) -f fleur_tests/tests/CMakeFiles/fleurTest.dir/build.make fleur_tests/tests/CMakeFiles/fleurTest.dir/service/Wiki_test.cpp.s
+.PHONY : service/Wiki_test.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -521,6 +575,9 @@ help:
 	@echo "... parser/Twitter_parser_test.o"
 	@echo "... parser/Twitter_parser_test.i"
 	@echo "... parser/Twitter_parser_test.s"
+	@echo "... parser/Wiki_parser_test.o"
+	@echo "... parser/Wiki_parser_test.i"
+	@echo "... parser/Wiki_parser_test.s"
 	@echo "... processing/Processing_http_test.o"
 	@echo "... processing/Processing_http_test.i"
 	@echo "... processing/Processing_http_test.s"
@@ -536,6 +593,9 @@ help:
 	@echo "... service/Twitter_test.o"
 	@echo "... service/Twitter_test.i"
 	@echo "... service/Twitter_test.s"
+	@echo "... service/Wiki_test.o"
+	@echo "... service/Wiki_test.i"
+	@echo "... service/Wiki_test.s"
 .PHONY : help
 
 
