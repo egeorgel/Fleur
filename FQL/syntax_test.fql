@@ -1,0 +1,16 @@
+SELECT html FROM "http://httpbin.org/html";
+SELECT html (h1) FROM "http://httpbin.org/html";
+use twitter;
+GET * FROM . limit 2;
+SELECT html FROM "http://httpbin.org/html";
+SELECT html (title) FROM "http://www.dynsim.fr";
+SELECT html (span[id="that's"]) FROM "http://www.dynsim.fr";
+SELECT "test" FROM "http://www.dynsim.fr";
+SELECT * FROM youtube SEARCH "Metallica";
+SELECT html (p) FROM "http://denis.fr" GET (name=denis, age=12, date=12/12/12) HEADER (tokenID=E223DEF, time=4);
+SEARCH java FROM WIKI LIMIT 4;
+GET (header) java FROM wikipedia;
+GET (html) java FROM wikipedia;
+GET (txt) java FROM wikipedia;
+SELECT json FROM "http://denis.fr" GET (name=denis);
+SELECT html FROM "https://httpbin.org/html" GET (h1);
