@@ -7,28 +7,47 @@ scopeName: source.fql
 uuid: 5b8e4cd0-5bb3-4b48-b23d-85ad17fde4f9
 
 patterns:
-- comment: Keywords
-  name: keyword.other.fql
-  match: (?i:\b(select|get(\s\(header\))?(\s\(txt\))?(\s\(html\))?|header|use|from|search|limit))
+- include: '#comments'
+- include: '#keywords'
+- include: '#parentheses'
+- include: '#double_quotes'
+- include: '#numbers'
 
-- comment: Parentheses
-  name: string.other.fql
-  match: (\()(.*?)(\))
-  captures:
-    '1': {name: constant.character.fql}
-    '2': {name: variable.parameter.fql}
-    '3': {name: constant.character.fql}
+repository:
+  comments:
+    patterns:
+    - match: --.*$
+      name: comment.line.double-dash.fql
+    - begin: \/\*
+      end: \*\/
+      name: comment.block.fql
 
-- comment: Double quotes
-  name: string.quotes.double.fql
-  match: (")(.*?)(")
-  captures:
-    '1': {name: constant.character.fql}
-    '2': {name: variable.parameter.fql}
-    '3': {name: constant.character.fql}
+  keywords:
+    patterns:
+    - name: keyword.other.fql
+      match: (?i:\b(select|get|post|delete|header|use|from|search|limit))
 
-- comment: Numbers
-  name: constant.numeric.fql
-  match: (\d+)
-  captures:
-    '1': {name: constant.numeric.fql}
+  parentheses:
+    patterns:
+    - name: string.other.fql
+      match: (\()(.*?)(\))
+      captures:
+        '1': {name: constant.character.fql}
+        '2': {name: variable.parameter.fql}
+        '3': {name: constant.character.fql}
+
+  double_quotes:
+    patterns:
+    - name: string.quotes.double.fql
+      match: (")(.*?)(")
+      captures:
+        '1': {name: constant.character.fql}
+        '2': {name: variable.parameter.fql}
+        '3': {name: constant.character.fql}
+
+  numbers:
+    patterns:
+    - name: constant.numeric.fql
+      match: (\d+)
+      captures:
+        '1': {name: constant.numeric.fql}
