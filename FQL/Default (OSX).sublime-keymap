@@ -1,0 +1,6 @@
+[
+  { 
+    "keys": ["alt+shift+f"],
+    "command": "fql_echo"
+  }
+]

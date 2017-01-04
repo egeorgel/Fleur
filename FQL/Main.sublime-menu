@@ -1,0 +1,13 @@
+[
+  {
+    "id" : "FQL_menu",
+    "caption": "FQL",
+    "children":
+    [
+      {
+        "caption" : "Run selection",
+        "command" : "fql_echo"
+      }
+    ]
+  }
+]

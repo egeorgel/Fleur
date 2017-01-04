@@ -1,0 +1,13 @@
+[
+  {
+    "id" : "FQL_context",
+    "caption": "FQL",
+    "children":
+    [
+      {
+        "caption" : "Run selection",
+        "command" : "fql_echo"
+      }
+    ]
+  }
+]
