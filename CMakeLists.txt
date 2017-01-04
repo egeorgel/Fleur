@@ -1,8 +1,12 @@
 cmake_minimum_required(VERSION 2.8)
 project(Fleur)
 
-add_definitions(-std=c++11)
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}/out/cli/")
+set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}/out/lib/")
+set(CMAKE_LIBRARY_OUTPUT_DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}/out/lib/")
 
+
+add_definitions(-std=c++11)
 
 if(NOT ${CMAKE_VERSION} LESS 3.2)
     set(CMAKE_CXX_STANDARD 11)
@@ -42,10 +46,6 @@ if(Boost_FOUND)
     message(STATUS "Boost_VERSION: ${Boost_VERSION}")
     include_directories(${Boost_INCLUDE_DIRS})
 endif()
-add_executable(BoostTest main.cpp)
-if(Boost_FOUND)
-    target_link_libraries(BoostTest ${Boost_LIBRARIES})
-endif()
 
 ##Gumbo parser
 include(cmake/PreventInSourceBuilds.cmake)
@@ -66,11 +66,13 @@ link_directories(libtwitcurl/lib)
 
 
 ## Fleur
-include_directories(src/include )
-add_subdirectory(src)
+include_directories(fleur/include )
+add_subdirectory(fleur)
 add_subdirectory(tests)
 
 
-#target_link_libraries(fleur_cli fleur_static_lib curl ${CPR_LIBRARIES} gumbo_query_shared libtwitcurl)
+
+#### Fleur CLI
 set(SOURCE_FILES main.cpp)
 add_executable(fleur_cli ${SOURCE_FILES})
+target_link_libraries(fleur_cli fleur_static_lib)

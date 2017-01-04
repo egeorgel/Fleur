@@ -1,2 +1,0 @@
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ar qc libgq.a  CMakeFiles/gumbo_query_static.dir/Document.cpp.o CMakeFiles/gumbo_query_static.dir/Node.cpp.o CMakeFiles/gumbo_query_static.dir/Object.cpp.o CMakeFiles/gumbo_query_static.dir/Parser.cpp.o CMakeFiles/gumbo_query_static.dir/QueryUtil.cpp.o CMakeFiles/gumbo_query_static.dir/Selection.cpp.o CMakeFiles/gumbo_query_static.dir/Selector.cpp.o
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib libgq.a
