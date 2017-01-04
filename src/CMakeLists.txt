@@ -1,4 +1,4 @@
-project(fleur_src)
+project(fleur_static_lib)
 
 set(HEADER_FILES
         include/parser/Requete_parser.h
@@ -25,4 +25,4 @@ set(SOURCE_FILES
         src/processing/Processing_twitter.cpp
         src/processing/Processing.cpp )
 
-add_library(fleur_src STATIC ${SOURCE_FILES} ${HEADER_FILES})
+add_library(fleur_static_lib STATIC ${SOURCE_FILES} ${HEADER_FILES})

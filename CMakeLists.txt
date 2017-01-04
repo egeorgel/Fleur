@@ -33,8 +33,6 @@ else()
 endif()
 
 
-set(SOURCE_FILES main.cpp)
-add_executable(fleur_run ${SOURCE_FILES})
 
 ### INCLUDE BOOST
 find_package(Boost COMPONENTS system filesystem REQUIRED)
@@ -66,12 +64,13 @@ add_subdirectory(libtwitcurl)
 include_directories(libtwitcurl/include)
 link_directories(libtwitcurl/lib)
 
+
 ## Fleur
-include_directories(fleur_src/include )
-
-add_subdirectory(fleur_src)
-add_subdirectory(fleur_tests)
-
-target_link_libraries(fleur_run fleur_src curl ${CPR_LIBRARIES} gumbo_query_shared libtwitcurl)
+include_directories(src/include )
+add_subdirectory(src)
+add_subdirectory(tests)
 
 
+#target_link_libraries(fleur_cli fleur_static_lib curl ${CPR_LIBRARIES} gumbo_query_shared libtwitcurl)
+set(SOURCE_FILES main.cpp)
+add_executable(fleur_cli ${SOURCE_FILES})
