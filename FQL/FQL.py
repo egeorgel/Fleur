@@ -11,7 +11,6 @@ class FqlEchoCommand(sublime_plugin.WindowCommand):
     view = window.active_view()
     sel = view.sel()
     selectionText = view.substr(sel[0])
-
     if selectionText:
       # TODO: Check if correct FQL command
       new_window = window.new_file()
