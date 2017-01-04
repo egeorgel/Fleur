@@ -1,7 +1,8 @@
 {
  "scope": "source.fql",
  "completions":
- [
+  [
+    "DELETE",
     "FROM",
     "GET (header)",
     "GET (html)",
@@ -11,12 +12,13 @@
       "trigger": "GET (custom parameter)",
       "contents": "GET (${1:parameter})"
     },
+    "POST",
     "SEARCH",
     "USE",
     {
       "trigger": "HEADER (parameter)",
-      "contents": "HEADER (${1:parameter})"
-    }
+      "contents": "HEADER (${1:parameter}=${2:value})"
+    },
     "SELECT"
   ]
 }
