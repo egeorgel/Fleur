@@ -66,13 +66,13 @@ link_directories(libtwitcurl/lib)
 
 
 ## Fleur
-include_directories(fleur/include )
-add_subdirectory(fleur)
-add_subdirectory(tests)
+include_directories(fleur_core/include )
+add_subdirectory(fleur_core/)
+add_subdirectory(fleur_core_tests/)
 
 
 
 #### Fleur CLI
-set(SOURCE_FILES main.cpp)
+set(SOURCE_FILES fleur_cli/main.cpp)
 add_executable(fleur_cli ${SOURCE_FILES})
 target_link_libraries(fleur_cli fleur_static_lib)
