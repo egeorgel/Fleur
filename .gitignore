@@ -50,3 +50,6 @@ Release/
 *.cmake
 *.build
 CMakeScripts/
+
+# Build directory
+out/

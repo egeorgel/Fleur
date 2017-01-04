@@ -1,10 +1,6 @@
 cmake_minimum_required(VERSION 2.8)
 project(Fleur)
 
-set(CMAKE_RUNTIME_OUTPUT_DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}/out/cli/")
-set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}/out/lib/")
-set(CMAKE_LIBRARY_OUTPUT_DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}/out/lib/")
-
 
 add_definitions(-std=c++11)
 
@@ -62,14 +58,15 @@ include_directories(${CPR_INCLUDE_DIRS} ${JSON_INCLUDE_DIRS})
 ## libtwitcurl
 add_subdirectory(libtwitcurl)
 include_directories(libtwitcurl/include)
-link_directories(libtwitcurl/lib)
 
 
 ## Fleur
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}/out/cli/")
+set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}/out/lib/")
+set(CMAKE_LIBRARY_OUTPUT_DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}/out/lib/")
 include_directories(fleur_core/include )
 add_subdirectory(fleur_core/)
 add_subdirectory(fleur_core_tests/)
-
 
 
 #### Fleur CLI

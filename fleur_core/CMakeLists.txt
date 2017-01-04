@@ -23,7 +23,7 @@ set(SOURCE_FILES
         src/parser/Xml_parser.cpp
         src/service/Twitter.cpp
         src/processing/Processing_twitter.cpp
-        src/processing/Processing.cpp )
+        src/processing/Processing.cpp src/entrypoint.cpp)
 
 #### Fleur Static Lib
 add_library(fleur_static_lib STATIC ${SOURCE_FILES} ${HEADER_FILES})
