@@ -18,7 +18,7 @@ set(HEADER_FILES
 set(SOURCE_FILES
         src/parser/Requete_parser.cpp
         src/service/Http.cpp
-        src/Filter.cpp
+        src/parser/Filter.cpp
         src/processing/Processing_http.cpp
         src/parser/Xml_parser.cpp
         src/service/Twitter.cpp

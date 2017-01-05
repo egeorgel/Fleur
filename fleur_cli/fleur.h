@@ -5,6 +5,26 @@
 #ifndef FLEUR_FLEUR_H
 #define FLEUR_FLEUR_H
 
-void denis();
+
+#include <iostream>
+#include <string>
+
+std::string fleur_version();
+
+class Processing {
+
+public:
+    Processing(const std::string &requettes);
+
+    typedef std::vector<std::string> Strings;
+    Strings build();
+
+private:
+
+    typedef Strings type_requettes;
+    type_requettes _requettes;
+
+    bool postProcessingParssing(const std::string &requettes);
+};
 
 #endif //FLEUR_FLEUR_H

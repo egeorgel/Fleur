@@ -35,7 +35,7 @@ endif()
 
 
 ### INCLUDE BOOST
-find_package(Boost COMPONENTS system filesystem REQUIRED)
+find_package(Boost COMPONENTS system filesystem program_options REQUIRED)
 if(Boost_FOUND)
     message(STATUS "Boost_INCLUDE_DIRS: ${Boost_INCLUDE_DIRS}")
     message(STATUS "Boost_LIBRARIES: ${Boost_LIBRARIES}")
@@ -72,4 +72,4 @@ add_subdirectory(fleur_core_tests/)
 #### Fleur CLI
 set(SOURCE_FILES fleur_cli/main.cpp)
 add_executable(fleur_cli ${SOURCE_FILES})
-target_link_libraries(fleur_cli fleur_static_lib)
+target_link_libraries(fleur_cli ${Boost_LIBRARIES} fleur_static_lib)

@@ -11,18 +11,18 @@
 /**
  * string _parametersStr to type_parameterS _parameters
  */
-void parser::Requete::splitParametersStr(std::string &parameterStr, type_parameterS &parameter) {
+    void parser::Requete::splitParametersStr(std::string &parameterStr, type_parameterS &parameter) {
 
-    boost::erase_all(parameterStr, " ");
+        boost::erase_all(parameterStr, " ");
 
-    std::vector<std::string> parametersSplitByEgual = split(parameterStr, ',');
+        std::vector<std::string> parametersSplitByEgual = split(parameterStr, ',');
 
-    for (auto & element : parametersSplitByEgual) {
-        std::vector<std::string> parameterIvect = split(element, '=');
-        type_parameter parameterTuple = std::make_pair(parameterIvect.front(), parameterIvect.back());
-        parameter.push_back(parameterTuple);
+        for (auto &element : parametersSplitByEgual) {
+            std::vector<std::string> parameterIvect = split(element, '=');
+            type_parameter parameterTuple = std::make_pair(parameterIvect.front(), parameterIvect.back());
+            parameter.push_back(parameterTuple);
+        }
     }
-}
 
 
 /////////////////////
@@ -35,14 +35,14 @@ void parser::Requete::splitParametersStr(std::string &parameterStr, type_paramet
  * @param delim
  * @return
  */
-std::vector<std::string> parser::Requete::split(const std::string &s, char delim) {
-    std::stringstream stringstream;
-    stringstream.str(s);
-    std::string item;
+    std::vector<std::string> parser::Requete::split(const std::string &s, char delim) {
+        std::stringstream stringstream;
+        stringstream.str(s);
+        std::string item;
 
-    std::vector<std::string> parameters;
-    while (std::getline(stringstream, item, delim)) {
-        parameters.push_back(item);
+        std::vector<std::string> parameters;
+        while (std::getline(stringstream, item, delim)) {
+            parameters.push_back(item);
+        }
+        return parameters;
     }
-    return parameters;
-}

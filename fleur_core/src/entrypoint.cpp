@@ -3,8 +3,9 @@
 //
 
 #include <iostream>
+#define FLEUR_VERSION "1.0.0-alpha1"
 
-void denis()
+std::string fleur_version()
 {
-    std::cout << "Denis";
+    return FLEUR_VERSION;
 }

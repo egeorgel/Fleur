@@ -16,16 +16,16 @@
 #include <boost/spirit/include/phoenix_core.hpp>
 #include <boost/spirit/include/phoenix_operator.hpp>
 #include <boost/spirit/include/phoenix_object.hpp>
+    namespace parser {
 
-namespace parser {
+        struct Include {
 
-    struct Include {
+        public:
+            std::string _module;
+        };
 
-    public:
-        std::string _module;
-    };
+    }
 
-}
 
 // We need to tell fusion about our Include struct
 // to make it a first-class fusion citizen. This has to
@@ -49,14 +49,14 @@ namespace parser {
             using qi::lexeme;
             using ascii::char_;
 
-            lexemModule = lexeme [ +(char_ - ';') >> ';'];
-            requete = ascii::no_case [ "use" ] >> lexemModule;
+            lexemModule = lexeme[+(char_ - ';') >> ';'];
+            requete = ascii::no_case["use"] >> lexemModule;
         }
 
     };
 
-    template <typename C>
-    bool doParse(const C& input, Include &query) {
+    template<typename C>
+    bool doParse(const C &input, Include &query) {
         auto i_begin(std::begin(input)), i_end(std::end(input));
 
         Include_parser<decltype(i_begin)> includeParser;
@@ -66,19 +66,17 @@ namespace parser {
             if (ok) {
                 std::cout << "parse success\n";
                 std::cout << "include : " << query._module << "\n";
-            }
-            else {
+            } else {
                 std::cerr << "parse failed: '" << std::string(i_begin, i_end) << "'\n";
             }
             return ok;
-        } catch(const qi::expectation_failure<decltype(i_begin)>& e) {
+        } catch (const qi::expectation_failure<decltype(i_begin)> &e) {
             std::string frag(e.first, e.last);
             std::cerr << e.what() << "'" << frag << "'\n";
         }
 
         return false;
     }
-
 }
 
 #endif //FLEUR_REQUETETWIT_PARSER_H

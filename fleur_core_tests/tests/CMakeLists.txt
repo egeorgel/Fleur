@@ -3,7 +3,7 @@ include_directories(${gtest_SOURCE_DIR}/include ${gtest_SOURCE_DIR})
 add_executable(fleurTest
         parser/Requete_parser_test.cpp
         service/Http_test.cpp
-        Filter_test.cpp
+        parser/Filter_test.cpp
         processing/Processing_http_test.cpp
         parser/Html_parser_test.cpp
         parser/Include_parser_test.cpp
