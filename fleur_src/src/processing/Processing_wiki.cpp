@@ -3,3 +3,8 @@
 //
 
 #include "processing/Processing_wiki.h"
+
+Processing_wiki::Strings Processing_wiki::build() {
+    Wiki wiki(_wikiParser);
+    return wiki.process();
+}

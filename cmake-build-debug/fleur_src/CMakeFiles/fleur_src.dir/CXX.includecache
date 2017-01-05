@@ -160,6 +160,10 @@ parser/Requete_parser.h
 service/Twitter.h
 -
 
+../fleur_src/include/processing/Processing_wiki.h
+service/Wiki.h
+-
+
 ../fleur_src/include/service/Http.h
 string
 -
@@ -545,6 +549,10 @@ processing/Processing_twitter.h
 /Users/Edgar/ClionProjects/Fleur/fleur_src/src/processing/processing/Processing_twitter.h
 boost/algorithm/string.hpp
 -
+service/Wiki.h
+-
+processing/Processing_wiki.h
+-
 
 /Users/Edgar/ClionProjects/Fleur/fleur_src/src/processing/Processing_http.cpp
 processing/Processing_http.h
@@ -559,6 +567,10 @@ Filter.h
 /Users/Edgar/ClionProjects/Fleur/fleur_src/src/processing/Processing_twitter.cpp
 processing/Processing_twitter.h
 /Users/Edgar/ClionProjects/Fleur/fleur_src/src/processing/processing/Processing_twitter.h
+
+/Users/Edgar/ClionProjects/Fleur/fleur_src/src/processing/Processing_wiki.cpp
+processing/Processing_wiki.h
+/Users/Edgar/ClionProjects/Fleur/fleur_src/src/processing/processing/Processing_wiki.h
 
 /Users/Edgar/ClionProjects/Fleur/fleur_src/src/service/Http.cpp
 HttpException.h

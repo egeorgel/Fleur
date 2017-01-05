@@ -227,6 +227,9 @@
 		<Unit filename="/Users/Edgar/ClionProjects/Fleur/fleur_tests/tests/processing/Processing_twitter_test.cpp">
 			<Option target="fleurTest"/>
 		</Unit>
+		<Unit filename="/Users/Edgar/ClionProjects/Fleur/fleur_tests/tests/processing/Processing_wiki.cpp">
+			<Option target="fleurTest"/>
+		</Unit>
 		<Unit filename="/Users/Edgar/ClionProjects/Fleur/fleur_tests/tests/processing/processing_test.cpp">
 			<Option target="fleurTest"/>
 		</Unit>

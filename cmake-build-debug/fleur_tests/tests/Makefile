@@ -434,6 +434,33 @@ processing/Processing_twitter_test.cpp.s:
 	cd /Users/Edgar/ClionProjects/Fleur/cmake-build-debug && $(MAKE) -f fleur_tests/tests/CMakeFiles/fleurTest.dir/build.make fleur_tests/tests/CMakeFiles/fleurTest.dir/processing/Processing_twitter_test.cpp.s
 .PHONY : processing/Processing_twitter_test.cpp.s
 
+processing/Processing_wiki.o: processing/Processing_wiki.cpp.o
+
+.PHONY : processing/Processing_wiki.o
+
+# target to build an object file
+processing/Processing_wiki.cpp.o:
+	cd /Users/Edgar/ClionProjects/Fleur/cmake-build-debug && $(MAKE) -f fleur_tests/tests/CMakeFiles/fleurTest.dir/build.make fleur_tests/tests/CMakeFiles/fleurTest.dir/processing/Processing_wiki.cpp.o
+.PHONY : processing/Processing_wiki.cpp.o
+
+processing/Processing_wiki.i: processing/Processing_wiki.cpp.i
+
+.PHONY : processing/Processing_wiki.i
+
+# target to preprocess a source file
+processing/Processing_wiki.cpp.i:
+	cd /Users/Edgar/ClionProjects/Fleur/cmake-build-debug && $(MAKE) -f fleur_tests/tests/CMakeFiles/fleurTest.dir/build.make fleur_tests/tests/CMakeFiles/fleurTest.dir/processing/Processing_wiki.cpp.i
+.PHONY : processing/Processing_wiki.cpp.i
+
+processing/Processing_wiki.s: processing/Processing_wiki.cpp.s
+
+.PHONY : processing/Processing_wiki.s
+
+# target to generate assembly for a file
+processing/Processing_wiki.cpp.s:
+	cd /Users/Edgar/ClionProjects/Fleur/cmake-build-debug && $(MAKE) -f fleur_tests/tests/CMakeFiles/fleurTest.dir/build.make fleur_tests/tests/CMakeFiles/fleurTest.dir/processing/Processing_wiki.cpp.s
+.PHONY : processing/Processing_wiki.cpp.s
+
 processing/processing_test.o: processing/processing_test.cpp.o
 
 .PHONY : processing/processing_test.o
@@ -584,6 +611,9 @@ help:
 	@echo "... processing/Processing_twitter_test.o"
 	@echo "... processing/Processing_twitter_test.i"
 	@echo "... processing/Processing_twitter_test.s"
+	@echo "... processing/Processing_wiki.o"
+	@echo "... processing/Processing_wiki.i"
+	@echo "... processing/Processing_wiki.s"
 	@echo "... processing/processing_test.o"
 	@echo "... processing/processing_test.i"
 	@echo "... processing/processing_test.s"

@@ -13,6 +13,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/Users/Edgar/ClionProjects/Fleur/fleur_tests/tests/parser/Wiki_parser_test.cpp" "/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/fleur_tests/tests/CMakeFiles/fleurTest.dir/parser/Wiki_parser_test.cpp.o"
   "/Users/Edgar/ClionProjects/Fleur/fleur_tests/tests/processing/Processing_http_test.cpp" "/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/fleur_tests/tests/CMakeFiles/fleurTest.dir/processing/Processing_http_test.cpp.o"
   "/Users/Edgar/ClionProjects/Fleur/fleur_tests/tests/processing/Processing_twitter_test.cpp" "/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/fleur_tests/tests/CMakeFiles/fleurTest.dir/processing/Processing_twitter_test.cpp.o"
+  "/Users/Edgar/ClionProjects/Fleur/fleur_tests/tests/processing/Processing_wiki.cpp" "/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/fleur_tests/tests/CMakeFiles/fleurTest.dir/processing/Processing_wiki.cpp.o"
   "/Users/Edgar/ClionProjects/Fleur/fleur_tests/tests/processing/processing_test.cpp" "/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/fleur_tests/tests/CMakeFiles/fleurTest.dir/processing/processing_test.cpp.o"
   "/Users/Edgar/ClionProjects/Fleur/fleur_tests/tests/service/Http_test.cpp" "/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/fleur_tests/tests/CMakeFiles/fleurTest.dir/service/Http_test.cpp.o"
   "/Users/Edgar/ClionProjects/Fleur/fleur_tests/tests/service/Twitter_test.cpp" "/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/fleur_tests/tests/CMakeFiles/fleurTest.dir/service/Twitter_test.cpp.o"

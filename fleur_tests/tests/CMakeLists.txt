@@ -12,7 +12,7 @@ add_executable(fleurTest
         processing/Processing_twitter_test.cpp
         processing/processing_test.cpp
         parser/Wiki_parser_test.cpp
-        service/Wiki_test.cpp)
+        service/Wiki_test.cpp processing/Processing_wiki.cpp)
 
 set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} ${PROJECT_SOURCE_DIR}/cmake)
 find_package(Gumbo REQUIRED)

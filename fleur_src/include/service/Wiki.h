@@ -39,6 +39,8 @@ public:
      */
     type_article getArticleText() const;
 
+    std::vector<std::string> process() const;
+
 private:
 
     parser::Wiki _wiki;
@@ -47,6 +49,7 @@ private:
     type_listArticle populatListArctivle(const std::string &limit, const cpr::Response &result) const;
     type_article populatArctivleHeader(const cpr::Response &result) const;
     type_article getUrlArticle(const cpr::Response &result) const;
+    std::string article2string(type_article article) const;
 };
 
 

@@ -154,6 +154,10 @@ parser/Requete_parser.h
 service/Twitter.h
 -
 
+../fleur_src/include/processing/Processing_wiki.h
+service/Wiki.h
+-
+
 ../fleur_src/include/service/Http.h
 string
 -
@@ -672,8 +676,20 @@ gtest/gtest.h
 processing/Processing_twitter.h
 /Users/Edgar/ClionProjects/Fleur/fleur_tests/tests/processing/processing/Processing_twitter.h
 
+/Users/Edgar/ClionProjects/Fleur/fleur_tests/tests/processing/Processing_wiki.cpp
+gtest/gtest.h
+-
+service/Wiki.h
+-
+processing/Processing_wiki.h
+-
+utils/sha1.h
+-
+
 /Users/Edgar/ClionProjects/Fleur/fleur_tests/tests/processing/processing_test.cpp
 gtest/gtest.h
+-
+utils/sha1.h
 -
 processing/Processing.h
 /Users/Edgar/ClionProjects/Fleur/fleur_tests/tests/processing/processing/Processing.h

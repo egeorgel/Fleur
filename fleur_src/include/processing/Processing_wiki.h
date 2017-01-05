@@ -6,8 +6,21 @@
 #define FLEUR_PROCESSING_WIKI_H
 
 
+#include <service/Wiki.h>
+
 class Processing_wiki {
 
+public:
+    typedef std::vector<std::string> Strings;
+
+    Processing_wiki(const parser::Wiki &wiki) : _wikiParser(wiki){}
+
+    /**
+     * Run the _requete
+     */
+    Strings build();
+private:
+    parser::Wiki _wikiParser;
 };
 
 

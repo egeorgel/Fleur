@@ -12,6 +12,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/fleurTest.dir/processing/processing_test.cpp.o"
   "CMakeFiles/fleurTest.dir/parser/Wiki_parser_test.cpp.o"
   "CMakeFiles/fleurTest.dir/service/Wiki_test.cpp.o"
+  "CMakeFiles/fleurTest.dir/processing/Processing_wiki.cpp.o"
   "fleurTest.pdb"
   "fleurTest"
 )

@@ -9,6 +9,8 @@
 #include "processing/Processing_twitter.h"
 
 #include <boost/algorithm/string.hpp>
+#include <service/Wiki.h>
+#include <processing/Processing_wiki.h>
 
 Processing::Processing(const std::string &requettes) {
 
@@ -23,15 +25,18 @@ Processing::Processing(const std::string &requettes) {
 Processing::Strings Processing::build() {
     assert(_requettes.size() > 0);
 
-    parser::Include requeteInclude;
+
     parser::TwitterKeyOAut requeteTwitterKeyOAut;
 
     Strings output;
     bool isAfterUsing = false;
+    std::string include = "";
 
     for (std::string requetteStr : _requettes) {
         parser::Requete requeteHttp;
         parser::Twitter requeteTwitter;
+        parser::Wiki requeteWiki;
+        parser::Include requeteInclude;
         Strings response;
 
         if (parser::doParse(requetteStr, requeteHttp)) { // HTTP
@@ -43,10 +48,11 @@ Processing::Strings Processing::build() {
 
         if (parser::doParse(requetteStr, requeteInclude)) { // INCLUDE
             isAfterUsing = true;
+            include = requeteInclude._module;
             continue;
         }
 
-        if (requeteInclude._module == "twitter" && isAfterUsing) { //KEY OAUTH
+        if (include == "twitter" && isAfterUsing) { //KEY OAUTH TWITTER
             isAfterUsing = false;
             parser::doParse(requetteStr, requeteTwitterKeyOAut);
             continue;
@@ -54,8 +60,17 @@ Processing::Strings Processing::build() {
 
         if (requeteTwitterKeyOAut._consumerKey != "" && requeteTwitterKeyOAut._consumerSecret != "" &&
                 requeteTwitterKeyOAut._tokenKey != "" && requeteTwitterKeyOAut._tokenSecret != "") { // TWITTER
-            if (parser::doParse(requetteStr, requeteTwitter)) {
+            if (include == "twitter" && parser::doParse(requetteStr, requeteTwitter)) {
                 Processing_twitter processing(requeteTwitter, requeteTwitterKeyOAut);
+                response = processing.build();
+                output.insert(output.end(), response.begin(), response.end());
+                continue;
+            }
+        }
+
+        if (include == "wikipedia") {
+            if (parser::doParse(requetteStr, requeteWiki)) {
+                Processing_wiki processing(requeteWiki);
                 response = processing.build();
                 output.insert(output.end(), response.begin(), response.end());
                 continue;

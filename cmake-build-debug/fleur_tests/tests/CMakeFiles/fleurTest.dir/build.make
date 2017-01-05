@@ -369,6 +369,30 @@ fleur_tests/tests/CMakeFiles/fleurTest.dir/service/Wiki_test.cpp.o.provides: fle
 fleur_tests/tests/CMakeFiles/fleurTest.dir/service/Wiki_test.cpp.o.provides.build: fleur_tests/tests/CMakeFiles/fleurTest.dir/service/Wiki_test.cpp.o
 
 
+fleur_tests/tests/CMakeFiles/fleurTest.dir/processing/Processing_wiki.cpp.o: fleur_tests/tests/CMakeFiles/fleurTest.dir/flags.make
+fleur_tests/tests/CMakeFiles/fleurTest.dir/processing/Processing_wiki.cpp.o: ../fleur_tests/tests/processing/Processing_wiki.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object fleur_tests/tests/CMakeFiles/fleurTest.dir/processing/Processing_wiki.cpp.o"
+	cd /Users/Edgar/ClionProjects/Fleur/cmake-build-debug/fleur_tests/tests && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/fleurTest.dir/processing/Processing_wiki.cpp.o -c /Users/Edgar/ClionProjects/Fleur/fleur_tests/tests/processing/Processing_wiki.cpp
+
+fleur_tests/tests/CMakeFiles/fleurTest.dir/processing/Processing_wiki.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/fleurTest.dir/processing/Processing_wiki.cpp.i"
+	cd /Users/Edgar/ClionProjects/Fleur/cmake-build-debug/fleur_tests/tests && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Edgar/ClionProjects/Fleur/fleur_tests/tests/processing/Processing_wiki.cpp > CMakeFiles/fleurTest.dir/processing/Processing_wiki.cpp.i
+
+fleur_tests/tests/CMakeFiles/fleurTest.dir/processing/Processing_wiki.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/fleurTest.dir/processing/Processing_wiki.cpp.s"
+	cd /Users/Edgar/ClionProjects/Fleur/cmake-build-debug/fleur_tests/tests && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Edgar/ClionProjects/Fleur/fleur_tests/tests/processing/Processing_wiki.cpp -o CMakeFiles/fleurTest.dir/processing/Processing_wiki.cpp.s
+
+fleur_tests/tests/CMakeFiles/fleurTest.dir/processing/Processing_wiki.cpp.o.requires:
+
+.PHONY : fleur_tests/tests/CMakeFiles/fleurTest.dir/processing/Processing_wiki.cpp.o.requires
+
+fleur_tests/tests/CMakeFiles/fleurTest.dir/processing/Processing_wiki.cpp.o.provides: fleur_tests/tests/CMakeFiles/fleurTest.dir/processing/Processing_wiki.cpp.o.requires
+	$(MAKE) -f fleur_tests/tests/CMakeFiles/fleurTest.dir/build.make fleur_tests/tests/CMakeFiles/fleurTest.dir/processing/Processing_wiki.cpp.o.provides.build
+.PHONY : fleur_tests/tests/CMakeFiles/fleurTest.dir/processing/Processing_wiki.cpp.o.provides
+
+fleur_tests/tests/CMakeFiles/fleurTest.dir/processing/Processing_wiki.cpp.o.provides.build: fleur_tests/tests/CMakeFiles/fleurTest.dir/processing/Processing_wiki.cpp.o
+
+
 # Object files for target fleurTest
 fleurTest_OBJECTS = \
 "CMakeFiles/fleurTest.dir/parser/Requete_parser_test.cpp.o" \
@@ -383,7 +407,8 @@ fleurTest_OBJECTS = \
 "CMakeFiles/fleurTest.dir/processing/Processing_twitter_test.cpp.o" \
 "CMakeFiles/fleurTest.dir/processing/processing_test.cpp.o" \
 "CMakeFiles/fleurTest.dir/parser/Wiki_parser_test.cpp.o" \
-"CMakeFiles/fleurTest.dir/service/Wiki_test.cpp.o"
+"CMakeFiles/fleurTest.dir/service/Wiki_test.cpp.o" \
+"CMakeFiles/fleurTest.dir/processing/Processing_wiki.cpp.o"
 
 # External object files for target fleurTest
 fleurTest_EXTERNAL_OBJECTS =
@@ -401,6 +426,7 @@ fleur_tests/tests/fleurTest: fleur_tests/tests/CMakeFiles/fleurTest.dir/processi
 fleur_tests/tests/fleurTest: fleur_tests/tests/CMakeFiles/fleurTest.dir/processing/processing_test.cpp.o
 fleur_tests/tests/fleurTest: fleur_tests/tests/CMakeFiles/fleurTest.dir/parser/Wiki_parser_test.cpp.o
 fleur_tests/tests/fleurTest: fleur_tests/tests/CMakeFiles/fleurTest.dir/service/Wiki_test.cpp.o
+fleur_tests/tests/fleurTest: fleur_tests/tests/CMakeFiles/fleurTest.dir/processing/Processing_wiki.cpp.o
 fleur_tests/tests/fleurTest: fleur_tests/tests/CMakeFiles/fleurTest.dir/build.make
 fleur_tests/tests/fleurTest: fleur_tests/lib/gtest-1.7.0/libgtest.a
 fleur_tests/tests/fleurTest: fleur_tests/lib/gtest-1.7.0/libgtest_main.a
@@ -412,7 +438,7 @@ fleur_tests/tests/fleurTest: fleur_tests/lib/gtest-1.7.0/libgtest.a
 fleur_tests/tests/fleurTest: /usr/lib/libcurl.dylib
 fleur_tests/tests/fleurTest: /usr/local/lib/libgumbo.dylib
 fleur_tests/tests/fleurTest: fleur_tests/tests/CMakeFiles/fleurTest.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Linking CXX executable fleurTest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/Edgar/ClionProjects/Fleur/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Linking CXX executable fleurTest"
 	cd /Users/Edgar/ClionProjects/Fleur/cmake-build-debug/fleur_tests/tests && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/fleurTest.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -433,6 +459,7 @@ fleur_tests/tests/CMakeFiles/fleurTest.dir/requires: fleur_tests/tests/CMakeFile
 fleur_tests/tests/CMakeFiles/fleurTest.dir/requires: fleur_tests/tests/CMakeFiles/fleurTest.dir/processing/processing_test.cpp.o.requires
 fleur_tests/tests/CMakeFiles/fleurTest.dir/requires: fleur_tests/tests/CMakeFiles/fleurTest.dir/parser/Wiki_parser_test.cpp.o.requires
 fleur_tests/tests/CMakeFiles/fleurTest.dir/requires: fleur_tests/tests/CMakeFiles/fleurTest.dir/service/Wiki_test.cpp.o.requires
+fleur_tests/tests/CMakeFiles/fleurTest.dir/requires: fleur_tests/tests/CMakeFiles/fleurTest.dir/processing/Processing_wiki.cpp.o.requires
 
 .PHONY : fleur_tests/tests/CMakeFiles/fleurTest.dir/requires
 

@@ -9,12 +9,6 @@
 #include <json.hpp>
 #include "service/Wiki.h"
 
-
-////https://en.wikipedia.org/w/api.php?action=opensearch&search=bee&limit=1&format=json
-//std::string url("https://en.wikipedia.org/w/api.php?action=opensearch&format=json&search=Java&limit=3");
-//std::string url1("http://en.wikipedia.org/w/api.php?action=query&prop=extracts&format=json&exintro=&titles=Stack%20Overflow");
-//std::string url2("https://en.wikipedia.org/w/api.php?action=parse&page=java");
-
 Wiki::type_listArticle Wiki::findMostRelativeSubjectWithLimit() const {
     assert(_wiki._crud == "search");
     assert(_wiki._fromName == "wikipedia");
@@ -35,15 +29,13 @@ Wiki::type_article Wiki::getArticleHeader() const {
     assert(_wiki._fromName == "wikipedia");
     assert(_wiki._format == "header");
 
-    auto parameters = cpr::Parameters{{"action", "query"},
-                                      {"prop", "extracts"},
+    auto parameters = cpr::Parameters{{"action", "opensearch"},
                                       {"format", "json"},
-                                      {"exintro", ""},
-                                      {"redirects", "1"},
-                                      {"titles", _wiki._articleName}};
+                                      {"search", _wiki._articleName},
+                                      {"limit", "1"}};
     auto result = cpr::Get(cpr::Url{_urlApi}, parameters);
 
-    return populatArctivleHeader(result);
+    return populatListArctivle("1", result).front();
 }
 
 Wiki::type_article Wiki::getArticleHtml() const {
@@ -86,6 +78,31 @@ Wiki::type_article Wiki::getArticleText() const {
     ArticleNameAndUrl.second = c.nodeAt(0).text();
 
     return ArticleNameAndUrl;
+}
+
+std::vector<std::string> Wiki::process() const {
+
+    std::vector<std::string> output;
+    if (_wiki._crud == "search") {
+        type_listArticle articles = findMostRelativeSubjectWithLimit();
+        for (type_article article : articles) {
+            output.push_back(article2string(article));
+        }
+    }else if (_wiki._crud == "get") {
+        if (_wiki._format == "html") {
+            output.push_back(article2string(getArticleHtml()));
+        } else if (_wiki._format == "txt") {
+            output.push_back(article2string(getArticleText()));
+        } else if (_wiki._format == "header") {
+            output.push_back(article2string(getArticleHeader()));
+        } else {
+            output.push_back("Error in wikipedia processing");
+        }
+    } else {
+        output.push_back("Error in wikipedia processing");
+    }
+
+    return output;
 }
 
 Wiki::type_listArticle Wiki::populatListArctivle(const std::string &limit, const cpr::Response &result) const {
@@ -186,3 +203,11 @@ Wiki::type_article Wiki::getUrlArticle(const cpr::Response &result) const {
     }
     return articleWithUrl;
 }
+
+std::string Wiki::article2string(Wiki::type_article article) const {
+    return std::string(" *** Wikipedia Title *** \\n" + article.first + "\\n *** Wikipedia Content *** \\n" + article.second);
+}
+
+
+
+
