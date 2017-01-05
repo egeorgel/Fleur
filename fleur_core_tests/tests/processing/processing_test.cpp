@@ -25,7 +25,7 @@ TEST_F(Processing_test, test_1) {
                             "(CBJimEZofmww7RQ4fvitrNHnj, M9NBXFAQLJC6j5lTcQ1QL0QMAm4L8nyCKGwNcARP5BGlrJaNLA, 2711422854-wV9d3fCBnyx7oTDFlRn9F4oCM4CysAaR97TeaKn, qq9z0Bv5ZigB810CnRnF8rgrdx7cen9TS1CJTKlMngYRm);"
                             "get * from . limit 2;");
 
-    Processing processing(requettes);
+    fleur::Processing processing(requettes);
     std::vector<std::string> results = processing.build();
 
     ASSERT_EQ(results.size(), 4);
@@ -51,7 +51,7 @@ TEST_F(Processing_test, test_2) {
                              "search football from twitter limit 3;"
     );
 
-    Processing processing(requettes);
+    fleur::Processing processing(requettes);
     std::vector<std::string> results = processing.build();
 
     for (auto result : results) {

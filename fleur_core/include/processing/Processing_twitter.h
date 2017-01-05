@@ -8,22 +8,24 @@
 
 #include <service/Twitter.h>
 
-class Processing_twitter {
+namespace fleur {
+    class Processing_twitter {
 
-public:
-    typedef std::vector<std::string> Strings;
+    public:
+        typedef std::vector<std::string> Strings;
 
-    Processing_twitter(const parser::Twitter &twitter, const parser::TwitterKeyOAut &twitterKeyOAut)
-            : _twitterParser(twitter), _twitterKeyOAut(twitterKeyOAut){}
+        Processing_twitter(const fleur::parser::Twitter &twitter, const fleur::parser::TwitterKeyOAut &twitterKeyOAut)
+                : _twitterParser(twitter), _twitterKeyOAut(twitterKeyOAut){}
 
-    /**
-     * Run the _requete
-     */
-    Strings build();
+        /**
+         * Run the _requete
+         */
+        Strings build();
 
-private:
-    parser::Twitter _twitterParser;
-    parser::TwitterKeyOAut _twitterKeyOAut;
-};
+    private:
+        fleur::parser::Twitter _twitterParser;
+        fleur::parser::TwitterKeyOAut _twitterKeyOAut;
+    };
 
+}
 #endif //FLEUR_PROCESSING_TWITTER_H

@@ -8,23 +8,25 @@
 #include <exception>
 #include <string>
 
-class FilterException : public std::exception {
+namespace fleur {
+    class FilterException : public std::exception {
 
-public:
-    FilterException(std::string const& message="") throw()
-            :
-            _message(message)
-    {}
+    public:
+        FilterException(std::string const& message="") throw()
+                :
+                _message(message)
+        {}
 
-    virtual const char* what() const throw() {
-        return _message.c_str();
-    }
+        virtual const char* what() const throw() {
+            return _message.c_str();
+        }
 
-    virtual ~FilterException() throw() {}
+        virtual ~FilterException() throw() {}
 
-private:
-    std::string _message;
-};
+    private:
+        std::string _message;
+    };
 
 
+}
 #endif //FLEUR_FILTEREXCEPTION_H

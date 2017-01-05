@@ -8,22 +8,24 @@
 #include <exception>
 #include <string>
 
-class ProcessingException : public std::exception {
+namespace fleur {
+    class ProcessingException : public std::exception {
 
-public:
-    ProcessingException(std::string const& message="") throw()
-            :
-            _message(message)
-    {}
+    public:
+        ProcessingException(std::string const& message="") throw()
+                :
+                _message(message)
+        {}
 
-    virtual const char* what() const throw() {
-        return _message.c_str();
-    }
+        virtual const char* what() const throw() {
+            return _message.c_str();
+        }
 
-    virtual ~ProcessingException() throw() {}
+        virtual ~ProcessingException() throw() {}
 
-private:
-    std::string _message;
-};
+    private:
+        std::string _message;
+    };
 
+}
 #endif //FLEUR_PROCESSINGEXCEPTION_H

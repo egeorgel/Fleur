@@ -8,65 +8,67 @@
 
 #include "parser/Twitter_parser.h"
 
-class Twitter {
+namespace fleur {
+    class Twitter {
 
-public:
-    typedef std::pair<std::string, std::string> type_tweet;
-    typedef std::vector<type_tweet> type_listOfTweet ;
-    Twitter(const parser::Twitter &twitter, twitCurl &twitCurl) : _twitter(twitter), _twitCurl(twitCurl){};
-    ~Twitter(){}
+    public:
+        typedef std::pair<std::string, std::string> type_tweet;
+        typedef std::vector<type_tweet> type_listOfTweet ;
+        Twitter(const fleur::parser::Twitter &twitter, twitCurl &twitCurl) : _twitter(twitter), _twitCurl(twitCurl){};
+        ~Twitter(){}
 
-    /*
-     * return the time line (list of tweet) of the current user or the user give in the
-     * parser::Twitter object the default limit is 200
-     */
-    type_listOfTweet getTimeLineFromUserWithLimit();
+        /*
+         * return the time line (list of tweet) of the current user or the user give in the
+         * parser::Twitter object the default limit is 200
+         */
+        type_listOfTweet getTimeLineFromUserWithLimit();
 
-    /*
-     * return a vector of pair the limit of the vector is fixe in the parse::Twitter object
-     * key : user name
-     * value : text of the tweet
-     */
-    type_listOfTweet searchForTwitContainStringWithLimit();
+        /*
+         * return a vector of pair the limit of the vector is fixe in the parse::Twitter object
+         * key : user name
+         * value : text of the tweet
+         */
+        type_listOfTweet searchForTwitContainStringWithLimit();
 
-    /*
-     * return all the tweet mentioning the connected acount
-     */
-    type_listOfTweet getTwitSelfMentioningWithLimit();
+        /*
+         * return all the tweet mentioning the connected acount
+         */
+        type_listOfTweet getTwitSelfMentioningWithLimit();
 
-    /*
-     * Post a new tweet on the connected user timeline
-     */
-    type_tweet postNewTweet();
+        /*
+         * Post a new tweet on the connected user timeline
+         */
+        type_tweet postNewTweet();
 
-    /*
-     * Delete tweet from the connected user timeline
-     */
-    type_tweet deleteTweet();
+        /*
+         * Delete tweet from the connected user timeline
+         */
+        type_tweet deleteTweet();
 
-    /*
-     * return a vector of string containing the most tweet word of the moment
-     */
-    std::vector<std::string> getCurrentTrendWithLimit();
+        /*
+         * return a vector of string containing the most tweet word of the moment
+         */
+        std::vector<std::string> getCurrentTrendWithLimit();
 
-    std::vector<std::string> process();
+        std::vector<std::string> process();
 
-private:
-    const parser::Twitter &_twitter;
-    twitCurl &_twitCurl;
+    private:
+        const fleur::parser::Twitter &_twitter;
+        twitCurl &_twitCurl;
 
-    bool isLogIn();
-    std::string getWebResponse(bool isWorking);
-    type_listOfTweet json2TypeListOfTweetGetTimeLine(std::string json);
-    type_listOfTweet json2TypeListOfTweetSearch(std::string json);
-    type_listOfTweet json2TypeListOfTweetSelfMentioning(std::string json, int limit);
-    type_tweet json2TypeTweetpostNewTweet(std::string json);
-    type_tweet json2TypeTweetDeletTweet(std::string json);
-    std::vector<std::string> json2stringVecOfTrend(std::string json, int limit);
+        bool isLogIn();
+        std::string getWebResponse(bool isWorking);
+        type_listOfTweet json2TypeListOfTweetGetTimeLine(std::string json);
+        type_listOfTweet json2TypeListOfTweetSearch(std::string json);
+        type_listOfTweet json2TypeListOfTweetSelfMentioning(std::string json, int limit);
+        type_tweet json2TypeTweetpostNewTweet(std::string json);
+        type_tweet json2TypeTweetDeletTweet(std::string json);
+        std::vector<std::string> json2stringVecOfTrend(std::string json, int limit);
 
-    std::vector<std::string> type_listOfTweet2VectorString(type_listOfTweet listOfTweet, std::string keyName);
-    std::vector<std::string> type_tweet2VectorString(type_tweet tweet, std::string typeOperation);
-};
+        std::vector<std::string> type_listOfTweet2VectorString(type_listOfTweet listOfTweet, std::string keyName);
+        std::vector<std::string> type_tweet2VectorString(type_tweet tweet, std::string typeOperation);
+    };
 
 
+}
 #endif //FLEUR_TWITTER_H

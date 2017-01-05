@@ -5,14 +5,14 @@
 #include "processing/Processing_twitter.h"
 
 
-    Processing_twitter::Strings Processing_twitter::build() {
+fleur::Processing_twitter::Strings fleur::Processing_twitter::build() {
 
-        twitCurl twitCurl;
-        twitCurl.getOAuth().setConsumerKey(_twitterKeyOAut._consumerKey);
-        twitCurl.getOAuth().setConsumerSecret(_twitterKeyOAut._consumerSecret);
-        twitCurl.getOAuth().setOAuthTokenKey(_twitterKeyOAut._tokenKey);
-        twitCurl.getOAuth().setOAuthTokenSecret(_twitterKeyOAut._tokenSecret);
-        Twitter twitter(_twitterParser, twitCurl);
+    twitCurl twitCurl;
+    twitCurl.getOAuth().setConsumerKey(_twitterKeyOAut._consumerKey);
+    twitCurl.getOAuth().setConsumerSecret(_twitterKeyOAut._consumerSecret);
+    twitCurl.getOAuth().setOAuthTokenKey(_twitterKeyOAut._tokenKey);
+    twitCurl.getOAuth().setOAuthTokenSecret(_twitterKeyOAut._tokenSecret);
+    fleur::Twitter twitter(_twitterParser, twitCurl);
 
-        return twitter.process();
-    }
+    return twitter.process();
+}

@@ -7,24 +7,26 @@
 
 #include "parser/Requete_parser.h"
 
-class Processing_http {
+namespace fleur {
+    class Processing_http {
 
-public:
-    typedef std::vector<std::string> Strings;
+    public:
+        typedef std::vector<std::string> Strings;
 
-    Processing_http(const parser::Requete &requete) : _requete(requete) {}
+        Processing_http(const parser::Requete &requete) : _requete(requete) {}
 
-    /**
-     * Run the _requete
-     */
-    Strings build();
+        /**
+         * Run the _requete
+         */
+        Strings build();
 
-private:
+    private:
 
-    parser::Requete _requete;
+        parser::Requete _requete;
 
-    std::string processHeader(const std::string &format, const std::string &crud) const;
-};
+        std::string processHeader(const std::string &format, const std::string &crud) const;
+    };
 
 
+}
 #endif //FLEUR_PROCESSING_HTTP_H

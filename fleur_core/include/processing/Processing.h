@@ -7,21 +7,23 @@
 
 #include <vector>
 
-class Processing {
+namespace fleur {
+    class Processing {
 
-public:
-    Processing(const std::string &requettes);
+    public:
+        Processing(const std::string &requettes);
 
-    typedef std::vector<std::string> Strings;
-    Strings build();
+        typedef std::vector<std::string> Strings;
+        Strings build();
 
-private:
+    private:
 
-    typedef Strings type_requettes;
-    type_requettes _requettes;
+        typedef Strings type_requettes;
+        type_requettes _requettes;
 
-    bool postProcessingParssing(const std::string &requettes);
-};
+        bool postProcessingParssing(const std::string &requettes);
+    };
 
 
+}
 #endif //FLEUR_PROCESSING_H

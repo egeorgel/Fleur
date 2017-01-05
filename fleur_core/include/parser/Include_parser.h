@@ -16,6 +16,8 @@
 #include <boost/spirit/include/phoenix_core.hpp>
 #include <boost/spirit/include/phoenix_operator.hpp>
 #include <boost/spirit/include/phoenix_object.hpp>
+namespace fleur {
+
     namespace parser {
 
         struct Include {
@@ -25,15 +27,18 @@
         };
 
     }
+}
 
 
 // We need to tell fusion about our Include struct
 // to make it a first-class fusion citizen. This has to
 // be in global scope.
 BOOST_FUSION_ADAPT_STRUCT(
-        parser::Include,
+        fleur::parser::Include,
         (std::string, _module)
 )
+
+namespace fleur {
 
 namespace parser {
     namespace qi = boost::spirit::qi;
@@ -79,4 +84,5 @@ namespace parser {
     }
 }
 
+}
 #endif //FLEUR_REQUETETWIT_PARSER_H

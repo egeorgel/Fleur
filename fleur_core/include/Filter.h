@@ -8,18 +8,20 @@
 #include <string>
 #include <vector>
 
-class Filter {
+namespace fleur {
+    class Filter {
 
-public:
-    Filter();
+    public:
+        Filter();
 
-    //filter the result with the condition in  parser::Requete._selector
-    std::vector<std::string> filterHTMLByMarked(const std::string &strToFilter, const std::string &marker);
+        //filter the result with the condition in  parser::Requete._selector
+        std::vector<std::string> filterHTMLByMarked(const std::string &strToFilter, const std::string &marker);
 
-private:
-    std::vector<std::string> markerHtml;
+    private:
+        std::vector<std::string> markerHtml;
 
-};
+    };
 
 
+}
 #endif //FLEUR_FILTER_H
