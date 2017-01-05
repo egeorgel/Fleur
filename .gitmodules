@@ -1,0 +1,12 @@
+[submodule "submodules/twitcurl"]
+	path = submodules/twitcurl
+	url = https://github.com/swatkat/twitcurl.git
+[submodule "submodules/gumbo-query"]
+	path = submodules/gumbo-query
+	url = https://github.com/lazytiger/gumbo-query.git
+[submodule "submodules/cpr"]
+	path = submodules/cpr
+	url = https://github.com/whoshuu/cpr.git
+[submodule "submodules/json"]
+	path = submodules/json
+	url = https://github.com/nlohmann/json
