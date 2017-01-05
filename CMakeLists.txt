@@ -1,7 +1,9 @@
 cmake_minimum_required(VERSION 2.8)
 project(Fleur)
+include(CTest)
 
 
+#C++11 Support
 add_definitions(-std=c++11)
 
 if(NOT ${CMAKE_VERSION} LESS 3.2)
@@ -43,33 +45,53 @@ if(Boost_FOUND)
     include_directories(${Boost_INCLUDE_DIRS})
 endif()
 
-##Gumbo parser
-include(cmake/PreventInSourceBuilds.cmake)
-set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} ${PROJECT_SOURCE_DIR}/cmake)
-find_package(Gumbo REQUIRED)
-include_directories(${PROJECT_SOURCE_DIR}/gumbo-query/include)
-include_directories(${Gumbo_INCLUDE_DIRS} ${gumbo_query_SOURCE_DIRECTORY})
-add_subdirectory(${PROJECT_SOURCE_DIR}/gumbo-query/src)
 
-## https://whoshuu.github.io/cpr/introduction.html lib C++ Requests: Curl for People
-add_subdirectory(opt)
+### CPR & JSON
+set(JSON_INCLUDE_DIRS ${PROJECT_SOURCE_DIR}/submodules/json/src)
+add_subdirectory(${PROJECT_SOURCE_DIR}/submodules/json/)
+if(WIN32)
+    option(CMAKE_USE_OPENSSL "Use OpenSSL code. Experimental" OFF)
+endif()
+
+set(BUILD_CPR_TESTS OFF CACHE BOOL "Don't build cpr tests")
+find_package(CURL)
+if(CURL_FOUND)
+    set(USE_SYSTEM_CURL ON CACHE BOOL "Use the system curl for faster builds")
+endif()
+add_subdirectory(${PROJECT_SOURCE_DIR}/submodules/cpr/)
 include_directories(${CPR_INCLUDE_DIRS} ${JSON_INCLUDE_DIRS})
 
-## libtwitcurl
-add_subdirectory(libtwitcurl)
-include_directories(libtwitcurl/include)
+
+### libtwitcurl
+add_subdirectory(${PROJECT_SOURCE_DIR}/submodules/twitcurl/libtwitcurl/)
+include_directories(${PROJECT_SOURCE_DIR}/submodules/twitcurl/libtwitcurl/)
 
 
-## Fleur
-set(CMAKE_RUNTIME_OUTPUT_DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}/build/bin/")
+### GUMBO QUERY
+set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/submodules/gumbo-query/lib/)
+set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${CMAKE_LIBRARY_OUTPUT_DIRECTORY})
+file(MAKE_DIRECTORY ${CMAKE_LIBRARY_OUTPUT_DIRECTORY})
+set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} ${PROJECT_SOURCE_DIR}/submodules/gumbo-query/cmake/)
+find_package(Gumbo REQUIRED)
+set(gumbo_query_SOURCE_DIRECTORY ${PROJECT_SOURCE_DIR}/submodules/gumbo-query/src)
+add_subdirectory(${PROJECT_SOURCE_DIR}/submodules/gumbo-query/src)
+add_subdirectory(${PROJECT_SOURCE_DIR}/submodules/gumbo-query/test)
+include_directories(${PROJECT_SOURCE_DIR}/submodules/gumbo-query/include)
+include_directories(${Gumbo_INCLUDE_DIRS} ${gumbo_query_SOURCE_DIRECTORY})
+
+
+
+### FLEUR Static Lib
 set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}/build/lib/")
 set(CMAKE_LIBRARY_OUTPUT_DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}/build/lib/")
 include_directories(fleur_core/include )
 add_subdirectory(fleur_core/)
-add_subdirectory(fleur_core_tests/)
+#add_subdirectory(fleur_core_tests/)
 
 
 #### Fleur CLI
-set(SOURCE_FILES fleur_cli/main.cpp)
-add_executable(fleur_cli ${SOURCE_FILES})
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}/build/bin/")
+set(FLEUR_CLI_SOURCE_FILES fleur_cli/main.cpp)
+add_executable(fleur_cli ${FLEUR_CLI_SOURCE_FILES})
 target_link_libraries(fleur_cli ${Boost_LIBRARIES} fleur_static_lib)
+
