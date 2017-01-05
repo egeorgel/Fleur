@@ -1,6 +1,6 @@
 include_directories(${gtest_SOURCE_DIR}/include ${gtest_SOURCE_DIR})
 
-add_executable(fleurTest
+add_executable(fleur_core_tests
         parser/Requete_parser_test.cpp
         service/Http_test.cpp
         parser/Filter_test.cpp
@@ -17,5 +17,5 @@ find_package(Gumbo REQUIRED)
 
 include_directories(${PROJECT_SOURCE_DIR}/gumbo-query/include)
 
-target_link_libraries(fleurTest gtest gtest_main curl ${CPR_LIBRARIES} gumbo_query_shared libtwitcurl)
-target_link_libraries(fleurTest fleur_src)
+target_link_libraries(fleur_core_tests gtest gtest_main curl ${CPR_LIBRARIES} gumbo_query_shared libtwitcurl)
+target_link_libraries(fleur_core_tests fleur_static_lib)
