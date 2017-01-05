@@ -9,6 +9,8 @@
 #include "processing/Processing_twitter.h"
 
 #include <boost/algorithm/string.hpp>
+#include <service/Wiki.h>
+#include <processing/Processing_wiki.h>
 
 
 
@@ -17,10 +19,7 @@ fleur::Processing::Processing(const std::string &requettes) {
     if (!fleur::Processing::postProcessingParssing(requettes)) {
         throw fleur::ProcessingException("Error in general sintax");
     }
-
-
 }
-
 
 fleur::Processing::Strings fleur::Processing::build() {
     assert(_requettes.size() > 0);
@@ -30,10 +29,13 @@ fleur::Processing::Strings fleur::Processing::build() {
 
     fleur::Processing::Strings output;
     bool isAfterUsing = false;
+    std::string include = "";
 
     for (std::string requetteStr : _requettes) {
         fleur::parser::Requete requeteHttp;
         fleur::parser::Twitter requeteTwitter;
+        fleur::parser::Wiki requeteWiki;
+        fleur::parser::Include requeteInclude;
         Strings response;
 
         if (parser::doParse(requetteStr, requeteHttp)) { // HTTP
@@ -45,10 +47,11 @@ fleur::Processing::Strings fleur::Processing::build() {
 
         if (parser::doParse(requetteStr, requeteInclude)) { // INCLUDE
             isAfterUsing = true;
+            include = requeteInclude._module;
             continue;
         }
 
-        if (requeteInclude._module == "twitter" && isAfterUsing) { //KEY OAUTH
+        if (include == "twitter" && isAfterUsing) { //KEY OAUTH TWITTER
             isAfterUsing = false;
             parser::doParse(requetteStr, requeteTwitterKeyOAut);
             continue;
@@ -56,8 +59,18 @@ fleur::Processing::Strings fleur::Processing::build() {
 
         if (requeteTwitterKeyOAut._consumerKey != "" && requeteTwitterKeyOAut._consumerSecret != "" &&
                 requeteTwitterKeyOAut._tokenKey != "" && requeteTwitterKeyOAut._tokenSecret != "") { // TWITTER
-            if (parser::doParse(requetteStr, requeteTwitter)) {
+
+            if (include == "twitter" && parser::doParse(requetteStr, requeteTwitter)) {
                 fleur::Processing_twitter processing(requeteTwitter, requeteTwitterKeyOAut);
+                response = processing.build();
+                output.insert(output.end(), response.begin(), response.end());
+                continue;
+            }
+        }
+
+        if (include == "wikipedia") {
+            if (fleur::parser::doParse(requetteStr, requeteWiki)) {
+                fleur::Processing_wiki processing(requeteWiki);
                 response = processing.build();
                 output.insert(output.end(), response.begin(), response.end());
                 continue;

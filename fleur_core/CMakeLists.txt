@@ -12,7 +12,11 @@ set(HEADER_FILES
         include/service/Twitter.h
         include/processing/Processing_twitter.h
         include/processing/Processing.h
-        include/ProcessingException.h)
+        include/ProcessingException.h
+        include/parser/Wiki_parser.h
+        include/service/Wiki.h
+        include/utils/sha1.h
+        include/processing/Processing_wiki.h)
 
 set(SOURCE_FILES
         src/parser/Requete_parser.cpp
@@ -21,7 +25,12 @@ set(SOURCE_FILES
         src/processing/Processing_http.cpp
         src/service/Twitter.cpp
         src/processing/Processing_twitter.cpp
-        src/processing/Processing.cpp src/entrypoint.cpp)
+        src/processing/Processing.cpp
+        src/entrypoint.cpp
+        src/processing/Processing.cpp
+        src/service/Wiki.cpp
+        src/utils/sha1.cpp
+        src/processing/Processing_wiki.cpp)
 
 #### Fleur Static Lib
 add_library(fleur_static_lib STATIC ${SOURCE_FILES} ${HEADER_FILES})
