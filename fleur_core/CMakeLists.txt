@@ -34,4 +34,4 @@ set(SOURCE_FILES
 
 #### Fleur Static Lib
 add_library(fleur_static_lib STATIC ${SOURCE_FILES} ${HEADER_FILES})
-target_link_libraries(fleur_static_lib ${Boost_LIBRARIES} curl ${CPR_LIBRARIES} gumbo_query_shared libtwitcurl)
+target_link_libraries(fleur_static_lib ${Boost_LIBRARIES} curl ${CPR_LIBRARIES} gumbo_query_static twitcurl)

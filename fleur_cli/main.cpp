@@ -15,7 +15,6 @@
 
 namespace po = boost::program_options;
 
-void fleur_query(std::string requetes);
 int poll_stdin();
 int main(const int argc, const char *argv[]) {
 
@@ -62,7 +61,8 @@ int main(const int argc, const char *argv[]) {
         {
             input += line;
         }
-        fleur_query(input);
+        for (auto const& c : fleur_query(line))
+            std::cout << c << std::endl;
     }
     #endif
 
@@ -91,18 +91,11 @@ int main(const int argc, const char *argv[]) {
             }
 
             /* Execute fleur query */
-            fleur_query(line);
+            for (auto const& c : fleur_query(line))
+                std::cout << c << std::endl;
         } while (true);
     }
     return 0;
-}
-
-void fleur_query(std::string requetes) {
-    Processing processing(requetes);
-    std::vector<std::string> results = processing.build();
-    if (results.size())
-        for (auto result : results)
-            std::cout << result << std::endl;
 }
 
 int poll_stdin() {
