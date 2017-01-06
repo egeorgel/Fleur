@@ -15,8 +15,18 @@
 //TODO: Throw exception with result.status_code != 200
 
 std::string fleur::Http::downloadContent() const {
-    auto response = cpr::Get(cpr::Url{_requete._url});
-    return response.text;
+
+    cpr::Response rep;
+    if (_requete._headers.size() > 0){
+        cpr::Header header;
+        for (auto i_h : _requete._headers) {
+            header.insert(i_h);
+        }
+        rep = cpr::Get(cpr::Url{_requete._url}, header);
+    } else {
+        rep = cpr::Get(cpr::Url{_requete._url});
+    }
+    return rep.text;
 }
 
 std::string fleur::Http::get() const {
@@ -24,9 +34,18 @@ std::string fleur::Http::get() const {
     assert(_requete._crud == "get");
 
     auto parameters = cpr::Parameters{{_requete._parameters}};
-    auto result = cpr::Get(cpr::Url{_requete._url}, parameters);
+    cpr::Response rep;
+    if (_requete._headers.size() > 0){
+        cpr::Header header;
+        for (auto i_h : _requete._headers) {
+            header.insert(i_h);
+        }
+        rep = cpr::Get(cpr::Url{_requete._url}, parameters, header);
+    } else {
+        rep = cpr::Get(cpr::Url{_requete._url}, parameters);
+    }
 
-    return result.text;
+    return rep.text;
 }
 
 std::string fleur::Http::post() const {
@@ -34,9 +53,18 @@ std::string fleur::Http::post() const {
     assert(_requete._crud == "post");
 
     auto parameters = cpr::Payload{{_requete._parameters}};
-    auto result = cpr::Post(cpr::Url{_requete._url}, parameters);
+    cpr::Response rep;
+    if (_requete._headers.size() > 0){
+        cpr::Header header;
+        for (auto i_h : _requete._headers) {
+            header.insert(i_h);
+        }
+        rep = cpr::Post(cpr::Url{_requete._url}, parameters, header);
+    } else {
+        rep = cpr::Post(cpr::Url{_requete._url}, parameters);
+    }
 
-    return result.text;
+    return rep.text;
 }
 
 std::string fleur::Http::process() const {

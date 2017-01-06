@@ -68,6 +68,45 @@ TEST_F(Http_test, http_post) {
     ASSERT_EQ("denis", json["form"]["name"].get<std::string>());
 }
 
+TEST_F(Http_test, http_header) {
+    fleur::parser::Requete req;
+    req._url = "http://httpbin.org/headers";
+    fleur::parser::type_parameterS head;
+    head.push_back(std::make_pair("name", "denis"));
+    head.push_back(std::make_pair("age", "12"));
+    req._headers = head;
+
+    fleur::Http http(req);
+
+    std::string returnPost = http.downloadContent();
+    auto json = nlohmann::json::parse(returnPost);
+
+    ASSERT_EQ("12", json["headers"]["Age"].get<std::string>());
+    ASSERT_EQ("denis", json["headers"]["Name"].get<std::string>());
+}
+
+TEST_F(Http_test, http_header_get) {
+    fleur::parser::Requete req;
+    req._url = "http://httpbin.org/headers";
+    req._crud = "get";
+    fleur::parser::type_parameterS head;
+    head.push_back(std::make_pair("name", "denis"));
+    head.push_back(std::make_pair("age", "12"));
+    req._headers = head;
+    fleur::parser::type_parameterS param;
+    param.push_back(std::make_pair("name", "denis"));
+    param.push_back(std::make_pair("age", "12"));
+    req._parameters = param;
+
+    fleur::Http http(req);
+
+    std::string returnPost = http.get();
+    auto json = nlohmann::json::parse(returnPost);
+
+    ASSERT_EQ("12", json["headers"]["Age"].get<std::string>());
+    ASSERT_EQ("denis", json["headers"]["Name"].get<std::string>());
+}
+
 TEST_F(Http_test, http_get) {
     fleur::parser::Requete req;
     req._url = "http://httpbin.org/get";
@@ -87,3 +126,4 @@ TEST_F(Http_test, http_get) {
     ASSERT_EQ("12", pt.get<std::string>("args.age"));
     ASSERT_EQ("denis", pt.get<std::string>("args.name"));
 }
+
