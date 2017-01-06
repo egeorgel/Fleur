@@ -66,6 +66,9 @@ add_subdirectory(${PROJECT_SOURCE_DIR}/submodules/twitcurl/libtwitcurl/)
 include_directories(${PROJECT_SOURCE_DIR}/submodules/twitcurl/libtwitcurl/)
 
 
+### GoogleTests
+add_subdirectory(submodules/googletest)
+
 
 ### GUMBO QUERY
 set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/submodules/gumbo-query/lib/)
@@ -86,7 +89,7 @@ set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}/build/lib/")
 set(CMAKE_LIBRARY_OUTPUT_DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}/build/lib/")
 include_directories(fleur_core/include )
 add_subdirectory(fleur_core/)
-#add_subdirectory(fleur_core_tests/)
+add_subdirectory(fleur_core_tests/)
 
 
 #### Fleur CLI
