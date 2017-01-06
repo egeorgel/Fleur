@@ -96,5 +96,5 @@ add_subdirectory(fleur_core_tests/)
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}/build/bin/")
 set(FLEUR_CLI_SOURCE_FILES fleur_cli/main.cpp)
 add_executable(fleur_cli ${FLEUR_CLI_SOURCE_FILES})
-target_link_libraries(fleur_cli ${Boost_LIBRARIES} fleur_static_lib)
+target_link_libraries(fleur_cli ${Boost_LIBRARIES} fleur_static)
 

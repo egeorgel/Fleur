@@ -1,4 +1,4 @@
-project(fleur_static_lib)
+project(fleur_static)
 
 set(HEADER_FILES
         include/parser/Requete_parser.h
@@ -33,5 +33,5 @@ set(SOURCE_FILES
         src/processing/Processing_wiki.cpp)
 
 #### Fleur Static Lib
-add_library(fleur_static_lib STATIC ${SOURCE_FILES} ${HEADER_FILES})
-target_link_libraries(fleur_static_lib ${Boost_LIBRARIES} curl ${CPR_LIBRARIES} gumbo_query_static twitcurl)
+add_library(fleur_static STATIC ${SOURCE_FILES} ${HEADER_FILES})
+target_link_libraries(fleur_static ${Boost_LIBRARIES} curl ${CPR_LIBRARIES} gumbo_query_static twitcurl)

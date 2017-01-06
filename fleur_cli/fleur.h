@@ -2,8 +2,8 @@
 // Created by Val on 04/01/2017.
 //
 
-#ifndef FLEUR_FLEUR_H
-#define FLEUR_FLEUR_H
+#ifndef FLEUR_H
+#define FLEUR_H
 
 
 #include <iostream>
