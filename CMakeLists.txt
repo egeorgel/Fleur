@@ -52,7 +52,6 @@ add_subdirectory(${PROJECT_SOURCE_DIR}/submodules/json/)
 if(WIN32)
     option(CMAKE_USE_OPENSSL "Use OpenSSL code. Experimental" OFF)
 endif()
-
 set(BUILD_CPR_TESTS OFF CACHE BOOL "Don't build cpr tests")
 find_package(CURL)
 if(CURL_FOUND)
@@ -62,9 +61,10 @@ add_subdirectory(${PROJECT_SOURCE_DIR}/submodules/cpr/)
 include_directories(${CPR_INCLUDE_DIRS} ${JSON_INCLUDE_DIRS})
 
 
-### libtwitcurl
+### Libtwitcurl
 add_subdirectory(${PROJECT_SOURCE_DIR}/submodules/twitcurl/libtwitcurl/)
 include_directories(${PROJECT_SOURCE_DIR}/submodules/twitcurl/libtwitcurl/)
+
 
 
 ### GUMBO QUERY
