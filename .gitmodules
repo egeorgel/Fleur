@@ -1,6 +1,6 @@
 [submodule "submodules/twitcurl"]
 	path = submodules/twitcurl
-	url = https://github.com/swatkat/twitcurl.git
+	url = https://github.com/ValHook/twitcurl.git
 [submodule "submodules/gumbo-query"]
 	path = submodules/gumbo-query
 	url = https://github.com/lazytiger/gumbo-query.git
