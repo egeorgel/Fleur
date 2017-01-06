@@ -17,5 +17,5 @@ find_package(Gumbo REQUIRED)
 
 include_directories(${PROJECT_SOURCE_DIR}/gumbo-query/include)
 
-target_link_libraries(fleur_core_tests gtest gtest_main curl ${CPR_LIBRARIES} gumbo_query_shared libtwitcurl)
+target_link_libraries(fleur_core_tests gtest gtest_main curl ${CPR_LIBRARIES} gumbo_query_static twitcurl)
 target_link_libraries(fleur_core_tests fleur_static_lib)
