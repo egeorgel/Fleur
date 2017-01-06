@@ -13,6 +13,7 @@
 1. Download the repo
 ```sh
     git clone https://github.com/egeorgel/Fleur.git
+    git submodule update --init --recursive
 ```
 2. You are ready to go
 ## How to use 
