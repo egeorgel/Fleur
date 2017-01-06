@@ -23,13 +23,13 @@ public:
 
 TEST_F(Processing_twitter_test, get_tweets_from_twitter) {
     std::string requet("get tweets from twitter;");
-    parser::Twitter twitter;
-    parser::doParse(requet, twitter);
+    fleur::parser::Twitter twitter;
+    fleur::parser::doParse(requet, twitter);
 
     std::string keyRequette("(CBJimEZofmww7RQ4fvitrNHnj, M9NBXFAQLJC6j5lTcQ1QL0QMAm4L8nyCKGwNcARP5BGlrJaNLA, 2711422854-wV9d3fCBnyx7oTDFlRn9F4oCM4CysAaR97TeaKn, qq9z0Bv5ZigB810CnRnF8rgrdx7cen9TS1CJTKlMngYRm);");
-    parser::TwitterKeyOAut twitterKeyOAut;
-    parser::doParse(keyRequette, twitterKeyOAut);
-    Processing_twitter processingTwitter(twitter, twitterKeyOAut);
+    fleur::parser::TwitterKeyOAut twitterKeyOAut;
+    fleur::parser::doParse(keyRequette, twitterKeyOAut);
+    fleur::Processing_twitter processingTwitter(twitter, twitterKeyOAut);
     std::vector<std::string> output = processingTwitter.build();
     ASSERT_EQ(output.size(), 21);
     ASSERT_EQ(output.back(), "Id = 603949083192127489 | tweet = 100 free awesome iOS tab bar &amp; toolbar icons by http://t.co/TWSAHVdNai");
@@ -37,13 +37,13 @@ TEST_F(Processing_twitter_test, get_tweets_from_twitter) {
 
 TEST_F(Processing_twitter_test, get_tweets_from_twitter_limit_2) {
     std::string requet("get * from . limit 2;");
-    parser::Twitter twitter;
-    parser::doParse(requet, twitter);
+    fleur::parser::Twitter twitter;
+    fleur::parser::doParse(requet, twitter);
 
     std::string keyRequette("(CBJimEZofmww7RQ4fvitrNHnj, M9NBXFAQLJC6j5lTcQ1QL0QMAm4L8nyCKGwNcARP5BGlrJaNLA, 2711422854-wV9d3fCBnyx7oTDFlRn9F4oCM4CysAaR97TeaKn, qq9z0Bv5ZigB810CnRnF8rgrdx7cen9TS1CJTKlMngYRm);");
-    parser::TwitterKeyOAut twitterKeyOAut;
-    parser::doParse(keyRequette, twitterKeyOAut);
-    Processing_twitter processingTwitter(twitter, twitterKeyOAut);
+    fleur::parser::TwitterKeyOAut twitterKeyOAut;
+    fleur::parser::doParse(keyRequette, twitterKeyOAut);
+    fleur::Processing_twitter processingTwitter(twitter, twitterKeyOAut);
     std::vector<std::string> output = processingTwitter.build();
     ASSERT_EQ(output.size(), 2);
     ASSERT_EQ(output.front(), "Id = 814785277025779712 | tweet = Considering the development speed, when would I want to use Java instead of Python? by Garry Taylor https://t.co/NihLaoR6Eu");
@@ -51,37 +51,37 @@ TEST_F(Processing_twitter_test, get_tweets_from_twitter_limit_2) {
 
 TEST_F(Processing_twitter_test, get_tweets_from_productHunt_limit_2) {
     std::string requet("get tweets from ProductHunt limit 2;");
-    parser::Twitter twitter;
-    parser::doParse(requet, twitter);
+    fleur::parser::Twitter twitter;
+    fleur::parser::doParse(requet, twitter);
 
     std::string keyRequette("(CBJimEZofmww7RQ4fvitrNHnj, M9NBXFAQLJC6j5lTcQ1QL0QMAm4L8nyCKGwNcARP5BGlrJaNLA, 2711422854-wV9d3fCBnyx7oTDFlRn9F4oCM4CysAaR97TeaKn, qq9z0Bv5ZigB810CnRnF8rgrdx7cen9TS1CJTKlMngYRm);");
-    parser::TwitterKeyOAut twitterKeyOAut;
-    parser::doParse(keyRequette, twitterKeyOAut);
-    Processing_twitter processingTwitter(twitter, twitterKeyOAut);    std::vector<std::string> output = processingTwitter.build();
+    fleur::parser::TwitterKeyOAut twitterKeyOAut;
+    fleur::parser::doParse(keyRequette, twitterKeyOAut);
+    fleur::Processing_twitter processingTwitter(twitter, twitterKeyOAut);    std::vector<std::string> output = processingTwitter.build();
     ASSERT_EQ(output.size(), 2);
 }
 
 TEST_F(Processing_twitter_test, search_lol_from_twitter_limit_3) {
     std::string requet("search lol from * limit 3;");
-    parser::Twitter twitter;
-    parser::doParse(requet, twitter);
+    fleur::parser::Twitter twitter;
+    fleur::parser::doParse(requet, twitter);
 
     std::string keyRequette("(CBJimEZofmww7RQ4fvitrNHnj, M9NBXFAQLJC6j5lTcQ1QL0QMAm4L8nyCKGwNcARP5BGlrJaNLA, 2711422854-wV9d3fCBnyx7oTDFlRn9F4oCM4CysAaR97TeaKn, qq9z0Bv5ZigB810CnRnF8rgrdx7cen9TS1CJTKlMngYRm);");
-    parser::TwitterKeyOAut twitterKeyOAut;
-    parser::doParse(keyRequette, twitterKeyOAut);
-    Processing_twitter processingTwitter(twitter, twitterKeyOAut);    std::vector<std::string> output = processingTwitter.build();
+    fleur::parser::TwitterKeyOAut twitterKeyOAut;
+    fleur::parser::doParse(keyRequette, twitterKeyOAut);
+    fleur::Processing_twitter processingTwitter(twitter, twitterKeyOAut);    std::vector<std::string> output = processingTwitter.build();
     ASSERT_EQ(output.size(), 3);
 }
 
 TEST_F(Processing_twitter_test, get_mentions_from) {
     std::string requet("get mentions from .;");
-    parser::Twitter twitter;
-    parser::doParse(requet, twitter);
+    fleur::parser::Twitter twitter;
+    fleur::parser::doParse(requet, twitter);
 
     std::string keyRequette("(CBJimEZofmww7RQ4fvitrNHnj, M9NBXFAQLJC6j5lTcQ1QL0QMAm4L8nyCKGwNcARP5BGlrJaNLA, 2711422854-wV9d3fCBnyx7oTDFlRn9F4oCM4CysAaR97TeaKn, qq9z0Bv5ZigB810CnRnF8rgrdx7cen9TS1CJTKlMngYRm);");
-    parser::TwitterKeyOAut twitterKeyOAut;
-    parser::doParse(keyRequette, twitterKeyOAut);
-    Processing_twitter processingTwitter(twitter, twitterKeyOAut);    std::vector<std::string> output = processingTwitter.build();
+    fleur::parser::TwitterKeyOAut twitterKeyOAut;
+    fleur::parser::doParse(keyRequette, twitterKeyOAut);
+    fleur::Processing_twitter processingTwitter(twitter, twitterKeyOAut);    std::vector<std::string> output = processingTwitter.build();
     ASSERT_EQ(output.size(), 4);
     ASSERT_EQ(output[0], "User = JobProdDev | tweet = @EdgarGeorgel https://t.co/ZHIcy8zAuN : Bravo pour tes résultats sur le QCM Swift Niv.2 et ta 3è place aux… https://t.co/30Dj3W0UJZ");
     ASSERT_EQ(output[1], "User = JobProdDev | tweet = @EdgarGeorgel https://t.co/ZHIcy8zAuN  Pour le moment tu fais partie du TOP100 des #BestCoders d'octobre sur+ de 1500 développeurs : BRAVO !");
@@ -91,13 +91,13 @@ TEST_F(Processing_twitter_test, get_mentions_from) {
 
 TEST_F(Processing_twitter_test, post_and_delete) {
     std::string requet("post test post new tweet;");
-    parser::Twitter twitter;
-    parser::doParse(requet, twitter);
+    fleur::parser::Twitter twitter;
+    fleur::parser::doParse(requet, twitter);
 
     std::string keyRequette("(CBJimEZofmww7RQ4fvitrNHnj, M9NBXFAQLJC6j5lTcQ1QL0QMAm4L8nyCKGwNcARP5BGlrJaNLA, 2711422854-wV9d3fCBnyx7oTDFlRn9F4oCM4CysAaR97TeaKn, qq9z0Bv5ZigB810CnRnF8rgrdx7cen9TS1CJTKlMngYRm);");
-    parser::TwitterKeyOAut twitterKeyOAut;
-    parser::doParse(keyRequette, twitterKeyOAut);
-    Processing_twitter processingTwitter(twitter, twitterKeyOAut);    std::vector<std::string> output = processingTwitter.build();
+    fleur::parser::TwitterKeyOAut twitterKeyOAut;
+    fleur::parser::doParse(keyRequette, twitterKeyOAut);
+    fleur::Processing_twitter processingTwitter(twitter, twitterKeyOAut);    std::vector<std::string> output = processingTwitter.build();
 
     std::stringstream  stream(output[0]);
     std::string  word;
@@ -109,10 +109,10 @@ TEST_F(Processing_twitter_test, post_and_delete) {
     ASSERT_EQ(output[0], "The tweet "+ word +" : test post new tweet has been post");
 
     std::string requet2("delete "+ word +";");
-    parser::Twitter twitter2;
-    parser::doParse(requet2, twitter2);
+    fleur::parser::Twitter twitter2;
+    fleur::parser::doParse(requet2, twitter2);
 
-    Processing_twitter processingTwitter2(twitter2, twitterKeyOAut);
+    fleur::Processing_twitter processingTwitter2(twitter2, twitterKeyOAut);
     std::vector<std::string> output2 = processingTwitter2.build();
 
     ASSERT_EQ(output2.size(), 1);
@@ -121,12 +121,12 @@ TEST_F(Processing_twitter_test, post_and_delete) {
 
 TEST_F(Processing_twitter_test, get_trends) {
     std::string requet("get trends;");
-    parser::Twitter twitter;
-    parser::doParse(requet, twitter);
+    fleur::parser::Twitter twitter;
+    fleur::parser::doParse(requet, twitter);
 
     std::string keyRequette("(CBJimEZofmww7RQ4fvitrNHnj, M9NBXFAQLJC6j5lTcQ1QL0QMAm4L8nyCKGwNcARP5BGlrJaNLA, 2711422854-wV9d3fCBnyx7oTDFlRn9F4oCM4CysAaR97TeaKn, qq9z0Bv5ZigB810CnRnF8rgrdx7cen9TS1CJTKlMngYRm);");
-    parser::TwitterKeyOAut twitterKeyOAut;
-    parser::doParse(keyRequette, twitterKeyOAut);
-    Processing_twitter processingTwitter(twitter, twitterKeyOAut);
+    fleur::parser::TwitterKeyOAut twitterKeyOAut;
+    fleur::parser::doParse(keyRequette, twitterKeyOAut);
+    fleur::Processing_twitter processingTwitter(twitter, twitterKeyOAut);
     std::vector<std::string> output = processingTwitter.build();
 }

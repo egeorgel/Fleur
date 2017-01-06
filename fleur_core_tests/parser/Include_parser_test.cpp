@@ -20,14 +20,14 @@ public:
 
 TEST_F(Include_parser_test, parse_include_twitter) {
     const std::string input = "use twitter;";
-    parser::Include include;
-    EXPECT_TRUE(parser::doParse(input, include));
+    fleur::parser::Include include;
+    EXPECT_TRUE(fleur::parser::doParse(input, include));
     ASSERT_EQ(include._module, "twitter");
 }
 
 TEST_F(Include_parser_test, parse_include_fb) {
     const std::string input = "use facebook;";
-    parser::Include include;
-    EXPECT_TRUE(parser::doParse(input, include));
+    fleur::parser::Include include;
+    EXPECT_TRUE(fleur::parser::doParse(input, include));
     ASSERT_EQ(include._module, "facebook");
 }

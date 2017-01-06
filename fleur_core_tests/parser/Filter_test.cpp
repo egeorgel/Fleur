@@ -19,18 +19,18 @@ public:
 
 TEST_F(Filter_test, filterHTMLByMarked_shouldThowException) {
 
-    Filter filter;
+    fleur::Filter filter;
     try {
         filter.filterHTMLByMarked("text", "NotAMarker");
         FAIL();
-    }catch (const FilterException &e) {
+    }catch (const fleur::FilterException &e) {
         ASSERT_STREQ("No valid html marker", e.what());
     }
 }
 
 TEST_F(Filter_test, filterHTMLByMarked_divX1) {
 
-    Filter filter;
+    fleur::Filter filter;
     std::vector<std::string> outputFilter = filter.filterHTMLByMarked("<html> <h1> Test h1 </h1> <div> I'm a dive </div></html>",
                                                          "div");
 
@@ -39,7 +39,7 @@ TEST_F(Filter_test, filterHTMLByMarked_divX1) {
 
 TEST_F(Filter_test, filterHTMLByMarked_pX3) {
 
-    Filter filter;
+    fleur::Filter filter;
     std::vector<std::string> outputFilter;
     outputFilter = filter.filterHTMLByMarked("<html> <h1> Test h1 </h1> "
                                              "<p> p marker 1 <span> spam moi </span> </p>"
@@ -57,7 +57,7 @@ TEST_F(Filter_test, filterHTMLByMarked_pX3) {
 
 TEST_F(Filter_test, filterHTMLcalss) {
 
-    Filter filter;
+    fleur::Filter filter;
     std::vector<std::string> outputFilter;
     outputFilter = filter.filterHTMLByMarked("<html> <h1 > Test h1 </h1> "
                                                      "<p> p marker 1 <span> spam moi </span> </p>"
@@ -76,7 +76,7 @@ TEST_F(Filter_test, filterHTMLcalss) {
 
 TEST_F(Filter_test, filterHTMLid) {
 
-    Filter filter;
+    fleur::Filter filter;
     std::vector<std::string> outputFilter;
     outputFilter = filter.filterHTMLByMarked("<html> <h1 > Test h1 </h1> "
                                                      "<p> p marker 1 <span> spam moi </span> </p>"
