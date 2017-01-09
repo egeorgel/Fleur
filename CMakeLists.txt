@@ -37,7 +37,7 @@ endif()
 
 
 ### INCLUDE BOOST
-find_package(Boost COMPONENTS system filesystem program_options REQUIRED)
+find_package(Boost COMPONENTS system filesystem program_options regex REQUIRED)
 if(Boost_FOUND)
     message(STATUS "Boost_INCLUDE_DIRS: ${Boost_INCLUDE_DIRS}")
     message(STATUS "Boost_LIBRARIES: ${Boost_LIBRARIES}")
