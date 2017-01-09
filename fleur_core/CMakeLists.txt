@@ -16,7 +16,10 @@ set(HEADER_FILES
         include/parser/Wiki_parser.h
         include/service/Wiki.h
         include/utils/sha1.h
-        include/processing/Processing_wiki.h)
+        include/processing/Processing_wiki.h
+        include/parser/WolframAlpha_parser.h
+        include/service/WolframAlpha.h
+        include/processing/Processing_wolframalpha.h)
 
 set(SOURCE_FILES
         src/parser/Requete_parser.cpp
@@ -30,7 +33,7 @@ set(SOURCE_FILES
         src/processing/Processing.cpp
         src/service/Wiki.cpp
         src/utils/sha1.cpp
-        src/processing/Processing_wiki.cpp)
+        src/processing/Processing_wiki.cpp src/service/WolframAlpha.cpp src/processing/Processing_wolframalpha.cpp)
 
 #### Fleur Static Lib
 add_library(fleur_static STATIC ${SOURCE_FILES} ${HEADER_FILES})

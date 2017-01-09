@@ -12,7 +12,7 @@ add_executable(fleur_core_tests
         processing/processing_test.cpp
         parser/Wiki_parser_test.cpp
         service/Wiki_test.cpp
-        processing/Processing_wiki.cpp)
+        processing/Processing_wiki.cpp parser/WolframAlpha_parser_test.cpp)
 
 set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} ${PROJECT_SOURCE_DIR}/cmake)
 find_package(Gumbo REQUIRED)
@@ -20,4 +20,4 @@ find_package(Gumbo REQUIRED)
 include_directories(${PROJECT_SOURCE_DIR}/gumbo-query/include)
 
 target_link_libraries(fleur_core_tests gtest gtest_main curl ${CPR_LIBRARIES} gumbo_query_static twitcurl)
-target_link_libraries(fleur_core_tests fleur_static_lib)
+target_link_libraries(fleur_core_tests fleur_static)

@@ -2,6 +2,7 @@
 // Created by Edgar on 21/11/2016.
 //
 
+#include "processing/Processing.h"
 #include "processing/Processing_http.h"
 #include <assert.h>
 #include <service/Http.h>

@@ -6,13 +6,16 @@
 #define FLEUR_PROCESSING_H
 
 #include <vector>
+#include <string>
+#include <unordered_map>
 
 namespace fleur {
     class Processing {
 
     public:
         Processing(const std::string &requettes);
-
+        static std::string include;
+        static std::unordered_map<std::string, bool> installed_modules;
         typedef std::vector<std::string> Strings;
         Strings build();
 
