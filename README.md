@@ -9,26 +9,44 @@
 ## Getting Started
 ### Prerequisities
 1. Install [Boost](http://www.boost.org/doc/libs/1_61_0/more/getting_started/unix-variants.html)
+2. Install Curl
+3. Install Gumbo
 ### Installing
 1. Download the repo
 ```sh
     git clone https://github.com/egeorgel/Fleur.git
     git submodule update --init --recursive
 ```
-2. You are ready to go
-## How to use 
-The syntax is SQL like in order to be easy to take in charge
-Some key word :
-* SELECT + css selector
-* FROM + url or name of your ressource
-* USE + your component ex: twitter by default it will use the HTML component 
-### Example
-```fql
-    SELECT html FROM "http://httpbin.org/html";
-    SELECT html (title) FROM "http://www.dynsim.fr";
+2. Init Cmake
+```sh
+    cd Fleur
+    mkdir tmp && cd tmp
+    cmake -DCMAKE_BUILD_TYPE=Release ..
 ```
+
+3. Build and/or install Fleur's static library
+```sh
+    make fleur_static
+    # Files will be in Fleur/build/lib
+    
+    make fleur_static-install
+    # Files will be in /usr/local/include/fleur.h and /usr/local/include/libfleur.a
+```
+
+4. Build and/or install Fleur's Command Line
+```sh
+    make fleur_cli
+    # File will be in Fleur/build/bin
+    
+    make fleur_static-install
+    # File will be in /usr/local/bin/fleur
+ ```
+ 
+
+## Fleur Query Language
+## How to use the CLI
 ## Contributing
 Feel free to add any new component to this project.
 
 ## Authors
-Edgar Georgel - Philppe Dupart - Arthur Busser - Anthony Da Mota - Valentin Mercier
+Edgar Georgel - Philippe Dupart - Arthur Busser - Anthony Da Mota - Valentin Mercier

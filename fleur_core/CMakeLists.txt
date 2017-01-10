@@ -41,22 +41,26 @@ target_link_libraries(fleur_static ${Boost_LIBRARIES} curl ${CPR_LIBRARIES} gumb
 add_custom_target(
         fleur_static-install
         COMMAND
-            cp build/lib/libfleur_static.a /usr/local/lib/fleur.a
+            cp build/lib/libfleur_static.a /usr/local/lib/libfleur.a
         COMMAND
-            echo 'Installed fleur static library to /usr/local/lib/fleur.a'
+            echo 'Installed fleur static library to /usr/local/lib/libfleur.a'
         COMMAND
             cp fleur_cli/fleur.h /usr/local/include/fleur.h
         COMMAND
             echo 'Installed fleur.h header to /usr/local/include/fleur.h'
         WORKING_DIRECTORY
-        "${PROJECT_SOURCE_DIR}"
+            "${PROJECT_SOURCE_DIR}"
 )
 add_custom_target(
-        fleur_cli-uninstall
+        fleur_static-uninstall
         COMMAND
-        rm /usr/local/bin/fleur
+            rm /usr/local/lib/libfleur.a
         COMMAND
-        echo 'Uninstalled fleur command line'
+            echo 'Uninstalled fleur.a static library'
+        COMMAND
+            rm /usr/local/include/fleur.h
+        COMMAND
+            echo 'Uninstalled fleur.h header'
         WORKING_DIRECTORY
-        "${PROJECT_SOURCE_DIR}"
+            "${PROJECT_SOURCE_DIR}"
 )
