@@ -17,15 +17,73 @@
 ```
 2. You are ready to go
 ## How to use 
+Fleur comprend différent module en plus des fonctionnalité du module de base.
+Chaque module comporte quelques spécificité syntaxique que vous pouvez trouver ci-dessous
+###Basic Module
 The syntax is SQL like in order to be easy to take in charge
-Some key word :
-* SELECT + css selector
-* FROM + url or name of your ressource
-* USE + your component ex: twitter by default it will use the HTML component 
-### Example
-```fql
+* SELECT + html/* or json or xml + Optional: (css selector) + FROM + url or name of your ressource + Optional: GET/POST/Header (param1=val1, param2=val2)
+```fql    
     SELECT html FROM "http://httpbin.org/html";
     SELECT html (title) FROM "http://www.dynsim.fr";
+    
+    select json from "http://denis.fr" get (name=denis, age=12, date=12/12/12) header (tokenID=E223DEF, time=4);
+    select html (p) from "http://denis.fr" get (name=denis, age=12, date=12/12/12) header (tokenID=E223DEF, time=4);
+```
+
+###Twitter Module
+In order to start the Twitter Module you have to type:
+```fql
+    use twitter;
+    (_consumerKey, _consumerSecret, _tokenKey, _tokenSecret);
+```
+* syntax : GET + */tweets or mention or trends + from twitter/. or anyother personn + Optional : limit to X
+```fql
+get tweets from twitter;                           #Get all your tweet from twitter limit to 200
+get * from .;                                               #Same request
+get tweets from ProductHunt limit 2;    #Get the 2 first tweets from ProductHunt   
+get * from ProductHunt limit 2;              #Same request
+```
+* syntax: SEARCH + text + FROM + twitter
+```fql
+    search Java from wiki;            #Search all article with the key word Java
+    search "text" from * limit 2;   #Same request but only take the 2 first
+```
+* syntax: POST + text
+```fql
+    post "new tweet";
+```
+* syntax: DELETE + post_id
+```fql
+   delete 934839843522;
+```
+###Wikipedia Module
+In order to start the Twitter Module you have to type:
+```fql
+    use wikipedia;
+```
+* syntax: GET + (html or header or txt) article_name + FROM + wikipedia + Optional: limit to X
+```fql
+    get (header) java from wiki;     #get the first part of the java article 
+    get (html) java from wiki;          #get the full html of the java arcticle
+    get java from wiki;                     #same as HTML
+    get (txt) java from wiki;             #retreive the full content of the article in text format
+```
+
+* syntax: SEARCH + article_name + FROM + wikipedia + Optional: limit to X
+```fql
+    search Java from wiki;              #Get all article id, name, header from the Java search
+    search Java from wiki limit 4;  #Get the 4 first result of the previous search
+```
+###WolframeAlpha Module
+In order to start the Twitter Module you have to type:
+```fql
+    use wolframealpha;
+    (_appId);
+```
+* syntax : evaluate + string_to_evaluate_in_walframe_alpha
+```fql
+    evaluate x + 3 = 4;
+    evaluate string to search in Walframe Alpha
 ```
 ## Contributing
 Feel free to add any new component to this project.
