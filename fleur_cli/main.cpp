@@ -45,12 +45,13 @@ int main(const int argc, const char *argv[]) {
 
     /* Version Option */
     else if (vm.count("version")) {
-        std::cout << fleur_version() << std::endl;
+        std::cout << "FleurQL Version: " << fleurql_version() << std::endl;
+        std::cout << "Bundled with modules : " << fleurql_installed_modules() << std::endl;
     }
 
     /* Execute Option */
     else if (vm.count("execute")) {
-        fleur_query(vm["execute"].as<std::string>());
+        fleurql_query(vm["execute"].as<std::string>());
     }
 
     /* Query passed piped through stdin */
@@ -61,7 +62,7 @@ int main(const int argc, const char *argv[]) {
         {
             input += line;
         }
-        for (auto const& c : fleur_query(line))
+        for (auto const& c : fleurql_query(line))
             std::cout << c << std::endl;
     }
     #endif
@@ -70,7 +71,8 @@ int main(const int argc, const char *argv[]) {
     else {
 
         /* Log in information */
-        std::cout << "Fleur Interactive Shell - Version " << fleur_version() << std::endl;
+        std::cout << "Fleur Interactive Shell - Version " << fleurql_version() << std::endl;
+        std::cout << "Bundled with modules : " << fleurql_installed_modules() << std::endl;
         std::cout << "Type quit or exit to leave this shell" << std::endl << std::endl;
 
         /* REPL Loop */
@@ -78,7 +80,7 @@ int main(const int argc, const char *argv[]) {
         std::locale locale;
         do {
             /* Ask for input */
-            std::cout << "Fleur> ";
+            std::cout << "Fleur" << (fleurql_current_module() != "" ? " ("+fleurql_current_module()+") " : "") << ">";
             std::getline(std::cin, line);
 
             /* To lower, to detect quit/exit in a case insensitive way */
@@ -91,7 +93,7 @@ int main(const int argc, const char *argv[]) {
             }
 
             /* Execute fleur query */
-            for (auto const& c : fleur_query(line))
+            for (auto const& c : fleurql_query(line))
                 std::cout << c << std::endl;
         } while (true);
     }

@@ -72,7 +72,7 @@ namespace parser {
                 std::cout << "parse success\n";
                 std::cout << "include : " << query._module << "\n";
             } else {
-                std::cerr << "parse failed: '" << std::string(i_begin, i_end) << "'\n";
+                //std::cerr << "parse failed: '" << std::string(i_begin, i_end) << "'\n";
             }
             return ok;
         } catch (const qi::expectation_failure<decltype(i_begin)> &e) {

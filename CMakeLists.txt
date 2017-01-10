@@ -37,7 +37,7 @@ endif()
 
 
 ### INCLUDE BOOST
-find_package(Boost COMPONENTS system filesystem program_options REQUIRED)
+find_package(Boost COMPONENTS system filesystem program_options regex REQUIRED)
 if(Boost_FOUND)
     message(STATUS "Boost_INCLUDE_DIRS: ${Boost_INCLUDE_DIRS}")
     message(STATUS "Boost_LIBRARIES: ${Boost_LIBRARIES}")
@@ -96,5 +96,5 @@ add_subdirectory(fleur_core_tests/)
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}/build/bin/")
 set(FLEUR_CLI_SOURCE_FILES fleur_cli/main.cpp)
 add_executable(fleur_cli ${FLEUR_CLI_SOURCE_FILES})
-target_link_libraries(fleur_cli ${Boost_LIBRARIES} fleur_static_lib)
+target_link_libraries(fleur_cli ${Boost_LIBRARIES} fleur_static)
 

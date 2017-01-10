@@ -128,6 +128,22 @@ TEST_F(Requete_parser_test, parse_url_JSON_and_url_and_get_3p_header_2p) {
     ASSERT_EQ(requete._headers, outputH);
 }
 
+TEST_F(Requete_parser_test, parse_url_JSON_and_url_and_header_2p) {
+    const std::string input = "select json "
+            "from \"http://denis.fr\" "
+            "header (tokenID=E223DEF, time=4);";
+    fleur::parser::Requete requete;
+    EXPECT_TRUE(fleur::parser::doParse(input, requete));
+    ASSERT_EQ(requete._url, "http://denis.fr");
+    ASSERT_EQ(requete._format, "json");
+    ASSERT_EQ(requete._headersStr, "tokenID=E223DEF,time=4");
+
+    fleur::parser::type_parameterS outputH;
+    outputH.push_back(std::make_pair("tokenID", "E223DEF"));
+    outputH.push_back(std::make_pair("time", "4"));
+    ASSERT_EQ(requete._headers, outputH);
+}
+
 TEST_F(Requete_parser_test, parse_url_HTML_select_P_and_url_and_get_3p_header_2p) {
     const std::string input = "select html (p) "
             "from \"http://denis.fr\" "
@@ -153,3 +169,4 @@ TEST_F(Requete_parser_test, parse_url_HTML_select_P_and_url_and_get_3p_header_2p
     outputH.push_back(std::make_pair("time", "4"));
     ASSERT_EQ(requete._headers, outputH);
 }
+
