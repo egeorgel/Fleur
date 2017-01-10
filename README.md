@@ -47,7 +47,7 @@
  
  * Uninstall
 ```sh
-     make fleur_cli-install
+     make fleur_cli-uninstall
      make fleur_static-uninstall
  ```
  
