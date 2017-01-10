@@ -24,8 +24,8 @@ int main(const int argc, const char *argv[]) {
             ("help,h", "Display the help message")
             ("version,v", "Display the version number")
             ("execute,e", po::value<std::string>(), NOT_A_WINDOWS ?
-                                                    "Execute a fleur Query - Queries can additionally be piped through STDIN"
-                                                    : "Execute a fleur Query");
+                                                    "Execute a Fleur Query - Queries can additionally be piped through STDIN"
+                                                    : "Execute a Fleur Query");
 
 
     /* Parse argv for command line options */
@@ -37,6 +37,8 @@ int main(const int argc, const char *argv[]) {
         std::cerr << ex.what() << std::endl << "Use fleur --help for usage information" << std::endl;
     }
 
+    /* Poll STDIN */
+    int polled_stdin = poll_stdin();
 
     /* Help Option */
     if (vm.count("help")) {
@@ -45,24 +47,24 @@ int main(const int argc, const char *argv[]) {
 
     /* Version Option */
     else if (vm.count("version")) {
-        std::cout << "FleurQL Version: " << fleurql_version() << std::endl;
-        std::cout << "Bundled with modules : " << fleurql_installed_modules() << std::endl;
+        std::cout << "Fleur Version: " << fleur_version() << std::endl;
+        std::cout << "Bundled with modules : " << fleur_installed_modules() << std::endl;
     }
 
     /* Execute Option */
     else if (vm.count("execute")) {
-        fleurql_query(vm["execute"].as<std::string>());
+        fleur_query(vm["execute"].as<std::string>());
     }
 
     /* Query passed piped through stdin */
     #ifdef NOT_A_WINDOWS
-    else if (poll_stdin()) {
+    else if (polled_stdin) {
         std::string line, input;
         while (std::getline(std::cin, line))
         {
             input += line;
         }
-        for (auto const& c : fleurql_query(line))
+        for (auto const& c : fleur_query(input))
             std::cout << c << std::endl;
     }
     #endif
@@ -71,8 +73,8 @@ int main(const int argc, const char *argv[]) {
     else {
 
         /* Log in information */
-        std::cout << "Fleur Interactive Shell - Version " << fleurql_version() << std::endl;
-        std::cout << "Bundled with modules : " << fleurql_installed_modules() << std::endl;
+        std::cout << "Fleur Interactive Shell: Version " << fleur_version() << std::endl;
+        std::cout << "Bundled with modules: " << fleur_installed_modules() << std::endl;
         std::cout << "Type quit or exit to leave this shell" << std::endl << std::endl;
 
         /* REPL Loop */
@@ -80,7 +82,7 @@ int main(const int argc, const char *argv[]) {
         std::locale locale;
         do {
             /* Ask for input */
-            std::cout << "Fleur" << (fleurql_current_module() != "" ? " ("+fleurql_current_module()+") " : "") << ">";
+            std::cout << "Fleur" << (fleur_current_module() != "" ? " ("+fleur_current_module()+") " : "") << ">";
             std::getline(std::cin, line);
 
             /* To lower, to detect quit/exit in a case insensitive way */
@@ -93,7 +95,7 @@ int main(const int argc, const char *argv[]) {
             }
 
             /* Execute fleur query */
-            for (auto const& c : fleurql_query(line))
+            for (auto const& c : fleur_query(line))
                 std::cout << c << std::endl;
         } while (true);
     }

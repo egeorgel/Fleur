@@ -6,6 +6,6 @@
 
 
 fleur::Processing_wolframalpha::Strings fleur::Processing_wolframalpha::build() {
-    WolframAlpha wa = WolframAlpha(_wolframAlphaParser);
+    WolframAlpha wa = WolframAlpha(_wolframAlphaParser, _wolframAlphaAppID);
     return wa.process();
 }

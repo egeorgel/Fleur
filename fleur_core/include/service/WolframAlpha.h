@@ -12,12 +12,14 @@ namespace fleur {
 
     public:
 
-        WolframAlpha(const fleur::parser::WolframAlpha &wa_parser) : _wolframAlphaParser(wa_parser){};
+        WolframAlpha(const fleur::parser::WolframAlpha &wa_parser, const fleur::parser::WolframAlphaAppID &wa_appid)
+                : _wolframAlphaParser(wa_parser), _wolframAlphaAppID(wa_appid) {};
         ~WolframAlpha(){};
         std::vector<std::string> process();
 
     private:
         const fleur::parser::WolframAlpha &_wolframAlphaParser;
+        const fleur::parser::WolframAlphaAppID &_wolframAlphaAppID;
     };
 }
 

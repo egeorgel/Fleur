@@ -12,10 +12,16 @@ std::vector<std::string> fleur::WolframAlpha::process() {
         return {"Error, not a valid syntax use : evaluate"};
 
     auto r = cpr::Get(cpr::Url{"http://api.wolframalpha.com/v2/query"},
-                      cpr::Parameters{{"input", _wolframAlphaParser._to_evaluate}, {"appid", "2T56W4-5LKKEYV96R"}});
+                      cpr::Parameters{{"input", _wolframAlphaParser._to_evaluate}, {"appid", _wolframAlphaAppID._appID}});
 
     if (r.status_code != 200)
         return {"Error, WolframAlpha API did not return a 200 HTTP Response"};
+
+    boost::regex regex_err("<error>.*?<msg>(.*?)</msg>.*?</error>");
+    boost::sregex_token_iterator iter_err(r.text.begin(), r.text.end(), regex_err, 1);
+    boost::sregex_token_iterator end_err;
+    if (iter_err != end_err)
+        return {*iter_err};
 
 
     boost::regex regex("<plaintext>(.*?)</plaintext>");

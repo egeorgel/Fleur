@@ -84,17 +84,16 @@ include_directories(${Gumbo_INCLUDE_DIRS} ${gumbo_query_SOURCE_DIRECTORY})
 
 
 
-### FLEUR Static Lib
-set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}/build/lib/")
-set(CMAKE_LIBRARY_OUTPUT_DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}/build/lib/")
+### FLEUR
+set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY "${PROJECT_SOURCE_DIR}/build/lib/")
+set(CMAKE_LIBRARY_OUTPUT_DIRECTORY "${PROJECT_SOURCE_DIR}/build/lib/")
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY "${PROJECT_SOURCE_DIR}/build/bin/")
+
+### Static Lib
 include_directories(fleur_core/include )
 add_subdirectory(fleur_core/)
 add_subdirectory(fleur_core_tests/)
 
-
 #### Fleur CLI
-set(CMAKE_RUNTIME_OUTPUT_DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}/build/bin/")
-set(FLEUR_CLI_SOURCE_FILES fleur_cli/main.cpp)
-add_executable(fleur_cli ${FLEUR_CLI_SOURCE_FILES})
-target_link_libraries(fleur_cli ${Boost_LIBRARIES} fleur_static)
-
+add_subdirectory(fleur_cli/)
+#add_subdirectory(fleur_cli_tests/)

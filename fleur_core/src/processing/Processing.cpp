@@ -23,6 +23,10 @@ std::unordered_map<std::string, bool> fleur::Processing::installed_modules {
         {"twitter", true},
         {"wolframalpha", true}
 };
+std::unordered_map<std::string, std::string> fleur::Processing::modules_with_credentials {
+        {"twitter", "OAuth Key"},
+        {"wolframalpha", "AppID"}
+};
 
 
 
@@ -33,15 +37,14 @@ fleur::Processing::Processing(const std::string &requettes) {
     }
 }
 
+
+static fleur::parser::TwitterKeyOAut requeteTwitterKeyOAut;
+static fleur::parser::WolframAlphaAppID requeteWolframAlphaAppID;
 fleur::Processing::Strings fleur::Processing::build() {
     assert(_requettes.size() > 0);
 
     fleur::parser::Include requeteInclude;
-    fleur::parser::TwitterKeyOAut requeteTwitterKeyOAut;
-    fleur::parser::WolframAlphaCredentials wolframAlphaCredentials;
-
     fleur::Processing::Strings output;
-    bool isAfterUsing = false;
 
     for (std::string requetteStr : _requettes) {
         fleur::parser::Requete requeteHttp;
@@ -57,12 +60,15 @@ fleur::Processing::Strings fleur::Processing::build() {
             for(auto elem : requeteInclude._module)
                 include_tolower += std::tolower(elem,locale);
             // Check if the module is valid
-            if (installed_modules[include_tolower] != true) {
+            if (!installed_modules.count(include_tolower)) {
                 std::cerr << "No such module: " << include_tolower << std::endl;
                 break;
             }
-            isAfterUsing = true;
-            include = requeteInclude._module;
+            // Check if the module requires credentials
+            if (modules_with_credentials.count(include_tolower))
+                include = requeteInclude._module + " " + modules_with_credentials[include_tolower];
+            else
+                include = requeteInclude._module;
             continue;
         }
 
@@ -73,9 +79,9 @@ fleur::Processing::Strings fleur::Processing::build() {
             continue;
         }
 
-        if (include == "twitter" && isAfterUsing) { //KEY OAUTH TWITTER
-            isAfterUsing = false;
-            parser::doParse(requetteStr, requeteTwitterKeyOAut);
+        if (include == "twitter " + modules_with_credentials["twitter"]) { //KEY OAUTH TWITTER
+            if (parser::doParse(requetteStr, requeteTwitterKeyOAut))
+                include = "twitter";
             continue;
         }
 
@@ -99,14 +105,22 @@ fleur::Processing::Strings fleur::Processing::build() {
             }
         }
 
+        if (include == "wolframalpha " + modules_with_credentials["wolframalpha"]) { //KEY OAUTH TWITTER
+            if (parser::doParse(requetteStr, requeteWolframAlphaAppID))
+                include = "wolframalpha";
+            continue;
+        }
+
         if (include == "wolframalpha") {
             if (fleur::parser::doParse(requetteStr, requeteWolframAlpha)) {
-                fleur::Processing_wolframalpha processing(requeteWolframAlpha, wolframAlphaCredentials);
+                fleur::Processing_wolframalpha processing(requeteWolframAlpha, requeteWolframAlphaAppID);
                 response = processing.build();
                 output.insert(output.end(), response.begin(), response.end());
                 continue;
             }
         }
+
+
 
         std::cerr << "Invalid syntax" << std::endl;
 

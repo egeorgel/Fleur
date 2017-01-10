@@ -7,16 +7,16 @@
 
 #define FLEUR_VERSION "1.0.0-alpha1"
 
-std::string fleurql_version()
+std::string fleur_version()
 {
     return FLEUR_VERSION;
 }
 
-std::string fleurql_current_module() {
+std::string fleur_current_module() {
     return fleur::Processing::include;
 }
 
-std::string fleurql_installed_modules() {
+std::string fleur_installed_modules() {
     std::string ret = "";
     for (auto it : fleur::Processing::installed_modules)
         ret = ret + it.first + " - ";
@@ -25,7 +25,7 @@ std::string fleurql_installed_modules() {
     return ret.substr(0, ret.size()-3);
 }
 
-std::vector<std::string> fleurql_query(std::string requetes) {
+std::vector<std::string> fleur_query(std::string requetes) {
     fleur::Processing processing(requetes);
     std::vector<std::string> results = processing.build();
     return results;

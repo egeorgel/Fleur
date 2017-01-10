@@ -26,3 +26,10 @@ TEST_F(WolframAlpha_parser_test, parse_general_question) {
     ASSERT_EQ(wolframReq._action, "EVALUATE");
     ASSERT_EQ(wolframReq._to_evaluate, "x + 2 = 10");
 }
+
+TEST_F(WolframAlpha_parser_test, parse_app_id) {
+    std::string input = "denis;";
+    fleur::parser::WolframAlphaAppID wolframAppIDReq;
+    EXPECT_TRUE(fleur::parser::doParse(input, wolframAppIDReq));
+    ASSERT_EQ(wolframAppIDReq._appID, "denis");
+}

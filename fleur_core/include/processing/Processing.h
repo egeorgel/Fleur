@@ -16,6 +16,7 @@ namespace fleur {
         Processing(const std::string &requettes);
         static std::string include;
         static std::unordered_map<std::string, bool> installed_modules;
+        static std::unordered_map<std::string, std::string> modules_with_credentials;
         typedef std::vector<std::string> Strings;
         Strings build();
 

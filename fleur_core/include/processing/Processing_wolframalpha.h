@@ -14,8 +14,8 @@ namespace fleur {
     public:
         typedef std::vector<std::string> Strings;
 
-        Processing_wolframalpha(const fleur::parser::WolframAlpha &wolframAlpha, const fleur::parser::WolframAlphaCredentials &wolframAlphaCredentials)
-                : _wolframAlphaParser(wolframAlpha), _wolframAlphaCredentials(wolframAlphaCredentials){}
+        Processing_wolframalpha(const fleur::parser::WolframAlpha &wolframAlpha, const fleur::parser::WolframAlphaAppID &wolframAlphaAppID)
+                : _wolframAlphaParser(wolframAlpha), _wolframAlphaAppID(wolframAlphaAppID){}
 
         /**
          * Run the _requete
@@ -24,7 +24,7 @@ namespace fleur {
 
     private:
         fleur::parser::WolframAlpha _wolframAlphaParser;
-        fleur::parser::WolframAlphaCredentials _wolframAlphaCredentials;
+        fleur::parser::WolframAlphaAppID _wolframAlphaAppID;
     };
 
 }

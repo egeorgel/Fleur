@@ -26,7 +26,7 @@ namespace fleur {
             std::string _to_evaluate;
         };
 
-        struct WolframAlphaCredentials {
+        struct WolframAlphaAppID {
 
         public:
             std::string _appID;
@@ -45,7 +45,7 @@ BOOST_FUSION_ADAPT_STRUCT(
 )
 
 BOOST_FUSION_ADAPT_STRUCT(
-        fleur::parser::WolframAlphaCredentials,
+        fleur::parser::WolframAlphaAppID,
 (std::string, _appID)
 )
 
@@ -67,7 +67,7 @@ namespace fleur {
                 using qi::hold;
 
                 lexemEvaluate = lexeme       [+(char_("*evaluateEVALUATE"))];
-                lexemQuestion = hold[lexeme  [ ( +(char_ - ";") >> ";" )]];
+                lexemQuestion = lexeme  [ ( +(char_ - ";") >> ";" )];
 
                 requete =  lexemEvaluate >> lexemQuestion;
             }
@@ -85,6 +85,46 @@ namespace fleur {
                 if (ok) {
                     std::cout << "parse success\n";
                     std::cout << "should evaluate : " << query._to_evaluate << "\n";
+                }
+                else {
+                    std::cerr << "parse failed: '" << std::string(i_begin, i_end) << "'\n";
+                }
+                return ok;
+            } catch(const qi::expectation_failure<decltype(i_begin)>& e) {
+                std::string frag(e.first, e.last);
+                std::cerr << e.what() << "'" << frag << "'\n";
+            }
+            return false;
+        }
+
+
+        template<typename Iterator>
+        struct WolframAlphaAppID_parser : qi::grammar<Iterator, WolframAlphaAppID(), ascii::space_type> {
+
+            qi::rule<Iterator, std::string(), ascii::space_type> lexemAppID;
+            qi::rule<Iterator, WolframAlphaAppID(), ascii::space_type> requete;
+
+            WolframAlphaAppID_parser() : WolframAlphaAppID_parser::base_type(requete) {
+                using qi::lexeme;
+                using ascii::char_;
+
+                lexemAppID = lexeme  [ ( +(char_ - ";") >> ";" )];
+                requete = lexemAppID;
+
+            }
+        };
+
+        template <typename C>
+        bool doParse(const C& input, WolframAlphaAppID &query) {
+            auto i_begin(std::begin(input)), i_end(std::end(input));
+
+            WolframAlphaAppID_parser<decltype(i_begin)> wolframAlphaAppIDParser;
+
+            try {
+                bool ok = qi::phrase_parse(i_begin, i_end, wolframAlphaAppIDParser, ascii::space, query);
+                if (ok) {
+                    std::cout << "parse success\n";
+                    std::cout << "appID : " << query._appID << "\n";
                 }
                 else {
                     std::cerr << "parse failed: '" << std::string(i_begin, i_end) << "'\n";
