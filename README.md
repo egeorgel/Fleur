@@ -47,8 +47,8 @@
  
  * Uninstall
  ```sh
- make fleur_cli-install
- make fleur_static-uninstall
+     make fleur_cli-install
+     make fleur_static-uninstall
  ```
  
 ## Fleur Query Language Documentation 
