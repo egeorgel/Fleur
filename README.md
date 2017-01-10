@@ -10,9 +10,10 @@
 
 ## Getting Started
 ### Prerequisities
-1. Install [Boost](http://www.boost.org/doc/libs/1_61_0/more/getting_started/unix-variants.html)
-2. Install Curl
-3. Install Gumbo
+* Install [Boost](http://www.boost.org/doc/libs/1_61_0/more/getting_started/unix-variants.html)
+* Install Curl
+* Install Gumbo
+
 ### Installing
 1. Download the repo
 ```sh
