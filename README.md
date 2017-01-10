@@ -45,6 +45,12 @@
     # File will be in /usr/local/bin/fleur
 ```
  
+ * Uninstall
+ ```sh
+ make fleur_cli-install
+ make fleur_static-uninstall
+ ```
+ 
 ## Fleur Query Language Documentation 
 Fleur comprend différent module en plus des fonctionnalité du module de base.
 Chaque module comporte quelques spécificité syntaxique que vous pouvez trouver ci-dessous.
