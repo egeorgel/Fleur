@@ -23,7 +23,6 @@
 ```
 * Init Cmake
 ```sh
-    cd Fleur
     mkdir tmp && cd tmp
     cmake -DCMAKE_BUILD_TYPE=Release ..
 ```
