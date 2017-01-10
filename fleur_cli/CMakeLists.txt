@@ -8,7 +8,7 @@ target_link_libraries(fleur_cli ${Boost_LIBRARIES} fleur_static)
 add_custom_target(
         fleur_cli-install
         COMMAND
-            cp build/bin/fleur_cli /usr/local/bin/fleur
+            cp -f build/bin/fleur_cli /usr/local/bin/fleur
         COMMAND
             echo 'Installed fleur command line to /usr/local/bin/fleur'
         WORKING_DIRECTORY

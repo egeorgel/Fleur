@@ -41,11 +41,11 @@ target_link_libraries(fleur_static ${Boost_LIBRARIES} curl ${CPR_LIBRARIES} gumb
 add_custom_target(
         fleur_static-install
         COMMAND
-            cp build/lib/libfleur_static.a /usr/local/lib/libfleur.a
+            cp -f build/lib/libfleur_static.a /usr/local/lib/libfleur.a
         COMMAND
             echo 'Installed fleur static library to /usr/local/lib/libfleur.a'
         COMMAND
-            cp fleur_cli/fleur.h /usr/local/include/fleur.h
+            cp -f fleur_cli/fleur.h /usr/local/include/fleur.h
         COMMAND
             echo 'Installed fleur.h header to /usr/local/include/fleur.h'
         WORKING_DIRECTORY
