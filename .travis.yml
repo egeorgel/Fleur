@@ -45,6 +45,8 @@ before_install:
   - sudo apt-get update -qq
   - sudo apt-get install unzip
   - sudo apt-get install build-essential
+  - sudo apt-get install libboost-all-dev
+
   - wget http://www.cmake.org/files/v3.5/cmake-3.5.2.tar.gz
   - tar xf cmake-3.5.2.tar.gz
   - cd cmake-3.5.2
@@ -53,6 +55,7 @@ before_install:
   - sudo make install
   - export PATH=/usr/local/bin:$PATH
   - export LD_LIBRARY_PATH=/usr/local/lib:$LD_LIBRARY_PATH
+
   - wget https://github.com/google/gumbo-parser/archive/master.zip -O /tmp/gumbo.zip
   - unzip /tmp/gumbo.zip -d /tmp/gumbo
   - cd /tmp/gumbo/gumbo-parser-master/
