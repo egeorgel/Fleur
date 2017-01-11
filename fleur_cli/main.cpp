@@ -115,4 +115,4 @@ int poll_stdin() {
     fds.events = POLLIN;
     ret = poll(&fds, 1, 0);
     return ret;
-}}
+}
