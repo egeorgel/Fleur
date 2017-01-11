@@ -46,11 +46,10 @@ before_install:
   - sudo apt-get install libboost-all-dev
   - wget https://github.com/google/gumbo-parser/archive/master.zip -O /tmp/gumbo.zip
   - unzip /tmp/gumbo.zip -d /tmp/gumbo
-  - cd /tmp/gumbo/gumbo-parser-master/
-  - ./autogen.sh
-  - ./configure
-  - make
-  - sudo make install
+  - /tmp/gumbo/gumbo-parser-master/./autogen.sh
+  - /tmp/gumbo/gumbo-parser-master/./configure
+  - /tmp/gumbo/gumbo-parser-master/ make
+  - /tmp/gumbo/gumbo-parser-master/ sudo make install
 script:
   - mkdir build
   - cd build
