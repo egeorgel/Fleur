@@ -44,6 +44,10 @@ before_install:
   - sudo apt-get update -qq
   - sudo apt-get install unzip
   - sudo apt-get install libboost-all-dev
+  - sudo apt-get install software-properties-common
+  - sudo add-apt-repository ppa:george-edison55/cmake-3.1
+  - sudo apt-get update
+  - sudo apt-get upgrade
   - wget https://github.com/google/gumbo-parser/archive/master.zip -O /tmp/gumbo.zip
   - unzip /tmp/gumbo.zip -d /tmp/gumbo
   - OUTPUT=$(pwd)
