@@ -43,11 +43,15 @@ git:
 before_install:
   - sudo apt-get update -qq
   - sudo apt-get install unzip
-  - sudo apt-get install libboost-all-dev
-  - sudo apt-get install software-properties-common
-  - sudo add-apt-repository ppa:george-edison55/cmake-3.1
-  - sudo apt-get update
-  - sudo apt-get upgrade
+  - sudo apt-get install build-essential
+  - wget http://url.to/cmake-3.2-src.tar.gz
+  - tar xzf cmake-3.2-src.tar.gz
+  - cd cmake-3.2-src
+  - ./configure
+  - make
+  - sudo make install
+  - export PATH=/usr/local/bin:$PATH
+  - export LD_LIBRARY_PATH=/usr/local/lib:$LD_LIBRARY_PATH
   - wget https://github.com/google/gumbo-parser/archive/master.zip -O /tmp/gumbo.zip
   - unzip /tmp/gumbo.zip -d /tmp/gumbo
   - OUTPUT=$(pwd)
