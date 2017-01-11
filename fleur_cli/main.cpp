@@ -9,7 +9,7 @@
 #if defined(__APPLE__) || defined(__unix__)
     #define NOT_A_WINDOWS 1
     #include <sys/poll.h>
-#elif
+#else
     #define NOT_A_WINDOWS 0
 #endif
 

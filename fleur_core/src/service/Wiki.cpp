@@ -150,7 +150,7 @@ fleur::Wiki::type_listArticle fleur::Wiki::populatListArctivle(const std::string
 }
 
 fleur::Wiki::type_article fleur::Wiki::populatArctivleHeader(const cpr::Response &result) const {
-    std::__1::stringstream ss;
+    std::stringstream ss;
     ss << result.text;
     boost::property_tree::ptree pt;
     boost::property_tree::json_parser::read_json(ss, pt);
