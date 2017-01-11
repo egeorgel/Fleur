@@ -8,7 +8,7 @@ compiler:
 
 env:
   global:
-    - GCC_VERSION="4.8"
+    - GCC_VERSION="4.9.3"
 git:
     submodules: true
 
