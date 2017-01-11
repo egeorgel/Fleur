@@ -111,7 +111,7 @@ In order to start the Twitter Module you have to type:
     search Java from wiki limit 4;  #Get the 4 first result of the previous search
 ```
 ###WolframeAlpha Module
-In order to start the Twitter Module you have to type:
+In order to start the WolframeAlpha Module you have to type:
 ```fql
     use wolframealpha;
     appId;
