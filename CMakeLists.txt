@@ -2,6 +2,10 @@ cmake_minimum_required(VERSION 2.8)
 project(Fleur)
 include(CTest)
 
+#Windows Ban
+IF (WIN32)
+    message(FATAL_ERROR "Fleur does not support Windows yet")
+endif()
 
 #C++11 Support
 add_definitions(-std=c++11)

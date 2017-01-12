@@ -12,6 +12,7 @@
 ### Prerequisities
 * Install [Boost](http://www.boost.org/doc/libs/1_61_0/more/getting_started/unix-variants.html)
 * Install Curl
+* Install Readline
 * Install Gumbo
 
 ### Installing
@@ -23,7 +24,7 @@
 ```
 * Init Cmake
 ```sh
-    mkdir tmp && cd tmp
+    mkdir cmake && cd cmake
     cmake -DCMAKE_BUILD_TYPE=Release ..
 ```
 

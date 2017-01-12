@@ -5,13 +5,10 @@
 #include <boost/exception/diagnostic_information.hpp>
 #include <boost/exception_ptr.hpp>
 #include "fleur.h"
+#include <readline/readline.h>
+#include <readline/history.h>
+#include <sys/poll.h>
 
-#if defined(__APPLE__) || defined(__unix__)
-    #define NOT_A_WINDOWS 1
-    #include <sys/poll.h>
-#else
-    #define NOT_A_WINDOWS 0
-#endif
 
 namespace po = boost::program_options;
 
@@ -24,9 +21,7 @@ int main(const int argc, const char *argv[]) {
             ("help,h", "Displays the help message")
             ("version,v", "Displays the version number")
             ("silent,s", "Strips verbosity to minimum - Only outputs query results")
-            ("execute,e", po::value<std::string>(), NOT_A_WINDOWS ?
-                                                    "Executes a Fleur Query - Queries can additionally be piped through STDIN"
-                                                    : "Executes a Fleur Query");
+            ("execute,e", po::value<std::string>(), "Executes a Fleur Query - Queries can additionally be piped through STDIN");
 
 
     /* Parse argv for command line options */
@@ -59,7 +54,6 @@ int main(const int argc, const char *argv[]) {
     }
 
     /* Query passed piped through stdin */
-    #ifdef NOT_A_WINDOWS
     else if (polled_stdin) {
         std::string line, input;
         while (std::getline(std::cin, line))
@@ -69,7 +63,6 @@ int main(const int argc, const char *argv[]) {
         for (auto const& c : fleur_query(input))
             std::cout << c << std::endl;
     }
-    #endif
 
     /* REPL */
     else {
@@ -86,15 +79,18 @@ int main(const int argc, const char *argv[]) {
         std::locale locale;
         do {
             /* Ask for input */
-            if (!vm.count("silent"))
-                std::cout << "Fleur" << (fleur_current_module() != "" ? " ("+fleur_current_module()+")" : "") << "> ";
-            std::getline(std::cin, line);
+            if (!vm.count("silent")) {
+                std::string prompt = "Fleur" + (fleur_current_module() != "" ? " (" + fleur_current_module() + ")" : "") + "> ";
+                line = readline(prompt.c_str());
+            } else
+                line = readline("");
+            add_history(line.c_str());
 
             /* To lower, to detect quit/exit in a case insensitive way */
             line_tolower = "";
             for(auto elem : line)
                 line_tolower += std::tolower(elem,locale);
-            if (line_tolower == "quit" || line_tolower == "exit") {
+            if (line_tolower == "quit" || line_tolower == "quit;" || line_tolower == "exit" || line_tolower == "exit;") {
                 if (!vm.count("silent"))
                     std::cout << "Bye" << std::endl;
                 break;

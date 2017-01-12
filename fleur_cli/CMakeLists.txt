@@ -1,7 +1,12 @@
+find_library(READLINE_LIB readline)
+if(NOT READLINE_LIB)
+    message(FATAL_ERROR "readline library not found")
+endif()
+
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY "${PROJECT_SOURCE_DIR}/build/bin/")
 set(FLEUR_CLI_SOURCE_FILES main.cpp)
 add_executable(fleur_cli ${FLEUR_CLI_SOURCE_FILES})
-target_link_libraries(fleur_cli ${Boost_LIBRARIES} fleur_static)
+target_link_libraries(fleur_cli ${Boost_LIBRARIES} fleur_static readline)
 
 
 #### Install
