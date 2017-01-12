@@ -33,7 +33,7 @@ std::unordered_map<std::string, std::string> fleur::Processing::modules_with_cre
 
 fleur::Processing::Processing(const std::string &requettes) {
     if (!fleur::Processing::postProcessingParssing(requettes)) {
-        throw fleur::ProcessingException("Error in general syntax");
+        std::cout << "Syntax error" << std::endl;
     }
 }
 
@@ -61,14 +61,17 @@ fleur::Processing::Strings fleur::Processing::build() {
                 include_tolower += std::tolower(elem,locale);
             // Check if the module is valid
             if (!installed_modules.count(include_tolower)) {
-                std::cerr << "No such module: " << include_tolower << std::endl;
+                std::cout << "No such module: " << include_tolower << std::endl;
                 break;
             }
             // Check if the module requires credentials
-            if (modules_with_credentials.count(include_tolower))
+            if (modules_with_credentials.count(include_tolower)) {
                 include = requeteInclude._module + " " + modules_with_credentials[include_tolower];
-            else
+                std::cout << "Enter a " << include  << std::endl;
+            } else {
                 include = requeteInclude._module;
+                std::cout << "Now using the " << include << " module"  << std::endl;
+            }
             continue;
         }
 
@@ -122,7 +125,7 @@ fleur::Processing::Strings fleur::Processing::build() {
 
 
 
-        std::cerr << "Invalid syntax" << std::endl;
+        std::cout << "Invalid syntax" << std::endl;
 
     }
 

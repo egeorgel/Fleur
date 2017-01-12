@@ -87,7 +87,7 @@ int main(const int argc, const char *argv[]) {
         do {
             /* Ask for input */
             if (!vm.count("silent"))
-                std::cout << "Fleur" << (fleur_current_module() != "" ? " ("+fleur_current_module()+") " : "") << ">";
+                std::cout << "Fleur" << (fleur_current_module() != "" ? " ("+fleur_current_module()+")" : "") << "> ";
             std::getline(std::cin, line);
 
             /* To lower, to detect quit/exit in a case insensitive way */

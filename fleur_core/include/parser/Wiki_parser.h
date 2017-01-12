@@ -90,7 +90,7 @@ namespace fleur {
                     std::cout << "from : " << query._fromName << "\n";
                     std::cout << "limit : " << query._limit << "\n";
                 } else {
-                    std::cerr << "parse failed: '" << std::string(i_begin, i_end) << "'\n";
+                    std::cout << "parse failed: '" << std::string(i_begin, i_end) << "'\n";
                 }
                 return ok;
             } catch (const qi::expectation_failure<decltype(i_begin)> &e) {
