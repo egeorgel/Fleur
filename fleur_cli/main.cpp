@@ -9,10 +9,15 @@
 #include <readline/history.h>
 #include <sys/poll.h>
 
+#ifndef __APPLE__
+    #define LOG_QUERY 1
+#endif
+
 
 namespace po = boost::program_options;
-
 int poll_stdin();
+std::vector<std::string> fleur_query_ex(std::string);
+
 int main(const int argc, const char *argv[]) {
 
     /* Declare Command Line Options */
@@ -51,7 +56,7 @@ int main(const int argc, const char *argv[]) {
 
     /* Execute Option */
     else if (vm.count("execute")) {
-        fleur_query(vm["execute"].as<std::string>());
+        fleur_query_ex(vm["execute"].as<std::string>());
     }
 
     /* Query passed piped through stdin */
@@ -61,7 +66,7 @@ int main(const int argc, const char *argv[]) {
         {
             input += line;
         }
-        for (auto const& c : fleur_query(input))
+        for (auto const& c : fleur_query_ex(input))
             std::cout << c << std::endl;
     }
 
@@ -113,7 +118,7 @@ int main(const int argc, const char *argv[]) {
             }
 
             /* Execute fleur query */
-            for (auto const& c : fleur_query(line))
+            for (auto const& c : fleur_query_ex(line))
                 std::cout << c << std::endl;
         } while (true);
     }
@@ -127,4 +132,14 @@ int poll_stdin() {
     fds.events = POLLIN;
     ret = poll(&fds, 1, 0);
     return ret;
+}
+
+
+std::vector<std::string> fleur_query_ex(std::string line) {
+    #ifdef LOG_QUERY
+        std::string influx_curl = "curl -i -XPOST 'http://localhost:8086/write?db=fleur' --data-binary 'fleur_queries,"
+                                  + fleur_current_module() + "=1 value=1 '\"$(date +%s%N)\"";
+        system(&influx_curl[0u]);
+    #endif
+    return fleur_query(line);
 }
