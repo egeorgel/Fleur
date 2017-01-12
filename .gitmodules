@@ -13,3 +13,6 @@
 [submodule "submodules/googletest"]
 	path = submodules/googletest
 	url = https://github.com/google/googletest.git
+[submodule "fleur_server/websockify"]
+	path = fleur_server/websockify
+	url = https://github.com/novnc/websockify.git
