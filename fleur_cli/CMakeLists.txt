@@ -3,10 +3,9 @@ if(NOT READLINE_LIB)
     message(FATAL_ERROR "readline library not found")
 endif()
 
-OPTION(FLEUR_LOG_INFLUXDB "Option description" OFF) # Disbaled by default, we use it for our fleur.how server
-IF(DEFINE_MACRO)
+IF(FLEUR_LOG_INFLUXDB)
     ADD_DEFINITIONS(-DFLEUR_LOG_INFLUXDB)
-ENDIF(DEFINE_MACRO)
+ENDIF(FLEUR_LOG_INFLUXDB)
 
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY "${PROJECT_SOURCE_DIR}/build/bin/")
 set(FLEUR_CLI_SOURCE_FILES main.cpp)
