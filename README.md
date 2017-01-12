@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/egeorgel/Fleur.svg?branch=master)](https://travis-ci.org/egeorgel/Fleur)
 # Ƒ|eµℝ
  An API request tool for developpers, our main goal is to create a unify request language for all the APIs.
 
