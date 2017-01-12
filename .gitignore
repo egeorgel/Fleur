@@ -54,3 +54,4 @@ CMakeScripts/
 # Build directory
 build/
 tmp/
+cmake/
