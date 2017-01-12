@@ -5,13 +5,10 @@
 #include <boost/exception/diagnostic_information.hpp>
 #include <boost/exception_ptr.hpp>
 #include "fleur.h"
+#include <readline/readline.h>
+#include <readline/history.h>
+#include <sys/poll.h>
 
-#if defined(__APPLE__) || defined(__unix__)
-    #define NOT_A_WINDOWS 1
-    #include <sys/poll.h>
-#else
-    #define NOT_A_WINDOWS 0
-#endif
 
 namespace po = boost::program_options;
 
@@ -21,11 +18,10 @@ int main(const int argc, const char *argv[]) {
     /* Declare Command Line Options */
     po::options_description cli_options("Fleur CLI Options");
     cli_options.add_options()
-            ("help,h", "Display the help message")
-            ("version,v", "Display the version number")
-            ("execute,e", po::value<std::string>(), NOT_A_WINDOWS ?
-                                                    "Execute a Fleur Query - Queries can additionally be piped through STDIN"
-                                                    : "Execute a Fleur Query");
+            ("help,h", "Displays the help message")
+            ("version,v", "Displays the version number")
+            ("silent,s", "Strips verbosity to minimum - Only outputs query results")
+            ("execute,e", po::value<std::string>(), "Executes a Fleur Query - Queries can additionally be piped through STDIN");
 
 
     /* Parse argv for command line options */
@@ -35,6 +31,7 @@ int main(const int argc, const char *argv[]) {
         po::notify(vm);
     } catch(std::exception const&  ex) {
         std::cerr << ex.what() << std::endl << "Use fleur --help for usage information" << std::endl;
+        return EXIT_FAILURE;
     }
 
     /* Poll STDIN */
@@ -48,7 +45,7 @@ int main(const int argc, const char *argv[]) {
     /* Version Option */
     else if (vm.count("version")) {
         std::cout << "Fleur Version: " << fleur_version() << std::endl;
-        std::cout << "Bundled with modules : " << fleur_installed_modules() << std::endl;
+        std::cout << "Bundled with modules: " << fleur_installed_modules() << std::endl;
     }
 
     /* Execute Option */
@@ -57,7 +54,6 @@ int main(const int argc, const char *argv[]) {
     }
 
     /* Query passed piped through stdin */
-    #ifdef NOT_A_WINDOWS
     else if (polled_stdin) {
         std::string line, input;
         while (std::getline(std::cin, line))
@@ -67,30 +63,36 @@ int main(const int argc, const char *argv[]) {
         for (auto const& c : fleur_query(input))
             std::cout << c << std::endl;
     }
-    #endif
 
     /* REPL */
     else {
 
         /* Log in information */
-        std::cout << "Fleur Interactive Shell: Version " << fleur_version() << std::endl;
-        std::cout << "Bundled with modules: " << fleur_installed_modules() << std::endl;
-        std::cout << "Type quit or exit to leave this shell" << std::endl << std::endl;
+        if (!vm.count("silent")) {
+            std::cout << "Fleur Interactive Shell: Version " << fleur_version() << std::endl;
+            std::cout << "Bundled with modules: " << fleur_installed_modules() << std::endl;
+            std::cout << "Type quit or exit to leave this shell" << std::endl << std::endl;
+        }
 
         /* REPL Loop */
         std::string line, line_tolower;
         std::locale locale;
         do {
             /* Ask for input */
-            std::cout << "Fleur" << (fleur_current_module() != "" ? " ("+fleur_current_module()+") " : "") << ">";
-            std::getline(std::cin, line);
+            if (!vm.count("silent")) {
+                std::string prompt = "Fleur" + (fleur_current_module() != "" ? " (" + fleur_current_module() + ")" : "") + "> ";
+                line = readline(prompt.c_str());
+            } else
+                line = readline("");
+            add_history(line.c_str());
 
             /* To lower, to detect quit/exit in a case insensitive way */
             line_tolower = "";
             for(auto elem : line)
                 line_tolower += std::tolower(elem,locale);
-            if (line_tolower == "quit" || line_tolower == "exit") {
-                std::cout << "Bye" << std::endl;
+            if (line_tolower == "quit" || line_tolower == "quit;" || line_tolower == "exit" || line_tolower == "exit;") {
+                if (!vm.count("silent"))
+                    std::cout << "Bye" << std::endl;
                 break;
             }
 
@@ -99,7 +101,7 @@ int main(const int argc, const char *argv[]) {
                 std::cout << c << std::endl;
         } while (true);
     }
-    return 0;
+    return EXIT_SUCCESS;
 }
 
 int poll_stdin() {

@@ -151,7 +151,7 @@ namespace fleur {
                     std::cout << "tokenSecret : " << query._tokenSecret << "\n";
                 }
                 else {
-                    std::cerr << "parse failed: '" << std::string(i_begin, i_end) << "'\n";
+                    std::cout << "parse failed: '" << std::string(i_begin, i_end) << "'\n";
                 }
                 return ok;
             } catch(const qi::expectation_failure<decltype(i_begin)>& e) {
