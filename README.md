@@ -3,18 +3,18 @@
 # Ƒ|eµℝ
  An API request tool for developpers, our main goal is to create a unify request language for all the APIs.
 
-- [Tech](#Tech)
-- [Getting Started](#Getting-Started)
-  - [Prerequisities](#Prerequisities)
-  - [Installing](#Installing)
-- [Fleur Query Language Documentation](#Fleur-Query-Language-Documentation)
-    - [HTTP Module](#HTTP-Module)
-    - [Twitter Module](#Twitter-Module)
-    - [Wikipedia Module](#Wikipedia-Module)
-    - [WolframeAlpha Module](#WolframeAlpha-Module)
-- [How to use the CLI](#How-to-use-the-CLI)
-- [Contributing](#Contributing)
-- [Authors](#Authors)
+- [Tech](#tech)
+- [Getting Started](#getting-started)
+  - [Prerequisities](#prerequisities)
+  - [Installing](#installing)
+- [Fleur Query Language Documentation](#fleur-query-language-documentation)
+    - [HTTP Module](#http-module)
+    - [Twitter Module](#twitter-module)
+    - [Wikipedia Module](#wikipedia-module)
+    - [WolframeAlpha Module](#wolframealpha-module)
+- [How to use the CLI](#how-to-use-the-cli)
+- [Contributing](#contributing)
+- [Authors](#authors)
 
 ## Tech
 Ƒ|eµℝ uses a number of open source projects to work properly:
