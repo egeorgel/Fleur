@@ -20,8 +20,9 @@ int main(const int argc, const char *argv[]) {
     cli_options.add_options()
             ("help,h", "Displays the help message")
             ("version,v", "Displays the version number")
-            ("silent,s", "Strips verbosity to minimum - Only outputs query results")
-            ("execute,e", po::value<std::string>(), "Executes a Fleur Query - Queries can additionally be piped through STDIN");
+            ("execute,e", po::value<std::string>(), "Executes a Fleur Query - Queries can additionally be piped through STDIN")
+            ("silent,s", "Strips verbosity to minimum - Only outputs query results  - Useful when used with socat to create a server")
+            ("no-rlwrap", "Will use standard getline instead of readline - Useful when used with socat to create a server");
 
 
     /* Parse argv for command line options */
@@ -75,16 +76,31 @@ int main(const int argc, const char *argv[]) {
         }
 
         /* REPL Loop */
+        char * line_readline;
         std::string line, line_tolower;
         std::locale locale;
         do {
-            /* Ask for input */
-            if (!vm.count("silent")) {
-                std::string prompt = "Fleur" + (fleur_current_module() != "" ? " (" + fleur_current_module() + ")" : "") + "> ";
-                line = readline(prompt.c_str());
-            } else
-                line = readline("");
-            add_history(line.c_str());
+            /* Ask for input with read*/
+            if (vm.count("no-rlwrap")) {
+                if (!vm.count("silent"))
+                    std::cout << "Fleur" + (fleur_current_module() != "" ? " (" + fleur_current_module() + ")" : "") +
+                                 "> ";
+                std::getline(std::cin, line);
+            }
+
+            else {
+                if (!vm.count("silent")) {
+                    std::string prompt =
+                            "Fleur" + (fleur_current_module() != "" ? " (" + fleur_current_module() + ")" : "") + "> ";
+                    line_readline = readline(prompt.c_str());
+                } else {
+                    line_readline = readline("");
+                }
+                add_history(line_readline);
+                line = std::string(line_readline);
+                free(line_readline); // Sneaky memory leak
+            }
+
 
             /* To lower, to detect quit/exit in a case insensitive way */
             line_tolower = "";
