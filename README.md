@@ -1,6 +1,20 @@
 [![Build Status](https://travis-ci.org/egeorgel/Fleur.svg?branch=master)](https://travis-ci.org/egeorgel/Fleur)
+
 # Ƒ|eµℝ
  An API request tool for developpers, our main goal is to create a unify request language for all the APIs.
+
+- [Tech](#Tech)
+- [Getting Started](#Getting-Started)
+  - [Prerequisities](#Prerequisities)
+  - [Installing](#Installing)
+- [Fleur Query Language Documentation](#Fleur-Query-Language-Documentation)
+    - [HTTP Module](#HTTP-Module)
+    - [Twitter Module](#Twitter-Module)
+    - [Wikipedia Module](#Wikipedia-Module)
+    - [WolframeAlpha Module](#WolframeAlpha-Module)
+- [How to use the CLI](#How-to-use-the-CLI)
+- [Contributing](#Contributing)
+- [Authors](#Authors)
 
 ## Tech
 Ƒ|eµℝ uses a number of open source projects to work properly:
@@ -56,7 +70,7 @@
 ## Fleur Query Language Documentation 
 Fleur comprend différent module en plus des fonctionnalité du module de base.
 Chaque module comporte quelques spécificité syntaxique que vous pouvez trouver ci-dessous.
-###HTTP Module
+### HTTP Module
 The syntax is SQL like in order to be easy to take in charge
 * SELECT + html/* or json or xml + Optional: (css selector) + FROM + url or name of your ressource + Optional: GET/POST/Header (param1=val1, param2=val2)
 ```fql
