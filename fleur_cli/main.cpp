@@ -4,14 +4,11 @@
 #include <boost/program_options.hpp>
 #include <boost/exception/diagnostic_information.hpp>
 #include <boost/exception_ptr.hpp>
-#include "fleur.h"
+#include <boost/algorithm/string.hpp>
 #include <readline/readline.h>
 #include <readline/history.h>
 #include <sys/poll.h>
-
-#ifndef __APPLE__
-    #define LOG_QUERY 1
-#endif
+#include "fleur.h"
 
 
 namespace po = boost::program_options;
@@ -48,18 +45,18 @@ int main(const int argc, const char *argv[]) {
         std::cout << cli_options;
     }
 
-    /* Version Option */
+        /* Version Option */
     else if (vm.count("version")) {
         std::cout << "Fleur Version: " << fleur_version() << std::endl;
         std::cout << "Bundled with modules: " << fleur_installed_modules() << std::endl;
     }
 
-    /* Execute Option */
+        /* Execute Option */
     else if (vm.count("execute")) {
         fleur_query_ex(vm["execute"].as<std::string>());
     }
 
-    /* Query passed piped through stdin */
+        /* Query passed piped through stdin */
     else if (polled_stdin) {
         std::string line, input;
         while (std::getline(std::cin, line))
@@ -70,7 +67,7 @@ int main(const int argc, const char *argv[]) {
             std::cout << c << std::endl;
     }
 
-    /* REPL */
+        /* REPL */
     else {
 
         /* Log in information */
@@ -136,10 +133,13 @@ int poll_stdin() {
 
 
 std::vector<std::string> fleur_query_ex(std::string line) {
-    #ifdef LOG_QUERY
+#ifdef FLEUR_LOG_INFLUXDB // This is a breakpoint for us for monitoring traffic on fleur.how
+    std::string current_module = fleur_current_module();
+        if (current_module == "") current_module = "no module";
+        boost::replace_all(current_module, " ", "_");
         std::string influx_curl = "curl -i -XPOST 'http://localhost:8086/write?db=fleur' --data-binary 'fleur_queries,"
-                                  + fleur_current_module() + "=1 value=1 '\"$(date +%s%N)\"";
+                                  + current_module + "=1 value=1 '\"$(date +%s%N)\" 2>/dev/null 1>/dev/null";
         system(&influx_curl[0u]);
-    #endif
+#endif
     return fleur_query(line);
 }
