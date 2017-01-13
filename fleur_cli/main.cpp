@@ -137,8 +137,8 @@ std::vector<std::string> fleur_query_ex(std::string line) {
     std::string current_module = fleur_current_module();
         if (current_module == "") current_module = "no module";
         boost::replace_all(current_module, " ", "_");
-        std::string influx_curl = "curl -i -XPOST 'http://localhost:8086/write?db=fleur' --data-binary 'fleur_queries,"
-                                  + current_module + "=1 value=1 '\"$(date +%s%N)\" 2>/dev/null 1>/dev/null";
+        std::string influx_curl = "curl -i -XPOST 'http://localhost:8086/write?db=fleur' --data-binary 'fleur_queries total=1,"
+                                  + current_module + "=1 '\"$(date +%s%N)\" 2>/dev/null 1>/dev/null";
         system(&influx_curl[0u]);
 #endif
     return fleur_query(line);
