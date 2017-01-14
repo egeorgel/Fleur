@@ -1,2 +1,0 @@
-# FleurQL-Showcase
-FleurQL Showcase

@@ -1,45 +1,54 @@
-<!DOCTYPE html>
 <html>
-<head>
-  <title>FQL — Search</title>
-  <meta charset="utf-8">
-  <link rel="stylesheet" href="./css/bulma.css">
-  <link rel="stylesheet" href="./css/main.css">
-  <script src="js/rainyday.0.1.2.min.js"></script>
-</head>
-<body onload="run();">
-  <section class="hero is-fullheight">
-    <div class="hero-body">
-      <img id="background" alt="background" src="img/fleur.jpg" crossorigin="anonymous" class="background-img">
-      <div id="search-section" class="container has-text-centered search">
-        <h1 class="title"><span class="letter">F</span><span class="letter">L</span><span class="letter">E</span><span class="letter">U</span><span class="letter">R</span><sub class="letter">QL</sub></h1>
-        <div class="columns">
-          <div class="column is-half is-offset-one-quarter">
-            <p class="control">
-                <pre class="input" id="editor"></pre>
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link rel="stylesheet" href="./css/transitions.css">
+		<link rel="stylesheet" href="./css/fleur.css">
+		<title>Learn the Ƒ|eµℝ Query Language</title>
+		<link rel="icon" href="/img/logo.png">
+	</head>
+	<body>
+		<img id="background" src="/img/bg.jpg" width="100%" height="100%" />
+		<main>
+			<div id="logo">
+				<img src="/img/logo.png" />
+			</div>
+			<div id="wrapper">
+				<div id="left">
+					<textarea placeholder="Enter a Ƒ|eµℝ query"></textarea>
+					<hr>
+				</div>
+				<div id="right">
+					<iframe src="/README.html" id="documentation" class="shadow"></iframe>
+					<ul id="history">
 
-  <div id="modal" class="modal">
-    <div class="modal-background"></div>
-    <div class="modal-card">
-      <header class="modal-card-head">
-        <p class="modal-card-title">Results</p>
-      </header>
-      <section class="modal-card-body">Content</section>
-      <footer class="modal-card-foot">
-        <a class="button" id="close-modal">Close</a>
-      </footer>
-    </div>
-  </div>
+					</ul>
+				</div>
+			</div>
+			<ul id="quick-actions">
+				<li id="action-history"><img class="img-responsive" src="img/Clock%20Filled-100.png"><span>History</span></li>
+				<li id="action-documentation"><img class="img-responsive" src="img/Saving%20Book%20Filled-100.png"><span>Documentation</span></li>
+			</ul>
+		</main>
+		
+		
+	<div class="modal fade" tabindex="-1" role="dialog" id="error-modal">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	        <h4 class="modal-title">Your Ƒ|eµℝ stream is now disconnected</h4>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-danger" id="reload">Reload</button>
+	      </div>
+	    </div><!-- /.modal-content -->
+	  </div><!-- /.modal-dialog -->
+	</div><!-- /.modal -->
 
-  <script src="./js/jquery-2.2.4.min.js"></script>
-  <script src="./js/ace/ace.js"></script>
-  <script src="./js/ace/ext-language_tools.js"></script>
-  <script src="./js/app.js"></script>
-</body>
+	<script src="./js/rainyday.0.1.2.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="./js/fleur.js"></script>
+	</body>
 </html>

@@ -1,0 +1,220 @@
+<html>
+	<head>
+		<link crossorigin="anonymous" href="https://assets-cdn.github.com/assets/frameworks-c07e6f4b02b556d1d85052fb3853caf84c80e6b23dcdb1ae1b00f051da1115a2.css" integrity="sha256-wH5vSwK1VtHYUFL7OFPK+EyA5rI9zbGuGwDwUdoRFaI=" media="all" rel="stylesheet">
+		<link crossorigin="anonymous" href="https://assets-cdn.github.com/assets/github-f7908bec66dc71ca22b3075562a80e472f6e9f39ab2bfcb7e5eee9f041237433.css" integrity="sha256-95CL7GbcccoiswdVYqgORy9unzmrK/y35e7p8EEjdDM=" media="all" rel="stylesheet">
+	</head>
+	<body style="min-width: 0px !important">
+<div id="readme" class="readme blob instapaper_body">
+    <article class="markdown-body entry-content" itemprop="text"><p><a href="https://travis-ci.org/egeorgel/Fleur"><img src="https://camo.githubusercontent.com/f3dc68380eaa38a8200f846f79bb1343aa59b5ae/68747470733a2f2f7472617669732d63692e6f72672f6567656f7267656c2f466c6575722e7376673f6272616e63683d6d6173746572" alt="Build Status" data-canonical-src="https://travis-ci.org/egeorgel/Fleur.svg?branch=master" style="max-width:100%;"></a></p>
+
+<h1><a id="user-content-Ƒeµℝ" class="anchor" href="#Ƒeµℝ" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Ƒ|eµℝ</h1>
+
+<p>An API request tool for developpers, our main goal is to create a unify request language for all the APIs.</p>
+
+<ul>
+<li><a href="#tech">Tech</a></li>
+<li><a href="#getting-started">Getting Started</a>
+
+<ul>
+<li><a href="#prerequisities">Prerequisities</a></li>
+<li><a href="#installing">Installing</a></li>
+</ul></li>
+<li><a href="#fleur-query-language-documentation">Fleur Query Language Documentation</a>
+
+<ul>
+<li><a href="#http-module">HTTP Module</a></li>
+<li><a href="#twitter-module">Twitter Module</a></li>
+<li><a href="#wikipedia-module">Wikipedia Module</a></li>
+<li><a href="#wolframealpha-module">WolframeAlpha Module</a></li>
+</ul></li>
+<li><a href="#how-to-use-the-cli">How to use the CLI</a></li>
+<li><a href="#contributing">Contributing</a></li>
+<li><a href="#authors">Authors</a></li>
+</ul>
+
+<h2><a id="user-content-tech" class="anchor" href="#tech" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Tech</h2>
+
+<p>Ƒ|eµℝ uses a number of open source projects to work properly:</p>
+
+<ul>
+<li><a href="https://github.com/whoshuu/cpr">C++ Requests</a> - Simple wrapper around libcurl</li>
+<li><a href="https://github.com/lazytiger/gumbo-query">Gumbo-query</a> - Library that provides jQuery-like selectors</li>
+<li><a href="https://github.com/google/googletest">Google Test</a> - Google's C++ test framework!</li>
+<li><a href="http://www.boost.org/doc/libs/1_62_0/libs/spirit/doc/html/index.html">Spirit</a> - Practical parsing tool</li>
+</ul>
+
+<h2><a id="user-content-getting-started" class="anchor" href="#getting-started" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Getting Started</h2>
+
+<h3><a id="user-content-prerequisities" class="anchor" href="#prerequisities" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Prerequisities</h3>
+
+<ul>
+<li>Install <a href="http://www.boost.org/doc/libs/1_61_0/more/getting_started/unix-variants.html">Boost</a></li>
+<li>Install Curl</li>
+<li>Install Readline</li>
+<li>Install Gumbo</li>
+</ul>
+
+<h3><a id="user-content-installing" class="anchor" href="#installing" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Installing</h3>
+
+<ul>
+<li>Download the repo</li>
+</ul>
+
+<div class="highlight highlight-source-shell"><pre>    git clone https://github.com/egeorgel/Fleur.git
+    <span class="pl-c1">cd</span> Fleur/
+    git submodule update --init --recursive</pre></div>
+
+<ul>
+<li>Init Cmake</li>
+</ul>
+
+<div class="highlight highlight-source-shell"><pre>    mkdir cmake <span class="pl-k">&amp;&amp;</span> <span class="pl-c1">cd</span> cmake
+    cmake -DCMAKE_BUILD_TYPE=Release ..</pre></div>
+
+<ul>
+<li>Build and/or install Fleur's static library</li>
+</ul>
+
+<div class="highlight highlight-source-shell"><pre>    make fleur_static
+    <span class="pl-c"><span class="pl-c">#</span> Files will be in Fleur/build/lib</span>
+
+    make fleur_static-install
+    <span class="pl-c"><span class="pl-c">#</span> Files will be in /usr/local/include/fleur.h and /usr/local/include/libfleur.a</span></pre></div>
+
+<ul>
+<li>Build and/or install Fleur's Command Line</li>
+</ul>
+
+<div class="highlight highlight-source-shell"><pre>    make fleur_cli
+    <span class="pl-c"><span class="pl-c">#</span> File will be in Fleur/build/bin</span>
+
+    make fleur_static-install
+    <span class="pl-c"><span class="pl-c">#</span> File will be in /usr/local/bin/fleur</span></pre></div>
+
+<ul>
+<li>Uninstall</li>
+</ul>
+
+<div class="highlight highlight-source-shell"><pre>     make fleur_cli-uninstall
+     make fleur_static-uninstall</pre></div>
+
+<h2><a id="user-content-fleur-query-language-documentation" class="anchor" href="#fleur-query-language-documentation" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Fleur Query Language Documentation</h2>
+
+<p>Fleur comprend différent module en plus des fonctionnalité du module de base.
+Chaque module comporte quelques spécificité syntaxique que vous pouvez trouver ci-dessous.</p>
+
+<h3><a id="user-content-http-module" class="anchor" href="#http-module" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>HTTP Module</h3>
+
+<p>The syntax is SQL like in order to be easy to take in charge</p>
+
+<ul>
+<li>SELECT + html/* or json or xml + Optional: (css selector) + FROM + url or name of your ressource + Optional: GET/POST/Header (param1=val1, param2=val2)</li>
+</ul>
+
+<pre lang="fql"><code>    use http;  
+    SELECT html FROM "http://httpbin.org/html";
+    SELECT html (title) FROM "http://www.dynsim.fr";
+
+    select json from "http://denis.fr" get (name=denis, age=12, date=12/12/12) header (tokenID=E223DEF, time=4);
+    select html (p) from "http://denis.fr" get (name=denis, age=12, date=12/12/12) header (tokenID=E223DEF, time=4);
+</code></pre>
+
+<h3><a id="user-content-twitter-module" class="anchor" href="#twitter-module" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Twitter Module</h3>
+
+<p>In order to start the Twitter Module you have to type:</p>
+
+<pre lang="fql"><code>    use twitter;
+    (_consumerKey, _consumerSecret, _tokenKey, _tokenSecret);
+</code></pre>
+
+<ul>
+<li>syntax : GET + */tweets or mention or trends + from twitter/. or anyother personn + Optional : limit to X</li>
+</ul>
+
+<pre lang="fql"><code>get tweets from twitter;                           #Get all your tweet from twitter limit to 200
+get * from .;                                               #Same request
+get tweets from ProductHunt limit 2;    #Get the 2 first tweets from ProductHunt   
+get * from ProductHunt limit 2;              #Same request
+</code></pre>
+
+<ul>
+<li>syntax: SEARCH + text + FROM + twitter</li>
+</ul>
+
+<pre lang="fql"><code>    search Java from wiki;            #Search all article with the key word Java
+    search "text" from * limit 2;   #Same request but only take the 2 first
+</code></pre>
+
+<ul>
+<li>syntax: POST + text</li>
+</ul>
+
+<pre lang="fql"><code>    post "new tweet";
+</code></pre>
+
+<ul>
+<li>syntax: DELETE + post_id</li>
+</ul>
+
+<pre lang="fql"><code>   delete 934839843522;
+</code></pre>
+
+<h3><a id="user-content-wikipedia-module" class="anchor" href="#wikipedia-module" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Wikipedia Module</h3>
+
+<p>In order to start the Twitter Module you have to type:</p>
+
+<pre lang="fql"><code>    use wikipedia;
+</code></pre>
+
+<ul>
+<li>syntax: GET + (html or header or txt) article_name + FROM + wikipedia + Optional: limit to X</li>
+</ul>
+
+<pre lang="fql"><code>    get (header) java from wiki;     #get the first part of the java article 
+    get (html) java from wiki;          #get the full html of the java arcticle
+    get java from wiki;                     #same as HTML
+    get (txt) java from wiki;             #retreive the full content of the article in text format
+</code></pre>
+
+<ul>
+<li>syntax: SEARCH + article_name + FROM + wikipedia + Optional: limit to X</li>
+</ul>
+
+<pre lang="fql"><code>    search Java from wiki;              #Get all article id, name, header from the Java search
+    search Java from wiki limit 4;  #Get the 4 first result of the previous search
+</code></pre>
+
+<h3><a id="user-content-wolframealpha-module" class="anchor" href="#wolframealpha-module" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>WolframeAlpha Module</h3>
+
+<p>In order to start the WolframeAlpha Module you have to type:</p>
+
+<pre lang="fql"><code>    use wolframealpha;
+    appId;
+</code></pre>
+
+<ul>
+<li>syntax : evaluate + string_to_evaluate_in_walframe_alpha;</li>
+</ul>
+
+<pre lang="fql"><code>    evaluate x + 3 = 4;
+    evaluate string to search in Walframe Alpha
+</code></pre>
+
+<h2><a id="user-content-how-to-use-the-cli" class="anchor" href="#how-to-use-the-cli" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>How to use the CLI</h2>
+
+<div class="highlight highlight-source-shell"><pre>    fleur -h or fleur --help
+    fleur -v or fleur --version
+    fleur -e QUERY or fleur --execute QUERY
+    INPUT <span class="pl-k">|</span> fleur</pre></div>
+
+<h2><a id="user-content-contributing" class="anchor" href="#contributing" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Contributing</h2>
+
+<p>Feel free to add any new component to this project.</p>
+
+<h2><a id="user-content-authors" class="anchor" href="#authors" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Authors</h2>
+
+<p>Edgar Georgel - Valentin Mercier - Philippe Dupart - Arthur Busser - Anthony Da Mota</p>
+</article>
+  </div>
+	</body>
+</html>
