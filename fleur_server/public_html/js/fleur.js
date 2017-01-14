@@ -21,7 +21,13 @@ socket.query = function(query) {
 
 
 /* App */
-$(document).ready(load);
+$(document).ready(init);
+function init() {
+	var image = document.getElementById('background');
+	image.onload = load; // When the background image is loaded we start the whole app
+	image.src = 'img/bg.jpg?denis';
+	image.crossOrigin = 'anonymous';
+}
 
 function load() {
 	/* Initial Animation */
@@ -39,7 +45,7 @@ function load() {
 		
 	/* RainyDay */
 	var engine = new RainyDay({
-	        image: document.getElementById('background')
+	        image: this
 	});
 	engine.rain([ [0, 2, 20], [3, 3, 1] ], 100);
 	
