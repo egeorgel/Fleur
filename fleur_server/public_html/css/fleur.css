@@ -61,11 +61,12 @@ main {
 	display: inline-block;
 	height: 100%;
 	position: relative;
+	float: left;
 }
 
 #right {
 	border-radius: 8px;
-	margin-left: 10px;
+	margin-left: 15px;
 	width: calc(60% - 10px);
 	display: inline-block;
 	height: 100%;
