@@ -34,8 +34,12 @@ std::vector<std::string> fleur::WolframAlpha::process() {
 
     std::vector<std::string> results = std::vector<std::string>();
     for( ; iter != end && iter2 != end2; ++iter, ++iter2 )
-        if (*iter != "")
-            results.push_back(boost::replace_all_copy((*iter2 + ": " + *iter), "&apos;", "'"));
+        if (*iter != "") {
+            std::string result = *iter2 + ": " + *iter;
+            boost::replace_all(result, "&apos;", "'");
+            boost::replace_all(result, "&quot;", "\"");
+            results.push_back(result);
+        }
 
     return results;
 }

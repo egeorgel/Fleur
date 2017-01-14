@@ -32,6 +32,10 @@ std::unordered_map<std::string, std::string> fleur::Processing::modules_with_cre
 
 
 fleur::Processing::Processing(const std::string &requettes) {
+    if (requettes == "") {
+        return;
+    }
+
     if (!fleur::Processing::postProcessingParssing(requettes)) {
         std::cout << "Syntax error" << std::endl;
     }
