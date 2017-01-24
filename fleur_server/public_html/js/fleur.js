@@ -9,6 +9,8 @@ socket.onclose = function() {
 var sent_queries = []; // LIFO Buffer to store all the queries
 socket.onmessage = function(evt) {
 	var query = sent_queries.shift();
+	if (query === "undefined")
+		query = "Next part";
 	var response = atob(evt.data);
 	add_history(query, response); // Message is received in base64 so we need to decode it
 }
@@ -34,7 +36,7 @@ function load() {
 	$("#wrapper").addClass('landed');
 	
 	/* Rainyday window resize observer */
-	function resize_canvas() {
+	/*function resize_canvas() {
 		var canvas = $("canvas");
 		var img = $("#background");
 		canvas.width(img.width());
@@ -42,13 +44,13 @@ function load() {
 	}
 	resize_canvas();
 	window.onresize = resize_canvas;
-		
+	*/	
 	/* RainyDay */
-	var engine = new RainyDay({
+	/*var engine = new RainyDay({
 	        image: this
 	});
 	engine.rain([ [0, 2, 20], [3, 3, 1] ], 100);
-	
+	*/
 	/* Textarea keypress observer, handles ENTER and SHIFT+ENTER */
 	function handleEnter(evt) {
 	    if (evt.keyCode == 13 && !evt.shiftKey) {
@@ -84,12 +86,27 @@ function nl2br (str, is_xhtml) {
     var breakTag = (is_xhtml || typeof is_xhtml === 'undefined') ? '<br />' : '<br>';
     return (str + '').replace(/([^>\r\n]?)(\r\n|\n\r|\r|\n)/g, '$1' + breakTag + '$2');
 }
+function escapeHtml (string) {
+  var entityMap = {
+	  '&': '&amp;',
+	  '<': '&lt;',
+	  '>': '&gt;',
+	  '"': '&quot;',
+	  "'": '&#39;',
+	  '/': '&#x2F;',
+	  '`': '&#x60;',
+	  '=': '&#x3D;'
+	};
+  return String(string).replace(/[&<>"'`=\/]/g, function (s) {
+    return entityMap[s];
+  });
+}
 function show_error_modal() {
 	$("#error-modal").modal('show');
 }
 function add_history(title, message) {
 	toggle_history();
-	$("#history").prepend('<li><span class="small">'+nl2br(title)+'</span><br /><span class="big">'+nl2br(message)+'</span></li>');
+	$("#history").prepend('<li><span class="small">'+nl2br(title)+'</span><br /><span class="big"><pre>'+escapeHtml(message)+'</pre></span></li>');
 }
 function toggle_history() {
 	$("#history, #action-documentation").show();

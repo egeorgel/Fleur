@@ -133,6 +133,9 @@ int poll_stdin() {
 
 
 std::vector<std::string> fleur_query_ex(std::string line) {
+	if (line == "" || line == "\n" || line == "\r\n" || line == " ")
+		return std::vector<std::string>();
+	
 #ifdef FLEUR_LOG_INFLUXDB // This is a breakpoint for us for monitoring traffic on fleur.how
     std::string current_module = fleur_current_module();
         if (current_module == "") current_module = "no module";
