@@ -35,7 +35,7 @@
 ```sh
     git clone https://github.com/egeorgel/Fleur.git
     cd Fleur/
-    git submodule update --init --recursive
+    git submodule update --init --recursive --remote
 ```
 * Init Cmake
 ```sh
