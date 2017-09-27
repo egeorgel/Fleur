@@ -57,7 +57,7 @@
     make fleur_cli
     # File will be in Fleur/build/bin
     
-    make fleur_static-install
+    make fleur_cli-install
     # File will be in /usr/local/bin/fleur
 ```
  

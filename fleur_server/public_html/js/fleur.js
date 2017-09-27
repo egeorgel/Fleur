@@ -11,8 +11,13 @@ socket.onmessage = function(evt) {
 	var query = sent_queries.shift();
 	if (query === "undefined")
 		query = "Next part";
-	var response = atob(evt.data);
+	var response = b64DecodeUnicode(evt.data);
 	add_history(query, response); // Message is received in base64 so we need to decode it
+}
+function b64DecodeUnicode(str) {
+    return decodeURIComponent(Array.prototype.map.call(atob(str), function(c) {
+        return '%' + ('00' + c.charCodeAt(0).toString(16)).slice(-2);
+    }).join(''));
 }
 socket.query = function(query) {
 	var queries = query.split("\n");
